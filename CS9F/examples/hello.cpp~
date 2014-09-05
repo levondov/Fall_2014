@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+//traditional first program
+// author: Owen Astrachan, 2/27/99
+/* test */
+void Hello()
+{
+	cout << "Hello world" << endl << "test # 1=2" << endl;
+}
+int main()
+{
+	Hello();
+	return 0;
+}

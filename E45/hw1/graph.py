@@ -1,0 +1,14 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+x = [0.002778, 0.005556, 0.009897]
+y = [300,600,900]
+plt.plot(x,y)
+plt.grid(True)
+plt.axis([0.002, 0.007, 300, 700])
+plt.title('Strain vs Stress for P6.1')
+plt.xlabel('Stress (MPa)')
+plt.ylabel('Strain (n/a)')
+plt.savefig('graph_p6_1.pdf')
+plt.show()
