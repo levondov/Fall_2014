@@ -89,6 +89,18 @@ Plot the bond length of the metals in the long row of metallic elements (K to Ga
 \begin{problem}{2.52}
 Due to its large atomic diameter, neon has a higher heat of solution in vitreous silica than helium. If the heat of solution of neon in vitreous silica is $-6.70$ kJ/mol and the solubility at $25\degree$C is $9.07 \e{23}$ atoms/($m^3$*atm), calculate the solubility at $200\degree$C. (See problem 2.51.)
 \end{problem}
+
+Let $T_1 = 298.15\,K, T_2 = 473.15\,K$ and $S_1 = \text{solubility at } 298.15\,K, S_2 = \text{solubility at } 473.15\,K$.
+\begin{align*}
+\frac{S_0}{S_1} = e^{\frac{\Delta H_s}{RT_1}}, \,\,\, \frac{S_0}{S_2} = e^{\frac{\Delta H_s}{RT_2}} \\
+\text{divide the two equations with each other,} \\
+\frac{S_2}{S_1} = \frac{ e^{\frac{\Delta H_s}{RT_1}}}{e^{\frac{\Delta H_s}{RT_2}}} \\
+S_2 = S_1 e^{\frac{\Delta H_s}{R}(\frac{1}{T_1} - \frac{1}{T_2})} \\
+S_1 = 9.07 \e{23} \text{atoms/($m^3$atm)}, \Delta H_s = -6700 \text{J/mol}, R = 8.315 \text{J/(mol k)} \\
+\text{after plugging in numbers and solving,} \\
+S_2 = 0.368S_1 \\
+S_2 = 3.34 \e{23} \text{atoms/($m^3$ atm)}
+\end{align*}
 % --------------------------------------------------------------
 %     You don't have to mess with anything below this line.
 % --------------------------------------------------------------
