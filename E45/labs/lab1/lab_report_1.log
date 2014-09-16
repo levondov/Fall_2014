@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  13 SEP 2014 15:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  15 SEP 2014 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1369,53 +1369,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--190
  []
 
 
-Overfull \hbox (28.87086pt too wide) in paragraph at lines 195--203
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+
+Overfull \hbox (31.27086pt too wide) in paragraph at lines 199--207
  [][] 
  []
 
-[3] <graph_p4.pdf, id=1030, 578.16pt x 433.62pt>
-File: graph_p4.pdf Graphic file (type pdf)
- <use graph_p4.pdf>
-Package pdftex.def Info: graph_p4.pdf used on input line 258.
-(pdftex.def)             Requested size: 250.0pt x 187.49837pt.
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-[5 <./graph_p4.pdf>] <diagram22.pdf, id=1075, 543.02875pt x 262.9825pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--220
+
+ []
+
+[3] [4] <graph_p4.pdf, id=1034, 578.16pt x 433.62pt>
+File: graph_p4.pdf Graphic file (type pdf)
+ <use graph_p4.pdf>
+Package pdftex.def Info: graph_p4.pdf used on input line 270.
+(pdftex.def)             Requested size: 250.0pt x 187.49837pt.
+
+[5 <./graph_p4.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+
+ []
+
+<diagram22.pdf, id=1078, 543.02875pt x 262.9825pt>
 File: diagram22.pdf Graphic file (type pdf)
-
-<use diagram22.pdf>
-Package pdftex.def Info: diagram22.pdf used on input line 295.
+ <use diagram22.pdf>
+Package pdftex.def Info: diagram22.pdf used on input line 317.
 (pdftex.def)             Requested size: 400.0pt x 193.72118pt.
-Missing character: There is no 3 in font nullfont!
-
+ [6 <./diagram22.pdf>]
 No file lab_report_1.bbl.
-[6 <./diagram22.pdf>] (./lab_report_1.aux) ) 
+[7] (./lab_report_1.aux) ) 
 Here is how much of TeX's memory you used:
- 27583 strings out of 493304
- 646431 string characters out of 6139872
+ 27595 strings out of 493304
+ 646628 string characters out of 6139872
  761095 words of memory out of 5000000
- 30534 multiletter control sequences out of 15000+600000
+ 30546 multiletter control sequences out of 15000+600000
  7320 words of font info for 28 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,20n,74p,10440b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on lab_report_1.pdf (6 pages, 424110 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb>
+Output written on lab_report_1.pdf (7 pages, 428920 bytes).
 PDF statistics:
- 1596 PDF objects out of 1728 (max. 8388607)
- 1236 compressed objects within 13 object streams
+ 1604 PDF objects out of 1728 (max. 8388607)
+ 1240 compressed objects within 13 object streams
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -36,7 +36,7 @@
 
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 
-\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+%\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
 
 %\usepackage{times} % Uncomment to use the Times New Roman font
 
@@ -70,7 +70,7 @@
 
 \section{Objective}
 
-To use the Rockwell and Brinell tests to create deformations and compare results of various metals and alloys. These tests will help better understand how mechanical stress and strain behave.
+To use the Rockwell and Brinell tests to create deformations and compare results of various metals and alloys. These tests will help us better understand how mechanical stress and strain behavior works.
 
 % If you have more than one objective, uncomment the below:
 %\begin{description}
@@ -188,20 +188,32 @@ Copper 0.250 & 2 & 500 & 2.9 & 76 & 74\\
 
 Projected area $A_p = \pi (\frac{d}{2})^2$ where d is the indentation diameter \\
 
-Indentation Area $A_i = \frac{\pi D}{2}(D - \sqrt{D^2 - d^2})$ where D is the diameter of the penetrator ball (mm)
+Indentation Area $A_i = \frac{\pi D}{2}(D - \sqrt{D^2 - d^2})$ where D is the diameter of the penetrator ball (mm) \\
+
+stress $\sigma = \frac{P}{A_0}$ \\
+
+strain $\epsilon = \frac{l - l_0}{l_0}$
 
 \begin{figure}[H]
 \centering
-\begin{tabular}{c | c | c | c | c | c | c | c | c | c | c}
+\begin{tabular}{c || c | c | c | c | c | c | c | c | c | c}
 \specialcell{Load P \\(lb)} & \specialcell{$x_1$ \\(in)} & \specialcell{$x_2$ \\(in)} & \specialcell{$y_1$ \\(in)} & \specialcell{$y_2$ \\(in)} & \specialcell{Nominal \\ stress \\(psi)} & \specialcell{Local \\ stress \\(psi)} & \specialcell{Nominal $x_1$ \\ strain \\(in/in)} & \specialcell{Local $x_2$ \\ strain \\(in/in)} & \specialcell{Nominal $y_1$ \\ strain \\(in/in)} & \specialcell{Local $y_2$ \\ strain \\(in/in)} \\ \hline
 0 & $4^{\frac{58}{64}}$ & $\frac{32}{64}$ & $4^{\frac{63}{64}}$ & $\frac{32}{64}$ & 0 & 0 & - & - & - & -\\ \hline
-10 & $4^{\frac{56}{64}}$ & $\frac{32}{64}$ & $5^{\frac{2}{64}}$ & $\frac{33}{64}$ & 0.408 & 38.8 & -6.37 \e{-3} & 0 & 9.40 \e{-3} & 31.3 \e{-3}\\ \hline
-20 & $4^{\frac{55}{64}}$ & $\frac{31}{64}$ & $5^{\frac{2}{64}}$ & $\frac{34}{64}$ & 0.818 & 77.6 & -9.55 \e{-3} & -31.3 \e{-3} & 9.40 \e{-3} & 62.5 \e{-3}\\ \hline
-30 & $4^{\frac{53}{64}}$ & $\frac{31}{64}$ & $5^{\frac{5}{64}}$ & $\frac{35}{64}$ & 1.23 & 116 & -15.9 \e{-3} & -31.3 \e{-3} & 18.8 \e{-3} & 93.8 \e{-3}\\ \hline
-50 & $4^{\frac{53}{64}}$ & $\frac{31}{64}$ & $5^{\frac{10}{64}}$ & $\frac{37}{64}$ & 2.04 & 194 & -15.9 \e{-3} & -31.3 \e{-3} & 34.5 \e{-3} & 156 \e{-3}\\ \hline
+10 & $4^{\frac{56}{64}}$ & $\frac{32}{64}$ & $5^{\frac{2}{64}}$ & $\frac{33}{64}$ & 10.9 & 13.1 & -6.37 \e{-3} & 0 & 9.40 \e{-3} & 31.3 \e{-3}\\ \hline
+20 & $4^{\frac{55}{64}}$ & $\frac{31}{64}$ & $5^{\frac{2}{64}}$ & $\frac{34}{64}$ & 21.8 & 26.3 & -9.55 \e{-3} & -31.3 \e{-3} & 9.40 \e{-3} & 62.5 \e{-3}\\ \hline
+30 & $4^{\frac{53}{64}}$ & $\frac{31}{64}$ & $5^{\frac{5}{64}}$ & $\frac{35}{64}$ & 32.7 & 39.4 & -15.9 \e{-3} & -31.3 \e{-3} & 18.8 \e{-3} & 93.8 \e{-3}\\ \hline
+50 & $4^{\frac{53}{64}}$ & $\frac{31}{64}$ & $5^{\frac{10}{64}}$ & $\frac{37}{64}$ & 54.5 & 65.6 & -15.9 \e{-3} & -31.3 \e{-3} & 34.5 \e{-3} & 156 \e{-3}\\ \hline
 \end{tabular}
 \caption{Stress concentration measurements from rubber sheet}
 \end{figure}
+
+depth of rubber sheet $d_1 = \frac{10}{64}$in and $d_2 = \frac{10}{64}$in \\
+
+width of rubber sheet $w_1 = 5\,\frac{56}{64}$in and $w_2 = w_1 - $diameter of hole$ = 4\,\frac{56}{64}$in \\
+
+Nominal cross-sectional area $A_1 = 0.92\,\text{in}^2$ \\
+
+Local cross-sectional area $A_2 = 0.76\,\text{in}^2$ \\
 %----------------------------------------------------------------------------------------
 %	SECTION 3
 %----------------------------------------------------------------------------------------
@@ -262,7 +274,7 @@ The $y_2$ plot has the highest amount of strain on it -- almost four times as mu
 \item[5) What is the ratio between the highest tensile stress and the average longitudinal tensile stress, known as the “stress
 concentration factor?” Stress concentration can be easily obtained from your plots using a vertical line connecting
 two data sets for locations 1 and 2.]
-testest
+Looking at figure 4, the highest tensile stress is 65.6psi that occurs with a load of 50lbs at the Local stress point. The average tensile nominal stress for the material is 30.0psi. Therefore, the stress concentration factor is $\frac{65.6}{30.0} = 2.19$.
 
 \item[6) Using your data from the transparent photoelastic plate sample, rank the relative stress concentration at all four (4)
 non-circular openings from highest to lowest. Explain your results. Why should the shape of a “stress-raiser” matter?]
@@ -275,9 +287,19 @@ Rank & \# cycles & location \\ \hline
 1 & $2 \frac{2}{3}$ & second sheet, top \\ \hline
 3 & $2 \frac{1}{3}$ & first sheet, bottom \\ \hline
 4 & $1 \frac{2}{3}$ & second sheet, bottom \\ \hline
-\end{tabular}
-\caption{ranking for transparent photoelastic sheets. Cycles represents the number of color changes, i.e. yellow $\rightarrow$ red $\rightarrow$ green is one complete cycle.}
+\end{tabular} \\*[10pt]
+\begin{tikzpicture}
+\draw [fill=white] (0,0) rectangle (1,2);
+\draw [fill=white] (1.5,0) rectangle (2.5,2);
+\draw [fill=white] (3,0) rectangle (4,2);
+\draw [fill=white] (0.5,1.5) circle [radius=0.2];
+\draw [fill=white] (0.5,0.5) circle [radius=0.2];
+\draw [fill=white] (2.0,1.5) circle [radius=0.2];
+\draw [fill=white] (2.0,0.5) circle [radius=0.2];
+\end{tikzpicture}
+\caption{ranking for transparent photoelastic sheets. Cycles represents the number of color changes, i.e. yellow $\rightarrow$ red $\rightarrow$ green is one complete cycle. The three rectangles represents the three sheets in the lab.}
 \end{figure}
+
 
 \item[7) When a uniaxial stress $\sigma_y$ is applied to a material (Fig. 8), there are resulting elastic strains ($\epsilon_y$ and $\epsilon_x$ ) along both the y and x directions that are proportional to the applied stress, where E is Young's Modulus and $\upsilon$ is Poisson's Ratio. Write down the expressions for $\epsilon_y$ and $\epsilon_x$ when the same part is subject to a biaxial stress state, that is, both $\sigma_x$ and $\sigma_y$, as illustrated in Fig. 9. Hint: the principle of “superposition” applies here. Begin by writing the equations for the strains when only $\sigma_x$ is applied, add the equations for the strains when only $\sigma_y$ is applied (above), and simplify.]
 \begin{equation}
@@ -296,7 +318,7 @@ Rank & \# cycles & location \\ \hline
 \draw [fill=white,thick,white] (1.1,4.35) rectangle (1.3,4.5);
 \draw [fill=white,thick,white] (10.15,4.35) rectangle (10.3,4.5);
 \node at (1.2,4.445) {\footnotesize{8}};
-3\node at (10.3,4.445) {\footnotesize{9}};
+\node at (10.3,4.445) {\footnotesize{9}};
 \end{tikzpicture}
 \end{center}
 \end{description}
@@ -305,13 +327,23 @@ Rank & \# cycles & location \\ \hline
 %----------------------------------------------------------------------------------------
 
 \section{Conclusions}
-
+As a result of this investigation, the following conclusions can be drawn.
+\begin{enumerate}
+\item The rockwell and brinell tests do adequetly provide a way to measure a materials hardness.
+\item Alloys tend to have a higher hardness number than metals meaning that they are much stronger materials.
+\item Holes in materials significantly affect that materials tensile strength.
+\item Depending on the radius of curviture, stress on holes can vary significantly.
+\end{enumerate}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 5
 %----------------------------------------------------------------------------------------
 
 \section{References}
+\begin{enumerate}
+\item James F. Shackelford, Introduction to Materials Science for Engineers, Seventh Edition, Pearson Higher 
+Education, Inc., Upper Saddle River, New Jersey (2009).
+\end{enumerate}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 6
@@ -331,3 +363,4 @@ Rank & \# cycles & location \\ \hline
 
 
 \end{document}
+

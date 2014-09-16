@@ -16,10 +16,10 @@ loadAndArea500 = 500/loadAndArea[6:]
 #print(loadAndArea3000)
 #print(loadAndArea500)
 
-nStress = [0.408,0.818,1.23,2.04]
-x1 = [6.37e-3,9.55e-3,15.9e-3,15.9e-3]
+nStress = [10.9,21.8,32.7,54.5]
+x1 = [-6.37e-3,-9.55e-3,-15.9e-3,-15.9e-3]
 y1 = [9.40e-3,9.40e-3,18.8e-3,34.5e-3]
-x2 = [0,31.3e-3,31.3e-3,31.3e-3]
+x2 = [0,-31.3e-3,-31.3e-3,-31.3e-3]
 y2 = [31.3e-3,62.5e-3,93.8e-3,156e-3]
 
 f, (ax1, ax2, ax3, ax4) = plt.subplots(4, sharex=True, sharey=True)
@@ -45,8 +45,25 @@ ax4.set_xlabel("y2 strain (in/in)")
 ax4.set_ylabel("stress (psi)")
 ax4.grid(True)
 
-f.subplots_adjust(hspace=0.3)
+f.subplots_adjust(hspace=0.0)
 plt.setp([a.get_xticklabels() for a in f.axes[:-1]], visible=False)
 plt.savefig("graph_p4.pdf")
+
+
+loc1x = [4+(58./64), 4+(56./64), 4+(55./64),4+(53./64),4+(53./64)]
+loc1y = [4+(63./64),5+(2./64),5+(2./64),5+(5./64),5+(10./64)]
+loc2x = [(32./64), (32./64), (31./64),(31./64),(31./64)]
+loc2y = [(32./64),(33./64),(34./64),(35./64),(37./64)]
+
+plt.figure()
+plt.plot(loc1x,loc1y)
+plt.plot(loc2x,loc2y)
+
+
+
+
+
+
+
 plt.show()
 
