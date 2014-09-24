@@ -11,7 +11,26 @@ using namespace std;
 // and the fourth to the dealer. DealFirstFourCards should also print
 // appropriate debugging output.
 void DealFirstFourCards (DealerHand dh, CustomerHand ch, Deck d) {
+	// shuffle the deck first
+	d.Shuffle();
 	
+	card1 = d.Deal();  
+	card2 = d.Deal();
+	card3 = d.Deal();
+	card4 = d.Deal();
+	
+	cout << "Dealing " << card1.Name << endl;
+	cout << "Dealing " << card2.Name << endl;
+	cout << "Dealing " << card3.Name << endl;
+	cout << "Dealing " << card4.Name << endl;
+	
+	ch.AddCard(card1);
+	ch.AddCard(card3);
+	dh.AddCard(card2);
+	dh.AddCard(card4);
+	
+	cout << ch.Print() << endl;
+	cout << dh.Print() << endl;
 }
 
 // You complete this function, which takes two hands and a deck as arguments. 
@@ -26,8 +45,28 @@ void DealFirstFourCards (DealerHand dh, CustomerHand ch, Deck d) {
 // ResultOfPlay returns 1 if the dealer busts or if the customer's total 
 // exceeds the dealer's and the customer has not bust.
 // ResultOfPlay should also print appropriate debugging output.
-int ResultOfPlay ( ... [you fill this in] ) {
-    ... [you fill this in]
+int ResultOfPlay (DealerHand dh, CustomerHand ch, Deck d) {
+    int k = 0;
+    while(k=0) {
+    
+    if (ch.CanDraw(dh.UpCard())) {
+    	ch.AddCard(d.Deal());
+    }
+    else {
+    	if(dh.CanDraw()) {
+		dh.AddCard(d.Deal());
+	}
+	else {
+		k++;
+		if (ch.Total > 21 || (dh.Total <= 21 && ch.Total <= dh.Total)) {
+			return 0;
+		}
+		else {
+			return 1;
+		}
+	}
+    }
+    }
 }
 
 int main () {
