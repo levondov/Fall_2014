@@ -49,23 +49,11 @@ Card DealerHand::UpCard () {
 }
 
 int DealerHand::Total () {
-	int sum = 0;
-	
-	for (int i = 0; i < myHandSize; i++) {
-		// check whether an ace has a value 11 or 1
-		if(myHand[i].IsAce() && sum + 11 > 21) {
-			sum += 1;
-		}
-		else {
-			sum += myHand[i].Value();
-		}
-	}
-	myTotal = sum;
-	return sum;
+	return myTotal;
 }
 
 void DealerHand::Print () {
-	cout << "Dealer Hand: "<< myHandSize <<" cards, up card = " << myHand[0].Name() << ", total = "<< Total() << endl;
+	cout << "Dealer Hand: "<< myCardCount <<" cards, up card = " << myUpCard.Name << ", total = "<< Total() << endl;
 }
 
 CustomerHand::CustomerHand () {

@@ -84,7 +84,7 @@ void CustomerHand::AddCard (Card c) {
 }
 
 bool CustomerHand::CanDraw (Card dealerUpCard) {
-	if ((Total() < 17 && (dealerUpCard.Value() == 7 || dealerUpCard.Value() == 8 || dealerUpCard.Value() == 9 || dealerUpCard.Value() == 10 || dealerUpCard.Value() == 11)) || (Total() <12 && (dealerUpCard.Value() == 2 || dealerUpCard.Value() == 3 || dealerUpCard.Value() == 4 || dealerUpCard.Value() == 5 || dealerUpCard.Value() == 6))) {
+	if ((Total() < 17 && (dealerUpCard.Value() == 7 || dealerUpCard.Value() == 8 || dealerUpCard.Value() == 9 || dealerUpCard.Value() == 10 || dealerUpCard.Value() == 11)) || (Total() < 12 && (dealerUpCard.Value() == 2 || dealerUpCard.Value() == 3 || dealerUpCard.Value() == 4 || dealerUpCard.Value() == 5 || dealerUpCard.Value() == 6))) {
 	return true;
 	}
 	return false;
