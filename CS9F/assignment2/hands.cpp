@@ -6,7 +6,7 @@
 
 using namespace std;
 
-DealerHand::Dealerhand () {
+DealerHand::DealerHand () {
 	Card myUpCard;
 	myCardCount = 0;
 	myAceAs11Count = 0;
@@ -53,7 +53,7 @@ int DealerHand::Total () {
 }
 
 void DealerHand::Print () {
-	cout << "Dealer Hand: "<< myCardCount <<" cards, up card = " << myUpCard.Name << ", total = "<< Total() << endl;
+	cout << "Dealer Hand: "<< myCardCount <<" cards, up card = " << myUpCard.Name() << ", total = "<< Total() << endl;
 }
 
 CustomerHand::CustomerHand () {
@@ -95,7 +95,7 @@ int CustomerHand::Total () {
 }
 
 void CustomerHand::Print () {
-	cout << "Customer Hand: " << myCardCount " cards, total = "<< myTotal << endl;
+	cout << "Customer Hand: " << myCardCount << " cards, total = " << myTotal << endl;
 }
 
 

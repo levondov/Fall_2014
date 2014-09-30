@@ -116,9 +116,9 @@ for i in range(0,x2e.shape[0]):
 print(localmax2)
 #################################################
 
-#plt.figure()
-#plt.plot(x3e,y3e)
-#plt.grid(True)
+plt.figure()
+plt.plot(x3e,y3e)
+plt.grid(True)
 #plt.title('Engineering Stress vs Strain for Al-Cu')
 #plt.xlabel('strain (in/in)')
 #plt.ylabel('Stress (psi)')
@@ -142,7 +142,7 @@ slope3, intercept3, r_value3, p_value3, std_err3 = stats.linregress(slopex3,slop
 b3 = slope3*0.012*-1
 xoffset = np.linspace(0.012,0.0225,1000)
 yoffset = slope3*xoffset + b3
-#plt.plot(xoffset,yoffset)
+plt.plot(xoffset,yoffset)
 
 #tensile strength
 localmax3 = 0
@@ -198,7 +198,7 @@ plt.grid(True)
 plt.title('True and Engineering Stress vs Strain for Steel-1018')
 plt.xlabel('strain (in/in)')
 plt.ylabel('Stress (psi)')
-plt.legend()
+plt.legend(loc=2)
 plt.savefig('1018et.pdf')
 
 plt.figure()
@@ -208,7 +208,7 @@ plt.grid(True)
 plt.title('True and Engineering Stress vs Strain for Steel-4340')
 plt.xlabel('strain (in/in)')
 plt.ylabel('Stress (psi)')
-plt.legend()
+plt.legend(loc=2)
 plt.savefig('4340et.pdf')
 
 plt.figure()
@@ -218,7 +218,7 @@ plt.grid(True)
 plt.title('True and Engineering Stress vs Strain for Al-Cu')
 plt.xlabel('strain (in/in)')
 plt.ylabel('Stress (psi)')
-plt.legend()
+plt.legend(loc=2)
 plt.savefig('alcuet.pdf')
 
 plt.show()

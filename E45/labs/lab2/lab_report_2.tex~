@@ -72,7 +72,7 @@
 
 \section{Objective}
 
-To demonstrate the basic properties of strength and toughness by using the uniaxial tensile test and observing the necking and yielding behavior of the corresponding stress strain plots generated. To view and understand the micro structure of materials and the points of fraction using the Charpy Impact test and a scanning electron microscope. 
+To demonstrate the basic properties of strength and toughness by using the uniaxial tensile test and observing the necking and yielding behavior of the corresponding stress strain plots generated. To view and understand the micro structure of materials after fracture using the Charpy Impact test and a scanning electron microscope. 
 
 % If you have more than one objective, uncomment the below:
 %\begin{description}
@@ -83,11 +83,11 @@ To demonstrate the basic properties of strength and toughness by using the uniax
 %\end{description}
 
 \section{Experimental Procedures}
-\subsection{Rockwell hardness test}
-LATER
+\subsection{Uniaxial Tensile test}
+First we performed rockwell hardness tests on all three materials. We performed the test once on each end of the materials. Next we measured the initial length of the material as well as the diameter of the cross sectional area. We placed each material into the uniaxial tensile test machine and used the rates of 0.003, 0.001, and 0.003 in/sec for the steel-1018, steel-4340, and Al-Cu alloys. During the test, observe the live data being generated for any signs of necking that occurs.
 
 \subsection{Charpy Impact test}
-LATER
+Before the start of the lab, we placed a sample of 1018 steel in liquid nitrogen in order to cool the material. First we performed a test run without any sample in the machine and recorded this as the test angle. Next we placed a piece of 1018 steel at room temperature into the machine and ran the test. Finally, we grabbed the liquid nitrogen cooled sample of steel-1018 and ran the same test with this sample. We placed both samples of steel-1018 into a scanning electron microscope in order to observe the surface of fracture.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -137,7 +137,7 @@ Steel-4340 & 1.973 & 2.008 & 0.235 & 0.234 & 0.001 & 72 & 74 \\ \hline
 \node at(0,-3.3) {\textbf{(a)}};
 \node at(8,-3.3) {\textbf{(b)}};
 \end{tikzpicture}
-\caption{\textbf{(a)} SEM picture for Steel-1018. \textbf{(b)} SEM picture for Steel-1018}
+\caption{\textbf{(a)} SEM picture for liquid nitrogen cooled Steel-1018. \textbf{(b)} SEM picture for room temperature Steel-1018}
 \end{figure}
 
 %\begin{figure}[H]
@@ -186,7 +186,7 @@ Steel-1018 & 1.433629\e{6} & 7.821898\e{3} & 1.370663 \e{4} & 1.12 \e{4} & 88.4 
 Steel-4340 & 2.624936\e{6} & 52.25604 \e{3} & 5.812479 \e{4} & 5.84 \e{4} & 99.6 & 0.0177 & 1.006291 \e{3} \\ \hline
 Al-Cu & 1.057670 \e{6} & 9.127436\e{3} & 1.536832 \e{4} & 1.67 \e{4} & 91.3 & 0.192 & 2.819101 \e{3} \\ \hline
 \end{tabular}
-\caption{Table shows the key mechanic properties of a tensile test for two types of steel and a Al-Cu alloy. Some of the results has 7 sig figs because the uniaxial test data provided 7 sig figs of accuracy. The measurements of area and length were done in 3 sig figs because this was measured with a XXX.}
+\caption{Table shows the key mechanic properties of a tensile test for two types of steel and a Al-Cu alloy. Some of the results has 7 sig figs because the uniaxial test data provided 7 sig figs of accuracy. The measurements of area and length were done in 3 sig figs because this was measured with a scaliper. Toughness was calculated using simpson's rule of integration. Young's modulus was calculated by doing a linear fit on the elastic portion of the data. Yiled strength was calculated by plotting the 0.2\% offset and finding the point of intersection. Tensile strength was found by finding the largest value of stress in the data set.}
 \end{figure}
 
 \item[3) During the tensile test the volume of the material remains constant, which can be expressed mathematically as, $l_0A_0 = l_iA_i = \text{constant}$. Using this relation and the definitions of engineering stress, engineering strain, true stress, and true strain, derive the following relationship between true stress and engineering stress, $\sigma_{\text{true}} = \sigma_e(1 + \epsilon_e)$, and the relationship between true strain and engineering strain, $te\epsilon_{\text{true}} = \sigma_e(1 + \epsilon_e)$.]
@@ -224,6 +224,8 @@ I expected necking as well as fracture to occur where the initial rockwell tests
 \end{figure}
 
 \item[6) Compare and contrast the scanning electron “fractographs” recorded during your lab experiments. What are the distinctive features of the fracture surface? How do these features differ from sample to sample? Do these observations make physical sense with respect to their observed strength and toughness? Explain.]
+
+Both pictures seem to have dark holes present; this is magnesium sulfide impurities in the metals. The liquid nitrogen sample surface is a lot more flat and smooth as this fracture was done while the metal was in its brittle stage. The room temperature sample has a lot more crack and fracture points as this was stretched more because of its high toughness.
 \end{description}
 %----------------------------------------------------------------------------------------
 %	SECTION 4
@@ -232,10 +234,10 @@ I expected necking as well as fracture to occur where the initial rockwell tests
 \section{Conclusions}
 As a result of this investigation, the following conclusions can be drawn.
 \begin{enumerate}
-\item The rockwell and brinell tests do adequetly provide a way to measure a materials hardness.
-\item Alloys tend to have a higher hardness number than metals meaning that they are much stronger materials.
-\item Holes in materials significantly affect that materials tensile strength.
-\item Depending on the radius of curviture, stress on holes can vary significantly.
+\item Of the three alloys tested, Steel-1018 had the largest toughness.
+\item Steel-4340 had almost no plastic region meaning that it cannot deform very well and was very brittle at room temperature.
+\item Temperature change of materials can cause a drastic change in its toughness, making the material very brittle at low temperatures.
+\item The microstructure of brittle materials at fracture is much more smooth and flat than that of non brittle materials.
 \end{enumerate}
 
 %----------------------------------------------------------------------------------------
