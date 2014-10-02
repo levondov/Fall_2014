@@ -1,6 +1,7 @@
 #include <iostream>
 #include "cards.h"
 #include "hands.h"
+#include <stdlib.h> 
 
 using namespace std;
 
@@ -37,7 +38,7 @@ int ResultOfPlay (DealerHand& dh, CustomerHand& ch, Deck& d) {
     int k = 0;
     while(true) {
     
-    if (ch.CanDraw(dh.UpCard())) { 
+    if (ch.CanDraw()) { 
     	ch.AddCard(d.Deal());
     }
     else {
@@ -70,6 +71,8 @@ int ResultOfPlay (DealerHand& dh, CustomerHand& ch, Deck& d) {
 }
 
 int main () {
+    // initialize random seed
+    srand (time(NULL));
     Deck d(true);
     int numGames, numWins;
     DealerHand dealerHand;

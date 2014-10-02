@@ -10,17 +10,12 @@ using namespace std;
 // to the customer, the second to the dealer, the third to the customer,
 // and the fourth to the dealer. DealFirstFourCards should also print
 // appropriate debugging output.
-void DealFirstFourCards (DealerHand dh, CustomerHand ch, Deck d) {
+void DealFirstFourCards (DealerHand& dh, CustomerHand& ch, Deck& d) {
 	
-	Card card1 = d.Deal();  
-	Card card2 = d.Deal();
-	Card card3 = d.Deal();
-	Card card4 = d.Deal();
-	
-	ch.AddCard(card1);
-	ch.AddCard(card3);
-	dh.AddCard(card2);
-	dh.AddCard(card4);
+	ch.AddCard(d.Deal());
+	dh.AddCard(d.Deal());
+	ch.AddCard(d.Deal());
+	dh.AddCard(d.Deal());
 	
 	ch.Print();
 	dh.Print();
@@ -38,23 +33,33 @@ void DealFirstFourCards (DealerHand dh, CustomerHand ch, Deck d) {
 // ResultOfPlay returns 1 if the dealer busts or if the customer's total 
 // exceeds the dealer's and the customer has not bust.
 // ResultOfPlay should also print appropriate debugging output.
-int ResultOfPlay (DealerHand dh, CustomerHand ch, Deck d) {
+int ResultOfPlay (DealerHand& dh, CustomerHand& ch, Deck& d) {
+    int k = 0;
     while(true) {
     
     if (ch.CanDraw(dh.UpCard())) { 
     	ch.AddCard(d.Deal());
     }
     else {
+    	if (k==0) {
+    	cout << "Customer stands." << endl;
+    	k++;
+    	}
+    	
     	if(dh.CanDraw()) {
 		dh.AddCard(d.Deal());
 	}
 	else {
 		if (ch.Total() > 21 || (dh.Total() <= 21 && ch.Total() <= dh.Total())) {
+			cout << endl;
+			cout << "LOSE: Customer - "<< ch.Total() << ", Dealer - "<< dh.Total() << endl;
 			dh.Reset();
 			ch.Reset();
 			return 0;
 		}
 		else {
+			cout << endl;
+			cout << "WIN: Customer - "<< ch.Total() << ", Dealer - "<< dh.Total() << endl;
 			dh.Reset();
 			ch.Reset();
 			return 1;
@@ -82,7 +87,6 @@ int main () {
 	} else {
 	    numWins += ResultOfPlay (dealerHand, ourHand, d);
 	}
-	d.shuffle();
     }
     cout << "We won " << numWins << " out of " << numGames << endl;
     return 0;
