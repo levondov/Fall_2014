@@ -54,15 +54,11 @@ int ResultOfPlay (DealerHand& dh, CustomerHand& ch, Deck& d) {
 		if (ch.Total() > 21 || (dh.Total() <= 21 && ch.Total() <= dh.Total())) {
 			cout << "LOSE: Customer - "<< ch.Total() << ", Dealer - "<< dh.Total() << endl;
 			cout << endl;
-			dh.Reset();
-			ch.Reset();
 			return 0;
 		}
 		else {
 			cout << "WIN: Customer - "<< ch.Total() << ", Dealer - "<< dh.Total() << endl;
 			cout << endl;
-			dh.Reset();
-			ch.Reset();
 			return 1;
 		}
 	}
@@ -90,6 +86,8 @@ int main () {
 	} else {
 	    numWins += ResultOfPlay (dealerHand, ourHand, d);
 	}
+	dealerHand.Reset();
+	ourHand.Reset();
     }
     cout << "We won " << numWins << " out of " << numGames << endl;
     return 0;
