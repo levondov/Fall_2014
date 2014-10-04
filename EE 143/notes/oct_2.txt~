@@ -5,3 +5,73 @@ Heat a metal (eg, al, Au) to the point of vaporization
 Vaporized metal impinges onto the Si substrate, farming a film - kind of like a spray.
 
 Do this under vaccum for better control of film composisiton
+
+=========================
+			|
+			|
+ ------(+-)------	|
+ |		|	|
+ |		|	|
+ |		|	|
+ ------@@@@-----|	|
+       ^^^^ - Al staples|
+     / 	|  \		|========
+___________________ - wafer	|
+				| - vacuum pump
+=================================
+       
+ joule heating to get this filament up to high temperature.
+ - use tungsten
+ 
+ 
+- Hang aluminum staples on filament (@@@@)
+
+***step 0 - pump down to vacuum -- reduce film contamination & allows better thickness control
+
+Al vapor will evaporate onto wafer in straight line vector paths evenly across
+
+mean free path \lambda = kT/(sqrt(2)*pi*P*d^2)
+
+P = pressure
+d = diameter of gas molecule
+k = boltzman constant
+T = temperature
+
+\lambda can be about 60m for a 4 Angstrom particle
+
+E-4 Pa = 0.75 uTorr
+
+***step 1 - Heat W filament -> melt Al, wets filament due to surface tension
+
+***step 2 - Raise temperature more -> evporates the Al 
+
+############################3
+
+problems (w/ evaporation)
+
+wafer under essentially a point source
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
