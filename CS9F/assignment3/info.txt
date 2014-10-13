@@ -1,0 +1,16 @@
+update levon 100
+list word here and words there
+list 1 1 2 3 5 8 13 21 34
+errors coming up
+
+batch
+batch afile.txt
+list 
+list 1 2 3 words 4 5
+list words text numbers 4 words 5
+update
+update levon
+update 420
+update levon texts
+update 21 400
+update 50 levon
