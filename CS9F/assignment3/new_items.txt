@@ -1,0 +1,15 @@
+update shoes 23
+update shirts 45
+update hats 38
+update socks 15
+update sandels 5
+update glasses 58
+update
+
+no commend
+batch nofile.txt
+update 340 levon
+update 235
+update levon words
+list namzs
+list 

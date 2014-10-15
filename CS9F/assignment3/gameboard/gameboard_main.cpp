@@ -1,0 +1,25 @@
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+#include <sstream>
+#include <cctype>
+#include <string>
+#include <stdlib.h>
+#include <vector>
+#include "gameboard.h"
+
+using namespace std;
+
+
+
+
+int main ( ) {
+	Gameboard gameboard;
+	gameboard.SetCell(0,5,5,'A');
+	gameboard.SetCell(1,11,15,'A');
+	gameboard.SetCell(0,2,18,'A');
+	gameboard.Print(0);
+	cout << endl;
+	gameboard.Print(1);
+  	return 0;
+}

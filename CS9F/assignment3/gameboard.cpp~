@@ -1,0 +1,24 @@
+#include <vector>
+#include <string>
+#include <iostream>
+#include <sstream>
+#include "gameboard.h"
+
+
+
+using namespace std;
+
+Gameboard::Gameboard () {
+	board.resize(19);
+
+}
+
+void Gameboard::SetCell (int player, int row, int col, char c) {
+
+
+}
+
+void Gameboard::Print (int player) {
+	cout << board.size << endl;
+
+}

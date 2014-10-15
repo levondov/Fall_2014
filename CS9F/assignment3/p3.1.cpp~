@@ -4,6 +4,7 @@
 #include <cctype>
 #include <string>
 #include <stdlib.h> 
+#include "inventory.h"
 
 using namespace std;
 
@@ -123,6 +124,6 @@ void InterpretCommands (istream& cmds) {
 }
 
 int main ( ) {
-  InterpretCommands (cin);
-  return 0;
+  	InterpretCommands (cin);
+  	return 0;
 }
