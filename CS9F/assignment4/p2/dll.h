@@ -18,7 +18,8 @@ public:
 	                       // return pointer to its successor, or 0.
 	                       // Precondition: there is a node to delete.
 	void Print ();
-	bool LengthIs1 ();  // Return true if the list contains exactly 1 element.
+	bool LengthIs1 ();
+	void printall ();  // Return true if the list contains exactly 1 element.
 private:
 	int myValue;
 	DLLnode* myPrevious;

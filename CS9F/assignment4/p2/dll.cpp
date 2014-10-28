@@ -39,14 +39,6 @@ DLLnode *DLLnode::Insert (DLLnode *ptr) {
     } else {
     	myPrevious = ptr;
     	ptr->myNext = this;
-    	
-    	while (ptr->myNext == ptr->myNext->myNext) {
-    		ptr->Print();
-    		ptr = ptr->myNext;
-    	}
-    	
-    	ptr->myNext->myNext = ptr;
-    	ptr->myPrevious = ptr->myNext;
     	return ptr;
     }
     
@@ -56,7 +48,13 @@ DLLnode *DLLnode::Insert (DLLnode *ptr) {
 // successor, or 0 if there was only one element in the list to
 // start with. Precondition: this != 0.
 DLLnode *DLLnode::Delete () {
-    // you fill this in
+    if (myNext == this && myPrevious == this) {
+		return 0;
+	} else {
+		DLLnode* p = this;
+		myNext = p->myNext->myNext;
+		p->myNext->myPrevious = p;
+	}
     return this;
 }
 
@@ -83,6 +81,16 @@ bool DLLnode::LengthIs1 () {
 		assert (false);               // failed consistency check!
     } else {
 		   return false;
+    }
+}
+
+void DLLnode::printall() {
+	if (this != 0) {
+	DLLnode *temp = this;
+	do {
+	    cout << temp->myPrevious->myValue << " " << temp->myValue << " " << temp->myNext->myValue << endl;
+	    temp = temp->myNext;
+	} while (temp != this);
     }
 }
 
