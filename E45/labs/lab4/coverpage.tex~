@@ -1,0 +1,16 @@
+\documentclass{article}
+
+\textwidth = 450pt
+
+\begin{document}
+\raggedleft{ \Huge \textbf{Lab 05}} \\*[50pt]
+
+\raggedleft{ \Huge \textbf{Binary Alloy Phase Diagrams}} \\*[200pt]
+
+\raggedleft{ \huge Submitted by: Levon Dovlatyan} \\*[50pt]
+
+\raggedleft{ \huge Lab Partners: Avyay Panchapakesan, Kira Watkins} \\*[25pt]
+\raggedleft{ \huge Lab Section: 102, Tuesday, 2-5pm} \\*[25pt]
+\raggedleft{ \huge GSIs: James Clarkson and Rohini Sankaran}
+
+\end{document}

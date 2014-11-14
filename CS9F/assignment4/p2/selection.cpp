@@ -16,14 +16,13 @@ int main () {
 		list = list->Insert(newGuy);
     }
     
-    list = list->Insert(last);
     
     list->Print();
     while (!list->LengthIs1 ()) {
 		for (int j=0; j<K; j++) {
 		    list = list->Next ();
 		}
-		list->Delete();		
+		list = list = list->Delete();		
 		list->Print();
 
     }

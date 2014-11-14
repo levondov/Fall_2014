@@ -32,6 +32,10 @@
 \usepackage{float}
 \usepackage{enumitem}
 \usepackage{gensymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage[all]{hypcap}
+\usepackage{subfloat}
+\usepackage{color}
 
 % Roman numerials
 \pagenumbering{arabic}
@@ -47,6 +51,18 @@
   \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
   
 \providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+
+%%%%%%%%%%%% COLOR DEFINITIONS %%%%%%%%%%%%%
+
+\definecolor{silicon}{RGB}{255,102,102}
+\definecolor{oxide}{RGB}{145,150,110}
+\definecolor{ioxide}{RGB}{175,180,135}
+\definecolor{goxide}{RGB}{195,200,150}
+\definecolor{poly}{RGB}{155,20,155}
+\definecolor{spinglass}{RGB}{200,205,100}
+\definecolor{n+}{RGB}{250,15,15}
+\definecolor{aluminum}{RGB}{30,30,30}
+
 %----------------------------------------------------------------------------------------
 %	DOCUMENT INFORMATION
 %----------------------------------------------------------------------------------------
@@ -70,19 +86,8 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Test}
-\begin{center}
-\begin{tikzpicture}
-\draw[fill,red] (0,1) rectangle (7,2);
-\draw[fill,blue] (0,2) rectangle (7,2.5);
-\draw[fill,green] (0,2.53) rectangle (2,3);
-\draw[fill,green] (5,2.53) rectangle (7,3);
-\draw[fill,black] (3,2.53) rectangle (4,2.6);
-\draw[fill,green] (3,2.6) rectangle (4,3);
-\end{tikzpicture}
-\end{center}
-
-
+\section{Profiles \& Layout}
+\subsection{}
 %----------------------------------------------------------------------------------------
 %	SECTION 5
 %----------------------------------------------------------------------------------------

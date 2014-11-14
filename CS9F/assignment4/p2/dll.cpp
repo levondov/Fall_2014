@@ -37,8 +37,11 @@ DLLnode *DLLnode::Insert (DLLnode *ptr) {
     if (this == 0) {
     	return ptr;
     } else {
+    	myPrevious->myNext = ptr;
+    	ptr->myPrevious = myPrevious;
     	myPrevious = ptr;
     	ptr->myNext = this;
+    	cout << myPrevious->myValue << " " << myValue << " " << myNext->myValue << endl;
     	return ptr;
     }
     
@@ -51,11 +54,12 @@ DLLnode *DLLnode::Delete () {
     if (myNext == this && myPrevious == this) {
 		return 0;
 	} else {
-		DLLnode* p = this;
-		myNext = p->myNext->myNext;
-		p->myNext->myPrevious = p;
+		myPrevious->myNext = myNext;
+		myNext->myPrevious = myPrevious;
+		DLLnode* temp = myNext;
+		delete this;
+		return temp;
 	}
-    return this;
 }
 
 // Print the list.
