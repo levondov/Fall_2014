@@ -1,0 +1,120 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+\usepackage[utf8]{inputenc}
+\usepackage{tikz,pgfplots}
+\usepackage[letterpaper, margin=0.5in]{geometry}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{gensymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage[all]{hypcap}
+\usepackage{subfloat}
+\usepackage{color}
+
+% Roman numerials
+\pagenumbering{arabic}
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+%\usepackage{times} % Uncomment to use the Times New Roman font
+
+% for some tables
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+  
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+
+%%%%%%%%%%%% COLOR DEFINITIONS %%%%%%%%%%%%%
+
+\definecolor{silicon}{RGB}{255,102,102}
+\definecolor{oxide}{RGB}{145,150,110}
+\definecolor{ioxide}{RGB}{175,180,135}
+\definecolor{goxide}{RGB}{195,200,150}
+\definecolor{poly}{RGB}{155,20,155}
+\definecolor{spinglass}{RGB}{200,205,100}
+\definecolor{n+}{RGB}{250,15,15}
+\definecolor{aluminum}{RGB}{30,30,30}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\title{Determination of the Atomic \\ Weight of Magnesium \\ CHEM 101} % Title
+
+%\author{John \textsc{Smith}} % Author name
+
+%\date{\today} % Date for the report
+
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+% If you wish to include an abstract, uncomment the lines below
+% \begin{abstract}
+% Abstract text
+% \end{abstract}
+\begin{figure}[H]
+\centering
+\begin{tabular}{c | c | c | c | c | c | c |}
+Layer & \specialcell{Theoretical \\ calculation \\ (nm)} & \specialcell{Experimental \\ (nm)} & \% Error & \specialcell{Linewidths \\ (photoresist) \\ (nm)} & \specialcell{Linewidths \\ (after PR Strip) \\ (nm)} & \% Overetch \\ \hline
+
+Field Oxide & 505.8 & 477.2 & 5.65 & ? & 3000 & ? \\ \hline
+Polysilicon & ? & ? & ? & ? & ? & ? \\ \hline
+Gate Oxide & 80.1 & 86.5 & 7.40 & 3628 & 4000 & ? \\ \hline
+Intermed Oxide & 386.3 & 320 & 17.2 & ? & ? & ? \\ \hline
+
+\end{tabular}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

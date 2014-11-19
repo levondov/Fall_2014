@@ -50,6 +50,7 @@
 \newcommand{\specialcell}[2][c]{%
   \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
   
+\newcommand{\me}{\mathrm{e}}
 \providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
 
 %%%%%%%%%%%% COLOR DEFINITIONS %%%%%%%%%%%%%
@@ -90,6 +91,48 @@
 \subsection{}
 \subsection{}
 \subsection{}
+\section{Process Procedures}
+\subsection{}
+\subsection{}
+\subsection{}
+\section{Calculations}
+a) Film Thickness
+\begin{figure}[H]
+\centering
+\begin{tabular}{c | c | c | c | c | c | c |}
+Layer & \specialcell{Theoretical \\ calculation \\ (nm)} & \specialcell{Experimental \\ (nm)} & \% Error & \specialcell{Linewidths \\ (photoresist) \\ (nm)} & \specialcell{Linewidths \\ (after PR Strip) \\ (nm)} & \% Overetch \\ \hline
+
+Field Oxide & 505.8 & 477.2 & 5.65 & ? & 3000 & ? \\ \hline
+Polysilicon & ? & ? & ? & ? & ? & ? \\ \hline
+Gate Oxide & 80.1 & 86.5 & 7.40 & 3628 & 4000 & ? \\ \hline
+Intermed Oxide & 386.3 & 320 & 17.2 & ? & ? & ? \\ \hline
+Aluminum & ? & ? & ? & 2088 & 2520 & ? \\ \hline
+
+\end{tabular}
+\end{figure}
+
+b) Sheet Resistance
+\section{Questions}
+\begin{enumerate}
+\item The lab uses positive photoresist. The lithography machine uses a light that has g line wavelength. The I and G lines refer to the wavelength of the light coming off the light bulb that reacts with photoresist. G line is roughly xx wavelength and I line is xx wavelength.
+\end{enumerate}
+
+\section{Appendix}
+Film thickness calculation for oxide:
+\begin{equation}
+X_{ox} = \frac{0.5B}{B/A}\Big[\sqrt{1 + \frac{4}{B}(\frac{B}{A})^2(t + \tau)} - 1\Big]
+\end{equation}
+\begin{equation}
+\tau = \frac{{X_i}^2}{B} + \frac{X_i}{B/A}
+\end{equation}
+where
+\begin{align*}
+B/A = D_o\me^{\frac{-E_a}{kT}} (\text{Use table 3.1 [1] to find }E_a \text{and } D_o) \\
+B = D_o\me^{\frac{-E_a}{kT}} (\text{Use table 3.1 [1] to find }E_a \text{and } D_o) \\
+t = \text{Time of oxide growth} \\ 
+\tau = \text{Time of initial oxide growth already present} \\
+X_i = \text{length of initial oxide growth}
+\end{align*}
 %----------------------------------------------------------------------------------------
 %	SECTION 5
 %----------------------------------------------------------------------------------------
