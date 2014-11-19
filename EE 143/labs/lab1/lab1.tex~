@@ -111,13 +111,36 @@ Aluminum & ? & ? & ? & 2088 & 2520 & ? \\ \hline
 \end{tabular}
 \end{figure}
 
-b) Sheet Resistance
+b) Sheet Resistance \\
+c) Overetch
+
+\begin{description}[style = nextline]
+\item[1) Theoretical and experimental thicknesses of field oxide, gate and intermediate 
+oxides (Include orientation dependence of oxidation rate but not impurity 
+dependence) (9 points)]
+For details on the theoretical oxide thickness calculations see Appendix \textcolor{blue}{\ref{sec:oxide}}.
+\begin{figure}[H]
+\centering
+\begin{tabular}{c | c | c | c |}
+Layer & \specialcell{Theoretical \\ (nm)} & \specialcell{Experimental \\ (nm)} & \% Error \\ \hline
+Field Oxide & 505.8 & 477.2 & 5.65 \\ \hline
+Gate Oxide & 80.1 & 86.5 & 7.40  \\ \hline
+Intermed Oxide & 386.3 & 320 & 17.2 \\ \hline
+\end{tabular}
+\end{figure}
+
+
+
+
+\end{description}
 \section{Questions}
 \begin{enumerate}
 \item The lab uses positive photoresist. The lithography machine uses a light that has g line wavelength. The I and G lines refer to the wavelength of the light coming off the light bulb that reacts with photoresist. G line is roughly xx wavelength and I line is xx wavelength.
 \end{enumerate}
 
 \section{Appendix}
+\subsection{Oxide Thickness calculations}
+\label{sec:oxide}
 Film thickness calculation for oxide:
 \begin{equation}
 X_{ox} = \frac{0.5B}{B/A}\Big[\sqrt{1 + \frac{4}{B}(\frac{B}{A})^2(t + \tau)} - 1\Big]
@@ -163,7 +186,7 @@ This time we do have an initial oxidation time $\tau$ because of the dry oxidati
 
 And finally our oxide growth is,
 \begin{align*}
-X_{ox} = \frac{0.5B}{B/A}\Big[\sqrt{1 + \frac{4}{B}(\frac{B}{A})^2(t + \tau)} - 1\Big] = \frac{0.5 (0.411)}{1.50}\Big[\sqrt{1 + \frac{4}{0.411}(1.50)^2(\frac{(12 + 25)\text{min}}{60\text{min/hr}} + 0.00488 \text{hrs})} - 1\Big] \approx 0.3863 \, \text{nm}
+X_{ox} = \frac{0.5B}{B/A}\Big[\sqrt{1 + \frac{4}{B}(\frac{B}{A})^2(t + \tau)} - 1\Big] = \frac{0.5 (0.411)}{1.50}\Big[\sqrt{1 + \frac{4}{0.411}(1.50)^2(\frac{(12 + 25)\text{min}}{60\text{min/hr}} + 0.00488 \text{hrs})} - 1\Big] \approx 386.3 \, \text{nm}
 \end{align*}
 %----------------------------------------------------------------------------------------
 %	SECTION 5

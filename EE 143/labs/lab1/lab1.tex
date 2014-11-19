@@ -111,14 +111,37 @@ Aluminum & ? & ? & ? & 2088 & 2520 & ? \\ \hline
 \end{tabular}
 \end{figure}
 
-b) Sheet Resistance
+b) Sheet Resistance \\
+c) Overetch
+
+\begin{description}[style = nextline]
+\item[1) Theoretical and experimental thicknesses of field oxide, gate and intermediate 
+oxides (Include orientation dependence of oxidation rate but not impurity 
+dependence) (9 points)]
+For details on the theoretical oxide thickness calculations see Appendix \textcolor{blue}{\ref{sec:oxide}}.
+\begin{figure}[H]
+\centering
+\begin{tabular}{c | c | c | c |}
+Layer & \specialcell{Theoretical \\ (nm)} & \specialcell{Experimental \\ (nm)} & \% Error \\ \hline
+Field Oxide & 505.8 & 477.2 & 5.65 \\ \hline
+Gate Oxide & 80.1 & 86.5 & 7.40  \\ \hline
+Intermed Oxide & 386.3 & 320 & 17.2 \\ \hline
+\end{tabular}
+\end{figure}
+
+
+
+
+\end{description}
 \section{Questions}
 \begin{enumerate}
 \item The lab uses positive photoresist. The lithography machine uses a light that has g line wavelength. The I and G lines refer to the wavelength of the light coming off the light bulb that reacts with photoresist. G line is roughly xx wavelength and I line is xx wavelength.
 \end{enumerate}
 
 \section{Appendix}
-Film thickness calculation for oxide:
+\subsection{Oxide Thickness calculations}
+\label{sec:oxide}
+Film thickness calculation for oxides:
 \begin{equation}
 X_{ox} = \frac{0.5B}{B/A}\Big[\sqrt{1 + \frac{4}{B}(\frac{B}{A})^2(t + \tau)} - 1\Big]
 \end{equation}
