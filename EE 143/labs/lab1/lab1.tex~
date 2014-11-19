@@ -129,9 +129,41 @@ where
 \begin{align*}
 B/A = D_o\me^{\frac{-E_a}{kT}} (\text{Use table 3.1 [1] to find }E_a \text{and } D_o) \\
 B = D_o\me^{\frac{-E_a}{kT}} (\text{Use table 3.1 [1] to find }E_a \text{and } D_o) \\
-t = \text{Time of oxide growth}
-\tau = \text{Time of initial oxide growth already present}
+t = \text{Time of oxide growth} \\ 
+\tau = \text{Time of initial oxide growth already present} \\
 X_i = \text{length of initial oxide growth}
+\end{align*}
+
+Example: Calculated oxide thickness of Intermed Oxide: \\
+Given: 5 min dry oxidation at $1050\degree$C and 12 + 25 min wet oxidation and annealing at $1050\degree$C, calculated oxide growth. \\
+
+First we consider the 5 min dry oxidation. Using table 3.1 [1] for a $<100>$ Silicon, and using dry oxidation, we see that for the linear rate constant (B/A), $E_A = 2.00$ eV and $D_o = 3.71\e{6} \, \mu$m/hr. For the parabolic rate constant (B), $E_A = 1.23$ eV and $D_o = 772\, \mu$m/hr. \\ \\
+Using an arrhenius equation where $k =$ Boltzmann's constant, and $T = $ temperature. 
+\begin{align*}
+B/A &= D_o\me^{\frac{-E_A}{kT}} = 3.71\e{6}\me^{\frac{-2.00*1.602\e{-19}}{1.38\e{-23}(1050\degree\text{C} + 273)}} = 0.0887 \mu\text{m/hr} \\
+B &= D_o\me^{\frac{-E_A}{kT}} = 772\me^{\frac{-1.23*1.602\e{-19}}{1.38\e{-23}(1050\degree\text{C} + 273)}} = 0.0159 \,{\mu\text{m}}^2\text{/hr}
+\end{align*}
+Since there is no initial oxide here, $\tau = 0$,
+\begin{align*}
+X_{ox} = \frac{0.5B}{B/A}\Big[\sqrt{1 + \frac{4}{B}(\frac{B}{A})^2(t + \tau)} - 1\Big] = \frac{0.5 (0.0159)}{0.0887}\Big[\sqrt{1 + \frac{4}{0.0159}(0.0887)^2(\frac{5\text{min}}{60\text{min/hr}} + 0)} - 1\Big] \approx 7.11 \, \text{nm}
+\end{align*}
+
+Now after this dry oxidation, we have a 37 minute wet oxidation at $1050 \degree$C. Using table 3.1 [1] again, but this time using the constants that apply for wet oxidation,
+
+\begin{align*}
+{B/A}_{\text{wet}} &= D_o\me^{\frac{-E_A}{kT}} = 9.70\e{7}\me^{\frac{-2.05*1.602\e{-19}}{1.38\e{-23}(1050\degree\text{C} + 273)}} = 1.50 \mu\text{m/hr} \\
+B_{\text{wet}} &= D_o\me^{\frac{-E_A}{kT}} = 386\me^{\frac{-0.78*1.602\e{-19}}{1.38\e{-23}(1050\degree\text{C} + 273)}} = 0.411 \,{\mu\text{m}}^2\text{/hr}
+\end{align*}
+
+This time we do have an initial oxidation time $\tau$ because of the dry oxidation we did. Here $X_i$ is the oxide length we calculated for the dry oxidation growth,
+
+\begin{align*}
+\tau = \frac{{X_i}^2}{B_{\text{wet}}} + \frac{X_i}{{B/A}_{\text{wet}}} = \frac{0.00711^2}{0.411} + \frac{0.00711}{1.50} \approx 0.00488 \text{hrs}
+\end{align*}
+
+And finally our oxide growth is,
+\begin{align*}
+X_{ox} = \frac{0.5B}{B/A}\Big[\sqrt{1 + \frac{4}{B}(\frac{B}{A})^2(t + \tau)} - 1\Big] = \frac{0.5 (0.411)}{1.50}\Big[\sqrt{1 + \frac{4}{0.411}(1.50)^2(\frac{(12 + 25)\text{min}}{60\text{min/hr}} + 0.00488 \text{hrs})} - 1\Big] \approx 0.3863 \, \text{nm}
 \end{align*}
 %----------------------------------------------------------------------------------------
 %	SECTION 5

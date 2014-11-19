@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  19 NOV 2014 09:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  19 NOV 2014 10:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1497,40 +1497,52 @@ LaTeX Info: Redefining \nameref on input line 77.
 \c__siunitx_mathsf_int=\count278
 \c__siunitx_mathtt_int=\count279
 
-No file lab1.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
+
+ []
+
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
+No file lab1.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
+[2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
  (./lab1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 190.
 Package rerunfilecheck Info: File `lab1.out' has not changed.
 (rerunfilecheck)             Checksum: 7FE6ECD0FB510662EAB1DAE0C4172FB4;538.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 190.
  ) 
 Here is how much of TeX's memory you used:
- 31065 strings out of 493304
- 699079 string characters out of 6139872
- 797612 words of memory out of 5000000
+ 31066 strings out of 493304
+ 699085 string characters out of 6139872
+ 799612 words of memory out of 5000000
  33964 multiletter control sequences out of 15000+600000
  6713 words of font info for 26 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,15n,74p,10432b,716s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,15n,74p,10432b,724s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy5.pfb>
-Output written on lab1.pdf (1 page, 90920 bytes).
+type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb>
+Output written on lab1.pdf (2 pages, 116720 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
+ 116 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
