@@ -53,6 +53,10 @@
 \newcommand{\me}{\mathrm{e}}
 \providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
 
+\newcommand{\eqname}[1]{\tag*{#1}}
+
+\DeclareMathOperator\erfc{erfc}
+
 %%%%%%%%%%%% COLOR DEFINITIONS %%%%%%%%%%%%%
 
 \definecolor{silicon}{RGB}{255,102,102}
@@ -99,7 +103,7 @@
 a) Film Thickness
 \begin{figure}[H]
 \centering
-\begin{tabular}{c | c | c | c | c | c | c |}
+\begin{tabular}{c | c | c | c | c | c | c}
 Layer & \specialcell{Theoretical \\ calculation \\ (nm)} & \specialcell{Experimental \\ (nm)} & \% Error & \specialcell{Linewidths \\ (photoresist) \\ (nm)} & \specialcell{Linewidths \\ (after PR Strip) \\ (nm)} & \% Overetch \\ \hline
 
 Field Oxide & 505.8 & 477.2 & 5.65 & ? & 3000 & ? \\ \hline
@@ -121,7 +125,7 @@ dependence) (9 points)]
 For details on the theoretical oxide thickness calculations see Appendix \textcolor{blue}{\ref{sec:oxide}}.
 \begin{figure}[H]
 \centering
-\begin{tabular}{c | c | c | c |}
+\begin{tabular}{c | c | c | c}
 Layer & \specialcell{Theoretical \\ (nm)} & \specialcell{Experimental \\ (nm)} & \% Error \\ \hline
 Field Oxide & 505.8 & 477.2 & 5.65 \\ \hline
 Gate Oxide & 80.1 & 86.5 & 7.40  \\ \hline
@@ -129,7 +133,22 @@ Intermed Oxide & 386.3 & 320 & 17.2 \\ \hline
 \end{tabular}
 \end{figure}
 
+\item[2) Junction depths after pre-diffusion and drive-in (theoretical, assume only 
+phosphorous doping with surface concentration limited by solid solubility). You 
+must consider the effect of the initial ion implantation. For pre-deposition you may 
+use the box approximation, but for drive-in you must use the half-gaussian 
+calculation. Why is this? (10 points)]
 
+For details on the junction depth calculations see Appendix \textcolor{blue}{\ref{sec:jdepth}}.
+
+\begin{figure}[H]
+\centering
+\begin{tabular}{c | c}
+Step & \specialcell{Junction Depth \\ (nm)} \\ \hline
+Pre-diffusion & 365 \\ \hline
+Drive-in & 1000 \\ \hline
+\end{tabular}
+\end{figure}
 
 
 \end{description}
@@ -138,7 +157,13 @@ Intermed Oxide & 386.3 & 320 & 17.2 \\ \hline
 \item The lab uses positive photoresist. The lithography machine uses a light that has g line wavelength. The I and G lines refer to the wavelength of the light coming off the light bulb that reacts with photoresist. G line is roughly xx wavelength and I line is xx wavelength.
 \end{enumerate}
 
+
+
+
+
+
 \section{Appendix}
+
 \subsection{Oxide Thickness calculations}
 \label{sec:oxide}
 Film thickness calculation for oxides:
@@ -187,6 +212,57 @@ This time we do have an initial oxidation time $\tau$ because of the dry oxidati
 And finally our oxide growth is,
 \begin{align*}
 X_{ox} = \frac{0.5B}{B/A}\Big[\sqrt{1 + \frac{4}{B}(\frac{B}{A})^2(t + \tau)} - 1\Big] = \frac{0.5 (0.411)}{1.50}\Big[\sqrt{1 + \frac{4}{0.411}(1.50)^2(\frac{(12 + 25)\text{min}}{60\text{min/hr}} + 0.00488 \text{hrs})} - 1\Big] \approx 386.3 \, \text{nm}
+\end{align*}
+
+\subsection{Junction Depth Calculations}
+\label{sec:jdepth}
+Junction depth calculation for box approximation (limited-source diffusion):
+\begin{equation}
+x_j = 2\sqrt{Dt \ln{(N_o/N_B)}}
+\end{equation}
+and for a half gaussian (constant-source diffusion):
+\begin{equation}
+x_j = 2\sqrt{Dt}\erfc^{-1}{(N_B/N_o)}
+\end{equation}
+where,
+\begin{align*}
+D &= D_o\me{\frac{-E_A}{kT}} \,\,\text{(Diffusion coefficient)} \\ 
+t &= \text{time of diffusion} \\
+N_B &= \text{Background impurity concentration} \\ 
+N_o &= \text{Surface concentration limited by solid solubility}
+\end{align*}
+
+Example: Calculate the junction depth after pre-diffusion and drive in. \\
+According to the Process flow [2], our silicon wafer has a resistivity of about 14-16 ohm-cm. From the same process flow we know that we had a phosphorus doped, solid solubility limited constant diffusion at $1050\degree$C. Using figure 4.6 [1] we see that at a temperature of $1050\degree$C our phosphorus surface concentration $N_o \approx 10^{21}$/$\text{cm}^3$. Now using the Resistivity of our wafer and figure 4.8 [1], we see that we have an impurity concentration $N_B \approx 8\e{14}$. \\ \\
+Using table 4.1 [1], we can calculate our diffusion coefficient. Note that pre-diffusion was done at $1050\degree$C for 5 minutes.
+\begin{align*}
+D &= D_o\me{\frac{-E_A}{kT}} = 10.5 \,\text{cm}^2/\text{sec}\,\, \exp{(\frac{-3.69*1.602\e{-19}}{1.38\e{-23}(1050 + 273)})} = 9.11\e{-14} \, \text{cm}^2/\text{sec}
+\end{align*}
+Now we can plug everything into our solid solubility limited box approximation equation:
+\begin{align*}
+x_j = 2\sqrt{Dt}\erfc^{-1}{(N_B/N_o)} = 2\sqrt{(9.11\e{-14})(300\text{sec})} \erfc^{-1}{(8\e{14}/10^{21})} \approx 365 \,\text{nm}
+\end{align*}
+
+Now for drive-in we kept the temperature the same, $1050\degree$C, but kept the wafer inside the furnace for 37 minutes (2220 seconds). Also we can no longer assume a simple box approximation, we must use a half gaussian; this means that our surface concentration is going to change with drive-in. \\\\
+We will use the following equation,
+
+\begin{equation}
+N_B = (Q/\sqrt{\pi D_2t_2})\exp{(-(\frac{x_j}{2\sqrt{D_2t_2}})^2)}
+\end{equation}
+
+where Q is the does rate,
+\begin{equation}
+Q = 2N_o\sqrt{D_1t_1/\pi}
+\end{equation}
+
+Combining the two equations and noting that $D_1 = D_2$ because we are using the same temperature, $1050\degree$C, for both pre-diffusion and drive-in ($t_1$ is the pre-diffusion time and $t_2$ is the drive in time),
+
+\begin{align*}
+N_B = (2N_o/\pi)\sqrt{\frac{t_1}{t_2}}\exp{(-(\frac{x_j}{2\sqrt{D_2t_2}})^2)}
+\end{align*}
+Solving this for $x_j$ yields,
+\begin{align*}
+x_j = 2\sqrt{D_2t_2\ln{\big((2N_o/\pi N_B)(\sqrt{t_1/t_2})\big)}} = 2\sqrt{(9.11\e{-14})(2220)\ln{\big((2(10^{21})/\pi (8\e{14}))(\sqrt{300/2220})\big)}} \approx 1000 \,nm
 \end{align*}
 %----------------------------------------------------------------------------------------
 %	SECTION 5

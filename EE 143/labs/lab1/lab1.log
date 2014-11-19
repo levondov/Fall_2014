@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  19 NOV 2014 11:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  19 NOV 2014 15:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1299,20 +1299,20 @@ Package subfloat Warning: Numbers of floats not counted:
 ) (./lab1.aux)
 \openout1 = `lab1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count196
@@ -1428,7 +1428,7 @@ File: siunitx-abbreviations.cfg 2013/07/31 v2.5s siunitx: Abbreviated units
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
 our preamble.
- on input line 77.
+ on input line 81.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1464,19 +1464,19 @@ our preamble.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \celsius on input line 77.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 77.
+LaTeX Info: Redefining \celsius on input line 81.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 81.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 77.
-Package gensymb Info: Using \Omega for \ohm on input line 77.
+LaTeX Info: Redefining \ohm on input line 81.
+Package gensymb Info: Using \Omega for \ohm on input line 81.
 
 Package gensymb Warning: Not defining \micro.
 
 \AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring OFF on input line 77.
+Package hyperref Info: Link coloring OFF on input line 81.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1486,9 +1486,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 Normal \count register pool exhausted, switching to extended pool.
 \c@section@level=\count277
 )
-LaTeX Info: Redefining \ref on input line 77.
-LaTeX Info: Redefining \pageref on input line 77.
-LaTeX Info: Redefining \nameref on input line 77.
+LaTeX Info: Redefining \ref on input line 81.
+LaTeX Info: Redefining \pageref on input line 81.
+LaTeX Info: Redefining \nameref on input line 81.
 
 (./lab1.out) (./lab1.out)
 \@outlinefile=\write4
@@ -1504,33 +1504,49 @@ te ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.158 \end{align*}
-                  ]
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
+l.172 \end{equation}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.1}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.172 \end{equation}
+                    ]
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 235--238
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
 
  []
 
 No file lab1.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
+[3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
  (./lab1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
 Package rerunfilecheck Info: File `lab1.out' has not changed.
-(rerunfilecheck)             Checksum: 38934886A3759AD6F8074C0AEF6297FC;616.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
+(rerunfilecheck)             Checksum: 5DF243DC1D3A792DDC4A89319B3E70FA;693.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 289.
  ) 
 Here is how much of TeX's memory you used:
- 31077 strings out of 493304
- 699283 string characters out of 6139872
- 799670 words of memory out of 5000000
- 33973 multiletter control sequences out of 15000+600000
+ 31088 strings out of 493304
+ 699394 string characters out of 6139872
+ 802750 words of memory out of 5000000
+ 33978 multiletter control sequences out of 15000+600000
  7021 words of font info for 27 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,15n,74p,10432b,726s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1546,10 +1562,10 @@ msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 
-Output written on lab1.pdf (2 pages, 132789 bytes).
+Output written on lab1.pdf (3 pages, 145189 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 109 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 
