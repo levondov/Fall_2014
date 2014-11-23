@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  19 NOV 2014 15:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  23 NOV 2014 12:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1496,7 +1496,14 @@ LaTeX Info: Redefining \nameref on input line 81.
 
 \c__siunitx_mathsf_int=\count278
 \c__siunitx_mathtt_int=\count279
- [1
+
+
+LaTeX Warning: Reference `sec:oxide' on page 1 undefined on input line 125.
+
+
+LaTeX Warning: Reference `sec:jdepth' on page 1 undefined on input line 143.
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}pdfTeX warning (ext4): desti
 nation with the same identifier (name{figure.1}) has been already used, duplica
@@ -1504,52 +1511,76 @@ te ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.172 \end{equation}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.1}) has been already used, duplicate ignored
+l.165 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.172 \end{equation}
-                    ]
-Underfull \hbox (badness 10000) in paragraph at lines 185--187
+l.165 
+      ]pdfTeX warning (ext4): destination with the same identifier (name{figure
+.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.166 \begin{figure}[H]
+                       
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 235--238
+Underfull \hbox (badness 10000) in paragraph at lines 259--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
 
+ []
+
+[3]
+Overfull \hbox (43.90215pt too wide) in paragraph at lines 298--299
+\OT1/cmr/m/n/10 and Ti3Al Films." Thin Solid Films 270.1-2 (1995): 260-63. Web.
+ <http://www.sciencedirect.com/science/journal/00406090/270>. 
  []
 
 No file lab1.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 318.
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 318.
  (./lab1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
-Package rerunfilecheck Info: File `lab1.out' has not changed.
-(rerunfilecheck)             Checksum: 5DF243DC1D3A792DDC4A89319B3E70FA;693.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 289.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 318.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 318.
+
+
+Package rerunfilecheck Warning: File `lab1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `lab1.out':
+(rerunfilecheck)             Before: D50E0314B256031E949A1F9E5DFA16D2;449
+(rerunfilecheck)             After:  7B5F7EB77A403E287B7FCEA84FFD6E98;739.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 318.
  ) 
 Here is how much of TeX's memory you used:
- 31088 strings out of 493304
- 699394 string characters out of 6139872
- 802750 words of memory out of 5000000
- 33978 multiletter control sequences out of 15000+600000
- 7021 words of font info for 27 fonts, out of 8000000 for 9000
+ 31094 strings out of 493304
+ 699416 string characters out of 6139872
+ 802635 words of memory out of 5000000
+ 33977 multiletter control sequences out of 15000+600000
+ 7640 words of font info for 29 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,15n,74p,10432b,726s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,74p,10432b,835s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -1562,10 +1593,10 @@ msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 
-Output written on lab1.pdf (3 pages, 145189 bytes).
+Output written on lab1.pdf (4 pages, 153103 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 135 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
