@@ -1,0 +1,38 @@
+$ field oxide
+
+$ Initialization 
+Initialize <100> material=silicon Phosphorus=8e14 width=1.5 dX=0.005
+
+$ Blanket implant here
+Implant B11 Energy=60 Dose=3e12
+
+$ 5-80-5 oxidation
+Diffusion Time= 35 Temperature= 800 T.Rate=+5.714 Nitrogen
+Diffusion Time=5 Temperature=1000 DryO2
+Diffusion Time=80 CONTINUE Temperature=1000 WetO2
+Diffusion Time=5 CONTINUE Temperature=1000 DryO2
+
+$ plotting
+Select z=log10(active(boron))
+Plot.1d
+Print.1d
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$ Gate oxide
+
+$ Initialization 
+Initialize <100> material=silicon Phosphorus=8e14 width=3 dX=0.0005
+
+$ Blanket implant here
+Implant B11 Energy=60 Dose=3e12
+
+$ 5-80-5 oxidation
+Diffusion Time= 35 Temperature= 1100 T.Rate=+5.714 Nitrogen
+Diffusion Time=45 Temperature=1100 DryO2
+
+
+$ plotting
+Select z=log10(active(boron))
+Plot.1d
+Print.1d
+
+Print Layers

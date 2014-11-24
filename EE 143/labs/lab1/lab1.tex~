@@ -36,6 +36,7 @@
 \usepackage[all]{hypcap}
 \usepackage{subfloat}
 \usepackage{color}
+\usepackage{listings}
 
 % Roman numerials
 \pagenumbering{arabic}
@@ -168,7 +169,8 @@ The profiles were all created in Tsuprem-4 using the EE143 process flow.
 \node at (2.5,2.5) {\textbf{Si}};
 \node at (1.0,7.6) {16.74};
 \end{tikzpicture}
-\caption{Dopant profile with only field oxide. The Si-Si$\text{O}_2$ interface occurs at 0.2104$\mu$m. There was about 500 nm of field oxide deposited here. The peak concentration is roughly $\e{16.74}$.}
+\caption{Dopant profile with only field oxide. The Si-Si$\text{O}_2$ interface occurs at 0.2104$\mu$m. There was about 500 nm of field oxide deposited here. The peak concentration is roughly ${10}^{16.74}$.}
+\label{fig:doping1}
 \end{figure}
 
 
@@ -192,9 +194,61 @@ Aluminum [4]& 70 & 22.2 $\cdot$ 10$ ^{-6}$ & 0.33 \\ \hline
 
 \end{description}
 \section{Questions}
-\begin{enumerate}
-\item The lab uses positive photoresist. The lithography machine uses a light that has g line wavelength. The I and G lines refer to the wavelength of the light coming off the light bulb that reacts with photoresist. G line is roughly xx wavelength and I line is xx wavelength.
-\end{enumerate}
+\begin{description}[style = nextline]
+\item[1) What type of photoresist (positive or negative? I-line or G-line?) do we use in the
+lab? What do I-line and G-line refer to? Briefly describe how the resist responds
+to the process steps like spinning, UV light exposure and development.]
+
+\item[2) What is the purpose of baking the wafers at 120 $\degree$C before depositing HMDS? What
+is the purpose of the 90 $\degree$C bake after spinning on photoresist? What happens if the
+soft bake is too hot and too long (say 120 $\degree$C, 5 minutes)?]
+
+\item[3) What is the purpose of hard bake? What happens if we skip this step? What may
+happen if the bake is done at a temperature above 120 $\degree$C (say 200 $\degree$C)?]
+
+\item[4) We do lithography steps under yellow light only. What is the consequence if we
+expose the wafers to fluorescent light before development? What if we expose
+them to fluorescent light after development? Would red light damage your process?]
+
+\item[5) What are the differences between wet and dry oxidation that lead us to use one for
+the gate oxide and one for the field/intermediate oxide? What is the purpose of
+annealing in nitrogen after oxidation?]
+
+\item[6) How do you determine etching time using theoretical etch rate in literature? List
+two ways to determine etch time empirically from lab measurements, when you
+etch the layers. (Hint: these methods include visual cues.). How close are the
+experimental and the theoretically calculated values?]
+
+\item[7) Before n+ deposition (prior to SOG spinning), we clean in Piranha but not in HF.
+Before gate oxidation, we clean in both. Why the difference?]
+
+\item[8) Why is 5:1 BHF (5:1 N$\text{H}_4$F:HF) used for etching features in the oxide while 10:1
+BHF is used for cleaning and spin-on-glass stripping? Why buffered HF? ]
+
+\item[9) What would happen if we skipped the HF dip before metallization? ]
+
+\item[10) What is etch selectivity? ]
+
+\item[11) Why do we first use the roughing pump and then the diffusion pump when pumping
+down the aluminum deposition system? Why must the foreline pressure be kept
+below 100 mTorr?]
+
+\item[12) What is the Al etchant composed of? What happens if you use it at room
+temperature? What is the purpose of sintering? What will result if sintering step is
+skipped? What happens if sintering temperature is too hot or too low?]
+
+
+\item[13) Briefly explain the mechanism of Xe$\text{F}_2$ etching. Is the etch isotropic or
+anisotropic? In an integrated CMOS/MEMS process, is there any consequence to
+using KOH instead of Xe$\text{F}_2$ for etch?]
+
+\item[14) . What would happen if a thick oxide film was left on the wafers as it went into the
+Xe$\text{F}_2$ etching step? ]
+
+\item[15) Identify two of the 11 major processing steps that are unnecessary to fabricate a
+functional oxide cantilever beam. Why are they unnecessary?]
+
+\end{description}
 
 
 
@@ -303,6 +357,39 @@ Solving this for $x_j$ yields,
 \begin{align*}
 x_j = 2\sqrt{D_2t_2\ln{\big((2N_o/\pi N_B)(\sqrt{t_1/t_2})\big)}} = 2\sqrt{(9.11\e{-14})(2220)\ln{\big((2(10^{21})/\pi (8\e{14}))(\sqrt{300/2220})\big)}} \approx 1000 \,nm
 \end{align*}
+
+\subsection{Dopant Profiles.}
+\begin{itemize}
+\item Field Oxide
+\end{itemize}
+According to the EE143 process flow, There was an initial blanket implant of B11 3E12$\text{cm}^{-3}$ on our $<100>$ wafer. Also our wafer had a resistivity of 14-16cm which corresponds to a background concentration of about 8E14$\text{cm}^{-3}$. Now for the field oxide, we used 5-80-5 minute dry,wet,dry oxidation to create about 500 nm of oxide. Putting all this information into Tsuprem-4 generates the plot in Figure \textcolor{blue}{\ref{fig:doping1}}. \\ \\
+Script file: \\
+\begin{verbatim}
+$ field oxide
+
+$ Initialization 
+Initialize <100> material=silicon Phosphorus=8e14 width=1.5 dX=0.005
+
+$ Blanket implant here
+Implant B11 Energy=60 Dose=3e12
+
+$ 5-80-5 oxidation
+Diffusion Time=5 Temperature=1000 DryO2
+Diffusion Time=80 CONTINUE Temperature=1000 WetO2
+Diffusion Time=5 CONTINUE Temperature=1000 DryO2
+
+$ plotting
+Select z=log10(active(boron))
+Plot.1d
+Print.1d
+\end{verbatim}
+
+\begin{itemize}
+\item Gate Oxide
+\end{itemize}
+
+
+
 %----------------------------------------------------------------------------------------
 %	SECTION 5
 %----------------------------------------------------------------------------------------
