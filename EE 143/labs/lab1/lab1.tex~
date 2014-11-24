@@ -104,21 +104,48 @@
 a) Film Thickness
 \begin{figure}[H]
 \centering
-\begin{tabular}{c | c | c | c | c | c | c}
+\begin{tabular}{c || c | c | c | c | c | c}
 Layer & \specialcell{Theoretical \\ calculation \\ (nm)} & \specialcell{Experimental \\ (nm)} & \% Error & \specialcell{Linewidths \\ (photoresist) \\ (nm)} & \specialcell{Linewidths \\ (after PR Strip) \\ (nm)} & \% Overetch \\ \hline
 
 Field Oxide & 505.8 & 477.2 & 5.65 & ? & 3000 & ? \\ \hline
 Polysilicon & ? & ? & ? & ? & ? & ? \\ \hline
 Gate Oxide & 80.1 & 86.5 & 7.40 & 3628 & 4000 & ? \\ \hline
 Intermed Oxide & 386.3 & 320 & 17.2 & ? & ? & ? \\ \hline
-Aluminum & ? & ? & ? & 2088 & 2520 & ? \\ \hline
+Aluminum & 800 & ? & ? & 2088 & 2520 & ? \\ \hline
 
 \end{tabular}
 \end{figure}
 
-b) Sheet Resistance \\
-c) Overetch
+b) Sheet Resistance 
+\begin{figure}[H]
+\centering
+\begin{tabular}{c || c | c }
+Layer & \specialcell{Sheet Resistance \\ (??)} & \specialcell{Surface concentration \\ (??)} \\ \hline
 
+\specialcell{ACTV after \\ Field Oxidation} & ? & ? \\ \hline
+Polysilicon & ? & ? \\ \hline
+\specialcell{ACTV after \\ Pre-Dep} & ? & ? \\ \hline
+\specialcell{ACTV after \\ Drive-In} & ? & ? \\ \hline
+Metal & ? & ? \\ \hline
+
+\end{tabular}
+\end{figure}
+
+c) Overetch
+\begin{figure}[H]
+\centering
+\begin{tabular}{c || c | c | c | c | c}
+Layer & \specialcell{Measured Linewidth \\ (nm)} & \% Overetch & \specialcell{Theoretical \\ etch time \\ (min)} & \specialcell{Actual \\ etch time \\ (min)} & \% Overetch \\ \hline
+
+Field Oxide &  ? & ? & 4.8 & 6 & 25 \\ \hline
+Polysilicon &  ? & ? & 1.6 & $\sim2.25$ & 41  \\ \hline
+Gate Oxide &  ? & ? & 0.87 & ? & ? \\ \hline
+Intermed Oxide &  ? & ? & 3.2 &  4.5 & 41 \\ \hline
+Aluminum &  ? & ? & 1.4 & $\sim5$ & 360 \\ \hline
+
+\end{tabular}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{description}[style = nextline]
 \item[1) Theoretical and experimental thicknesses of field oxide, gate and intermediate 
 oxides (Include orientation dependence of oxidation rate but not impurity 
@@ -363,7 +390,7 @@ x_j = 2\sqrt{D_2t_2\ln{\big((2N_o/\pi N_B)(\sqrt{t_1/t_2})\big)}} = 2\sqrt{(9.11
 \item Field Oxide
 \end{itemize}
 According to the EE143 process flow, There was an initial blanket implant of B11 3E12$\text{cm}^{-3}$ on our $<100>$ wafer. Also our wafer had a resistivity of 14-16cm which corresponds to a background concentration of about 8E14$\text{cm}^{-3}$. Now for the field oxide, we used 5-80-5 minute dry,wet,dry oxidation to create about 500 nm of oxide. Putting all this information into Tsuprem-4 generates the plot in Figure \textcolor{blue}{\ref{fig:doping1}}. \\ \\
-Script file: \\
+Script file: 
 \begin{verbatim}
 $ field oxide
 
