@@ -126,7 +126,7 @@ For details on the theoretical oxide thickness calculations see Appendix \textco
 %NOTE REDO DRY OXIDE AND INCLUDE TAO OF 25nm!
 \begin{figure}[H]
 \centering
-\begin{tabular}{c | c | c | c}
+\begin{tabular}{c || c | c | c}
 Layer & \specialcell{Theoretical \\ (nm)} & \specialcell{Experimental \\ (nm)} & \% Error \\ \hline
 Field Oxide & 505.8 & 477.2 & 5.65 \\ \hline
 Gate Oxide & 80.1 & 86.5 & 7.40  \\ \hline
@@ -140,11 +140,11 @@ must consider the effect of the initial ion implantation. For pre-deposition you
 use the box approximation, but for drive-in you must use the half-gaussian 
 calculation. Why is this? (10 points)]
 
-For details on the junction depth calculations see Appendix \textcolor{blue}{\ref{sec:jdepth}}.
+For details on the junction depth calculations see Appendix \textcolor{blue}{\ref{sec:jdepth}}. Also the reason we use a box approximation for the pre-diffusion is because we have a constant source profile. However, for drive-in we now have source-limited diffusion.
 
 \begin{figure}[H]
 \centering
-\begin{tabular}{c | c}
+\begin{tabular}{c || c}
 Step & \specialcell{Junction Depth \\ (nm)} \\ \hline
 Pre-diffusion & 365 \\ \hline
 Drive-in & 1000 \\ \hline
@@ -154,8 +154,23 @@ Drive-in & 1000 \\ \hline
 \item[3) test]
 test
 
-\item[4) test]
-test
+\item[4) Plot or sketch the change of dopant profile from the silicon surface through the source-drain after each thermal step. Quantitatively label significant points such as Peak concentration, Peak Width, Junction Depth. Show movement of the Silicon-Silicon Dioxide interface and qualitatively show non-ideal effects such as dopant redistribution during oxidation. (11 points)]
+The profiles were all created in Tsuprem-4 using the EE143 process flow.
+
+\begin{itemize} 
+\item Field Oxidation 
+\end{itemize}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=350pt]{dope_profile/profile1.pdf}};
+\node at (1.1,2.5) {\textbf{Si$\text{O}_2$}};
+\node at (2.5,2.5) {\textbf{Si}};
+\node at (1.0,7.6) {16.74};
+\end{tikzpicture}
+\caption{Dopant profile with only field oxide. The Si-Si$\text{O}_2$ interface occurs at 0.2104$\mu$m. There was about 500 nm of field oxide deposited here. The peak concentration is roughly $\e{16.74}$.}
+\end{figure}
+
 
 \item[5) test]
 test
@@ -167,11 +182,11 @@ See table below
 \centering
 \begin{tabular}{c || c | c | c}
 Material & \specialcell{Young's modulus \\ (GPa)} & \specialcell{coeff. of \\ thermal expansion \\ ($K^{-1}$)} & \specialcell{Poisson's ratio \\ (a.u.)} \\ \hline
-Si$\text{O}_2$ [2]& 57(dry)-70(wet) & 5.6 $ \cdot$ 10$ ^{-7}$  & 0.17 \\ \hline
-poly-Si [1]& 169 $\pm$ 6.15 & 4.6 $ \cdot$ 10$ ^{-6}$ & 0.22 $\pm$ .011 \\ \hline
-Aluminum [3]& 70 & 22.2 $\cdot$ 10$ ^{-6}$ & 0.33 \\ \hline
+Si$\text{O}_2$ [3]& 57(dry)-70(wet) & 5.6 $ \cdot$ 10$ ^{-7}$  & 0.17 \\ \hline
+poly-Si [2]& 169 $\pm$ 6.15 & 4.6 $ \cdot$ 10$ ^{-6}$ & 0.22 $\pm$ .011 \\ \hline
+Aluminum [4]& 70 & 22.2 $\cdot$ 10$ ^{-6}$ & 0.33 \\ \hline
 \end{tabular}
-\caption{Values were found from various journals/articles found online ([1],[2], and[3]) and many of these values are calculated for thin films of the material.
+\caption{Values were found from various journals/articles found online ([2],[3], and[4]) and many of these values are calculated for thin films of the material.}
 \end{figure}
 
 
@@ -207,7 +222,7 @@ X_i = \text{length of initial oxide growth}
 \end{align*}
 
 Example: Calculated oxide thickness of Intermed Oxide: \\
-Given: 5 min dry oxidation at $1050\degree$C and 12 + 25 min wet oxidation and annealing at $1050\degree$C, calculated oxide growth. \\
+Given: 5 min dry oxidation at $1050\degree$C and 12 + 25 min wet oxidation annealing at $1050\degree$C, calculate oxide growth. \\
 
 First we consider the 5 min dry oxidation. Using table 3.1 [1] for a $<100>$ Silicon, and using dry oxidation, we see that for the linear rate constant (B/A), $E_A = 2.00$ eV and $D_o = 3.71\e{6} \, \mu$m/hr. For the parabolic rate constant (B), $E_A = 1.23$ eV and $D_o = 772\, \mu$m/hr. \\ \\
 Using an arrhenius equation where $k =$ Boltzmann's constant, and $T = $ temperature. 
@@ -227,7 +242,7 @@ Now after this dry oxidation, we have a 37 minute wet oxidation at $1050 \degree
 B_{\text{wet}} &= D_o\me^{\frac{-E_A}{kT}} = 386\me^{\frac{-0.78*1.602\e{-19}}{1.38\e{-23}(1050\degree\text{C} + 273)}} = 0.411 \,{\mu\text{m}}^2\text{/hr}
 \end{align*}
 
-This time we do have an initial oxidation time $\tau$ because of the dry oxidation we did. Here $X_i$ is the oxide length we calculated for the dry oxidation growth,
+This time we do have an initial oxidation time $\tau$ because of the dry oxidation we did in the previous step. Here $X_i$ is the oxide length we calculated for the dry oxidation growth,
 
 \begin{align*}
 \tau = \frac{{X_i}^2}{B_{\text{wet}}} + \frac{X_i}{{B/A}_{\text{wet}}} = \frac{0.00711^2}{0.411} + \frac{0.00711}{1.50} \approx 0.00488 \text{hrs}
@@ -257,7 +272,7 @@ N_o &= \text{Surface concentration limited by solid solubility}
 \end{align*}
 
 Example: Calculate the junction depth after pre-diffusion and drive in. \\
-According to the Process flow [2], our silicon wafer has a resistivity of about 14-16 ohm-cm. From the same process flow we know that we had a phosphorus doped, solid solubility limited constant diffusion at $1050\degree$C. Using figure 4.6 [1] we see that at a temperature of $1050\degree$C our phosphorus surface concentration $N_o \approx 10^{21}$/$\text{cm}^3$. Now using the Resistivity of our wafer and figure 4.8 [1], we see that we have an impurity concentration $N_B \approx 8\e{14}$. \\ \\
+According to the process flow [5], our silicon wafer has a resistivity of about 14-16 ohm-cm. From the same process flow we know that we had a phosphorus doped, solid solubility limited constant diffusion at $1050\degree$C. Using figure 4.6 [1] we see that at a temperature of $1050\degree$C our phosphorus surface concentration $N_o \approx 10^{21}$/$\text{cm}^3$. Now using the Resistivity of our wafer and figure 4.8 [1], we see that we have an impurity concentration $N_B \approx 8\e{14}/\text{cm}^3$. \\ \\
 Using table 4.1 [1], we can calculate our diffusion coefficient. Note that pre-diffusion was done at $1050\degree$C for 5 minutes.
 \begin{align*}
 D &= D_o\me{\frac{-E_A}{kT}} = 10.5 \,\text{cm}^2/\text{sec}\,\, \exp{(\frac{-3.69*1.602\e{-19}}{1.38\e{-23}(1050 + 273)})} = 9.11\e{-14} \, \text{cm}^2/\text{sec}
@@ -293,9 +308,10 @@ x_j = 2\sqrt{D_2t_2\ln{\big((2N_o/\pi N_B)(\sqrt{t_1/t_2})\big)}} = 2\sqrt{(9.11
 %----------------------------------------------------------------------------------------
 \section{References}
 \begin{enumerate}
+\item Jaeger, Richard. \textit{Introduction to microelectronic fabrication}. New Jersey: Prentice Hall, 2002. Print.
 \item Sharpe, William N., Bin Yuan, and Ranji Vaidyanathan. Measurements of Young's Modulus, Poisson's ratio, and Tensile Strength of Polysilicon. Publication no. 1. Nagoya: IEEE, 1997. Web.
-\item Kim, Min. "Influence of Substrates on the Elastic Reaction of Films for the Microindentation Tests." Thin Solid Films 283 (1996): 15. Web. <http://www.sciencedirect.com/science/journal/00406090/283>.
-\item Chinmulgund, M. "Effect of Ar Gas Pressure on Growth, Structure, and Mechanical Properties of Sputtered Ti, Al, TiAl, and Ti3Al Films." Thin Solid Films 270.1-2 (1995): 260-63. Web. <http://www.sciencedirect.com/science/journal/00406090/270>.
+\item Kim, Min. "Influence of Substrates on the Elastic Reaction of Films for the Microindentation Tests." Thin Solid Films 283 (1996): 15. Web.
+\item Chinmulgund, M. "Effect of Ar Gas Pressure on Growth, Structure, and Mechanical Properties of Sputtered Ti, Al, TiAl, and Ti3Al Films." Thin Solid Films 270.1-2 (1995): 260-63. Web.
 \end{enumerate}
 
 %----------------------------------------------------------------------------------------

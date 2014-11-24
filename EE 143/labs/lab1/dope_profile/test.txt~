@@ -1,0 +1,15 @@
+Initialize <100> material=silicon Phosphorus=8e14 width=1.5 dX=0.005
+
+Implant Phosphorus Energy=60 Dose=3e12
+
+Diffusion Time= 35 Temperature= 800 T.Rate=+5.714 Nitrogen
+Diffusion Time=5 Temperature=1000 DryO2
+Diffusion Time=180 CONTINUE Temperature=1000 WetO2
+Diffusion Time=5 CONTINUE Temperature=1000 DryO2
+
+
+Select z=log10(active(phosphorus))
+Plot.1d
+Print.1d out.file=Boron.txt
+
+Print Layers
