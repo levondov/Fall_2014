@@ -5,14 +5,17 @@
 #include "21game.h"
 #include "cards.h"
 
+// Player is a superclass of dealer
 class Dealer : public Player
 {
 	public:
+		// your name
 		Dealer(string name);
+		// virtual function tht must be defined from player class
 		virtual bool IsStillDrawing (Card c);
+		// dealer upcard
 		Card Upcard();
 	private:
-		Card myUpCard;
 	
 };
 

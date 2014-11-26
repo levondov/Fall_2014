@@ -112,7 +112,7 @@ bool SortedList<NODETYPE>::IsEmpty () {	// IsEmpty
 template <class NODETYPE>
 SortedList<NODETYPE> & SortedList<NODETYPE>::operator=(const SortedList <NODETYPE> & list) {
 	// check to see if x = x
-	// return empty list
+	// return this (list on left hand side)
 	if (myFirst == list.myFirst) {
 		cerr << "Error, you can't do that" << endl;
 		return *this;
@@ -126,7 +126,7 @@ SortedList<NODETYPE> & SortedList<NODETYPE>::operator=(const SortedList <NODETYP
 		temp2 = temp;
 	}
 	
-	//resign list's first node to myfirst and return a reference to this.
+	//re-assign list's first node to myfirst and return a reference to this.
 	myFirst = list.myFirst;
 	return *this;
 } 

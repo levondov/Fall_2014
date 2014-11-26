@@ -205,18 +205,18 @@ Looking at the plot above, the germanium sample does behave like an intrinsic se
 
 \item[7) What is the energy gap for your sample? Compare with published literature values and cite your sources.]
 
-According to [4], the energy band gap for Germanium is 0.67 eV (at 302K). According to the lab manual [2], the slope of figure 8 should be $-E_g/2k$. Therefore $E_g = -2k(\text{slope})$ where k is boltzmann's constant. Using linear regression and fitting a line to the data in figure 8, a slope of $-3.05\e{4} K^{-1}$ was calculated with a R value of 0.990. This corresponds to an $E_g = 5.25$eV. This is nothing close to the real energy band gap. Nevertheless, this corresponds to a percent error of $\approx 700$\%.
+According to [4], the energy band gap for Germanium is 0.67 eV (at 302K). According to the lab manual [2], the slope of figure 8 should be $-E_g/2k$. Therefore $E_g = -2k(\text{slope})$ where k is boltzmann's constant. Using linear regression and fitting a line to the data in the intrinsic in figure 8, a slope of $-4.42\e{3} K^{-1}$ was calculated with a R value of 0.9997. This corresponds to an $E_g = 0.77$eV. This corresponds to a percent error of 15\%.
 
 \item[8) Predict the resistance at 150$\degree$C of your sample.]
 
 After doing a linear fit on the plot in figure 8, the slope and intercept were calculated to be -3.05\e{4} and 9.371. Using this data we find that:
 
 \begin{align*}
-y = mx + b = \frac{-3.05\e{4}}{150\degree\text{C} + 273} + 9.371 = -62.7
+y = mx + b = \frac{-4.42\e{3}}{150\degree\text{C} + 273} + 9.371 = -1.08
 \end{align*}
 We also know from figure 8 that the y axis corresponds to $\ln{G/G_0}$ where $G_0 = 1$.
 \begin{align*}
-y = \ln{G/G_0} \Rightarrow -62.7 = ln{G/G_0} \Rightarrow \me^{-62.7} = \frac{G}{G_0} \Rightarrow G = 5.88\me^{-28} \Rightarrow R = 1/G = 1.7\me^{27}\text{k}\Omega.
+y = \ln{G/G_0} \Rightarrow -1.08 = ln{G/G_0} \Rightarrow \me^{-1.08} = \frac{G}{G_0} \Rightarrow G = 0.340 \Rightarrow R = 1/G = 2.94\text{k}\Omega.
 \end{align*}
 
 \item[9) Plot ln (G) versus 1/T for the insulator sample studied in this lab.]
@@ -232,7 +232,7 @@ See below plot.
 \end{figure}
 
 \item[10) What is the temperature corresponding to the change in slope of the ln (G) vs 1/T plot? If you don't observe any change in slope, what does that mean?]
-
+%% FIGURE 3 description in lab manual.
 Looking at figure 9 the slope change occurs roughly in the middle of the graph as indicated by the red line. This corresponds to a temperature of $550\degree$C.
 
 \item[11) From your plot determine both $E_m$ and $W$ in eV.]

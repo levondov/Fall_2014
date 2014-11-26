@@ -1,0 +1,15 @@
+TL1 0100
+/ Mask definition file s4ex4m.tl1, for use with s4ex4[abc].
+/
+1e3
+   0 5000
+4
+Field 1
+   0 3900
+Poly 1
+   0 0650
+Contact 2
+   0 1950
+3250 5000
+Metal 1
+1300 5000

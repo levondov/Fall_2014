@@ -1,0 +1,108 @@
+$ TMA TSUPREM4 NMOS transistor simulation
+$   Part b:  Through source/drain metallization
+
+$SOURCE  TS4.config
+
+$ Set grid spacing and accuracy parameters
+MESH      GRID.FAC=1.5
+$METHOD    ERR.FAC=2.0
+
+$ Read structure from initial simulation
+INITIAL   IN.FILE=S4EX4AS
+
+$ Read the mask definition file
+MASK      IN.FILE=s4ex4m.tl1
+
+$ Define polysilicon gate
+MATERIAL  MAT=POLY ^POLYCRYS
+DEPOSIT   POLYSILICON  THICK=0.4  SPACES=2
+DEPOSIT   PHOTORESIST  THICK=1.0
+EXPOSE    MASK=Poly
+DEVELOP
+ETCH      POLYSILICON  TRAP  THICK=0.7  ANGLE=79
+ETCH	  PHOTORESIST  ALL
+
+$ Oxidize the polysilicon gate
+DIFFUSION TIME=30  TEMP=1000  DRYO2  
+   
+$ LDD implant at a 7-degree tilt
+IMPLANT   ARSENIC DOSE=5E13 ENERGY=50  TILT=7.0 ROTATION=30  IMPL.TAB=ARSENIC
+
+$ Plot structure
+SELECT    Z=LOG10(BORON)  TITLE="LDD Process - After LDD Implant"
+PLOT.2D   SCALE  Y.MAX=2.0
+
+$ Add color fill
+COLOR     SILICON  COLOR=7
+COLOR     OXIDE    COLOR=5
+COLOR     POLY     COLOR=3
+
+$ Plot contours
+FOREACH   X  (15 TO 18 STEP 0.5)
+  CONTOUR   VALUE=X  LINE=5  COLOR=2
+END 
+SELECT    Z=LOG10(ARSENIC)
+FOREACH   X  (16 TO 20)
+  CONTOUR   VALUE=X  LINE=2  COLOR=4
+END 
+
+$ Replot boundaries
+PLOT.2D   ^AX  ^CL
+
+$ Define the oxide sidewall spacer
+DEPOSIT   OXIDE  THICK=0.4
+ETCH      OXIDE  THICK=0.45  TRAP
+
+$ Heavy S/D implant at a 7-degree tilt
+IMPLANT   DOSE=1E15  ENERGY=200  ARSENIC  TILT=7.0  ROTATION=30
+
+$ Anneal to activate the arsenic
+DIFFUSION TIME=15  TEMP=950
+  
+$ Deposit BPSG and cut source/drain contact holes
+DEPOSIT   OXIDE  THICKNES=0.7
+DEPOSIT   PHOTORESIST  POSITIVE  THICKNESS=1.0
+EXPOSE    MASK=Contact
+DEVELOP
+ETCH      OXIDE  THICKNESS=1.0  TRAP  ANGLE=75
+ETCH      PHOTORESIST  ALL
+   
+$ Define the metallization
+DEPOSIT   ALUMINUM  THICKNESS=1.0
+DEPOSIT   PHOTORESIST  POSITIVE  THICKNESS=1.0
+EXPOSE    MASK=Metal
+DEVELOP
+ETCH      ALUMINUM  TRAP  THICKNESS=1.5 ANGLE=75
+ETCH      PHOTORESIST  ALL
+
+$ Save the final structure
+SAVEFILE  OUT.FILE=S4EX4BS
+   
+$ Plot the half NMOS structure
+SELECT    Z=LOG10(BORON)  TITLE="LDD Process - Half of NMOS Structure"
+PLOT.2D   SCALE  Y.MAX=2.0  GRID C.GRID=2
+PLOT.2D   SCALE  Y.MAX=2.0  
+
+$ Color fill
+COLOR     SILICON  COLOR=7
+COLOR     OXIDE    COLOR=5
+COLOR     POLY     COLOR=3
+COLOR     ALUM     COLOR=2
+
+$ Plot contours
+FOREACH   X  (15 TO 18 STEP 0.5)
+  CONTOUR   VALUE=X  LINE=5  COLOR=2
+END 
+SELECT    Z=LOG10(ARSENIC)
+FOREACH   X  (15 TO 20)
+  CONTOUR   VALUE=X  LINE=2  COLOR=4
+END 
+
+$ Replot boundaries
+PLOT.2D   ^AX  ^CL
+
+$ Print doping through drain
+SELECT    Z=DOPING
+PRINT.1D  LAYERS  X.VALUE=2
+
+savefile out.f=s4ex4b.tif tif

@@ -61,7 +61,7 @@ public:
 	// If a true argument is given, it causes debugging output
 	// to be printed to cerr every time a card is dealt or the deck
 	// shuffled.
-	Deck (bool debug=false);
+	Deck (bool debug=true);
 
 	// Shuffle the deck, i.e. randomly permute its cards.
 	void Shuffle ();

@@ -17,7 +17,7 @@ bool Dealer::IsStillDrawing (Card c) {
 }
 
 Card Dealer::Upcard() {
-	return myUpCard;
+	return myHand[0];
 }
 
 Smarter::Smarter(string name): Player(name) {

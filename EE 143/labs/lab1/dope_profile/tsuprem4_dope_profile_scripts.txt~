@@ -20,7 +20,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $ Gate oxide
 
 $ Initialization 
-Initialize <100> material=silicon Phosphorus=8e14 width=3 dX=0.0005
+Initialize <100> material=silicon Phosphorus=8e14 width=3 dX=0.005
 
 $ Blanket implant here
 Implant B11 Energy=60 Dose=3e12

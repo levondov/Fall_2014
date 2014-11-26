@@ -97,7 +97,13 @@
 \subsection{}
 \subsection{}
 \section{Process Procedures}
-\subsection{}
+\subsection{Process Monitoring Measurements}
+\subsubsection{Measurement Type and Description}
+\begin{itemize} 
+\item Film color
+\end{itemize}
+Pay atten
+
 \subsection{}
 \subsection{}
 \section{Calculations}
@@ -107,11 +113,11 @@ a) Film Thickness
 \begin{tabular}{c || c | c | c | c | c | c}
 Layer & \specialcell{Theoretical \\ calculation \\ (nm)} & \specialcell{Experimental \\ (nm)} & \% Error & \specialcell{Linewidths \\ (photoresist) \\ (nm)} & \specialcell{Linewidths \\ (after PR Strip) \\ (nm)} & \% Overetch \\ \hline
 
-Field Oxide & 505.8 & 477.2 & 5.65 & ? & 3000 & ? \\ \hline
-Polysilicon & ? & ? & ? & ? & ? & ? \\ \hline
-Gate Oxide & 80.1 & 86.5 & 7.40 & 3628 & 4000 & ? \\ \hline
-Intermed Oxide & 386.3 & 320 & 17.2 & ? & ? & ? \\ \hline
-Aluminum & 800 & ? & ? & 2088 & 2520 & ? \\ \hline
+Field Oxide & 505.8 & 477.2 & 5.65 & 2000 & 3000 & 50 \\ \hline
+Polysilicon & ? & ? & ? & 3628 & 4000 & 10 \\ \hline
+Gate Oxide & 80.1 & 86.5 & 7.40 & 3628 & 4000 & 10 \\ \hline
+Intermed Oxide & 386.3 & 320 & 17.2 & 2749 & 1869 & 47 \\ \hline
+Aluminum & 800 & ? & ? & 2088 & 2520 & 21 \\ \hline
 
 \end{tabular}
 \end{figure}
@@ -120,12 +126,12 @@ b) Sheet Resistance
 \begin{figure}[H]
 \centering
 \begin{tabular}{c || c | c }
-Layer & \specialcell{Sheet Resistance \\ (??)} & \specialcell{Surface concentration \\ (??)} \\ \hline
+Layer & \specialcell{Sheet Resistance \\ ($\Omega$/sqr)} & \specialcell{Surface concentration \\ (??)} \\ \hline
 
-\specialcell{ACTV after \\ Field Oxidation} & ? & ? \\ \hline
+\specialcell{ACTV after \\ Field Oxidation} & 530 & ? \\ \hline
 Polysilicon & ? & ? \\ \hline
-\specialcell{ACTV after \\ Pre-Dep} & ? & ? \\ \hline
-\specialcell{ACTV after \\ Drive-In} & ? & ? \\ \hline
+\specialcell{ACTV after \\ Pre-Dep} & 5 & ? \\ \hline
+\specialcell{ACTV after \\ Drive-In} & 8 & ? \\ \hline
 Metal & ? & ? \\ \hline
 
 \end{tabular}
@@ -137,11 +143,11 @@ c) Overetch
 \begin{tabular}{c || c | c | c | c | c}
 Layer & \specialcell{Measured Linewidth \\ (nm)} & \% Overetch & \specialcell{Theoretical \\ etch time \\ (min)} & \specialcell{Actual \\ etch time \\ (min)} & \% Overetch \\ \hline
 
-Field Oxide &  ? & ? & 4.8 & 6 & 25 \\ \hline
-Polysilicon &  ? & ? & 1.6 & $\sim2.25$ & 41  \\ \hline
-Gate Oxide &  ? & ? & 0.87 & ? & ? \\ \hline
-Intermed Oxide &  ? & ? & 3.2 &  4.5 & 41 \\ \hline
-Aluminum &  ? & ? & 1.4 & $\sim5$ & 360 \\ \hline
+Field Oxide &  3000 & 50 & 4.8 & 6 & 25 \\ \hline
+Polysilicon &  4000 & 10 & 1.6 & $\sim2.25$ & 41  \\ \hline
+Gate Oxide &  4000 & 10 & 0.87 & 0.83 & 4.6 \\ \hline
+Intermed Oxide &  1869 & 47 & 3.2 &  4.5 & 41 \\ \hline
+Aluminum &  2520 & 21 & 1.4 & $\sim5$ & 360 \\ \hline
 
 \end{tabular}
 \end{figure}
@@ -228,21 +234,26 @@ Aluminum [4]& 70 & 22.2 $\cdot$ 10$ ^{-6}$ & 0.33 \\ \hline
 \item[1) What type of photoresist (positive or negative? I-line or G-line?) do we use in the
 lab? What do I-line and G-line refer to? Briefly describe how the resist responds
 to the process steps like spinning, UV light exposure and development.]
+The lab uses positive photoresist. The lithography machine uses a light that has g line wavelength. The I and G lines refer to the wavelength of the light coming off the light bulb that reacts with the photoresist. G line is roughly 436nm wavelength and I line is 365nm wavelength. Photoresist is spun onto the wafer to spread it evenly over the wafer, but extreme topology and surface debris can cause excess PR in some areas and deficient PR in others. When exposed to UV light, the photo-sensitive part of the polymer activates changing it into an organic acid, whereas unexposed PR remains unchanged. When dipped into the PR developer, the organic acid form of the PR dissolves whereas the polymer form remains on the wafer, leaving a layer PR that masks certain areas of the wafer.
 
 \item[2) What is the purpose of baking the wafers at 120 $\degree$C before depositing HMDS? What
 is the purpose of the 90 $\degree$C bake after spinning on photoresist? What happens if the
 soft bake is too hot and too long (say 120 $\degree$C, 5 minutes)?]
+The purpose of baking the wafers at 120$\degree$C before depositing HMDS is to remove excess environmental moisture that has accumulated on the wafer. The purpose of the 90$\degree$C bake after spinning on photoresist is to evaporate the solvent and make it less sticky. If the soft bake is too long, the photoactive component of the PR may start to decompose and the PR may become less soluable in the developer. 
 
 \item[3) What is the purpose of hard bake? What happens if we skip this step? What may
 happen if the bake is done at a temperature above 120 $\degree$C (say 200 $\degree$C)?]
+The purpose of the hard bake is to cross-polymerize the PR, making it less permeable to chemicals, more adhesive, and physically harder. If this step is skipped, subsequent etching and similar steps have a chance of penetrating the PR, making the mask meaningless. If the bake is done at a temperature above 120$\degree$C, the PR will start to become brittle, resulting in cracks that would also make the masking step meaningless.
 
 \item[4) We do lithography steps under yellow light only. What is the consequence if we
 expose the wafers to fluorescent light before development? What if we expose
 them to fluorescent light after development? Would red light damage your process?]
+If the fluorescent light happens to be near the wavelength of the g-line, it will react with the photoresist and make it soluble. Since there is no mask over the wafer at that time, it will make all the photoresist souble which will cause the developer to remove all the photoresist. If it were exposed after developement, it will still make the remaining photoresist soluble, but since we have already done developement, there is no risk of the remaining photoresist coming off (unless we were to dip it in the developer again).
 
 \item[5) What are the differences between wet and dry oxidation that lead us to use one for
 the gate oxide and one for the field/intermediate oxide? What is the purpose of
 annealing in nitrogen after oxidation?]
+Wet oxidation has a higher growth rate but a tendency to create dangling bonds and a lower density oxide, making it more suitable for the thick field/intermediate oxide. Dry oxidation is much slower but creates a higher density oxide with fewer dangling bonds, making it more suitable for creating the thin gate oxide that is critical in device performance. The purpose of annealing in nitrogen is to allow the silicon atoms to diffuse and repair damage done by oxidization. 
 
 \item[6) How do you determine etching time using theoretical etch rate in literature? List
 two ways to determine etch time empirically from lab measurements, when you
@@ -251,13 +262,17 @@ experimental and the theoretically calculated values?]
 
 \item[7) Before n+ deposition (prior to SOG spinning), we clean in Piranha but not in HF.
 Before gate oxidation, we clean in both. Why the difference?]
+For n+ deposition, we are depositing PSG (a phosphorate-doped oxide) on top of the wafer for diffusion. The presence of a native oxide on the surface serves as a barrier material between the PSG and the silicon, preventing unwanted inter-diffusion effects. However, for growing a high-quality gate oxide, the poor-quality native oxide will adversely affect results, thus it must be removed with an HF dip.
 
 \item[8) Why is 5:1 BHF (5:1 N$\text{H}_4$F:HF) used for etching features in the oxide while 10:1
 BHF is used for cleaning and spin-on-glass stripping? Why buffered HF? ]
+We use buffered HF because normal HF etches way too quickly and tends to peel off photoresist as well. Using buffered HF allows for more controllable and constant etching which allows for good process control. According to the process flow, spin on glass etches at 470 nm/sec in 10:1 BHF while thermally grown oxide etches at 100nm/sec in 5:1 BHF. If we had used 5:1 BHF for the spin on glass, it would etch way to quickly and be difficult to control.
 
 \item[9) What would happen if we skipped the HF dip before metallization? ]
+Skipping the HF dip before metallization would result in a thin layer of native oxide at the Al-Si interface, causing poor contact with the devices on the wafer.
 
 \item[10) What is etch selectivity? ]
+Etch selectivity is the relative difference in etch rates for given materials on the wafer. Ideally, the etch should be highly selective towards the material to be etched and thus etch it the fastest whereas other material, like the PR, should etch much more slowly.
 
 \item[11) Why do we first use the roughing pump and then the diffusion pump when pumping
 down the aluminum deposition system? Why must the foreline pressure be kept
@@ -266,17 +281,21 @@ below 100 mTorr?]
 \item[12) What is the Al etchant composed of? What happens if you use it at room
 temperature? What is the purpose of sintering? What will result if sintering step is
 skipped? What happens if sintering temperature is too hot or too low?]
+Al etchant has a composition of 80\% Phosphoric acid, 10\% H2, 5\% acetic acid, and 5\% nitric acid. It etches much more slowly at room temperature then at 50 degC. Sintering allows the aluminum and silicon to interdiffuse, resulting in a good contact, as well as allowing hydrogen to diffuse into the oxide and tie up dangling bonds. If the sintering step is skipped, the contact may be poor. If the sintering temperature is too hot, the eutectic Al-Si system will melt. If the sintering temeperature is too low, the contact resistance between the aluminum and silicon will be too high.
 
 
 \item[13) Briefly explain the mechanism of Xe$\text{F}_2$ etching. Is the etch isotropic or
 anisotropic? In an integrated CMOS/MEMS process, is there any consequence to
 using KOH instead of Xe$\text{F}_2$ for etch?]
+XeF2 gas is absorbed by the silicon surface, where it breaks down into xenon and fluoride gas. The fluoride gas reacts with the silicon to form SiF2 gas, and both the xenon and SiF2 gas are released back into the air. XeF2 etching is isotropic. Using KOH as an etchant instead of XeF2 has two consequences. First, it is anisotropic and therefore less efficient at undercutting the beam. Secondly, it is a wet etch and liquid etchants can cause the freed structure to stick to the substrate. 
 
 \item[14) . What would happen if a thick oxide film was left on the wafers as it went into the
 Xe$\text{F}_2$ etching step? ]
+Since XeF2 is highly selective against SiO2, the structure would not be freed as the etchant would not be able to etch through the oxide film to the silicon below.
 
 \item[15) Identify two of the 11 major processing steps that are unnecessary to fabricate a
 functional oxide cantilever beam. Why are they unnecessary?]
+Gate oxidation and S/D deposition are unnecessary to fabricating a functional oxide cantilever beam. The cantilever requires no gate so any gate oxide grown during this step must later be removed, and doping plays no part in the functioning of a cantilever device, so S/D deposition can also be skipped.
 
 \end{description}
 

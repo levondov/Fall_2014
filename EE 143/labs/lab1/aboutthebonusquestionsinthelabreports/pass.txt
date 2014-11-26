@@ -1,0 +1,7 @@
+iH>ZMCn2
+
+
+scp -r ee143-am@T7400-1.eecs.berkeley.edu:/home/cc/ee143/fa14/class/ee143-am/test /home/levon/Desktop
+
+ssh -X T7400-1.eecs.berkeley.edu -l ee143-am
+

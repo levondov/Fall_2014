@@ -1,0 +1,73 @@
+$ TMA TSUPREM4 NMOS transistor simulation
+$   Part a:  Through field oxidation
+
+$SOURCE  TS4.config
+
+$ Define the grid
+MESH       GRID.FAC=1.5
+$METHOD     ERR.FAC=2.0
+
+$ Read the mask definition file
+MASK       IN.FILE=s4ex4m.tl1  PRINT  GRID="Field,Poly"
+
+$ Initialize the structure
+INITIALIZE <100>  BORON=5E15
+
+$ Initial oxidation
+DIFFUSION  TIME=30  TEMP=1000  DRY  HCL=5
+
+$ Nitride deposition and field region mask
+DEPOSIT    NITRIDE      THICKNESS=0.07  SPACES=4
+DEPOSIT    PHOTORESIST  POSITIVE  THICKNESS=1
+EXPOSE     MASK=Field
+DEVELOP
+ETCH       NITRIDE      TRAP
+ETCH       OXIDE        TRAP  UNDERCUT=0.1
+ETCH       SILICON      TRAP  THICKNES=0.25  UNDERCUT=0.1
+
+
+
+$ Boron field implant
+IMPLANT    BORON  DOSE=5E12  ENERGY=50  TILT=7  ROTATION=30
+ETCH       PHOTORESIST  ALL
+
+$ Plot the initial NMOS structure
+SELECT     Z=LOG10(BORON)  TITLE="LDD Process - NMOS Isolation Region"
+PLOT.2D    SCALE GRID C.GRID=2 Y.MAX=2.0
+PLOT.2D    SCALE  Y.MAX=2.0  
+
+$ Field oxidation
+METHOD     PD.TRANS  COMPRESS
+DIFFUSION  TIME=20   TEMP=800   T.FINAL=1000
+DIFFUSION  TIME=180  TEMP=1000  WETO2 
+DIFFUSION  TIME=20   TEMP=1000  T.FINAL=800
+ETCH       NITRIDE   ALL
+
+$ Unmasked enhancement implant
+IMPLANT    BORON  DOSE=1E12  ENERGY=40  TILT=7  ROTATION=30
+
+$ Save structure
+SAVEFILE   OUT.FILE=S4EX4AS
+
+$ Plot the initial NMOS structure
+SELECT     Z=LOG10(BORON)  TITLE="LDD Process - NMOS Isolation Region"
+PLOT.2D    SCALE GRID C.GRID=2 Y.MAX=2.0
+PLOT.2D    SCALE  Y.MAX=2.0  
+
+$ Color fill the regions
+COLOR      SILICON  COLOR=7
+COLOR      OXIDE    COLOR=5
+
+$ Plot contours of boron
+FOREACH    X  (15 TO 20 STEP 0.5)
+  CONTOUR    VALUE=X  LINE=5  COLOR=2
+END
+
+$ Replot boundaries
+PLOT.2D    ^AX  ^CL
+
+$ Print doping information under field oxide
+SELECT     Z=DOPING
+PRINT.1D   X.VALUE=4.5  X.MAX=3
+
+savefile out.f=s4ex4a.tif tif

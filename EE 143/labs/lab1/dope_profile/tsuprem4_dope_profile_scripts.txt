@@ -36,3 +36,7 @@ Plot.1d
 Print.1d
 
 Print Layers
+
+
+$ ssh -X T7400-1.eecs.berkeley.edu -l ee143-am
+

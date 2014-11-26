@@ -43,14 +43,13 @@ int main () {
     list2 = list2;
     cout << "Should get copy constructor call here." << endl;
     SortedList<int> list3 = list2;
-    /* test list3
     cout << "List 3 = :";
     iter = new SortedListIterator<int> (list3);
     while (iter->MoreRemain ()) {
 	cout << " " << iter->Next ();
     }
     cout << endl;
-    */
+    
     cout << "Should get operator= call here deleting old elements of list 1."
 	 << endl;
     list1 = list2;

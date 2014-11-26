@@ -37,7 +37,7 @@ plt.grid(True)
 plt.savefig("salt_full.pdf")
 
 plt.figure()
-plt.xlabel("Temperature ($\degree$C))")
+plt.xlabel("Temperature (K))")
 plt.ylabel("Resistance (k$\Omega$)")
 plt.title("Metal Resistance")
 plt.grid(True)
@@ -73,20 +73,20 @@ plt.ylabel("ln($G/G_0$) ($k\Omega^{-1}m^{-1}/k\Omega^{-1}m^{-1}$)")
 plt.title("ln($G/G_0$) vs 1/T for Germanium sample")
 
 plt.grid(True)
-plt.plot(.1/(temp_semi + 273),np.log(1/resist_semi))
-plt.scatter(.1/(temp_semi + 273),np.log(1/resist_semi))
+plt.plot(1./(temp_semi + 273),np.log(1/resist_semi))
+plt.scatter(1./(temp_semi + 273),np.log(1/resist_semi))
 
 plt.savefig("semi_full_eg.pdf")
-x=.1/(temp_semi + 273)
-y=np.log(1/resist_semi)
+x=1./(temp_semi[5:] + 273)
+y=np.log(1/resist_semi[5:]	)
 
 slope, intercept, r_value, p_value, std_err = stats.linregress(x,y)
 print(slope, intercept, r_value, p_value, std_err)
 
-#(-30474.367134980825, 9.3714563026627591, -0.98639798755030872, 2.2916539659741053e-08, 1692.7623085578143)
+#(-44246.928047413392, 13.469903542524477, -0.99971629807973661, 1.2071875221474409e-07, 527.09838661380536)
 
 Egap = (-1*2*slope*1.38e-23)/(1.602e-19)
-
+print("TESTT")
 print(Egap)
 
 ##################################################
@@ -97,11 +97,11 @@ plt.ylabel("ln($G/G_0$) ($k\Omega^{-1}m^{-1}/k\Omega^{-1}m^{-1}$)")
 plt.title("ln($G/G_0$) vs 1/T for Salt  sample")
 
 plt.grid(True)
-plt.plot(.1/(temp_salt + 273),np.log(1/resist_salt))
-plt.scatter(.1/(temp_salt + 273),np.log(1/resist_salt))
+plt.plot(1./(temp_salt + 273),np.log(1/resist_salt))
+plt.scatter(1./(temp_salt + 273),np.log(1/resist_salt))
 
 plt.savefig("salt_full_eg.pdf")
-x1=.1/(temp_salt + 273)
+x1=1./(temp_salt + 273)
 y1=np.log(1/resist_salt)
 
 slope, intercept, r_value, p_value, std_err = stats.linregress(x1,y1)
@@ -114,9 +114,10 @@ y2half=y1[4:8:1]
 
 slope1, intercept1, r_value1, p_value1, std_err1 = stats.linregress(x1half,y1half)
 slope2, intercept2, r_value2, p_value2, std_err2 = stats.linregress(x2half,y2half)
-
-print(slope1/1.38e-23)
 print(slope2)
+print(slope2/1.38e-23)
+E = slope1/1.38e-23
+print(-2*(slope1*1.38e-23+E))
 
 
 

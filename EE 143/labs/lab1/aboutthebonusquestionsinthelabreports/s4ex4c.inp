@@ -1,0 +1,40 @@
+$ TMA TSUPREM4 NMOS transistor simulation
+$   Part c:  Formation of complete structure
+
+$SOURCE  TS4.config
+
+$ Read right half of structure 
+INITIAL   IN.FILE=S4EX4BS
+
+$ Reflect about the left edge to form the complete structure
+STRUCTURE REFLECT  LEFT
+   
+$ Plot the complete NMOS structure
+SELECT    Z=LOG10(BORON)  TITLE="Example 4 - Complete NMOS Structure"
+PLOT.2D   SCALE  Y.MAX=2.0  Y.MIN=-3.0
+
+$ Color fill
+COLOR     SILICON   COLOR=7
+LABEL  X=-4.1 Y=-2.5 LABEL="Silicon"     SIZE=.3 C.RECT=7 W.RECT=.4 H.R=.4
+COLOR     POLYSILI  COLOR=3
+LABEL  X=-1.8 Y=-2.5 LABEL="Polysilicon" SIZE=.3 C.RECT=3 W.RECT=.4 H.R=.4
+COLOR     OXIDE     COLOR=5
+LABEL  X=1.2 Y=-2.5 LABEL="Oxide"       SIZE=.3 C.RECT=5 W.RECT=.4 H.R=.4
+COLOR     ALUMINUM  COLOR=2
+LABEL  X=3.2 Y=-2.5 LABEL="Aluminum"    SIZE=.3 C.RECT=2 W.RECT=.4 H.R=.4
+
+$ Plot contours
+FOREACH   X  (15 16 17 18)
+  CONTOUR   VAL=X  LINE=5  COLOR=2
+END 
+SELECT    Z=LOG10(ARSENIC)
+FOREACH   X  (15 16 17 18 19 20)
+  CONTOUR   VAL=X  LINE=3  COLOR=4
+END 
+
+$ Replot boundaries
+PLOT.2D   ^AX  ^CL
+
+SAVEFILE  OUT.FILE=S4EX4CS
+
+savefile out.f=s4ex4c.tif tif
