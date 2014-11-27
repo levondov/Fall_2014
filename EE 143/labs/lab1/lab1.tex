@@ -179,7 +179,7 @@ For details on the junction depth calculations see Appendix \textcolor{blue}{\re
 \begin{figure}[H]
 \centering
 \begin{tabular}{c || c}
-Step & \specialcell{Junction Depth \\ (nm)} \\ \hline
+Step & \specialcell{Vertical \\ junction Depth \\ (nm)} \\ \hline
 Pre-diffusion & 365 \\ \hline
 Drive-in & 1000 \\ \hline
 \end{tabular}
@@ -210,8 +210,18 @@ The profiles were all created in Tsuprem-4 using the EE143 process flow.
 \item Gate Oxidation 
 \end{itemize}
 
-\item[5) test]
-test
+\item[5) Lateral diffusion under the MOSFET gates. You may estimate. Justify estimation.
+(Theoretical). (2 points)]
+Using the data calculated in Appendix \textcolor{blue}{\ref{sec:jdepth}}, we see that for pre diffusion $N_0 = 10^{21}/\text{cm}^3$ and $N_B = 8\e{14}/\text{cm}^3$. Now we will use figure 4.10a [1] in the textbook and note that $N_B/N_0 \approx 10^{-7}$. Since our data goes off the graph in the figure, we will make an approximation that every multiple of 10 decrease in $N_B/N_0$ results in a vertical and lateral junction depth increase of 0.5. Using this approximation we get a vertical junction depth of 4.3 and a lateral depth of 3.8. This gives us $3.8/4.3 = 0.88$. Now from our earlier junction depth calculations we see that pre diffustion resulted in a depth of 365 nm. Thus $(365)0.88 = 321$ nm lateral junction depth for pre diffusion. For drive-in we have the same values of $N_B$ and $N_0$, but our junction depth here increased by 1000 nm. Thus $(1000)0.88 = 880$ nm.
+\begin{figure}[H]
+\centering
+\begin{tabular}{c || c}
+Step & \specialcell{Lateral \\ junction Depth \\ (nm)} \\ \hline
+Pre-diffusion & 321 \\ \hline
+Drive-in & 880 \\ \hline
+\end{tabular}
+\end{figure}
+
 
 \item[6) List an estimate of the Young's modulus, Poisson ratio, and coefficient of thermalexpansion for Si$\text{O}_2$, poly-Si, and Al films as deposited. (You can find these in a table in many physics/ME textbooks, or in a web-based search.) (2 points) ]
 See table below
