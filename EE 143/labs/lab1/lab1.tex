@@ -114,25 +114,23 @@ a) Film Thickness
 Layer & \specialcell{Theoretical \\ calculation \\ (nm)} & \specialcell{Experimental \\ (nm)} & \% Error & \specialcell{Linewidths \\ (photoresist) \\ (nm)} & \specialcell{Linewidths \\ (after PR Strip) \\ (nm)} & \% Overetch \\ \hline
 
 Field Oxide & 505.8 & 477.2 & 5.65 & 2000 & 3000 & 50 \\ \hline
-Polysilicon & ? & ? & ? & 3628 & 4000 & 10 \\ \hline
+Polysilicon & 350 & 400 & 14 & 3628 & 4000 & 10 \\ \hline
 Gate Oxide & 80.1 & 86.5 & 7.40 & 3628 & 4000 & 10 \\ \hline
 Intermed Oxide & 386.3 & 320 & 17.2 & 2749 & 1869 & 47 \\ \hline
-Aluminum & 800 & ? & ? & 2088 & 2520 & 21 \\ \hline
-
+Aluminum & 800 & N/A & N/A & 2088 & 2520 & 21 \\ \hline
 \end{tabular}
+\caption{film thicknesses and line widths for various thin films. N/A represents data that was not available.}
 \end{figure}
 
 b) Sheet Resistance 
 \begin{figure}[H]
 \centering
-\begin{tabular}{c || c | c }
-Layer & \specialcell{Sheet Resistance \\ ($\Omega$/sqr)} & \specialcell{Surface concentration \\ (??)} \\ \hline
-
+\begin{tabular}{c || c | c |}
 \specialcell{ACTV after \\ Field Oxidation} & 530 & ? \\ \hline
-Polysilicon & ? & ? \\ \hline
-\specialcell{ACTV after \\ Pre-Dep} & 5 & ? \\ \hline
-\specialcell{ACTV after \\ Drive-In} & 8 & ? \\ \hline
-Metal & ? & ? \\ \hline
+Polysilicon & 730 & ? \\ \hline
+\specialcell{ACTV after \\ Pre-Dep} & 5 & 5\e{22} \\ \hline
+\specialcell{ACTV after \\ Drive-In} & 8 & $10^{21}$ \\ \hline
+Metal & N/A & N/A \\ \hline
 
 \end{tabular}
 \end{figure}
@@ -150,6 +148,7 @@ Intermed Oxide &  1869 & 47 & 3.2 &  4.5 & 41 \\ \hline
 Aluminum &  2520 & 21 & 1.4 & $\sim5$ & 360 \\ \hline
 
 \end{tabular}
+\caption{Linewidth measurements and etch times used during lab. The theoretical etch times were calculated with etch rates and film thicknesses.}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{description}[style = nextline]
@@ -309,10 +308,20 @@ Gate oxidation and S/D deposition are unnecessary to fabricating a functional ox
 
 \end{description}
 
+\section{Bonus Questions (up to 10 Points)}
+\begin{description}[style = nextline]
+\item[1) Simulate the 143 process flow in Tsuprem4 (8 points) (updated on 11/20/14, you
+only need to simulate the NMOS LDD example available online (i.e., s4ex4a, -b, -
+c.inp))]
+I ran the files provided to us by Wei-chang on one of the eecs linux servers that had tusprem-4 installed. I only changed input/output directories in the script files to get them to work properly. Here is the resulting figure that is plotted after compiling and running the example NMOS.
+\begin{figure}[H]
+\includegraphics[width=325pt]{calcs/Screenshot from 2014-11-28 18:56:49.png}
+\caption{tsuprem4 generated NMOS example process}
+\end{figure}
 
-
-
-
+\item[2) Describe an alternate method for doing one of the process steps (i.e. LOCOS instead
+of Field Oxide, Sputtering instead of Evaporation, etc) and the tradeoffs.]
+\end{description}
 
 \section{Appendix}
 
