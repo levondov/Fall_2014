@@ -152,13 +152,15 @@ b) Sheet Resistance
 \centering
 \begin{tabular}{c || c | c }
 Layer & \specialcell{Sheet Resistance \\ $\Omega/sqr$} & \specialcell{Surface Concentration \\ ($\text{cm}^{-3}$)} \\ \hline
-\specialcell{ACTV after \\ Field Oxidation} & 530 & ? \\ \hline
-Polysilicon & 730 & ? \\ \hline
+\specialcell{ACTV after \\ Field Oxidation} & 530 & 6\e{19} \\ \hline
+Polysilicon & 730 & 4\e{19} \\ \hline
 \specialcell{ACTV after \\ Pre-Dep} & 5 & 5\e{22} \\ \hline
 \specialcell{ACTV after \\ Drive-In} & 8 & $10^{21}$ \\ \hline
 Metal & N/A & N/A \\ \hline
 
 \end{tabular}
+\caption{Surface concentrations calculated from sheet resistance using the irvin curves in jaeger (figure 4.16). The surface concentration used here is $N_B = 8\e{14}$ according to the silicon wafer resistivity. Junction depths for pre-diffusion and drive-in were calculated in Appendix \textcolor{blue}{\ref{sec:jdepth}}. For field oxide, the junction depth used was the amount of silicon consumed when growing the field oxide ($(0.46)(477\text{ nm}) = 219 \text{ nm}$). For poly and gate oxide, we calculated ($(0.46)(86.5) = 39.8$ nm) of silicon that got consumed during gate oxide growth. Therefore a junction depth of $219 + 39.8 = 258.8$ nm. Refer to Appendix \textcolor{blue}{\ref{sec:oxide}} for how to calculate oxide thickness.}
+\label{fig:sheet}
 \end{figure}
 
 c) Overetch
@@ -210,8 +212,9 @@ Drive-in & 1000 \\ \hline
 \end{tabular}
 \end{figure}
 
-\item[3) test]
-test
+\item[3) Final surface concentrations of dopants, as determined from Irvin’s curves using
+sheet resistance measurements made in lab. (2 points)]
+Refer to Figure \textcolor{blue}{\ref{fig:sheet}}
 
 \item[4) Plot or sketch the change of dopant profile from the silicon surface through the source-drain after each thermal step. Quantitatively label significant points such as Peak concentration, Peak Width, Junction Depth. Show movement of the Silicon-Silicon Dioxide interface and qualitatively show non-ideal effects such as dopant redistribution during oxidation. (11 points)]
 The profiles were all created in Tsuprem-4 using the EE143 process flow.
