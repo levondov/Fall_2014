@@ -98,11 +98,36 @@
 \subsection{}
 \section{Process Procedures}
 \subsection{Process Monitoring Measurements}
-\subsubsection{Measurement Type and Description}
-\begin{itemize} 
-\item Film color
-\end{itemize}
-Pay atten
+
+\textbf{Describe monitoring measurements that were done during processing:} \\
+
+\textbf{Film color} - 
+Film color was used during etching processes. In order to determine wheather a layer had finished etching, we used visual queues by paying attention to the color change on the films. e.g. we know aluminum etch will have finished once the silver metalish color disappeared on the wafer. \\
+ 
+\textbf{Line Width} - 
+The width of 2 um lines were measured after photolithography and after etching and PR removal to determine the amount of overetch that occured for a given layer. \\
+
+\textbf{Thickness} -
+The nanospec machine in the lab is used to measure film thicknesses. This can be done directly on our wafers or can be done on control wafers. We use control wafers in the process to measure certain film thicknesses as well as resistivities. \\
+
+\textbf{Resistivity} - 
+A four-point probe was used to measure the sheet resistance of the control wafer to monitor diffusion effects on doping concentration. \\
+
+\textbf{Vernier} - 
+Interlocking bars with slightly different spacing were produced by aligning the alignment keys of different mask layers. The offset of the bars allows the offset of the alignment between different layers to be determined very precisely. \\
+
+\textbf{Determine whether each layer was overetched or underetched? Did you purposely
+over/underetch? Why?} \\
+
+\textbf{Field Oxide} - Overetched. This was purposely overetched to ensure process latitude. \\
+\textbf{Polysilicon} - Overetched. This was overetched in order to \\
+\textbf{Gate Oxide} - Overetched. This was overetched in order to keep the source/drain clear. \\
+\textbf{Intermed Oxide} - Overetched. This is because we want to make sure our contact holes are open before metalization. If the contact holes are blocked by oxide, our device will not function. \\
+\textbf{Aluminum} - Underetched. \\ \\ 
+\textbf{Describe how the verniers are used to measure misalignment. Using diagrams may
+help. Were any layers misaligned intentionally? For each pair of verniers (ACTVPOLY,
+ACTV-CONT, POLY-CONT, CONT-METL), describe how far the marks
+may be misaligned in terms of device function. (6 Points)} \\
 
 \subsection{}
 \subsection{}
@@ -125,7 +150,8 @@ Aluminum & 800 & N/A & N/A & 2088 & 2520 & 21 \\ \hline
 b) Sheet Resistance 
 \begin{figure}[H]
 \centering
-\begin{tabular}{c || c | c |}
+\begin{tabular}{c || c | c }
+Layer & \specialcell{Sheet Resistance \\ $\Omega/sqr$} & \specialcell{Surface Concentration \\ ($\text{cm}^{-3}$)} \\ \hline
 \specialcell{ACTV after \\ Field Oxidation} & 530 & ? \\ \hline
 Polysilicon & 730 & ? \\ \hline
 \specialcell{ACTV after \\ Pre-Dep} & 5 & 5\e{22} \\ \hline
@@ -316,7 +342,7 @@ c.inp))]
 I ran the files provided to us by Wei-chang on one of the eecs linux servers that had tusprem-4 installed. I only changed input/output directories in the script files to get them to work properly. Here is the resulting figure that is plotted after compiling and running the example NMOS.
 \begin{figure}[H]
 \centering
-\includegraphics[width=325pt]{calcs/Screenshot from 2014-11-28 18:56:49.png}
+\includegraphics[width=325pt]{calcs/bonus1.png}
 \caption{tsuprem4 generated NMOS example process}
 \end{figure}
 
