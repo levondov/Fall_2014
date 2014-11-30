@@ -123,13 +123,75 @@ over/underetch? Why?} \\
 \textbf{Polysilicon} - Overetched. This was overetched in order to \\
 \textbf{Gate Oxide} - Overetched. This was overetched in order to keep the source/drain clear. \\
 \textbf{Intermed Oxide} - Overetched. This is because we want to make sure our contact holes are open before metalization. If the contact holes are blocked by oxide, our device will not function. \\
-\textbf{Aluminum} - Underetched. \\ \\ 
+\textbf{Aluminum} - Overetched. This is done so contacts above the source/drain do not touch. \\ \\ 
 \textbf{Describe how the verniers are used to measure misalignment. Using diagrams may
 help. Were any layers misaligned intentionally? For each pair of verniers (ACTVPOLY,
 ACTV-CONT, POLY-CONT, CONT-METL), describe how far the marks
 may be misaligned in terms of device function. (6 Points)} \\
 
-\subsection{}
+A vernier system usually looks like the figure below.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=225pt]{calcs/vernier1.pdf}};
+\draw [red] (5.2,6.6) circle (0.5cm);
+\draw [red] (5.9,6.6) -- (9.4,6.6);
+\node at (10,6.6) {\textcolor{black}{\Large{start}}};
+\draw [red] (5.2,2.8) circle (0.5cm);
+\draw [red] (5.9,2.8) -- (9.4,2.8);
+\node at (10,2.8) {\textcolor{black}{\Large{stop}}};
+\end{tikzpicture}
+\caption{Typical vernier system.}
+\end{figure}
+The way vernier systems work is by aligning the square spacings in the middle. For our case, a spacing distance corresponds to 0.2 $\mu$m. Now more than likely the vernier spacing is not going to be perfect (like above), and as a result, you will have to calculate the misalignment by counting the spacings. To calculate the spacing, we start where the alignment between the verniers is perfect, this is circled in the above picture where it says 'start'. Now we count the number of spacings from the starting position until we hit alignment again, this is marked by 'stop' in the figure above. For the figure above, we count 5 spacings between alignment and since each spacing corresponds to 0.2 $\mu$m, this means we have a total misalignment of $0.2*5 = 1\,\mu$m. Now if you know exactly how much misalignment there was for a certain mask, you can repeat this same misalignment intentionally for the next mask in order to have the two masks aligned.
+
+\subsection{Batch Processing Steps}
+
+\textbf{List and concisely describe the possible problems that could have occurred during
+the batch fabrication steps.} \\
+\textbf{What were the sources of the problems, and how could you avoid them? How do
+you expect these deviations to affect the performance/function and cross-section of
+the device? List the types of monitoring measurements from Part A taken during
+each step (7 Points)} \\
+
+\textbf{W2: Field Oxidation}
+\begin{itemize}
+\item Thermal shock can occur when placing the wafer into the furnace. Also the time of oxidation could have been wrong and resulted in a different amount of oxide being grown.
+\item To fix the thermal shock problem we slowly placing the wafer into the furnace at a rate of 1 inch / 10 seconds. Using the nanospec we measured the oxide film thickness to make sure the right amount was grown.
+\end{itemize}
+
+\textbf{W4: Gate Oxidation}
+\begin{itemize}
+\item test
+\end{itemize}
+
+\textbf{W5: Poly Deposition}
+\begin{itemize}
+\item test
+\end{itemize}
+
+\textbf{W7a: Source-Drain Prediffusion}
+\begin{itemize}
+\item test
+\end{itemize}
+
+\textbf{W7b: Drive-In \& Intermediate Oxidation}
+\begin{itemize}
+\item test
+\end{itemize}
+
+\textbf{W9: Aluminum Evaporation}
+\begin{itemize}
+\item test
+\end{itemize}
+
+\textbf{W10: Sintering}
+\begin{itemize}
+\item test
+\end{itemize}
+
+
 \subsection{}
 \section{Calculations}
 a) Film Thickness

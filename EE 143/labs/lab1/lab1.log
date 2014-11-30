@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  29 NOV 2014 14:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  29 NOV 2014 17:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1567,110 +1567,122 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--131
 
  []
 
-[1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 223.
 
+pdfTeX warning: pdflatex (file ./calcs/vernier1.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<calcs/vernier1.pdf, id=71, 203.76125pt x 237.88875pt>
+File: calcs/vernier1.pdf Graphic file (type pdf)
+
+<use calcs/vernier1.pdf>
+Package pdftex.def Info: calcs/vernier1.pdf used on input line 137.
+(pdftex.def)             Requested size: 225.0pt x 262.69841pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 152--157
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 160.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 223.
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.225 \begin{figure}[H]
-                       
-<dope_profile/profile1.pdf, id=99, 578.16pt x 433.62pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 160.
+ [2 <./calcs/vernier1.pdf>] [3] <dope_profile/profile1.pdf, id=114, 578.16pt x 
+433.62pt>
 File: dope_profile/profile1.pdf Graphic file (type pdf)
 
 <use dope_profile/profile1.pdf>
-Package pdftex.def Info: dope_profile/profile1.pdf used on input line 228.
+Package pdftex.def Info: dope_profile/profile1.pdf used on input line 290.
 (pdftex.def)             Requested size: 350.0pt x 262.4964pt.
- [3pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.252 
-       <./dope_profile/profile1.pdf>] [4pdfTeX warning (ext4): destination with
- the same identifier (name{figure.5}) has been already used, duplicate ignored
+l.301 \end{itemize}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.5}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.295 
+l.301 \end{itemize}
+                    <./dope_profile/profile1.pdf>] [5pdfTeX warning (ext4): des
+tination with the same identifier (name{figure.6}) has been already used, dupli
+cate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.352 
       ]
-Underfull \hbox (badness 10000) in paragraph at lines 302--302
+Underfull \hbox (badness 10000) in paragraph at lines 364--364
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--321
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
 
  []
 
-<calcs/bonus1.png, id=155, 1313.90875pt x 699.61375pt>
+[6] <calcs/bonus1.png, id=175, 1313.90875pt x 699.61375pt>
 File: calcs/bonus1.png Graphic file (type png)
- <use calcs/bonus1.png>
-Package pdftex.def Info: calcs/bonus1.png used on input line 348.
+
+<use calcs/bonus1.png>
+Package pdftex.def Info: calcs/bonus1.png used on input line 410.
 (pdftex.def)             Requested size: 325.0pt x 173.04552pt.
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 416--416
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--378
+Underfull \hbox (badness 10000) in paragraph at lines 438--440
+
+ []
+
+[7 <./calcs/bonus1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 441--443
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--381
+Underfull \hbox (badness 10000) in paragraph at lines 488--491
 
  []
 
-[6 <./calcs/bonus1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 426--429
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 437--439
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 463--465
-
- []
-
-No file lab1.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 519.
 [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 519.
+Underfull \hbox (badness 10000) in paragraph at lines 499--501
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--527
+
+ []
+
+[9]
+No file lab1.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 581.
+[10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 581.
  (./lab1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 519.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 519.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 581.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 581.
 Package rerunfilecheck Info: File `lab1.out' has not changed.
-(rerunfilecheck)             Checksum: CA88ED378FFCC47974357D1E6B400D82;907.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 519.
+(rerunfilecheck)             Checksum: 6BA9F137D849AD5024638F931C20D74B;929.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 581.
  ) 
 Here is how much of TeX's memory you used:
- 32510 strings out of 493304
- 719889 string characters out of 6139872
- 821224 words of memory out of 5000000
- 35361 multiletter control sequences out of 15000+600000
+ 32528 strings out of 493304
+ 720218 string characters out of 6139872
+ 822228 words of memory out of 5000000
+ 35375 multiletter control sequences out of 15000+600000
  7986 words of font info for 30 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,19n,74p,10432b,862s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,74p,10432b,921s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -1678,16 +1690,17 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on lab1.pdf (8 pages, 233793 bytes).
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on lab1.pdf (10 pages, 288402 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 273 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
