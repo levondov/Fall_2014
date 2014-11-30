@@ -93,9 +93,155 @@
 %----------------------------------------------------------------------------------------
 
 \section{Profiles \& Layout}
-\subsection{}
-\subsection{}
-\subsection{}
+\subsection{MOSFET (test structure 8) cross-section}
+\textbf{Draw cross-sectional profiles of a MOSFET (test structure 8) after each of the steps}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw1.png}
+\caption{W1: Starting Wafer}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw2.png}
+\caption{W2: Field Oxidation}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw3note.png}
+\caption{W3: ACTV Photolithography and Etch}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw4.png}
+\caption{W4: Gate Oxidation}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw5anote.png}
+\caption{W5a: Anchor Opening Photolithography for MEMS}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw5b.png}
+\caption{W5b: Polysilicon CVD}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw6.png}
+\caption{W6: POLY Lithography and Etch, Source/Drain Clear}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw7a.png}
+\caption{W7a: Spin-On Glass + Sourace/Drain Pre-diffusion}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw7b.png}
+\caption{W7b: Source/Drain Drive-in + Intermediate Oxidation}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw8.png}
+\caption{W8: CONT Photolithograph and Etch}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw9note.png}
+\caption{W9: Aluminum Evaporation}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw10.png}
+\caption{W10: METL Photolithography + Etch}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw11note.png}
+\caption{W11: MEMS Comb-drive Structure Release Photolithography + Etch}
+\end{figure}
+
+\subsection{MOSFET (test structure 8) top-down view}
+\textbf{Draw top views of the same thin-oxide MOSFET (test structure 8) after each of the
+four photolithography steps. [ACTV, POLY, CONT, METL] (4 Points)}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFET_TOPDOWN.png}
+\caption{Top-down view of the MOSFET (test structure 8)}
+\end{figure}
+
+\subsection{MEMS cross-section (test structure 22)}
+\textbf{Draw cross-sectional profiles of the comb-drive (MEMS - test structure 22) after
+each of the 12 major processing steps, in the same fashion that you did for the
+MOSFET. See the diagram below for the exact cross-sections in question. The line
+runs through the anchor hole of the polystructure. (5 Points)}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw1.png}
+\caption{}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw2.png}
+\caption{}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw3.png}
+\caption{}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw4.png}
+\caption{}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw5a.png}
+\caption{}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw5b.png}
+\caption{}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw6.png}
+\caption{}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw7a.png}
+\caption{}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw7b.png}
+\caption{}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw8.png}
+\caption{}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw9.png}
+\caption{}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw10.png}
+\caption{}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=350pt]{CrossSections/MEMSlabprofiles/MEMSw11.png}
+\caption{}
+\end{figure}
+
+
 \section{Process Procedures}
 \subsection{Process Monitoring Measurements}
 
@@ -149,7 +295,7 @@ The way vernier systems work is by aligning the square spacings in the middle. F
 \subsection{Batch Processing Steps}
 
 \textbf{List and concisely describe the possible problems that could have occurred during
-the batch fabrication steps} \\
+the batch fabrication steps.} \\
 \textbf{What were the sources of the problems, and how could you avoid them? How do
 you expect these deviations to affect the performance/function and cross-section of
 the device? List the types of monitoring measurements from Part A taken during
@@ -163,17 +309,19 @@ each step (7 Points)} \\
 
 \textbf{W4: Gate Oxidation}
 \begin{itemize}
-\item test
+\item Depending on the cleaness of the clean room, particles and dust can get onto the gate oxide causing problems. 
+\item Keeping the wafer inside a dark/clean box will help shield it from particles in the air.
 \end{itemize}
 
 \textbf{W5: Poly Deposition}
 \begin{itemize}
-\item test
+\item Poly deposition takes a long time. This is because a LPCVD method is used by the nanolab to deposit the poly.
 \end{itemize}
 
 \textbf{W7a: Source-Drain Prediffusion}
 \begin{itemize}
-\item test
+\item The dose rate is not well controlled and uniformity is not very good. Also since we are using diffusion, there is a max concentration rate because of the solid solubility limited reactions. 
+\item One way to overcome the uniformity and dose rate problems is to use ion implantation instead of prediffusion. Also for dose rate, we use control wafers to measure resistivity.
 \end{itemize}
 
 \textbf{W7b: Drive-In \& Intermediate Oxidation}
