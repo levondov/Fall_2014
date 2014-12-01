@@ -392,6 +392,7 @@ Aluminum &  2520 & 21 & 1.4 & $\sim5$ & 360 \\ \hline
 
 \end{tabular}
 \caption{Linewidth measurements and etch times used during lab. The theoretical etch times were calculated with etch rates and film thicknesses.}
+\label{fig:fig31}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{description}[style = nextline]
@@ -577,7 +578,7 @@ The lab uses positive photoresist. The lithography machine uses a light that has
 \item[2) What is the purpose of baking the wafers at 120 $\degree$C before depositing HMDS? What
 is the purpose of the 90 $\degree$C bake after spinning on photoresist? What happens if the
 soft bake is too hot and too long (say 120 $\degree$C, 5 minutes)?]
-The purpose of baking the wafers at 120$\degree$C before depositing HMDS is to remove excess environmental moisture that has accumulated on the wafer. The purpose of the 90$\degree$C bake after spinning on photoresist is to evaporate the solvent and make it less sticky. If the soft bake is too long, the photoactive component of the PR may start to decompose and the PR may become less soluable in the developer. 
+The purpose of baking the wafers at 120$\degree$C before depositing HMDS is to remove excess environmental moisture that has accumulated on the wafer. The purpose of the 90$\degree$C bake after spinning on photoresist is to evaporate the solvent and make it less sticky. If the soft bake is too long, the photoactive component of the PR may start to decompose and the PR may become less soluable in the developer.  
 
 \item[3) What is the purpose of hard bake? What happens if we skip this step? What may
 happen if the bake is done at a temperature above 120 $\degree$C (say 200 $\degree$C)?]
@@ -597,6 +598,7 @@ Wet oxidation has a higher growth rate but a tendency to create dangling bonds a
 two ways to determine etch time empirically from lab measurements, when you
 etch the layers. (Hint: these methods include visual cues.). How close are the
 experimental and the theoretically calculated values?]
+Given a theoretical etch rate for a material, we would figure out the depth we want to etch and wheather the etch is anisotropic or isotropic. Knowing the depth we want to etch and a etch rate, we can calculate how long we would need to etch. A good way to determine etch time empirically is to look at the physical change on the wafer surface; this will most likely be a distinct color change across the wafer. A second way would be to measure line widths on the masks. You can measure a 2 $\mu$m before and after etching in order to determine how much you actually etched. In order to see how etch rates compare see Figure \textcolor{blue}{\ref{fig:fig31}}.
 
 \item[7) Before n+ deposition (prior to SOG spinning), we clean in Piranha but not in HF.
 Before gate oxidation, we clean in both. Why the difference?]
@@ -615,6 +617,7 @@ Etch selectivity is the relative difference in etch rates for given materials on
 \item[11) Why do we first use the roughing pump and then the diffusion pump when pumping
 down the aluminum deposition system? Why must the foreline pressure be kept
 below 100 mTorr?]
+Since the diffusion pump cannot exhaust against atmospheric pressure, we must first turn on the roughing mechanical pump to sweep the majority of the air out of the system before turning on the diffusion pump. The diffusion pump and roughing pump have pressure limits of $10^{-7}$ Torr and 10 mTorr. The foreline valve connects the diffusion pump and the roughing pump. If the foreline pressure is not kept below 100 mTorr, the diffusion pump will not be able to compress incoming gas to its rated efficiency.
 
 \item[12) What is the Al etchant composed of? What happens if you use it at room
 temperature? What is the purpose of sintering? What will result if sintering step is
@@ -625,7 +628,7 @@ Al etchant has a composition of 80\% Phosphoric acid, 10\% H2, 5\% acetic acid, 
 \item[13) Briefly explain the mechanism of Xe$\text{F}_2$ etching. Is the etch isotropic or
 anisotropic? In an integrated CMOS/MEMS process, is there any consequence to
 using KOH instead of Xe$\text{F}_2$ for etch?]
-XeF2 gas is absorbed by the silicon surface, where it breaks down into xenon and fluoride gas. The fluoride gas reacts with the silicon to form SiF2 gas, and both the xenon and SiF2 gas are released back into the air. XeF2 etching is isotropic. Using KOH as an etchant instead of XeF2 has two consequences. First, it is anisotropic and therefore less efficient at undercutting the beam. Secondly, it is a wet etch and liquid etchants can cause the freed structure to stick to the substrate. 
+XeF2 gas is absorbed by the silicon surface, where it breaks down into xenon and fluoride gas. The fluoride gas reacts with the silicon to form SiF2 gas, and both the xenon and SiF2 gas are released back into the air. XeF2 etching is isotropic. Using KOH as an etchant instead of XeF2 has two consequences. First, it is anisotropic and therefore less efficient at undercutting the beam. Secondly, it is a wet etch and liquid etchants can cause the freed structure to stick to the substrate due to surface tension of the liquid while drying. 
 
 \item[14) . What would happen if a thick oxide film was left on the wafers as it went into the
 Xe$\text{F}_2$ etching step? ]
@@ -633,7 +636,7 @@ Since XeF2 is highly selective against SiO2, the structure would not be freed as
 
 \item[15) Identify two of the 11 major processing steps that are unnecessary to fabricate a
 functional oxide cantilever beam. Why are they unnecessary?]
-Gate oxidation and S/D deposition are unnecessary to fabricating a functional oxide cantilever beam. The cantilever requires no gate so any gate oxide grown during this step must later be removed, and doping plays no part in the functioning of a cantilever device, so S/D deposition can also be skipped.
+Gate oxidation and S/D deposition are unnecessary to fabricating a functional oxide cantilever beam. The cantilever requires no gate so any gate oxide grown during this step must later be removed, and doping plays no part in the functioning of a cantilever device, so S/D deposition can also be skipped if fabricating a cantilever beam.
 
 \end{description}
 
@@ -651,6 +654,8 @@ I ran the files provided to us by Wei-chang on one of the eecs linux servers tha
 
 \item[2) Describe an alternate method for doing one of the process steps (i.e. LOCOS instead
 of Field Oxide, Sputtering instead of Evaporation, etc) and the tradeoffs.]
+When performing photolithography, projection printing can be used instead of contact printing as was used in the lab. Unlike contact printing, where the mask is directly in contact with the wafer for exposure, projection printing positions the mask at a distance from the wafer and utilizes multiple lens to focus light on a single die. Projection printing would have poorer resolution than that of the contact printing performed in lab. It would also be less desirable for creating MEMS devices due to the inability to expose large topographies. However, there would be less risk of contamination from direct contact with the mask for multiple exposures, and the single-die exposure does not require as small of a minimum mask feature size. As a result, projection printing would be cheaper as a whole.
+
 \end{description}
 
 \section{Appendix}
