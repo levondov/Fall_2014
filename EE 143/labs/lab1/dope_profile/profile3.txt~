@@ -1,4 +1,6 @@
-  Y (microns)    log10(active(boron))    Material
+  Y (microns)   log10(active(boron))    Material
+    -0.24063    5.00000e+00    polysilicon 
+     0.15937    5.00000e+00    polysilicon 
      0.15937    1.37795e+01    oxide       
      0.24900    1.51126e+01    oxide       
      0.24900    1.48427e+01    silicon     
@@ -31,4 +33,4 @@
     61.36171    5.00000e+00    silicon     
     90.54872    5.00000e+00    silicon     
    134.32922    5.00000e+00    silicon     
-   200.00000    5.00000e+00    silicon  
+   200.00000    5.00000e+00    silicon 

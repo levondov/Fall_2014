@@ -1,3 +1,15 @@
+$ Initialization 
+Initialize <100> material=silicon Phosphorus=8e14 width=1.5 dX=0.005
+
+$ Blanket implant here
+Implant B11 Energy=60 Dose=3e12
+
+$ plotting
+Select z=log10(active(boron))
+Plot.1d
+Print.1d
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $ field oxide
 
 $ Initialization 
@@ -26,14 +38,91 @@ $ Blanket implant here
 Implant B11 Energy=60 Dose=3e12
 
 $ 5-80-5 oxidation
+Diffusion Time= 35 Temperature= 800 T.Rate=+5.714 Nitrogen
+Diffusion Time=5 Temperature=1000 DryO2
+Diffusion Time=80 CONTINUE Temperature=1000 WetO2
+Diffusion Time=5 CONTINUE Temperature=1000 DryO2
+
+ETCH       OXIDE        TRAP
+
 Diffusion Time= 35 Temperature= 1100 T.Rate=+5.714 Nitrogen
 Diffusion Time=45 Temperature=1100 DryO2
-
 
 $ plotting
 Select z=log10(active(boron))
 Plot.1d
 Print.1d
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$ Poly Deposition
+
+$ Initialization 
+Initialize <100> material=silicon Phosphorus=8e14 width=3 dX=0.005
+
+$ Blanket implant here
+Implant B11 Energy=60 Dose=3e12
+
+$ 5-80-5 oxidation
+Diffusion Time= 35 Temperature= 800 T.Rate=+5.714 Nitrogen
+Diffusion Time=5 CONTINUE Temperature=1000 DryO2
+Diffusion Time=80 CONTINUE Temperature=1000 WetO2
+Diffusion Time=5 CONTINUE Temperature=1000 DryO2
+
+ETCH       OXIDE        TRAP
+
+Diffusion Time= 35 Temperature= 1100 T.Rate=+5.714 Nitrogen
+Diffusion Time=45 CONTINUE Temperature=1100 DryO2
+
+DEPOSIT   POLYSILICON  THICK=0.4
+
+
+$ plotting
+Select z=log10(boron)
+Plot.1d
+Print.1d
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$ Pre diffusion & Drive-in
+
+$ Initialization 
+Initialize <100> material=silicon Phosphorus=8e14 width=3 dX=0.005
+
+$ Blanket implant here
+Implant B11 Energy=60 Dose=3e12
+
+$ 5-80-5 oxidation
+Diffusion Time= 35 Temperature= 800 T.Rate=+5.714 Nitrogen
+Diffusion Time=5 CONTINUE Temperature=1000 DryO2
+Diffusion Time=80 CONTINUE Temperature=1000 WetO2
+Diffusion Time=5 CONTINUE Temperature=1000 DryO2
+
+ETCH       OXIDE        TRAP
+
+Diffusion Time= 35 Temperature= 1100 T.Rate=+5.714 Nitrogen
+Diffusion Time=45 CONTINUE Temperature=1100 DryO2
+
+DEPOSIT   POLYSILICON  THICK=0.4
+
+ETCH	POLY	TRAP
+ETCH 	OXIDE	TRAP
+
+$PSG
+Deposit Oxide Thickness = .320
+
+Diffusion Time=5 CONTINUE Temperature=1050 Boron=5e22
+
+Diffusion Time= 35 Temperature= 800 T.Rate=+5.714 Nitrogen
+Diffusion Time=12 CONTINUE Temperature=1050 WetO2
+Diffusion Time=25 CONTINUE Temperature=1050 Boron=5.9e15
+
+$ plotting
+Select z=log10(boron)
+Plot.1d
+Print.1d
+
+
+
+
+
 
 Print Layers
 

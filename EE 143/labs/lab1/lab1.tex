@@ -327,16 +327,19 @@ each step (7 Points)} \\
 \textbf{W7b: Drive-In \& Intermediate Oxidation}
 \begin{itemize}
 \item test
+\item test
 \end{itemize}
 
 \textbf{W9: Aluminum Evaporation}
 \begin{itemize}
-\item test
+\item Pressure not pumping below a certain amount (e.g. 1e-4 torr). No aluminum being evaporation onto a wafer.
+\item If there is not aluminum being evaporated then the tungsten coal might be contaminated and should be changed. If the pumping is not reaching certain pressures then there might be a leak somewhere. Make sure to clean the evaporator and check for any leaks.
 \end{itemize}
 
 \textbf{W10: Sintering}
 \begin{itemize}
-\item test
+\item Having to high of a temperature can cause the silicon to diffuse into the aluminum contacts. As a result, spikes can form inside the source and drain. If these speaks go all the way through the heavily doped source/drain into the silicon substrate, the device is dead.
+\item One way to avoid this is to have 1\% silicon already diffused in the aluminum before evaporation. This causes the aluminum to reach its solid solubility limit and won't allow more silicon to diffuse in creating spikes.
 \end{itemize}
 
 
@@ -427,26 +430,109 @@ sheet resistance measurements made in lab. (2 points)]
 Refer to Figure \textcolor{blue}{\ref{fig:sheet}}
 
 \item[4) Plot or sketch the change of dopant profile from the silicon surface through the source-drain after each thermal step. Quantitatively label significant points such as Peak concentration, Peak Width, Junction Depth. Show movement of the Silicon-Silicon Dioxide interface and qualitatively show non-ideal effects such as dopant redistribution during oxidation. (11 points)]
-The profiles were all created in Tsuprem-4 using the EE143 process flow.
+The profiles were all created in Tsuprem-4 using the EE143 process flow and verified by hand calculations. The oxide growth and dopand concentrations were compared with the values calculated for other questions and are reasonably close enough to be accurate. Note that tsuprem4 takes into account a lot of other things that don't make it into the hands calculations. See Appendix \textcolor{blue}{\ref{sec:dopefiles}} for the script file used to generate these plots.
+
+\begin{itemize}
+\item After initial silicon implant
+\end{itemize}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=350pt]{dope_profile/profile0.pdf}};
+\node at (6.1,2.5) {\textbf{Si}};
+\node at (1.0,7.9) {17.34};
+\end{tikzpicture}
+\caption{Doping profile of the bare silicon before any oxidation occurs, but after the original implant that occurs.}
+\label{fig:doping0}
+\end{figure}
 
 \begin{itemize} 
-\item Field Oxidation 
+\item After field Oxidation 
 \end{itemize}
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
 \node at (5,5) {\includegraphics[width=350pt]{dope_profile/profile1.pdf}};
-\node at (1.1,2.5) {\textbf{Si$\text{O}_2$}};
-\node at (2.5,2.5) {\textbf{Si}};
+\node at (5.1,2.5) {\textbf{Si$\text{O}_2$}};
+\node at (7,2.5) {\textbf{Si}};
 \node at (1.0,7.6) {16.74};
+\draw [<->] (5.15,5) -- (6.15,5);
+\node at (5,4.5) {0.2104};
 \end{tikzpicture}
-\caption{Dopant profile with only field oxide. The Si-Si$\text{O}_2$ interface occurs at 0.2104$\mu$m. There was about 500 nm of field oxide deposited here. The peak concentration is roughly ${10}^{16.74}$.}
+\caption{Dopant profile with only field oxide. The Si-Si$\text{O}_2$ interface occurs at 0.2104$\mu$m. There was about 500 nm of field oxide deposited here. The peak concentration is roughly ${10}^{16.74}$. Note the dopant redistribution effects evident from the original distribution in Figure 32.}
 \label{fig:doping1}
 \end{figure}
 
 \begin{itemize} 
 \item Gate Oxidation 
 \end{itemize}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=350pt]{dope_profile/profile2.pdf}};
+\node at (5.1,2.5) {\textbf{Si$\text{O}_2$}};
+\draw [->] (5.15,2.7) -- (6.2,3.5);
+\node at (7,2.5) {\textbf{Si}};
+\node at (1.0,7.2) {15.16};
+\draw [<->] (5.15,5) -- (6.35,5);
+\node at (5,4.5) {0.2490};
+\end{tikzpicture}
+\caption{Dopant profile with after gate oxide. The Si-Si$\text{O}_2$ interface occurs at 0.2490$\mu$m. There was about 86 nm of gate oxide deposited here. The peak concentration is roughly ${10}^{15.16}$. Note the drastic dopant redistribution effects.}
+\label{fig:doping2}
+\end{figure}
+
+\begin{itemize}
+\item Poly-Deposition
+\end{itemize}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=350pt]{dope_profile/profile3.pdf}};
+\node at (6.2,3.3) {\textbf{Si$\text{O}_2$}};
+\node at (5,3) {\textbf{Poly}};
+\node at (7,2.5) {\textbf{Si}};
+\node at (1.0,7.2) {15.16};
+\draw [<->] (5.15,5) -- (6.35,5);
+\node at (5,4.5) {0.2490};
+\end{tikzpicture}
+\caption{Dopant profile after Poly deposition. The Si-Si$\text{O}_2$ interface occurs at 0.2490$\mu$m. 400 nm of Poly was depositied. The peak concentration is roughly ${10}^{15.16}$. Note the drastic dopant redistribution effects.}
+\label{fig:doping3}
+\end{figure}
+
+\begin{itemize}
+\item Pre-Deposition
+\end{itemize}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=350pt]{dope_profile/profile4.pdf}};
+\node at (7,2.5) {\textbf{Si}};
+
+\node at (1.0,7.2) {15.03};
+\draw [<->] (3.55,5) -- (4.35,5);
+\node at (3,4.5) {0.2490};
+\end{tikzpicture}
+\caption{Dopant profile after Poly deposition. The Si-Si$\text{O}_2$ interface occurs at 0.2490$\mu$m. 400 nm of Poly was depositied. The peak concentration is roughly ${10}^{15.16}$. Note the drastic dopant redistribution effects.}
+\label{fig:doping4}
+\end{figure}
+
+\begin{itemize}
+\item Drive-in \& Intermediate oxide
+\end{itemize}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=350pt]{dope_profile/profile5.pdf}};
+\node at (7,2.5) {\textbf{Si}};
+\node at (3.9,3.3) {\textbf{Si$\text{O}_2$}};
+\node at (1.0,8.2) {21.4};
+\draw [<->] (3.55,5) -- (4.5,5);
+\node at (3.9,4.5) {0.2939};
+\end{tikzpicture}
+\caption{Dopant profile after drive-in. The Si-Si$\text{O}_2$ interface occurs at 0.2939$\mu$m. The peak concentration is roughly ${10}^{21.4}$..}
+\label{fig:doping5}
+\end{figure}
+
 
 \item[5) Lateral diffusion under the MOSFET gates. You may estimate. Justify estimation.
 (Theoretical). (2 points)]
@@ -667,9 +753,7 @@ x_j = 2\sqrt{D_2t_2\ln{\big((2N_o/\pi N_B)(\sqrt{t_1/t_2})\big)}} = 2\sqrt{(9.11
 \end{align*}
 
 \subsection{Dopant Profiles.}
-\begin{itemize}
-\item Field Oxide
-\end{itemize}
+\label{sec:dopefiles}
 According to the EE143 process flow, There was an initial blanket implant of B11 3E12$\text{cm}^{-3}$ on our $<100>$ wafer. Also our wafer had a resistivity of 14-16cm which corresponds to a background concentration of about 8E14$\text{cm}^{-3}$. Now for the field oxide, we used 5-80-5 minute dry,wet,dry oxidation to create about 500 nm of oxide. Putting all this information into Tsuprem-4 generates the plot in Figure \textcolor{blue}{\ref{fig:doping1}}. \\ \\
 Script file: 
 \begin{verbatim}
@@ -681,10 +765,35 @@ Initialize <100> material=silicon Phosphorus=8e14 width=1.5 dX=0.005
 $ Blanket implant here
 Implant B11 Energy=60 Dose=3e12
 
+$ Plot here for initial dopant profile before any oxidation
+
 $ 5-80-5 oxidation
 Diffusion Time=5 Temperature=1000 DryO2
 Diffusion Time=80 CONTINUE Temperature=1000 WetO2
 Diffusion Time=5 CONTINUE Temperature=1000 DryO2
+
+$ Plot here for dopant profile after field oxide
+
+ETCH       OXIDE        TRAP
+
+Diffusion Time= 35 Temperature= 1100 T.Rate=+5.714 Nitrogen
+Diffusion Time=45 CONTINUE Temperature=1100 DryO2
+
+$ Plot here for dopant profile after gate oxide
+
+DEPOSIT   POLYSILICON  THICK=0.4
+
+$ Plot here for dopant profile after poly deposition
+
+ETCH	POLY	TRAP
+ETCH 	OXIDE	TRAP
+
+$PSG
+Deposit Oxide Thickness = .320
+
+Diffusion Time=5 CONTINUE Temperature=1050 Boron=5e22
+
+$ Plot here for dopant profile after pre deposition
 
 $ plotting
 Select z=log10(active(boron))
