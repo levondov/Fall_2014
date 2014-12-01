@@ -326,8 +326,8 @@ each step (7 Points)} \\
 
 \textbf{W7b: Drive-In \& Intermediate Oxidation}
 \begin{itemize}
-\item test
-\item test
+\item The same problems that occur with prediffusion and oxide growth can occur here. The wrong amount of intermediate oxide can be grown which will cause problems later on when etching holes for the contacts.
+\item Using the nanoscope and control wafers to measure oxide growth will help prevent growing the wrong amount of an oxide film.
 \end{itemize}
 
 \textbf{W9: Aluminum Evaporation}
@@ -343,7 +343,9 @@ each step (7 Points)} \\
 \end{itemize}
 
 
-\subsection{}
+\subsection{Individual Processing Steps}
+
+
 \section{Calculations}
 a) Film Thickness
 \begin{figure}[H]
@@ -397,7 +399,7 @@ Aluminum &  2520 & 21 & 1.4 & $\sim5$ & 360 \\ \hline
 oxides (Include orientation dependence of oxidation rate but not impurity 
 dependence) (9 points)]
 For details on the theoretical oxide thickness calculations see Appendix \textcolor{blue}{\ref{sec:oxide}}.
-%NOTE REDO DRY OXIDE AND INCLUDE TAO OF 25nm!
+
 \begin{figure}[H]
 \centering
 \begin{tabular}{c || c | c | c}
@@ -406,6 +408,7 @@ Field Oxide & 505.8 & 477.2 & 5.65 \\ \hline
 Gate Oxide & 80.1 & 86.5 & 7.40  \\ \hline
 Intermed Oxide & 386.3 & 320 & 17.2 \\ \hline
 \end{tabular}
+\caption{Theoretical values refers to the values found in the lab processing flow while experimental values are what was actually calculated based on etch rate and actual film thickness. See Appendix \textcolor{blue}{\ref{sec:oxide}} for how to calculate oxide growth rates.}
 \end{figure}
 
 \item[2) Junction depths after pre-diffusion and drive-in (theoretical, assume only 
@@ -430,7 +433,7 @@ sheet resistance measurements made in lab. (2 points)]
 Refer to Figure \textcolor{blue}{\ref{fig:sheet}}
 
 \item[4) Plot or sketch the change of dopant profile from the silicon surface through the source-drain after each thermal step. Quantitatively label significant points such as Peak concentration, Peak Width, Junction Depth. Show movement of the Silicon-Silicon Dioxide interface and qualitatively show non-ideal effects such as dopant redistribution during oxidation. (11 points)]
-The profiles were all created in Tsuprem-4 using the EE143 process flow and verified by hand calculations. The oxide growth and dopand concentrations were compared with the values calculated for other questions and are reasonably close enough to be accurate. Note that tsuprem4 takes into account a lot of other things that don't make it into the hands calculations. See Appendix \textcolor{blue}{\ref{sec:dopefiles}} for the script file used to generate these plots.
+The profiles were all created in Tsuprem-4 using the EE143 process flow and verified by hand calculations. The oxide growth and dopand concentrations were compared with the values calculated for other questions and are reasonably close enough to be accurate. Note that tsuprem4 takes into account a lot of other things that don't make it into the hand calculations. See Appendix \textcolor{blue}{\ref{sec:dopefiles}} for the script file used to generate these plots.
 
 \begin{itemize}
 \item After initial silicon implant
