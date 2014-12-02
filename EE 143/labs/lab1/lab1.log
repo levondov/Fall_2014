@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  1 DEC 2014 20:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  1 DEC 2014 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1908,15 +1908,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1024.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1024.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1024.
 
-
-
-Package rerunfilecheck Warning: File `lab1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lab1.out':
-(rerunfilecheck)             Before: 5CD687A04FB76DEF487B6D83E955F456;1017
-(rerunfilecheck)             After:  52396154D473BDBCBC07AB25FF476E0D;974.
+Package rerunfilecheck Info: File `lab1.out' has not changed.
+(rerunfilecheck)             Checksum: 52396154D473BDBCBC07AB25FF476E0D;974.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1024.
  ) 
 Here is how much of TeX's memory you used:
@@ -1941,7 +1934,7 @@ amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on lab1.pdf (24 pages, 998123 bytes).
+Output written on lab1.pdf (24 pages, 997947 bytes).
 PDF statistics:
  673 PDF objects out of 1000 (max. 8388607)
  338 compressed objects within 4 object streams

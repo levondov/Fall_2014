@@ -105,7 +105,7 @@
 \begin{figure}[H]
 \centering
 \includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw2.png}
-\caption{W2: Field Oxidation}
+\caption{W2: Field Oxidation. Field oxide thickness is 500 nm.}
 \end{figure}
 \begin{figure}[H]
 \centering
@@ -115,7 +115,7 @@
 \begin{figure}[H]
 \centering
 \includegraphics[width=350pt]{CrossSections_Updates/MOSFETw4.png}
-\caption{W4: Gate Oxidation}
+\caption{W4: Gate Oxidation. Gate oxide thickness is about 80 nm.}
 \end{figure}
 \begin{figure}[H]
 \centering
@@ -125,7 +125,7 @@
 \begin{figure}[H]
 \centering
 \includegraphics[width=350pt]{CrossSections/MOSFETlabprofiles/MOSFETw5b.png}
-\caption{W5b: Polysilicon CVD}
+\caption{W5b: Polysilicon CVD. The poly thickness is about 350 nm.}
 \end{figure}
 \begin{figure}[H]
 \centering
@@ -140,7 +140,7 @@
 \begin{figure}[H]
 \centering
 \includegraphics[width=350pt]{CrossSections_Updates/MOSFETw7b.png}
-\caption{W7b: Source/Drain Drive-in + Intermediate Oxidation}
+\caption{W7b: Source/Drain Drive-in + Intermediate Oxidation. The intermediate oxide thickness is 385 nm.}
 \end{figure}
 \begin{figure}[H]
 \centering
@@ -172,7 +172,7 @@ four photolithography steps. [ACTV, POLY, CONT, METL] (4 Points)}
 \caption{Top-down view of the MOSFET (test structure 8)}
 \end{figure}
 
-\subsection{MEMS cross-section (test structure 22)}
+\subsection{Comb-drive MEMS Structure Cross Section}
 \textbf{Draw cross-sectional profiles of the comb-drive (MEMS - test structure 22) after
 each of the 12 major processing steps, in the same fashion that you did for the
 MOSFET. See the diagram below for the exact cross-sections in question. The line
@@ -534,7 +534,7 @@ Gate Oxide & 80.1 & 86.5 & 7.40 & 3628 & 4000 & 10 \\ \hline
 Intermed Oxide & 386.3 & 320 & 17.2 & 2749 & 1869 & 47 \\ \hline
 Aluminum & 800 & N/A & N/A & 2088 & 2520 & 21 \\ \hline
 \end{tabular}
-\caption{film thicknesses and line widths for various thin films. N/A represents data that was not available.}
+\caption{Film thicknesses and line widths for various thin films. N/A represents data that was not available.}
 \end{figure}
 
 b) Sheet Resistance 
