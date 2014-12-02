@@ -38,7 +38,7 @@ plt.savefig("salt_full.pdf")
 
 plt.figure()
 plt.xlabel("Temperature (K))")
-plt.ylabel("Resistance (k$\Omega$)")
+plt.ylabel("Resistance (m$\Omega$)")
 plt.title("Metal Resistance")
 plt.grid(True)
 
@@ -119,9 +119,16 @@ print(slope2/1.38e-23)
 E = slope1/1.38e-23
 print(-2*(slope1*1.38e-23+E))
 
-
-
-
+############################################3
+slope1m = (data1[0,1] - data1[1,1])/(temp_metal[0]-temp_metal[1])
+slope2m = (data1[0,2] - data1[1,2])/(temp_metal[0]-temp_metal[1])
+slope3m = (data1[0,3] - data1[1,3])/(temp_metal[0]-temp_metal[1])
+slope4m = (data1[0,4] - data1[1,4])/(temp_metal[0]-temp_metal[1])
+slope5m = (data1[0,5] - data1[1,5])/(temp_metal[0]-temp_metal[1])
+ave = np.mean([slope1m,slope2m,slope3m,slope4m,slope5m])
+sd = np.std([slope1m,slope2m,slope3m,slope4m,slope5m])
+err = sd/np.sqrt(5)
+print(ave,err,sd)
 
 
 

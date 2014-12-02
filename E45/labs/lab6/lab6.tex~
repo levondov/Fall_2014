@@ -80,7 +80,7 @@
 
 \section{Objective}
 
-N/A
+The objective of this lab is to find out the relationship between temperature change and material resistivity. The materials being used for this lab are metals, semiconductors, and insulators. Theoretical calculations show what a temperature vs resistivity plot would look like based on the materials fermi levels. This experiment aims to confirm these theoretical laws by grabbing resistivity data across a wide range of temperatures ($-77K\rightarrow 373K$) in order to create plots that show certain effects in the fermi diagrams such as the large energy band gap in semiconductors. These plots will then allow us to calculate experimental band gap Energies and test them against the known values.
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
@@ -189,7 +189,7 @@ N/A
 The resistivity will increase. This is because it is much harder for electrons to move through a material in the liquid phase rather than a solid phase. In the liquid phase, atoms move around a lot, and as a result, hinder the effectiveness of the electrons to make it across a material without running into something.
 
 \item[4) If you dope a metal A with another metal B where $\rho_B < \rho_A$, do you expect the resistivity of the alloy to increase or decrease? Why?]
-N/A
+Assuming metal A is 100\% pure. Adding another metal B will increase the total resitivity even if $\rho_B < \rho_A$. This is because diffusing the new metal B in A will create lots of defects in the alloy which makes it harder for electrons to move around thus causing resistivity to go up.
 
 \item[5) Plot ln (G) versus 1/T for the semiconducting sample studied in this lab.]
 Note the y axis units here. In the lab manual $\ln{G}$ was plotted with units of $\Omega^{-1}m^{-1}$. However, as we all know you cannot take a natural log of a number that has units because there is no physical meaning behind it; natural logs can only be used with unitless numbers. So I have added a constant. Instead we are plotting $\ln{G/G_0}$ where $G_0 = 1$ and has the same units as $G$. Thus there should be no units on the y axis of this plot.
@@ -232,8 +232,8 @@ See below plot.
 \end{figure}
 
 \item[10) What is the temperature corresponding to the change in slope of the ln (G) vs 1/T plot? If you don't observe any change in slope, what does that mean?]
-
-Looking at figure 9 the slope change occurs roughly in the middle of the graph as indicated by the red line. This corresponds to a temperature of $550\degree$C.
+%% FIGURE 3 description in lab manual.
+Looking at figure 9 the slope change occurs roughly in the middle of the graph as indicated by the red line. This corresponds to a temperature of $550\degree$C. If the slope does not become steeper afterwards then that means no Shottky defects ended up forming.
 
 \item[11) From your plot determine both $E_m$ and $W$ in eV.]
 From the lab manual [2] we know that the slope on the upper part of the graph in figure 9 should be equal to $-(E_m + [W/2])/k$ and the slope on the bottom part of the graph is equal to $-E_m/k$ where $k$ is boltmann's constant. Using linear regression on both parts of the plot in figure 9, slopes of -8.73\e{4}$K^{-1}$ and -1.76\e{5}$K^{-1}$ were calculated.
@@ -255,7 +255,9 @@ N/A
 \section{Conclusions}
 As a result of this investigation, the following conclusions can be drawn.
 \begin{enumerate}
-\item N/A
+\item We confirmed the energy band gap of Germaniam to within 15\% error using our experimental setup.
+\item For insulators, resistance goes down exponentially with an increase in temperature. Similarly semiconductors have their resistance go down but not as drastically as insulators with an increase in temperature. For metals, resistance goes up with an increase in temperature.
+
 \end{enumerate}
 
 %----------------------------------------------------------------------------------------
