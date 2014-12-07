@@ -74,17 +74,124 @@ plt.title("Diode reverse operation")
 plt.savefig("D7bplot.pdf")
 ## Device8a, plot 1
 plt.figure()
-device8a = np.genfromtxt('D8AIMG1.TXT.csv', delimiter=',',skip_header=113)
+device8a = np.genfromtxt('D8AIMG1.TXT.csv', delimiter=',',skip_header=113) #113
 start = 0;
 
 for i in range(0,np.size(device8a,0)):
 	if (device8a[i,0] < device8a[i-1,0]):
-		plt.plot(device8a[start:i-1,0],device8a[start:i-1,1])
+		plt.plot(device8a[start:i,0],device8a[start:i,1],'b')
 		start = i
 		
+plt.grid(True)
+plt.xlabel("VD (V)")
+plt.ylabel("ID (A)")
+plt.title("Mosfet 8a, Test 1 plot")
+plt.savefig("D8a1plot.pdf")
+## Device8b, plot 1
 plt.figure()
-plt.plot(device8a[:,0],device8a[:,1])
- 
+device8b = np.genfromtxt('D8BIMG1.TXT.csv', delimiter=',',skip_header=113) #113
+start = 0;
+
+for i in range(0,np.size(device8b,0)):
+	if (device8b[i,0] < device8b[i-1,0]):
+		plt.plot(device8b[start:i,0],device8b[start:i,1],'b')
+		start = i
+		
+plt.grid(True)
+plt.xlabel("VD (V)")
+plt.ylabel("ID (A)")
+plt.title("Mosfet 8b, Test 1 plot")
+plt.savefig("D8b1plot.pdf")
+## Device8c, plot 1
+plt.figure()
+device8c = np.genfromtxt('D8CIMG1.TXT.csv', delimiter=',',skip_header=113) #113
+start = 0;
+
+for i in range(0,np.size(device8c,0)):
+	if (device8c[i,0] < device8c[i-1,0]):
+		plt.plot(device8c[start:i,0],device8c[start:i,1],'b')
+		start = i
+		
+plt.grid(True)
+plt.xlabel("VD (V)")
+plt.ylabel("ID (A)")
+plt.title("Mosfet 8c, Test 1 plot")
+plt.savefig("D8c1plot.pdf")
+## Device8d, plot 1
+plt.figure()
+device8d = np.genfromtxt('D8DIMG1.TXT.csv', delimiter=',',skip_header=113) #113
+start = 0;
+
+for i in range(0,np.size(device8d,0)):
+	if (device8d[i,0] < device8d[i-1,0]):
+		plt.plot(device8d[start:i,0],device8d[start:i,1],'b')
+		start = i
+		
+plt.grid(True)
+plt.xlabel("VD (V)")
+plt.ylabel("ID (A)")
+plt.title("Mosfet 8d, Test 1 plot")
+plt.savefig("D8d1plot.pdf")
+## Device8a, plot 2
+plt.figure()
+device8a2 = np.genfromtxt('D8AIMG2.TXT.csv', delimiter=',',skip_header=113) #113
+start = 0;
+
+for i in range(0,np.size(device8a2,0)):
+	if (device8a2[i,0] < device8a2[i-1,0]):
+		plt.plot(device8a2[start:i,0],1000*device8a2[start:i,1],'b')
+		start = i
+		
+plt.grid(True)
+plt.xlabel("VG (V)")
+plt.ylabel("ID (mA)")
+plt.title("Mosfet 8a, Test 2 plot")
+plt.savefig("D8a2plot.pdf")
+## Device8b, plot 2
+plt.figure()
+device8b2 = np.genfromtxt('D8BIMG2.TXT.csv', delimiter=',',skip_header=113) #113
+start = 0;
+
+for i in range(0,np.size(device8b2,0)):
+	if (device8b2[i,0] < device8b2[i-1,0]):
+		plt.plot(device8b2[start:i,0],1000*device8b2[start:i,1],'b')
+		start = i
+		
+plt.grid(True)
+plt.xlabel("VG (V)")
+plt.ylabel("ID (mA)")
+plt.title("Mosfet 8b, Test 2 plot")
+plt.savefig("D8b2plot.pdf")
+## Device8c, plot 2
+plt.figure()
+device8c2 = np.genfromtxt('D8CIMG21.TXT.csv', delimiter=',',skip_header=113) #113
+start = 0;
+
+for i in range(0,np.size(device8c2,0)):
+	if (device8c2[i,0] < device8c2[i-1,0]):
+		plt.plot(device8c2[start:i,0],1000*device8c2[start:i,1],'b')
+		start = i
+		
+plt.grid(True)
+plt.xlabel("VG (V)")
+plt.ylabel("ID (mA)")
+plt.title("Mosfet 8c, Test 2 plot")
+plt.savefig("D8c2plot.pdf")
+## Device8d, plot 2
+plt.figure()
+device8d2 = np.genfromtxt('D8DIMG2.TXT.csv', delimiter=',',skip_header=113) #113
+start = 0;
+
+for i in range(0,np.size(device8d2,0)):
+	if (device8d2[i,0] < device8d2[i-1,0]):
+		plt.plot(device8d2[start:i,0],1000*device8d2[start:i,1],'b')
+		start = i
+		
+plt.grid(True)
+plt.xlabel("VG (V)")
+plt.ylabel("ID (mA)")
+plt.title("Mosfet 8d, Test 2 plot")
+plt.savefig("D8d2plot.pdf")
 
 
 
@@ -94,8 +201,4 @@ plt.plot(device8a[:,0],device8a[:,1])
 
 
 
-
-
-
-
-plt.show()
+#plt.show()

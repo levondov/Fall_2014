@@ -27,5 +27,7 @@
 \BOOKMARK [3][-]{subsubsection.1.7.3}{Extract the turn-on voltage and the series resistance}{subsection.1.7}% 27
 \BOOKMARK [2][-]{subsection.1.8}{MOSFETs of Varying Length, [8a-d]}{section.1}% 28
 \BOOKMARK [3][-]{subsubsection.1.8.1}{Measurement setups}{subsection.1.8}% 29
-\BOOKMARK [3][-]{subsubsection.1.8.2}{Plots of ID-VDS, sweeping VG}{subsection.1.8}% 30
-\BOOKMARK [1][-]{section.2}{References}{}% 31
+\BOOKMARK [3][-]{subsubsection.1.8.2}{Plots of ID-VD, sweeping VG}{subsection.1.8}% 30
+\BOOKMARK [3][-]{subsubsection.1.8.3}{Plots of ID-VG, sweeping VB}{subsection.1.8}% 31
+\BOOKMARK [2][-]{subsection.1.9}{MOSFETs of varying width [9a-c]}{section.1}% 32
+\BOOKMARK [1][-]{section.2}{References}{}% 33
