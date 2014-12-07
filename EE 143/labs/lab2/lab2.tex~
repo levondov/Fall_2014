@@ -199,6 +199,18 @@ ii. Extract metal-to-poly contact resistance
 \subsection{Gate Oxide Capacitor, 4} %%%%%%% Gate capacitor 4
 
 \subsubsection{Measurement Setup}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_setup/device4a2.pdf}};
+\node at (5,8) {Stage connector set to GND};
+\node at (3,5) {\textbf{A}};
+\draw[<->,thick] (3,4) -- (3,2.2);
+\node at (5,2){V sweep, -10 to 10 V, step 0.2 V, oscillation 0.02Hz, integration medium};
+\end{tikzpicture}
+\caption{Gate capacitor setup.}
+\end{figure}
+
 
 \subsubsection{C-V plot of gate oxide capacitor w/ lights ON}
 Minimum capacitance
@@ -210,6 +222,18 @@ minimum capacitance ...
 \subsection{Field Oxide Capacitor, 3} %%%%%%% Field Oxide Capacitors 3
 
 \subsubsection{Measurement Setup}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_setup/device3a2.pdf}};
+\node at (5,9) {Stage connector set to GND};
+\node at (5,5) {\textbf{A}};
+\draw[<->,thick] (5,4) -- (5,2.2);
+\node at (5,2){V sweep, -5 to 5 V, step 0.2 V, oscillation 0.02Hz, integration medium};
+\end{tikzpicture}
+\caption{Field oxide capacitor setup.}
+\end{figure}
+
 
 \subsubsection{C-V plot of field oxide capacitor}
 Minimum capacitance
@@ -225,6 +249,20 @@ stuff...
 \subsection{Intermediate Oxide Capacitors, 5} %%%%%%% Intermediate Oxide Capacitor 5
 
 \subsubsection{Measurement Setup}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_setup/device5a2.pdf}};
+\node at (5,5) {\textbf{A}};
+\node at (7.5,5) {\textbf{K}};
+\draw[<->,thick] (5,4) -- (5,2.2);
+\node at (5,2){V sweep, -5 to 0 V, step 0.2 V, oscillation 0.02Hz, integration medium};
+\draw[<->,thick] (7.5,4) -- (9,5);
+\node at (9,5.2) {GND};
+\end{tikzpicture}
+\caption{Intermediate oxide capacitor setup.}
+\end{figure}
+
 
 \subsubsection{C-V plot of intermediate oxide capacitor}
 
@@ -386,8 +424,197 @@ Calculate stuff here...
 \end{figure}
 
 Calculate stuff here...
+
+\subsection{MOSFETs of varying width [9a-c]}
+
+\subsubsection{Measurement setup}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+
+\node at (5,5) {\includegraphics[width=200pt]{Device_setup/device9a2.pdf}};
+\node at (15,5) {\includegraphics[width=200pt]{Device_setup/device9a2.pdf}};
+\node at (5,9) {\textbf{Test 1}};
+\node at (15,9) {\textbf{Test 2}};
+\node at (3.5,6) {\textbf{D}};
+\node at (7,6) {\textbf{S}};
+\node at (4.3,3.5) {\textbf{G}};
+\draw[<->,thick] (3.4,5) -- (3.4,2.3); % Drain
+\node at (3.5,2) {V sweep, 0 to 5 V, measure I, V};
+\draw[<->,thick] (7.1,5.5) -- (8,7.3); % source
+\node at (8,7.5) {constant};
+\draw[<->,thick] (5.5,3) -- (8,3) -- (8,3.3); % Gate
+\node at (8.5,3.6) {V sweep, 0 to 5 V, step size 1};
+\node at (5,8.5) {Stage connector is GND}; % Stage connector, B
+%%%%
+\node at (15,8.5) {Stage connector V sweep, 0 to -2 V, step size 2};
+\draw[<->,thick] (13.4,5) -- (11.5,6.4); % Drain
+\node at (11,6.6) {Constant, comp 0.05, measure I};
+\draw[<->,thick] (17.5,5) -- (17.5,3.7);
+\node at (17.6,3.5) {Constant};
+\draw[<->,thick] (15,3) -- (15,2) -- (11,2) -- (11,2.5);
+\node at (11.5,3) {V sweep, 0 to 12 V, measure V};
+\end{tikzpicture}
+\caption{Measurement setup for Mosfet 9a. The same setup is used for Mosfets 9a-c. The only difference is the channel widths which changes from 10 (9a) to 15 (9b) to 20 (9c) microns.}
+\end{figure}
+
+\subsubsection{Plots of $I_D$-$V_D$, sweeping $V_G$ }
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D9a1plot.pdf}};
+\end{tikzpicture}
+\caption{Test 1 for Mosfet 9a}
+\end{figure}
+
+Calculate stuff here... 
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D9b1plot.pdf}};
+\end{tikzpicture}
+\caption{Test 1 for Mosfet 9b}
+\end{figure}
+
+Calculate stuff here...
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D9c1plot.pdf}};
+\end{tikzpicture}
+\caption{Test 1 for Mosfet 9c}
+\end{figure}
+
+Calculate stuff here...
+
+\subsubsection{Plots of $I_D$-$V_G$, sweeping $V_B$}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D9a2plot.pdf}};
+\end{tikzpicture}
+\caption{Test 2 for Mosfet 9a}
+\end{figure}
+
+Calculate stuff here... 
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D9b2plot.pdf}};
+\end{tikzpicture}
+\caption{Test 2 for Mosfet 9b}
+\end{figure}
+
+Calculate stuff here...
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D9c2plot.pdf}};
+\end{tikzpicture}
+\caption{Test 2 for Mosfet 9c}
+\end{figure}
+
+Calculate stuff here...
+
+\subsection{Large MOSFET, 10}
+
+\subsubsection{Measurement setup}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+
+\node at (5,5) {\includegraphics[width=200pt]{Device_setup/device10a2.pdf}};
+\node at (15,5) {\includegraphics[width=200pt]{Device_setup/device10a2.pdf}};
+\node at (5,9) {\textbf{Test 1}};
+\node at (15,9) {\textbf{Test 2}};
+\node at (3.5,6) {\textbf{D}};
+\node at (7,6) {\textbf{S}};
+\node at (4.3,3.5) {\textbf{G}};
+\draw[<->,thick] (3,5) -- (3,2.3); % Drain
+\node at (3.5,1.9) {V sweep, 0 to 5 V, measure I, V};
+\draw[<->,thick] (7.1,5.5) -- (8,7.3); % source
+\node at (8,7.5) {constant};
+\draw[<->,thick] (5.5,3) -- (8,3) -- (8,3.3); % Gate
+\node at (8.5,3.6) {V sweep, 0 to 5 V, step size 1};
+\node at (5,8.5) {Stage connector is GND}; % Stage connector, B
+%%%%
+\node at (15,8.5) {Stage connector V sweep, 0 to -2 V, step size 2};
+\draw[<->,thick] (12.4,4.9) -- (11.5,6.4); % Drain
+\node at (11,6.5) {Constant, comp 0.05, measure I};
+\draw[<->,thick] (17.5,5) -- (17.5,3.7);
+\node at (17.6,3.5) {Constant};
+\draw[<->,thick] (15,3) -- (15,2) -- (11,2) -- (11,2.5);
+\node at (11.5,3) {V sweep, 0 to 12 V, measure V};
+\end{tikzpicture}
+\caption{Measurement setup for Mosfet 10. This mosfet has very large dimensions compared to others.}
+\end{figure}
+
+\subsubsection{Plots of $I_D$-$V_D$, sweeping $V_G$ }
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D101plot.pdf}};
+\end{tikzpicture}
+\caption{Test 1 for Mosfet 10}
+\end{figure}
+
+Calculate stuff here... 
+
+\subsubsection{Plots of $I_D$-$V_G$, sweeping $V_B$}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D102plot.pdf}};
+\end{tikzpicture}
+\caption{Test 2 for Mosfet 10}
+\end{figure}
+
+Calculate stuff here... 
+
+
+\subsection{Inverter, 14}
+
+\subsubsection{Measurement setup}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=350pt]{Device_setup/device14a2.pdf}};
+\node at (4.7,6.2) {\textbf{D}};
+\node at (4.7,3) {\textbf{S}};
+\node at (1.2,4) {\textbf{G}};
+\node at (6.6,5) {\textbf{B}};
+\draw[<->,thick] (4.8,6.4) -- (6,7); %Drain
+\node at (6,7.2) {V sweep, 5 to 15 V, step 5 V};
+\draw[<->,thick] (4.7,2.7) -- (4.7,1.5); %Source
+\node at (4.7,1.3) {Constant (GND)};
+\draw[<->,thick] (6.8,5) -- (7.8,5); %Base
+\node at (9.5,5) {Constant, measure V};
+\draw[<->,thick] (1.0,4) -- (0,3); %Gate
+\node at (-1,2.7) {V sweep, -5 to 5 V, measure V};
+\end{tikzpicture}
+\caption{Setup for the inverter. Note that the source is connected to a GND and not the stage connector.}
+\end{figure}
+
+\subsubsection{b. $V_{\text{in}}-V_{\text{out}}$ plot}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D14plot.pdf}};
+\end{tikzpicture}
+\caption{Plot for Inverter. Note both axis are in units of Volts.}
+\end{figure}
+
+\subsubsection{Estimate $V_M$}
+
+calculations here....
 %----------------------------------------------------------------------------------------
-%	SECTION 5
+%	SECTION References
 %----------------------------------------------------------------------------------------
 \section{References}
 \begin{enumerate}

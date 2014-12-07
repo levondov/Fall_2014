@@ -30,4 +30,15 @@
 \BOOKMARK [3][-]{subsubsection.1.8.2}{Plots of ID-VD, sweeping VG}{subsection.1.8}% 30
 \BOOKMARK [3][-]{subsubsection.1.8.3}{Plots of ID-VG, sweeping VB}{subsection.1.8}% 31
 \BOOKMARK [2][-]{subsection.1.9}{MOSFETs of varying width [9a-c]}{section.1}% 32
-\BOOKMARK [1][-]{section.2}{References}{}% 33
+\BOOKMARK [3][-]{subsubsection.1.9.1}{Measurement setup}{subsection.1.9}% 33
+\BOOKMARK [3][-]{subsubsection.1.9.2}{Plots of ID-VD, sweeping VG }{subsection.1.9}% 34
+\BOOKMARK [3][-]{subsubsection.1.9.3}{Plots of ID-VG, sweeping VB}{subsection.1.9}% 35
+\BOOKMARK [2][-]{subsection.1.10}{Large MOSFET, 10}{section.1}% 36
+\BOOKMARK [3][-]{subsubsection.1.10.1}{Measurement setup}{subsection.1.10}% 37
+\BOOKMARK [3][-]{subsubsection.1.10.2}{Plots of ID-VD, sweeping VG }{subsection.1.10}% 38
+\BOOKMARK [3][-]{subsubsection.1.10.3}{Plots of ID-VG, sweeping VB}{subsection.1.10}% 39
+\BOOKMARK [2][-]{subsection.1.11}{Inverter, 14}{section.1}% 40
+\BOOKMARK [3][-]{subsubsection.1.11.1}{Measurement setup}{subsection.1.11}% 41
+\BOOKMARK [3][-]{subsubsection.1.11.2}{b. Vin-Vout plot}{subsection.1.11}% 42
+\BOOKMARK [3][-]{subsubsection.1.11.3}{Estimate VM}{subsection.1.11}% 43
+\BOOKMARK [1][-]{section.2}{References}{}% 44
