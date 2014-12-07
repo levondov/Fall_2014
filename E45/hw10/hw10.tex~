@@ -1,0 +1,179 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{gensymb}
+\usepackage{graphicx}
+ \usepackage{tikz,pgfplots}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\slantedgrid}[4]{%
+   \pgfmathtruncatemacro{\result}{#1+#3}
+   \foreach \x in {#1,...,\result} \draw (\x,#2) -- ++(#4,#4);%
+   \pgfmathtruncatemacro{\result}{#2+#4}
+   \foreach \y in {#2,...,\result} \draw (#1+\y-#2,\y) -- ++(#3,0);%
+ }
+ \newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+  
+\DeclareMathOperator\erf{erf}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\providecommand{\ex}[1]{\ensuremath{10^{#1}}}
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+\title{HW 10}
+\author{Levon Dovlatyan \\ SI: 24451582\\ E45} 
+\date{Dec 5, 2014}
+\maketitle
+ 
+\begin{problem}{13.25} 
+What is the power dissipation ($I^2$R) in the filament of Problem 13.24?.
+\end{problem}
+\begin{problem}{Ref 13.24}
+A tungsten lightbulb filament is 9 mm long and 100 $\mu$m in diameter.  What is the current in the filament when operating at 1,000$\degree$C with a line voltage of 110 V?  
+\end{problem}
+
+Using eqn 13.9 in the textbook[1], we first solve for resistivity where $T_{th}$ is room temperature and $\rho_{th}$ is room resistivity. $\alpha$ is a constant we grab from table 13.2 in the book.
+\begin{align*}
+\rho = \rho_{th}[1 + \alpha(T-T_{th})] = (55.1\e{-9})(1 + 0.0045(1000-20)) = 2.98\e{-7}\,\Omega m
+\end{align*}
+
+Now we solve for Resistance:
+\begin{align*}
+R = \frac{\rho l}{A} = \frac{2.98\e{-7} * 9\e{-3}}{\pi*(100\e{-6}/2)^2} = 0.341 \Omega
+\end{align*}
+
+Now we solve for Power emission,
+\begin{align*}
+P = I^2 R = V^2 / R = (110 V)^2 / (0.341) = 35.5\e{3} \text{W}
+\end{align*}
+
+\begin{problem}{13.35}
+An alternate definition of polarization (introduced in Examples 13.11 and 13.12) is
+\begin{equation}
+P = (\kappa–1)\epsilon_0 E,
+\end{equation}
+where $\kappa$, $\epsilon_0$, and $E$ were defined relative to Equations 13.11 and 13.13.  Calculate the polarization for 99.9\% Al2O3 under a field strength of 5 kV/mm.  (You might note the magnitude of your answer in comparison to the inherent polarization of tetragonal BaTiO3 in Example 13.12).
+\end{problem}
+
+From table 13.4 [1], $\kappa = 10.1$ and $\epsilon_0 = 8.85\e{-12} C/V m$. Also note that 5 kV/mm is the same as $5*1000*1000 V/m$.
+\begin{align*}
+P = (\kappa–1)\epsilon_0 E = (10.1-1)*8.85\e{-12}*5*1000*1000 V/m = 4.03\e{-4} C/\text{m}^2
+\end{align*}
+
+\begin{problem}{13.45}
+What fraction of the conductivity at room temperature for \textbf{(a)} germanium and \textbf{(b)} CdS is contributed by (i) electrons and (ii) electron holes?
+\end{problem}
+Using eqn 13.14[1] in the textbook we cal solve this. Note that:
+\begin{align*}
+\sigma_{\text{total}} =& nq(\mu_e + \mu_h) \\
+\sigma_e =& nq\mu_e \\
+\sigma_h =& nq\mu_h \\
+\end{align*}
+Now to find the percent conductivity of electrons and holes we simply divide the conductivity due to electrons/holes by the total conductivity.
+\begin{align*}
+\frac{\sigma_e}{\sigma_{\text{total}}} =& \frac{nq\mu_e}{nq(\mu_e + \mu_h)} = \frac{\mu_e}{\mu_e + \mu_h} \\ \\
+\frac{\sigma_h}{\sigma_{\text{total}}} =& \frac{nq\mu_h}{nq(\mu_e + \mu_h)} = \frac{\mu_h}{\mu_e + \mu_h}
+\end{align*}
+\textbf{(a)} Using table 13.5[1] we find that for Germanium we have:
+\begin{align*}
+\frac{\sigma_e}{\sigma_{\text{total}}} =& \frac{0.364}{0.364 + 0.190} = 0.66 \approx 66\% \\ \\
+\frac{\sigma_h}{\sigma_{\text{total}}} =& \frac{0.190}{0.364 + 0.190} = 0.34 \approx 34\%
+\end{align*}
+\textbf{(b)} For CdS we have:
+\begin{align*}
+\frac{\sigma_e}{\sigma_{\text{total}}} =& \frac{0.034}{0.034 + 0.0018} = 0.95 \approx 95\% \\ \\
+\frac{\sigma_h}{\sigma_{\text{total}}} =& \frac{0.0018}{0.034 + 0.0018} = 0..050 \approx 5.0\%
+\end{align*}
+
+\begin{problem}{15.21}
+ The densities for three iron oxides are FeO (5.70 Mg/$m^3$), $\text{Fe}_3\text{O}_4$ (5.18 Mg/$m^3$), and $\text{Fe}_2\text{O}_3$ (5.24 Mg/$m^3$).  Calculate the Pilling-Bedworth ratio for iron relative to each type of oxide, and comment of the implications for the formation of a protective coating.
+\end{problem}
+
+From the textbook[1] we see that iron has an amu of 55.85 and a density of 7.87 g/$\text{cm}^3$. Also note for eqn 14.13[1] in the textbook that M = amu of the oxide, m = amu of iron, D = density of oxide, d = density of iron, and a = amount of iron in oxide.
+
+\textbf{(a)} For FeO we have a amu of $55.85 + 16.0$ and a density of 5.70 g/$\text{cm}^3$.
+\begin{align*}
+R = \frac{Md}{amD} = \frac{(55.85 + 16)(7.87)}{1(55.85)(5.70)} = 1.78
+\end{align*}
+Since the R value here is between 1 and 2, this means the oxide will allow for a coating layer to form.
+
+\textbf{(b)} For $\text{Fe}_3\text{O}_4$ we have a amu of $3(55.85) + 4(16.0)$ and a density of 5.18 g/$\text{cm}^3$. The formula also contains 3 Fe atoms so a = 3 here.
+\begin{align*}
+R = \frac{Md}{amD} = \frac{(3(55.85) + 4(16))(7.87)}{3(55.85)(5.18)} = 2.10
+\end{align*}
+Since the R value here is greater than 2 it will probably not form a protective coating because of the compressive stresses due to the oxide which will cause it to flake and fall off.
+
+\textbf{(c)} For $\text{Fe}_2\text{O}_3$ we have a amu of $2(55.85) + 3(16.0)$ and a density of 5.24 g/$\text{cm}^3$. The formula also contains 2 Fe atoms so a = 2 here.
+\begin{align*}
+R = \frac{Md}{amD} = \frac{(2(55.85) + 3(16))(7.87)}{2(55.85)(5.24)} = 2.15
+\end{align*}
+Similarly, since the R value here is greater than 2 it will probably not form a protective coating because of the compressive stresses due to the oxide which will cause it to flake and fall off.
+
+
+\begin{problem}{15.39}
+The maximum corrosion current density in a galvanized steel sheet used in the design of the new engineering laboratories on campus is found to be 5 mA/$m^2$.  What thickness of the zinc layer is necessary to ensure at least (a) 1 year and (b) 5 years of rust resistance?
+\end{problem}
+
+The solution to this problem is essentially playing with units. We first note the density of zinc is 7.13\e{6}g/$m^3$. Also the amu of zinc is 65.38g and that zinc has 2 electrons that it gives away when corrosion occurs.
+
+\begin{align*}
+\frac{5\e{-3}A}{m^2} = \frac{5\e{-3}C}{\text{s}*m^2}\frac{1e}{1.602\e{-19}C}\frac{1\,\text{zinc atom}}{2 e}\frac{65.38g}{6.023\e{23} \,\text{atoms}} = 1.69\e{-6} \frac{g}{\text{s}*m^2}
+\end{align*}
+Now this is the amount of of zinc leaving the surface of the metal per a second per a meter squared area. Let's set this equal to the density of zinc and solve for units.
+\begin{align*}
+1.69\e{-6} \frac{g}{\text{s}*m^2} = (7.13\e{6}\,\frac{g}{m^3})(x\,\, \text{meters})
+\end{align*}
+Now we need to multiply by some number x in order to match our units. This x also happens to be the thickness of zinc leaving the surface per a second.
+\begin{align*}
+x = \frac{1.69\e{-6}\frac{g}{\text{s}*m^2}}{7.13\e{6}\,\frac{g}{m^3}} = 2.37\e{-13}\,m/s
+\end{align*}
+Now the problem asks us for the amount that leaves in a year and 5 years. We simply multiple and convert our units to years.
+\begin{align*}
+\text{\textbf{(a)}} =& 2.37\e{-13}\,m/s\,*\frac{3600 s}{1 \text{hr}}\frac{24 \text{hr}}{1 \text{day}}\frac{365\text{day}}{\text{1year}} = 7.47\mu \text{m} / \text{year} \\ \\
+\text{\textbf{(b)}} =& 2.37\e{-13}\,m/s\,*\frac{3600 s}{1 \text{hr}}\frac{24 \text{hr}}{1 \text{day}}\frac{1825\text{day}}{\text{5year}} = 37.4 \mu \text{m} / \text{5 year}
+\end{align*}
+
+
+\section{References}
+\begin{enumerate}
+\item James F. Shackelford, Introduction to Materials Science for Engineers, Seventh Edition, Pearson Higher Education, Inc., Upper Saddle River, New Jersey (2009).
+\end{enumerate}
+
+
+
+
+
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+ 
+\end{document}

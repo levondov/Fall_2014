@@ -122,6 +122,7 @@ The setup was already done for us. The salt sample had electrodes hooked up and 
 \centering
 \includegraphics[width=325pt]{data/metal_full.pdf}
 \caption{Plot of the data points for metal measurements}
+\label{fig:metal}
 \end{figure}
 
 \begin{figure}[H]
@@ -182,8 +183,7 @@ Purity & Sample & \specialcell{$\rho_r$ \\ ($\mu \Omega$-cm)} \\ \hline
 
 
 \item[2) To what precision can you verify Matthiessen's rule? To answer this question, consider how the resistivity changes with temperature for a fixed concentration of impurities, then how the resistivity changes with impurity concentration when the temperature is fixed.]
-
-N/A
+Looking at all the plots in Figure \textcolor{blue}{\ref{fig:metal}} we can see that $\rho_r$ changes with each line as the impurity concentrations change. However $\rho_{th}$ remains the same across the samples; this means that our slopes should be the same at low temperatures. Now using the data for resistance at 77K and 200K for each metal sample, we can calculate slopes. With five different slopes we can calculate a standard deviation $\sigma$ and a standard error $\alpha = \sigma/\sqrt{n}$. This standard error will tell us the precision of our five slopes, $\rho_{th}$. After calculations we get $3.3 \pm 1.0\, m\Omega/K$. Thus our precision is $1.0/3.3 = 30\%$. 
 
 \item[3) Would you expect $\rho$ to increase or decrease as T is increased through the melting point? Why?]
 The resistivity will increase. This is because it is much harder for electrons to move through a material in the liquid phase rather than a solid phase. In the liquid phase, atoms move around a lot, and as a result, hinder the effectiveness of the electrons to make it across a material without running into something.
@@ -244,7 +244,7 @@ W =& -2(\text{slope}*k + E_m) = -2(-1.76\e{5}*1.38\e{-23} + 6.33\e{27}) = 1.27\e
 \end{align*} 
 
 \item[12) Do you think that conductivity measurements could be used as an index of purity in ionic crystals? Discuss.]
-N/A
+Yes. Having lots of defects in a material makes it much harder for electrons to move around causing low conductivity measurements. The purer the crystal, the easier it is for electrons to move through the material and thus would have a higher conductivity. So it is very reasonable to say that conductivity can be used as an indirect way to measure pureness of materials.
 
 \end{description}
 

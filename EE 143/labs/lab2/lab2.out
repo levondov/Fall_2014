@@ -1,0 +1,31 @@
+\BOOKMARK [1][-]{section.1}{Measurements \046 Parameter Extraction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Line Width/Misalignment}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Four-Point Resistors [2a, 2b]}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Measurement Setup}{subsection.1.2}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.2}{I-V plot for the diffusion resistor, 2a}{subsection.1.2}% 5
+\BOOKMARK [3][-]{subsubsection.1.2.3}{I-V plot for the poly resistor, 2b}{subsection.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.3}{Four-Point Contact-Chain Resistor [2c, 2d]}{section.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Measurement Setup}{subsection.1.3}% 8
+\BOOKMARK [3][-]{subsubsection.1.3.2}{b. I-V plot for diffusion resistor, 2c}{subsection.1.3}% 9
+\BOOKMARK [3][-]{subsubsection.1.3.3}{b. I-V plot for poly resistor, 2d}{subsection.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.4}{Gate Oxide Capacitor, 4}{section.1}% 11
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Measurement Setup}{subsection.1.4}% 12
+\BOOKMARK [3][-]{subsubsection.1.4.2}{C-V plot of gate oxide capacitor w/ lights ON}{subsection.1.4}% 13
+\BOOKMARK [3][-]{subsubsection.1.4.3}{C-V plot of gate oxide capacitor w/ lights OFF}{subsection.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.5}{Field Oxide Capacitor, 3}{section.1}% 15
+\BOOKMARK [3][-]{subsubsection.1.5.1}{Measurement Setup}{subsection.1.5}% 16
+\BOOKMARK [3][-]{subsubsection.1.5.2}{C-V plot of field oxide capacitor}{subsection.1.5}% 17
+\BOOKMARK [3][-]{subsubsection.1.5.3}{Capacitance in the accumulation region}{subsection.1.5}% 18
+\BOOKMARK [3][-]{subsubsection.1.5.4}{Field oxide thickness}{subsection.1.5}% 19
+\BOOKMARK [2][-]{subsection.1.6}{Intermediate Oxide Capacitors, 5}{section.1}% 20
+\BOOKMARK [3][-]{subsubsection.1.6.1}{Measurement Setup}{subsection.1.6}% 21
+\BOOKMARK [3][-]{subsubsection.1.6.2}{C-V plot of intermediate oxide capacitor}{subsection.1.6}% 22
+\BOOKMARK [3][-]{subsubsection.1.6.3}{Capacitance in the accumulation region}{subsection.1.6}% 23
+\BOOKMARK [2][-]{subsection.1.7}{Diode, 7}{section.1}% 24
+\BOOKMARK [3][-]{subsubsection.1.7.1}{Measurement setups for forward and reverse operations}{subsection.1.7}% 25
+\BOOKMARK [3][-]{subsubsection.1.7.2}{I-V plots for forward and reverse operation}{subsection.1.7}% 26
+\BOOKMARK [3][-]{subsubsection.1.7.3}{Extract the turn-on voltage and the series resistance}{subsection.1.7}% 27
+\BOOKMARK [2][-]{subsection.1.8}{MOSFETs of Varying Length, [8a-d]}{section.1}% 28
+\BOOKMARK [3][-]{subsubsection.1.8.1}{Measurement setups}{subsection.1.8}% 29
+\BOOKMARK [3][-]{subsubsection.1.8.2}{Plots of ID-VDS, sweeping VG}{subsection.1.8}% 30
+\BOOKMARK [1][-]{section.2}{References}{}% 31

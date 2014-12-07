@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  2 DEC 2014 12:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  6 DEC 2014 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**lab6.tex
-(./lab6.tex
+**lab2.tex x
+(./lab2.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -1171,12 +1171,6 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box65
 \enitdp@description=\count185
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
-Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
-LaTeX Info: Redefining \em on input line 420.
-LaTeX Info: The control sequence `\[' is already robust on input line 471.
-LaTeX Info: The control sequence `\]' is already robust on input line 472.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
@@ -1240,6 +1234,7 @@ Now handling font encoding PD1 ...
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
+Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
 Package hyperref Info: Hyper figures OFF on input line 4443.
 Package hyperref Info: Link nesting OFF on input line 4448.
 Package hyperref Info: Hyper index ON on input line 4451.
@@ -1289,44 +1284,75 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty
 Package: hypcap 2011/02/16 v1.11 Adjusting the anchors of captions (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/csvsimple/csvsimple.sty
-Package: csvsimple 2013/09/25 version 1.07 LaTeX CSV file processing
-\csv@file=\read3
-\c@csvinputline=\count196
-\c@csvrow=\count197
-\c@csvcol=\count198
-) (./lab6.aux)
-\openout1 = `lab6.aux'.
+(/usr/share/texlive/texmf-dist/tex/latex/subfloat/subfloat.sty
+Package: subfloat 2003/08/21 version 2.14
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+Package `subfloat', Version 2.14 of 2003/08/21.
+
+Package subfloat Warning: Numbers of floats not counted:
+(subfloat)                If you use one of the counters subfloatfiguremax or
+(subfloat)                subfloattablemax you will get strange error messages
+(subfloat)                containing \c@subfloatfiguremax or
+(subfloat)                \c@subfloattablemax:
+(subfloat)                Please switch on countmax or remove the code using
+(subfloat)                the counter then..
+
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count196
+\lst@gtempboxa=\box66
+\lst@token=\toks47
+\lst@length=\count197
+\lst@currlwidth=\dimen286
+\lst@column=\count198
+\lst@pos=\count199
+\lst@lostspace=\dimen287
+\lst@width=\dimen288
+\lst@newlines=\count200
+\lst@lineno=\count201
+\lst@maxwidth=\dimen289
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+Normal \count register pool exhausted, switching to extended pool.
+\c@lstnumber=\count277
+\lst@skipnumbers=\count278
+\lst@framebox=\box67
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+ (./lab2.aux)
+\openout1 = `lab2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count199
-\scratchdimen=\dimen286
-\scratchbox=\box66
-\nofMPsegments=\count200
-\nofMParguments=\count201
-\everyMPshowfont=\toks47
-Normal \count register pool exhausted, switching to extended pool.
-\MPscratchCnt=\count277
-\MPscratchDim=\dimen287
-\MPnumerator=\count278
-\makeMPintoPDFobject=\count279
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count279
+\scratchdimen=\dimen290
+\scratchbox=\box68
+\nofMPsegments=\count280
+\nofMParguments=\count281
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count282
+\MPscratchDim=\dimen291
+\MPnumerator=\count283
+\makeMPintoPDFobject=\count284
+\everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1429,7 +1455,7 @@ File: siunitx-abbreviations.cfg 2013/07/31 v2.5s siunitx: Abbreviated units
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
 our preamble.
- on input line 68.
+ on input line 84.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1465,122 +1491,207 @@ our preamble.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \celsius on input line 68.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 68.
+LaTeX Info: Redefining \celsius on input line 84.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 84.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 68.
-Package gensymb Info: Using \Omega for \ohm on input line 68.
+LaTeX Info: Redefining \ohm on input line 84.
+Package gensymb Info: Using \Omega for \ohm on input line 84.
 
 Package gensymb Warning: Not defining \micro.
 
-\AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring OFF on input line 68.
+\AtBeginShipoutBox=\box69
+Package hyperref Info: Link coloring OFF on input line 84.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count280
+\c@section@level=\count285
 )
-LaTeX Info: Redefining \ref on input line 68.
-LaTeX Info: Redefining \pageref on input line 68.
-LaTeX Info: Redefining \nameref on input line 68.
+LaTeX Info: Redefining \ref on input line 84.
+LaTeX Info: Redefining \pageref on input line 84.
+LaTeX Info: Redefining \nameref on input line 84.
 
-(./lab6.out) (./lab6.out)
+(./lab2.out) (./lab2.out)
 \@outlinefile=\write4
-\openout4 = `lab6.out'.
+\openout4 = `lab2.out'.
 
-\c__siunitx_mathsf_int=\count281
-\c__siunitx_mathtt_int=\count282
- <data/metal_full.pdf, id=43, 578.16pt x 433.62pt>
-File: data/metal_full.pdf Graphic file (type pdf)
+\c@lstlisting=\count286
+\c__siunitx_mathsf_int=\count287
+\c__siunitx_mathtt_int=\count288
 
-<use data/metal_full.pdf>
-Package pdftex.def Info: data/metal_full.pdf used on input line 123.
-(pdftex.def)             Requested size: 325.0pt x 243.74524pt.
- [1
+<Device_setup/device2a1.pdf, id=131, 137.51375pt x 393.47pt>
+File: Device_setup/device2a1.pdf Graphic file (type pdf)
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <data/semi_full.pdf, id=55
-, 578.16pt x 433.62pt>
-File: data/semi_full.pdf Graphic file (type pdf)
- <use data/semi_full.pdf>
-Package pdftex.def Info: data/semi_full.pdf used on input line 139.
-(pdftex.def)             Requested size: 325.0pt x 243.74524pt.
+<use Device_setup/device2a1.pdf>
+Package pdftex.def Info: Device_setup/device2a1.pdf used on input line 108.
+(pdftex.def)             Requested size: 87.3706pt x 250.0pt.
 
-<data/semi_part.pdf, id=56, 578.16pt x 433.62pt>
-File: data/semi_part.pdf Graphic file (type pdf)
- <use data/semi_part.pdf>
-Package pdftex.def Info: data/semi_part.pdf used on input line 140.
+<Device_setup/device2b1.pdf, id=132, 127.47626pt x 393.47pt>
+File: Device_setup/device2b1.pdf Graphic file (type pdf)
+
+<use Device_setup/device2b1.pdf>
+Package pdftex.def Info: Device_setup/device2b1.pdf used on input line 117.
+(pdftex.def)             Requested size: 80.9932pt x 250.0pt.
+
+<Device_plot_data/D2aplot.pdf, id=133, 578.16pt x 433.62pt>
+File: Device_plot_data/D2aplot.pdf Graphic file (type pdf)
+
+<use Device_plot_data/D2aplot.pdf>
+Package pdftex.def Info: Device_plot_data/D2aplot.pdf used on input line 134.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-Overfull \hbox (36.66838pt too wide) in paragraph at lines 144--145
-[][] 
- []
+<Device_plot_data/D2bplot.pdf, id=134, 578.16pt x 433.62pt>
+File: Device_plot_data/D2bplot.pdf Graphic file (type pdf)
 
-[2 <./data/metal_full.pdf> <./data/semi_full.pdf
+<use Device_plot_data/D2bplot.pdf>
+Package pdftex.def Info: Device_plot_data/D2bplot.pdf used on input line 145.
+(pdftex.def)             Requested size: 250.0pt x 187.49837pt.
+ [1
 
-pdfTeX warning: pdflatex (file ./data/semi_full.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./data/semi_part.pdf
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Device_setup/device2a1.p
+df> <./Device_setup/device2b1.pdf> <./Device_plot_data/D2aplot.pdf>]
+<Device_setup/device2c2.pdf, id=190, 112.42pt x 403.5075pt>
+File: Device_setup/device2c2.pdf Graphic file (type pdf)
 
-pdfTeX warning: pdflatex (file ./data/semi_part.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
->] <data/salt_full.pdf, id=189, 578.16pt x 433.62pt>
-File: data/salt_full.pdf Graphic file (type pdf)
- <use data/salt_full.pdf>
-Package pdftex.def Info: data/salt_full.pdf used on input line 161.
-(pdftex.def)             Requested size: 325.0pt x 243.74524pt.
+<use Device_setup/device2c2.pdf>
+Package pdftex.def Info: Device_setup/device2c2.pdf used on input line 159.
+(pdftex.def)             Requested size: 69.65164pt x 250.0pt.
 
-[3 <./data/salt_full.pdf>]
-<data/semi_full_eg.pdf, id=248, 578.16pt x 433.62pt>
-File: data/semi_full_eg.pdf Graphic file (type pdf)
+<Device_setup/device2d2.pdf, id=191, 112.42pt x 403.5075pt>
+File: Device_setup/device2d2.pdf Graphic file (type pdf)
 
-<use data/semi_full_eg.pdf>
-Package pdftex.def Info: data/semi_full_eg.pdf used on input line 199.
-(pdftex.def)             Requested size: 325.0pt x 243.74524pt.
+<use Device_setup/device2d2.pdf>
+Package pdftex.def Info: Device_setup/device2d2.pdf used on input line 164.
+(pdftex.def)             Requested size: 69.65164pt x 250.0pt.
 
-<data/salt_full_eg.pdf, id=249, 578.16pt x 433.62pt>
-File: data/salt_full_eg.pdf Graphic file (type pdf)
+<Device_plot_data/D2cplot.pdf, id=192, 578.16pt x 433.62pt>
+File: Device_plot_data/D2cplot.pdf Graphic file (type pdf)
 
-<use data/salt_full_eg.pdf>
-Package pdftex.def Info: data/salt_full_eg.pdf used on input line 228.
-(pdftex.def)             Requested size: 325.0pt x 243.74524pt.
- [4 <./data/semi_full_eg.pdf>] [5 <./data/salt_full_eg.pdf>]
-No file lab6.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
-[6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 293.
- (./lab6.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 293.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 293.
-Package rerunfilecheck Info: File `lab6.out' has not changed.
-(rerunfilecheck)             Checksum: 8B5B92C0B1A657339BBB31738CF7895B;510.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 293.
+<use Device_plot_data/D2cplot.pdf>
+Package pdftex.def Info: Device_plot_data/D2cplot.pdf used on input line 177.
+(pdftex.def)             Requested size: 250.0pt x 187.49837pt.
+ [2 <./Device_plot_data/D2bplot.pdf> <./Device_setup/device2c2.pdf> <./Device_s
+etup/device2d2.pdf>]
+<Device_plot_data/D2dplot.pdf, id=246, 578.16pt x 433.62pt>
+File: Device_plot_data/D2dplot.pdf Graphic file (type pdf)
+
+<use Device_plot_data/D2dplot.pdf>
+Package pdftex.def Info: Device_plot_data/D2dplot.pdf used on input line 190.
+(pdftex.def)             Requested size: 250.0pt x 187.49837pt.
+ [3 <./Device_plot_data/D2cplot.pdf> <./Device_plot_data/D2dplot.pdf
+
+pdfTeX warning: pdflatex (file ./Device_plot_data/D2dplot.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>] <Device_setup/device7a2.pdf, id=317, 313.17pt x 192.72pt>
+File: Device_setup/device7a2.pdf Graphic file (type pdf)
+
+<use Device_setup/device7a2.pdf>
+Package pdftex.def Info: Device_setup/device7a2.pdf used on input line 244.
+(pdftex.def)             Requested size: 200.0pt x 123.08159pt.
+File: Device_setup/device7a2.pdf Graphic file (type pdf)
+ <use Device_setup/device7a2.pdf>
+Package pdftex.def Info: Device_setup/device7a2.pdf used on input line 245.
+(pdftex.def)             Requested size: 200.0pt x 123.08159pt.
+
+<Device_plot_data/D7aplot.pdf, id=318, 578.16pt x 433.62pt>
+File: Device_plot_data/D7aplot.pdf Graphic file (type pdf)
+
+<use Device_plot_data/D7aplot.pdf>
+Package pdftex.def Info: Device_plot_data/D7aplot.pdf used on input line 264.
+(pdftex.def)             Requested size: 250.0pt x 187.49837pt.
+
+<Device_plot_data/D7bplot.pdf, id=319, 578.16pt x 433.62pt>
+File: Device_plot_data/D7bplot.pdf Graphic file (type pdf)
+
+<use Device_plot_data/D7bplot.pdf>
+Package pdftex.def Info: Device_plot_data/D7bplot.pdf used on input line 265.
+(pdftex.def)             Requested size: 250.0pt x 187.49837pt.
+ [4 <./Device_setup/device7a2.pdf>]
+<Device_setup/device8a2.pdf, id=331, 313.17pt x 288.07625pt>
+File: Device_setup/device8a2.pdf Graphic file (type pdf)
+
+<use Device_setup/device8a2.pdf>
+Package pdftex.def Info: Device_setup/device8a2.pdf used on input line 280.
+(pdftex.def)             Requested size: 200.0pt x 183.98134pt.
+File: Device_setup/device8a2.pdf Graphic file (type pdf)
+ <use Device_setup/device8a2.pdf>
+Package pdftex.def Info: Device_setup/device8a2.pdf used on input line 281.
+(pdftex.def)             Requested size: 200.0pt x 183.98134pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 306.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 306.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 306.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 306.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 306.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 306.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 306.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 306.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 306.
+
+No file lab2.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 335.
+[5 <./Device_plot_data/D7aplot.pdf> <./Device_plot_data/D7bplot.pdf
+
+pdfTeX warning: pdflatex (file ./Device_plot_data/D7bplot.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./Device_setup/device8a2.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 335.
+ (./lab2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 335.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 335.
+Package rerunfilecheck Info: File `lab2.out' has not changed.
+(rerunfilecheck)             Checksum: A32E2643A0F1BFB41E4D28E46A018D2C;2670.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 335.
  ) 
 Here is how much of TeX's memory you used:
- 31334 strings out of 493304
- 704359 string characters out of 6139872
- 800814 words of memory out of 5000000
- 34208 multiletter control sequences out of 15000+600000
- 7021 words of font info for 27 fonts, out of 8000000 for 9000
+ 32621 strings out of 493304
+ 722827 string characters out of 6139872
+ 814195 words of memory out of 5000000
+ 35461 multiletter control sequences out of 15000+600000
+ 7367 words of font info for 28 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,16n,74p,10432b,860s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,8n,74p,10434b,718s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy7.pfb>
-Output written on lab6.pdf (6 pages, 194015 bytes).
+/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on lab2.pdf (5 pages, 211582 bytes).
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 450 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 321 words of extra memory for PDF output out of 10000 (max. 10000000)
 
