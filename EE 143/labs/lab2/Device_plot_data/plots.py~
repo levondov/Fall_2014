@@ -11,7 +11,7 @@ plt.grid(True)
 plt.xlabel("VDiff (V)")
 plt.ylabel("IA (A)")
 plt.title("Resistor 2a measurement plot")
-
+print(device2a)
 plt.savefig("D2aplot.pdf")
 ## Device 2b
 plt.figure()
