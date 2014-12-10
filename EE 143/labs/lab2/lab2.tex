@@ -117,7 +117,7 @@
 \begin{tikzpicture}
 \node at (5,5) {\includegraphics[height=250pt]{Device_setup/device2a1.pdf}};
 \draw [<->,thick] (6,7.8) -- (8,7.8) -- (8,7.5); %SIM4
-\node at (10,7.3) {V sweep, -0.1 to 0.1 V, comp 5, I measured};
+\node at (10,7.3) {I sweep, -0.1 to 0.1 A, comp 5, I measured};
 \draw [<->,thick] (6,1.8) -- (8,1.8) -- (8,2.2); %Sim3
 \node at (8,2.35) {GND};
 \draw [<->,thick] (5,5.5) -- (7,5.5); %SIM1
@@ -166,10 +166,41 @@ From the previous lab report we have a junction depth of $1\,\mu m$. This means 
 
 From the plot above we calculate a 1/slope value of 15. Hense $R = 15 \,\Omega$. Our Resistivity is then $\rho = R_s t_{\text{poly}}$ where $t_{\text{poly}}$ is the polysilicon thickness which is 0.4 $\mu m$, Hense $\rho = 6 \,\Omega$-$\mu m$.
 
-\subsection{Four-Point Contact Resistor [17a, 17b]}
+\subsection{Four-Point Contact Resistor [17a, 17b]} %%%%%%%%%%%% Resistors 17a,b
 \subsubsection{Measurement Setup}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_setup/device17a2.pdf}};
+\draw [<->] (4.5,8) -- (6,9); %Current sweep
+\node at (6,9.2) {I sweep, -0.1 to 0.1 A, comp 5, measure I};
+\draw [<->] (2,5.5) -- (2,6.5); %voltage
+\node at (2,6.7) {V, constant};
+\draw [<->] (7,5.5) -- (7,6.5); % const current
+\node at (7,6.7) {I, constant, comp 5};
+\draw [<->] (4.5,3) -- (3,3.8); % const current
+\node at (2.5,4.1) {I, constant, comp 5};
+\end{tikzpicture}
+\caption{Measurement setup for 17a poly contact resistor. The same setup is used for the diffusion contact resistor, 17b.}
+\end{figure}
+
 \subsubsection{I-V plot for 17a}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D17aplot.pdf}};
+\end{tikzpicture}
+\caption{A plot of the measurement data taken for resistor 17a.}
+\end{figure}
+
 \subsubsection{I-V plot for 17b}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D17bplot.pdf}};
+\end{tikzpicture}
+\caption{A plot of the measurement data taken for resistor 17b.}
+\end{figure}
 
 \subsection{Four-Point Contact-Chain Resistor [2c, 2d]} %%%%%%%% Resistors 2c 2d
 
@@ -234,9 +265,23 @@ ii. Extract metal-to-poly contact resistance
 
 
 \subsubsection{C-V plot of gate oxide capacitor w/ lights ON}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D4aplot.pdf}};
+\end{tikzpicture}
+\caption{A plot of the measurement data taken for the gate capacitor, 4. Lights on.}
+\end{figure}
 Minimum capacitance
 
 \subsubsection{C-V plot of gate oxide capacitor w/ lights OFF}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D4bplot.pdf}};
+\end{tikzpicture}
+\caption{A plot of the measurement data taken for the gate capacitor, 4. Lights off.}
+\end{figure}
 
 minimum capacitance ...
 
@@ -257,6 +302,14 @@ minimum capacitance ...
 
 
 \subsubsection{C-V plot of field oxide capacitor}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D3plot.pdf}};
+\end{tikzpicture}
+\caption{A plot of the measurement data taken for the field oxide capacitor, 3}
+\end{figure}
+
 Minimum capacitance
 
 \subsubsection{Capacitance in the accumulation region}
@@ -286,6 +339,13 @@ stuff...
 
 
 \subsubsection{C-V plot of intermediate oxide capacitor}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D5plot.pdf}};
+\end{tikzpicture}
+\caption{A plot of the measurement data taken for the Intermediate oxide, 5}
+\end{figure}
 
 stuff ...
 
@@ -329,7 +389,7 @@ stuff...
 \subsubsection{Extract the turn-on voltage and the series resistance}
 
 
-\subsection{MOSFETs of Varying Length, [8a-d]}
+\subsection{MOSFETs of Varying Length, [8a-d]} %%%%%%%%%%%%%% MOSFETS 8a-d
 
 \subsubsection{Measurement setups}
 \begin{figure}[H]
@@ -446,7 +506,7 @@ Calculate stuff here...
 
 Calculate stuff here...
 
-\subsection{MOSFETs of varying width [9a-c]}
+\subsection{MOSFETs of varying width [9a-c]} %%%%%%%%%%%%%% MOSFETS 9a-c
 
 \subsubsection{Measurement setup}
 \begin{figure}[H]
@@ -542,7 +602,7 @@ Calculate stuff here...
 
 Calculate stuff here...
 
-\subsection{Large MOSFET, 10}
+\subsection{Large MOSFET, 10} %%%%%%%%%%% LARGE MOSFET 10
 
 \subsubsection{Measurement setup}
 \begin{figure}[H]
@@ -599,7 +659,7 @@ Calculate stuff here...
 Calculate stuff here... 
 
 
-\subsection{Inverter, 14}
+\subsection{Inverter, 14} %%%%%%%%%%%%% Inverter 14
 
 \subsubsection{Measurement setup}
 \begin{figure}[H]

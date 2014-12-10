@@ -11,7 +11,7 @@ plt.grid(True)
 plt.xlabel("VDiff (V)")
 plt.ylabel("IA (A)")
 plt.title("Resistor 2a measurement plot")
-print(device2a)
+
 plt.savefig("D2aplot.pdf")
 ## Device 2b
 plt.figure()
@@ -327,9 +327,78 @@ plt.xlabel("Vin (V)")
 plt.ylabel("Vout (V)")
 plt.title("Mosfet 14, inverter")
 plt.savefig("D14plot.pdf")
+## Device 17a
+plt.figure()
+device17a = np.genfromtxt('D17AIMG1.TXT.csv', delimiter=',',skip_header=108) 
 
+plt.plot(device17a[:,0],device17a[:,1])
+		
+plt.grid(True)
+plt.axis([-0.3,0.3,-0.1,0.1])
+plt.xlabel("VDiff (V)")
+plt.ylabel("I (A)")
+plt.title("Contact resistor, 17a")
+plt.savefig("D17aplot.pdf")
+## Device 17b
+plt.figure()
+device17b = np.genfromtxt('D17BIMG1.TXT.csv', delimiter=',',skip_header=108) 
 
+plt.plot(device17b[:,0],device17b[:,1])
+		
+plt.grid(True)
+plt.axis([-0.2,0.2,-0.1,0.1])
+plt.xlabel("VDiff (V)")
+plt.ylabel("I (A)")
+plt.title("Contact resistor, 17b")
+plt.savefig("D17bplot.pdf")
+## Device 3
+plt.figure()
+device3 = np.genfromtxt('D3IMG1.TXT.csv', delimiter=',',skip_header=11) 
 
+plt.plot(device3[:,0],device3[:,1])
+		
+plt.grid(True)
+#plt.axis([-0.2,0.2,-0.1,0.1])
+plt.xlabel("V sweep (V)")
+plt.ylabel("CX")
+plt.title("Field oxide capacitor, 3")
+plt.savefig("D3plot.pdf")
+## Device 4, with light, img1
+plt.figure()
+device4a = np.genfromtxt('D4IMG1.TXT.csv', delimiter=',',skip_header=11) 
+
+plt.plot(device4a[:,0],device4a[:,1])
+		
+plt.grid(True)
+#plt.axis([-0.2,0.2,-0.1,0.1])
+plt.xlabel("V sweep (V)")
+plt.ylabel("CX")
+plt.title("Gate oxide capacitor wlight, 4")
+plt.savefig("D4aplot.pdf")
+## Device 4 without light, img2
+plt.figure()
+device4b = np.genfromtxt('D4IMG2.TXT.csv', delimiter=',',skip_header=11) 
+
+plt.plot(device4b[:,0],device4b[:,1])
+		
+plt.grid(True)
+#plt.axis([-0.2,0.2,-0.1,0.1])
+plt.xlabel("V sweep (V)")
+plt.ylabel("CX")
+plt.title("Gate oxide capacitor w/o light, 4")
+plt.savefig("D4bplot.pdf")
+## Device 5 intermediate oxide
+plt.figure()
+device5 = np.genfromtxt('D5IMG1.TXT.csv', delimiter=',',skip_header=11) 
+
+plt.plot(device5[:,0],device5[:,1])
+		
+plt.grid(True)
+#plt.axis([-0.2,0.2,-0.1,0.1])
+plt.xlabel("V sweep (V)")
+plt.ylabel("CX")
+plt.title("Intermediate oxide capacitor, 5")
+plt.savefig("D5plot.pdf")
 
 
 
