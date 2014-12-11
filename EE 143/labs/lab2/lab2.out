@@ -21,46 +21,43 @@
 \BOOKMARK [2][-]{subsection.1.6}{Field Oxide Capacitor, 3}{section.1}% 21
 \BOOKMARK [3][-]{subsubsection.1.6.1}{Measurement Setup}{subsection.1.6}% 22
 \BOOKMARK [3][-]{subsubsection.1.6.2}{C-V plot of field oxide capacitor}{subsection.1.6}% 23
-\BOOKMARK [3][-]{subsubsection.1.6.3}{Capacitance in the accumulation region}{subsection.1.6}% 24
-\BOOKMARK [3][-]{subsubsection.1.6.4}{Field oxide thickness}{subsection.1.6}% 25
-\BOOKMARK [2][-]{subsection.1.7}{Intermediate Oxide Capacitors, 5}{section.1}% 26
-\BOOKMARK [3][-]{subsubsection.1.7.1}{Measurement Setup}{subsection.1.7}% 27
-\BOOKMARK [3][-]{subsubsection.1.7.2}{C-V plot of intermediate oxide capacitor}{subsection.1.7}% 28
-\BOOKMARK [3][-]{subsubsection.1.7.3}{Capacitance in the accumulation region}{subsection.1.7}% 29
-\BOOKMARK [2][-]{subsection.1.8}{Diode, 7}{section.1}% 30
-\BOOKMARK [3][-]{subsubsection.1.8.1}{Measurement setups for forward and reverse operations}{subsection.1.8}% 31
-\BOOKMARK [3][-]{subsubsection.1.8.2}{I-V plots for forward and reverse operation}{subsection.1.8}% 32
-\BOOKMARK [3][-]{subsubsection.1.8.3}{Extract the turn-on voltage and the series resistance}{subsection.1.8}% 33
-\BOOKMARK [2][-]{subsection.1.9}{MOSFETs of Varying Length, [8a-d]}{section.1}% 34
-\BOOKMARK [3][-]{subsubsection.1.9.1}{Measurement setups}{subsection.1.9}% 35
-\BOOKMARK [3][-]{subsubsection.1.9.2}{Plots of ID-VD, sweeping VG}{subsection.1.9}% 36
-\BOOKMARK [3][-]{subsubsection.1.9.3}{Plots of ID-VG, sweeping VB}{subsection.1.9}% 37
-\BOOKMARK [2][-]{subsection.1.10}{MOSFETs of varying width [9a-c]}{section.1}% 38
-\BOOKMARK [3][-]{subsubsection.1.10.1}{Measurement setup}{subsection.1.10}% 39
-\BOOKMARK [3][-]{subsubsection.1.10.2}{Plots of ID-VD, sweeping VG }{subsection.1.10}% 40
-\BOOKMARK [3][-]{subsubsection.1.10.3}{Plots of ID-VG, sweeping VB}{subsection.1.10}% 41
-\BOOKMARK [2][-]{subsection.1.11}{Large MOSFET, 10}{section.1}% 42
-\BOOKMARK [3][-]{subsubsection.1.11.1}{Measurement setup}{subsection.1.11}% 43
-\BOOKMARK [3][-]{subsubsection.1.11.2}{Plots of ID-VD, sweeping VG }{subsection.1.11}% 44
-\BOOKMARK [3][-]{subsubsection.1.11.3}{Plots of ID-VG, sweeping VB}{subsection.1.11}% 45
-\BOOKMARK [2][-]{subsection.1.12}{Inverter, 14}{section.1}% 46
-\BOOKMARK [3][-]{subsubsection.1.12.1}{Measurement setup}{subsection.1.12}% 47
-\BOOKMARK [3][-]{subsubsection.1.12.2}{b. Vin-Vout plot}{subsection.1.12}% 48
-\BOOKMARK [3][-]{subsubsection.1.12.3}{Estimate VM}{subsection.1.12}% 49
-\BOOKMARK [1][-]{section.2}{Theoretical Calculations}{}% 50
-\BOOKMARK [2][-]{subsection.2.1}{Measured Physical Dimensions and Parameters}{section.2}% 51
-\BOOKMARK [2][-]{subsection.2.2}{Resistors [2a,2b]}{section.2}% 52
-\BOOKMARK [2][-]{subsection.2.3}{Contact Resistances [17a,17b]}{section.2}% 53
-\BOOKMARK [2][-]{subsection.2.4}{Contact-Chain Resistors [2c, 2d]}{section.2}% 54
-\BOOKMARK [3][-]{subsubsection.2.4.1}{Diffusion chain resistor, 2c}{subsection.2.4}% 55
-\BOOKMARK [3][-]{subsubsection.2.4.2}{Poly chain resistor, 2d}{subsection.2.4}% 56
-\BOOKMARK [2][-]{subsection.2.5}{Gate/Field Oxide Capacitors[3,4]}{section.2}% 57
-\BOOKMARK [2][-]{subsection.2.6}{Diode}{section.2}% 58
-\BOOKMARK [2][-]{subsection.2.7}{MOSFETs}{section.2}% 59
-\BOOKMARK [3][-]{subsubsection.2.7.1}{MOSFETs of varying length [8] and width [9]}{subsection.2.7}% 60
-\BOOKMARK [3][-]{subsubsection.2.7.2}{Large MOSFET}{subsection.2.7}% 61
-\BOOKMARK [2][-]{subsection.2.8}{Inverter}{section.2}% 62
-\BOOKMARK [1][-]{section.3}{Discussion}{}% 63
-\BOOKMARK [1][-]{section.4}{Optional Questions}{}% 64
-\BOOKMARK [1][-]{section.5}{Appendix}{}% 65
-\BOOKMARK [1][-]{section.6}{References}{}% 66
+\BOOKMARK [2][-]{subsection.1.7}{Intermediate Oxide Capacitors, 5}{section.1}% 24
+\BOOKMARK [3][-]{subsubsection.1.7.1}{Measurement Setup}{subsection.1.7}% 25
+\BOOKMARK [3][-]{subsubsection.1.7.2}{C-V plot of intermediate oxide capacitor}{subsection.1.7}% 26
+\BOOKMARK [2][-]{subsection.1.8}{Diode, 7}{section.1}% 27
+\BOOKMARK [3][-]{subsubsection.1.8.1}{Measurement setups for forward and reverse operations}{subsection.1.8}% 28
+\BOOKMARK [3][-]{subsubsection.1.8.2}{I-V plots for forward and reverse operation}{subsection.1.8}% 29
+\BOOKMARK [3][-]{subsubsection.1.8.3}{Extract the turn-on voltage and the series resistance}{subsection.1.8}% 30
+\BOOKMARK [2][-]{subsection.1.9}{MOSFETs of Varying Length, [8a-d]}{section.1}% 31
+\BOOKMARK [3][-]{subsubsection.1.9.1}{Measurement setups}{subsection.1.9}% 32
+\BOOKMARK [3][-]{subsubsection.1.9.2}{Plots of ID-VD, sweeping VG}{subsection.1.9}% 33
+\BOOKMARK [3][-]{subsubsection.1.9.3}{Plots of ID-VG, sweeping VB}{subsection.1.9}% 34
+\BOOKMARK [2][-]{subsection.1.10}{MOSFETs of varying width [9a-c]}{section.1}% 35
+\BOOKMARK [3][-]{subsubsection.1.10.1}{Measurement setup}{subsection.1.10}% 36
+\BOOKMARK [3][-]{subsubsection.1.10.2}{Plots of ID-VD, sweeping VG }{subsection.1.10}% 37
+\BOOKMARK [3][-]{subsubsection.1.10.3}{Plots of ID-VG, sweeping VB}{subsection.1.10}% 38
+\BOOKMARK [2][-]{subsection.1.11}{Large MOSFET, 10}{section.1}% 39
+\BOOKMARK [3][-]{subsubsection.1.11.1}{Measurement setup}{subsection.1.11}% 40
+\BOOKMARK [3][-]{subsubsection.1.11.2}{Plots of ID-VD, sweeping VG }{subsection.1.11}% 41
+\BOOKMARK [3][-]{subsubsection.1.11.3}{Plots of ID-VG, sweeping VB}{subsection.1.11}% 42
+\BOOKMARK [2][-]{subsection.1.12}{Inverter, 14}{section.1}% 43
+\BOOKMARK [3][-]{subsubsection.1.12.1}{Measurement setup}{subsection.1.12}% 44
+\BOOKMARK [3][-]{subsubsection.1.12.2}{b. Vin-Vout plot}{subsection.1.12}% 45
+\BOOKMARK [3][-]{subsubsection.1.12.3}{Estimate VM}{subsection.1.12}% 46
+\BOOKMARK [1][-]{section.2}{Theoretical Calculations}{}% 47
+\BOOKMARK [2][-]{subsection.2.1}{Measured Physical Dimensions and Parameters}{section.2}% 48
+\BOOKMARK [2][-]{subsection.2.2}{Resistors [2a,2b]}{section.2}% 49
+\BOOKMARK [2][-]{subsection.2.3}{Contact Resistances [17a,17b]}{section.2}% 50
+\BOOKMARK [2][-]{subsection.2.4}{Contact-Chain Resistors [2c, 2d]}{section.2}% 51
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Diffusion chain resistor, 2c}{subsection.2.4}% 52
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Poly chain resistor, 2d}{subsection.2.4}% 53
+\BOOKMARK [2][-]{subsection.2.5}{Gate/Field Oxide Capacitors[3,4]}{section.2}% 54
+\BOOKMARK [2][-]{subsection.2.6}{Diode}{section.2}% 55
+\BOOKMARK [2][-]{subsection.2.7}{MOSFETs}{section.2}% 56
+\BOOKMARK [3][-]{subsubsection.2.7.1}{MOSFETs of varying length [8] and width [9]}{subsection.2.7}% 57
+\BOOKMARK [3][-]{subsubsection.2.7.2}{Large MOSFET}{subsection.2.7}% 58
+\BOOKMARK [2][-]{subsection.2.8}{Inverter}{section.2}% 59
+\BOOKMARK [1][-]{section.3}{Discussion}{}% 60
+\BOOKMARK [1][-]{section.4}{Optional Questions}{}% 61
+\BOOKMARK [1][-]{section.5}{Appendix}{}% 62
+\BOOKMARK [1][-]{section.6}{References}{}% 63

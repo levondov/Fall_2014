@@ -28,7 +28,7 @@ plt.savefig("D2bplot.pdf")
 ## Device 2c
 plt.figure()
 device2c = np.genfromtxt('D2CIMG.TXT.csv', delimiter=',',skip_header=108)
-
+print(device2c)
 plt.plot(device2c[:,0],device2c[:,1])
 plt.axis([-2,2,-.05,.05])
 plt.grid(True)
@@ -40,7 +40,7 @@ plt.savefig("D2cplot.pdf")
 ## Device 2d
 plt.figure()
 device2d = np.genfromtxt('D2DIMG.TXT.csv', delimiter=',',skip_header=108)
-
+print(device2d)
 plt.plot(device2d[:,0],device2d[:,1])
 plt.axis([-2,2,-.015,.015])
 plt.grid(True)
@@ -344,7 +344,7 @@ plt.figure()
 device17b = np.genfromtxt('D17BIMG1.TXT.csv', delimiter=',',skip_header=108) 
 
 plt.plot(device17b[:,0],device17b[:,1])
-print(device17b)
+
 plt.grid(True)
 plt.axis([-0.2,0.2,-0.1,0.1])
 plt.xlabel("VDiff (V)")

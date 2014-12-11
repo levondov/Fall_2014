@@ -324,15 +324,10 @@ minimum capacitance ...
 \caption{A plot of the measurement data taken for the field oxide capacitor, 3}
 \end{figure}
 
-Minimum capacitance
-
-\subsubsection{Capacitance in the accumulation region}
-
-minimum capacitance ...
-
-\subsubsection{Field oxide thickness}
-
-stuff...
+From the plot above we see that at the accumulation region of $\approx 10$ volts we have a corresponding capacitance of $C \approx 1.2$pF. Noting that the area of the capacitor plate is 200 $\mu m$ by 200 $\mu m$, we can now solve for the dieletric (oxide) thickness.
+\begin{align*}
+C = \frac{A \epsilon}{t_{\text{ox}}} \Rightarrow t_{\text{ox}} = \frac{3.9 A \epsilon_0}{C} = \frac{3.9 (4\e{-8}) (8.85\e{-12})}{1.2 \e{-9}} = 1.15 \,\text{nm}
+\end{align*}
 
 \subsection{Intermediate Oxide Capacitors, 5} %%%%%%% Intermediate Oxide Capacitor 5
 
@@ -361,11 +356,7 @@ stuff...
 \caption{A plot of the measurement data taken for the Intermediate oxide, 5}
 \end{figure}
 
-stuff ...
-
-\subsubsection{Capacitance in the accumulation region}
-
-stuff...
+The capacitance at the accumulation region of $\approx 5$ V is about 3.0725 pF
 
 
 \subsection{Diode, 7} %%%%%%%%% Diode 7
