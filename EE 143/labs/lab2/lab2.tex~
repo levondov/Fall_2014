@@ -319,7 +319,7 @@ Q_{BO} = \sqrt{2q\epsilon_{si}N_B2\phi_F} = \sqrt{2(1.602\e{-19})(11.7 \times 8.
 \end{align*}
 Now to calculate/estimate threshold voltage. Note that the work function $\phi_{ms}$ is zero for n+ doped poly gate.
 \begin{align*}
-V_t = \phi_{ms} - 2\phi_f - \frac{Q_{ss}}{C_{\text{max}}} - \frac{Q_{BO}}{C_{\text{max}}} = 0 - 0.6 - \frac{2.06\e{-3}}{15.7\e{-15}} - \frac{1.51\e{-4}}{15.7\e{-15}}
+V_t = \phi_{ms} - 2\phi_f - \frac{Q_{ss}}{C_{\text{max}}} - \frac{Q_{BO}}{C_{\text{max}}} = 0 - 0.6 - \frac{2.06\e{-3}}{15.7\e{-15}} - \frac{1.51\e{-4}}{15.7\e{-15}} = -1.41\e{11} V
 \end{align*}
 
 \subsubsection{C-V plot of gate oxide capacitor w/ lights OFF}
@@ -425,7 +425,8 @@ The capacitance at the accumulation region of $\approx 5$ V is about 3.0725 pF.
 \caption{Plots of forward and reverse operation of Diode 7.}
 \end{figure}
 
-\subsubsection{Extract the turn-on voltage and the series resistance}
+Looking at the plots above, the forward turn on voltage is $V_F \approx 70 V$ while the reverse bias turn off voltage is about $V_{RB} \approx 0.5 V$. To calculate the series resistance in the forward bias we look at the region of the curve where V is greater than 65 V. The inverse of the slope there results in $R = 17.8 \,k\Omega$. Similarly for the reverse bias plot, looking at the region below 0.5 Volts, we find that the inverse of the slope is $R = -22.1\,k\Omega$.
+
 
 
 \subsection{MOSFETs of Varying Length, [8a-d]} %%%%%%%%%%%%%% MOSFETS 8a-d
@@ -470,8 +471,21 @@ The capacitance at the accumulation region of $\approx 5$ V is about 3.0725 pF.
 \end{tikzpicture}
 \caption{Test 1 for Mosfet 8a}
 \end{figure}
-
-Calculate stuff here... 
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8a1longplot.pdf}};
+\draw[-,red,dashed] (2.1,2.35) -- (8.5,7.34);
+\draw[-,red,dashed] (2.1,2.35) -- (8.5,7.2);
+\draw[-,red,dashed] (2.1,2.35) -- (8.5,7.025);
+\draw[-,red,dashed] (2.1,2.35) -- (8.5,6.88);
+\draw[-,red,dashed] (2.1,2.35) -- (8.5,6.72);
+\draw[-,red,dashed] (2.1,2.35) -- (8.5,6.57);
+\end{tikzpicture}
+\caption{Test 1 for Mosfet 8a with extended x axis range in order to calculate lambda.}
+\label{fig:8along}
+\end{figure} 
+We see that everything intersects at about -13.8 V. This corresponds to $\lambda = \frac{1}{-13.8} = -0.0725$.
 
 \begin{figure}[H]
 \centering
@@ -480,8 +494,22 @@ Calculate stuff here...
 \end{tikzpicture}
 \caption{Test 1 for Mosfet 8b}
 \end{figure}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8b1longplot.pdf}};
+\draw[-,red,dashed] (2.5,2.35) -- (8.5,7.37);
+\draw[-,red,dashed] (2.5,2.35) -- (8.5,7.18);
+\draw[-,red,dashed] (2.5,2.35) -- (8.5,6.99);
+\draw[-,red,dashed] (2.5,2.35) -- (8.5,6.78);
+\draw[-,red,dashed] (2.5,2.35) -- (8.5,6.60);
+\draw[-,red,dashed] (2.5,2.35) -- (8.5,6.41);
+\end{tikzpicture}
+\caption{Test 1 for Mosfet 8b with extended x axis range in order to calculate lambda.}
+\label{fig:8blong}
+\end{figure}
+We see that everything intersects at about -8.23 V. This corresponds to $\lambda = \frac{1}{-8.23} = -0.122$.
 
-Calculate stuff here...
 
 \begin{figure}[H]
 \centering
@@ -490,8 +518,21 @@ Calculate stuff here...
 \end{tikzpicture}
 \caption{Test 1 for Mosfet 8c}
 \end{figure}
-
-Calculate stuff here...
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8c1longplot.pdf}};
+\draw[-,red,dashed] (3,2.35) -- (8.5,7.3);
+\draw[-,red,dashed] (3,2.35) -- (8.5,7.1);
+\draw[-,red,dashed] (3,2.35) -- (8.5,6.92);
+\draw[-,red,dashed] (3,2.35) -- (8.5,6.73);
+\draw[-,red,dashed] (3,2.35) -- (8.5,6.55);
+\draw[-,red,dashed] (3,2.35) -- (8.5,6.37);
+\end{tikzpicture}
+\caption{Test 1 for Mosfet 8c with extended x axis range in order to calculate lambda.}
+\label{fig:8clong}
+\end{figure}
+We see that everything intersects at about -4.70 V. This corresponds to $\lambda = \frac{1}{-4.70} = -0.213$.
 
 \begin{figure}[H]
 \centering
@@ -500,8 +541,35 @@ Calculate stuff here...
 \end{tikzpicture}
 \caption{Test 1 for Mosfet 8d}
 \end{figure}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8d1longplot.pdf}};
+\draw[-,red,dashed] (3.25,2.35) -- (8.5,6.87);
+\draw[-,red,dashed] (3.25,2.35) -- (8.5,6.525);
+\draw[-,red,dashed] (3.25,2.35) -- (8.5,6.365);
+\draw[-,red,dashed] (3.25,2.35) -- (8.5,6.21);
+\draw[-,red,dashed] (3.25,2.35) -- (8.5,6.05);
+\draw[-,red,dashed] (3.25,2.35) -- (8.5,5.90);
+\end{tikzpicture}
+\caption{Test 1 for Mosfet 8d with extended x axis range in order to calculate lambda.}
+\label{fig:8dlong}
+\end{figure}
+We see that everything intersects at about -2.72 V. This corresponds to $\lambda = \frac{1}{-2.72} = -0.368$.
 
-Calculate stuff here...
+\subsubsection{$\lambda$ vs $L_{\text{Drawn}}$}
+To summarize, here is a table of all $\lambda$ values calculated,
+\begin{figure}[H]
+\centering
+\begin{tabular}{c || c | c | c }
+MOSFET device & $\lambda$ ($V^{-1}$) & $L_{\text{drawn}}$ ($\mu m$) & Fig \# \\ \hline
+8a & -0.0725 & 4 & \textcolor{blue}{\ref{fig:8along}} \\ \hline
+8b & -0.122 & 6 & \textcolor{blue}{\ref{fig:8blong}}\\ \hline
+8c & -0.213 & 8 & \textcolor{blue}{\ref{fig:8clong}}\\ \hline
+8d & -0.368 & 10 & \textcolor{blue}{\ref{fig:8dlong}}\\ \hline
+\end{tabular}
+\caption{all $\lambda$ values for mosfets 9a-d}
+\end{figure}
 
 \subsubsection{Plots of $I_D$-$V_G$, sweeping $V_B$}
 

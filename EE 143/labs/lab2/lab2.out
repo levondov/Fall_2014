@@ -27,11 +27,11 @@
 \BOOKMARK [2][-]{subsection.1.8}{Diode, 7}{section.1}% 27
 \BOOKMARK [3][-]{subsubsection.1.8.1}{Measurement setups for forward and reverse operations}{subsection.1.8}% 28
 \BOOKMARK [3][-]{subsubsection.1.8.2}{I-V plots for forward and reverse operation}{subsection.1.8}% 29
-\BOOKMARK [3][-]{subsubsection.1.8.3}{Extract the turn-on voltage and the series resistance}{subsection.1.8}% 30
-\BOOKMARK [2][-]{subsection.1.9}{MOSFETs of Varying Length, [8a-d]}{section.1}% 31
-\BOOKMARK [3][-]{subsubsection.1.9.1}{Measurement setups}{subsection.1.9}% 32
-\BOOKMARK [3][-]{subsubsection.1.9.2}{Plots of ID-VD, sweeping VG}{subsection.1.9}% 33
-\BOOKMARK [3][-]{subsubsection.1.9.3}{Plots of ID-VG, sweeping VB}{subsection.1.9}% 34
+\BOOKMARK [2][-]{subsection.1.9}{MOSFETs of Varying Length, [8a-d]}{section.1}% 30
+\BOOKMARK [3][-]{subsubsection.1.9.1}{Measurement setups}{subsection.1.9}% 31
+\BOOKMARK [3][-]{subsubsection.1.9.2}{Plots of ID-VD, sweeping VG}{subsection.1.9}% 32
+\BOOKMARK [3][-]{subsubsection.1.9.3}{ vs LDrawn}{subsection.1.9}% 33
+\BOOKMARK [3][-]{subsubsection.1.9.4}{Plots of ID-VG, sweeping VB}{subsection.1.9}% 34
 \BOOKMARK [2][-]{subsection.1.10}{MOSFETs of varying width [9a-c]}{section.1}% 35
 \BOOKMARK [3][-]{subsubsection.1.10.1}{Measurement setup}{subsection.1.10}% 36
 \BOOKMARK [3][-]{subsubsection.1.10.2}{Plots of ID-VD, sweeping VG }{subsection.1.10}% 37
