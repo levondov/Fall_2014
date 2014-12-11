@@ -332,7 +332,7 @@ plt.figure()
 device17a = np.genfromtxt('D17AIMG1.TXT.csv', delimiter=',',skip_header=108) 
 
 plt.plot(device17a[:,0],device17a[:,1])
-		
+
 plt.grid(True)
 plt.axis([-0.3,0.3,-0.1,0.1])
 plt.xlabel("VDiff (V)")
@@ -344,7 +344,7 @@ plt.figure()
 device17b = np.genfromtxt('D17BIMG1.TXT.csv', delimiter=',',skip_header=108) 
 
 plt.plot(device17b[:,0],device17b[:,1])
-		
+print(device17b)
 plt.grid(True)
 plt.axis([-0.2,0.2,-0.1,0.1])
 plt.xlabel("VDiff (V)")
