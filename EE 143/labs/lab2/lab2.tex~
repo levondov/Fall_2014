@@ -286,7 +286,41 @@ R_{\text{total poly}} = 7(\eta R_{\text{S poly}} + R_{\text{C poly}}) \Rightarro
 \end{tikzpicture}
 \caption{A plot of the measurement data taken for the gate capacitor, 4. Lights on.}
 \end{figure}
-Minimum capacitance
+
+The minimum capacitance from the plot above is 7.48 pF. The accumulation region capacitance at about 5 V is 15.7 pF. The active area is 200 $\mu m$ by 200 $\mu m$ while the pad+ring area is 240 $\mu m$ by 335 $\mu m$. Also note the gate oxide thickness calculated below for the field oxide capacitors is 1.15 $\mu$m.
+\begin{align*}
+C_{\text{measured}} &= A_{\text{active}}\frac{\epsilon_{\text{ox}}}{t_{\text{gox}}} + A_{\text{pad-ring}}\frac{\epsilon_{\text{ox}}}{t_{\text{fox}}} \\ \\
+t_{\text{gox}} = [\frac{1}{A_{\text{active}}}(\frac{C_{\text{measured}}}{\epsilon_{\text{ox}}} - \frac{A_{\text{pad-ring}}}{t_{\text{fox}}})]^{-1} &= [\frac{1}{4\e{-8}}(\frac{15.7\e{-12}}{(3.9)8.85\e{-12}} - \frac{8.04\e{-8}}{1.15\e{-6}})]^{-1} = 0.104 \,\mu\text{m}
+\end{align*}
+The capacitance per unit area in this case would be 15.7 pF / ($240 \mu m \times 335 \mu m$). C/area = 1.95 pF/$\mu$m. Now in order to calculate the maximum depletion region we use an equation from lecture notes. Note the max and min capacitance we calculated earlier,
+\begin{equation}
+\frac{1}{C_{\text{min}}} = \frac{1}{C_{\text{max}}} + \frac{1}{A_{\text{pad-ring}} C_{\text{Dmin}}},\,\text{where } C_{\text{Dmin}} = \frac{\epsilon_{\text{si}}}{x_{\text{dmax}}}
+\end{equation}
+Solving for the maximum depletion region we get,
+\begin{align*}
+x_{\text{dmax}} = A_{\text{pad-ring}}\epsilon_{\text{si}}(\frac{1}{C_{\text{min}}} - \frac{1}{C_{\text{max}}}) = (8.04\e{-8})(11.7 \times 8.85\e{-12})(\frac{1}{7.48\e{-12}} - \frac{1}{15.7\e{-12}}) = 0.583 \mu m
+\end{align*}
+
+Another equation from lecture will help us solve for the substrate doping concentration,
+\begin{equation}
+x_d = \sqrt{\frac{2\epsilon_{\text{si}}}{q}\frac{1}{N_A}|\psi_s|}
+\end{equation}
+where $\psi_s$ is the potential drop and has a typical value of 0.3, q is the charge of an electron 1.602\e{-19} C, and $N_A$ is the doping concentration.
+\begin{align*}
+N_A = \frac{2\epsilon_{\text{si}} |\psi_s|}{q{x_d}^2} = \frac{2(11.7 \times 8.85\e{-12})(0.3)}{1.602\e{-19}(0.583\e{-6})^2} = 1.14\e{21} \,{\text{cm}}^{-3}
+\end{align*}
+From the curve above (Figure 11) we can see that the flatband voltage is $V_{FB} \approx 5.5$ and the corresponding $C_{FB} \approx 15.5$pF. To find the charge per unit area at the oxide silicon interface we can use the Q = CV equation.
+\begin{align*}
+\frac{Q_{ss}}{A} = \frac{C_{FB}V_{FB}}{A_{\text{pad-ring}}} = \frac{(5.5)(15.5\e{-12})}{8.04\e{-8}} = 1.06 \,\text{mF}/\text{m}^2
+\end{align*}
+To calculate the threshold voltage we will assume that $V_{SB} = 0$. First we must also calculate $Q_{BO}$ which is the charge stored in the depletion region,
+\begin{align*}
+Q_{BO} = \sqrt{2q\epsilon_{si}N_B2\phi_F} = \sqrt{2(1.602\e{-19})(11.7 \times 8.85\e{-12})(1.14\e{21})(2 \times 0.3)} = 1.51\e{-4}\, C/{\text{m}}^2
+\end{align*}
+Now to calculate/estimate threshold voltage. Note that the work function $\phi_{ms}$ is zero for n+ doped poly gate.
+\begin{align*}
+V_t = \phi_{ms} - 2\phi_f - \frac{Q_{ss}}{C_{\text{max}}} - \frac{Q_{BO}}{C_{\text{max}}} = 0 - 0.6 - \frac{2.06\e{-3}}{15.7\e{-15}} - \frac{1.51\e{-4}}{15.7\e{-15}}
+\end{align*}
 
 \subsubsection{C-V plot of gate oxide capacitor w/ lights OFF}
 \begin{figure}[H]
@@ -326,7 +360,7 @@ minimum capacitance ...
 
 From the plot above we see that at the accumulation region of $\approx 10$ volts we have a corresponding capacitance of $C \approx 1.2$pF. Noting that the area of the capacitor plate is 200 $\mu m$ by 200 $\mu m$, we can now solve for the dieletric (oxide) thickness.
 \begin{align*}
-C = \frac{A \epsilon}{t_{\text{ox}}} \Rightarrow t_{\text{ox}} = \frac{3.9 A \epsilon_0}{C} = \frac{3.9 (4\e{-8}) (8.85\e{-12})}{1.2 \e{-9}} = 1.15 \,\text{nm}
+C = \frac{A \epsilon_{\text{ox}}}{t_{\text{fox}}} \Rightarrow t_{\text{fox}} = \frac{3.9 A \epsilon_0}{C} = \frac{3.9 (4\e{-8}) (8.85\e{-12})}{1.2 \e{-12}} = 1.15 \,\mu\text{m}
 \end{align*}
 
 \subsection{Intermediate Oxide Capacitors, 5} %%%%%%% Intermediate Oxide Capacitor 5
@@ -356,7 +390,7 @@ C = \frac{A \epsilon}{t_{\text{ox}}} \Rightarrow t_{\text{ox}} = \frac{3.9 A \ep
 \caption{A plot of the measurement data taken for the Intermediate oxide, 5}
 \end{figure}
 
-The capacitance at the accumulation region of $\approx 5$ V is about 3.0725 pF
+The capacitance at the accumulation region of $\approx 5$ V is about 3.0725 pF.
 
 
 \subsection{Diode, 7} %%%%%%%%% Diode 7

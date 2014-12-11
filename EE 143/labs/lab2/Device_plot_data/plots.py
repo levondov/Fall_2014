@@ -368,19 +368,19 @@ plt.figure()
 device4a = np.genfromtxt('D4IMG1.TXT.csv', delimiter=',',skip_header=11) 
 
 plt.plot(device4a[:,0],device4a[:,1])
-		
+
 plt.grid(True)
 #plt.axis([-0.2,0.2,-0.1,0.1])
 plt.xlabel("V sweep (V)")
 plt.ylabel("CX (F)")
-plt.title("Gate oxide capacitor wlight, 4")
+plt.title("Gate oxide capacitor w/ light, 4")
 plt.savefig("D4aplot.pdf")
 ## Device 4 without light, img2
 plt.figure()
 device4b = np.genfromtxt('D4IMG2.TXT.csv', delimiter=',',skip_header=11) 
 
 plt.plot(device4b[:,0],device4b[:,1])
-		
+
 plt.grid(True)
 #plt.axis([-0.2,0.2,-0.1,0.1])
 plt.xlabel("V sweep (V)")
