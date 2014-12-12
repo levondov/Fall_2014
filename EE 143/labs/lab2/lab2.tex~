@@ -292,7 +292,7 @@ The minimum capacitance from the plot above is 7.48 pF. The accumulation region 
 C_{\text{measured}} &= A_{\text{active}}\frac{\epsilon_{\text{ox}}}{t_{\text{gox}}} + A_{\text{pad-ring}}\frac{\epsilon_{\text{ox}}}{t_{\text{fox}}} \\ \\
 t_{\text{gox}} = [\frac{1}{A_{\text{active}}}(\frac{C_{\text{measured}}}{\epsilon_{\text{ox}}} - \frac{A_{\text{pad-ring}}}{t_{\text{fox}}})]^{-1} &= [\frac{1}{4\e{-8}}(\frac{15.7\e{-12}}{(3.9)8.85\e{-12}} - \frac{8.04\e{-8}}{1.15\e{-6}})]^{-1} = 0.104 \,\mu\text{m}
 \end{align*}
-The capacitance per unit area in this case would be 15.7 pF / ($240 \mu m \times 335 \mu m$). C/area = 1.95 pF/$\mu$m. Now in order to calculate the maximum depletion region we use an equation from lecture notes. Note the max and min capacitance we calculated earlier,
+The capacitance per unit area in this case would be 15.7 pF / ($240 \mu m \times 335 \mu m$). C/area = 1.95 pF/$\mu$m or 1.95 F/$m^{-2}$. Now in order to calculate the maximum depletion region we use an equation from lecture notes. Note the max and min capacitance we calculated earlier,
 \begin{equation}
 \frac{1}{C_{\text{min}}} = \frac{1}{C_{\text{max}}} + \frac{1}{A_{\text{pad-ring}} C_{\text{Dmin}}},\,\text{where } C_{\text{Dmin}} = \frac{\epsilon_{\text{si}}}{x_{\text{dmax}}}
 \end{equation}
@@ -307,7 +307,7 @@ x_d = \sqrt{\frac{2\epsilon_{\text{si}}}{q}\frac{1}{N_A}|\psi_s|}
 \end{equation}
 where $\psi_s$ is the potential drop and has a typical value of 0.3, q is the charge of an electron 1.602\e{-19} C, and $N_A$ is the doping concentration.
 \begin{align*}
-N_A = \frac{2\epsilon_{\text{si}} |\psi_s|}{q{x_d}^2} = \frac{2(11.7 \times 8.85\e{-12})(0.3)}{1.602\e{-19}(0.583\e{-6})^2} = 1.14\e{21} \,{\text{cm}}^{-3}
+N_A = \frac{2\epsilon_{\text{si}} |\psi_s|}{q{x_d}^2} = \frac{2(11.7 \times 8.85\e{-12})(0.3)}{1.602\e{-19}(0.583\e{-6})^2} = 1.14\e{21} \,{\text{cm}}^{-3} = 1.14\e{27} \,{\text{m}}^{-3}
 \end{align*}
 From the curve above (Figure 11) we can see that the flatband voltage is $V_{FB} \approx 5.5$ and the corresponding $C_{FB} \approx 15.5$pF. To find the charge per unit area at the oxide silicon interface we can use the Q = CV equation.
 \begin{align*}
@@ -315,11 +315,11 @@ From the curve above (Figure 11) we can see that the flatband voltage is $V_{FB}
 \end{align*}
 To calculate the threshold voltage we will assume that $V_{SB} = 0$. First we must also calculate $Q_{BO}$ which is the charge stored in the depletion region,
 \begin{align*}
-Q_{BO} = \sqrt{2q\epsilon_{si}N_B2\phi_F} = \sqrt{2(1.602\e{-19})(11.7 \times 8.85\e{-12})(1.14\e{21})(2 \times 0.3)} = 1.51\e{-4}\, C/{\text{m}}^2
+Q_{BO} = \sqrt{2q\epsilon_{si}N_B2\phi_F} = \sqrt{2(1.602\e{-19})(11.7 \times 8.85\e{-12})(1.14\e{27})(2 \times 0.3)} = 1.51\e{-1}\, C/{\text{m}}^2
 \end{align*}
 Now to calculate/estimate threshold voltage. Note that the work function $\phi_{ms}$ is zero for n+ doped poly gate.
 \begin{align*}
-V_t = \phi_{ms} - 2\phi_f - \frac{Q_{ss}}{C_{\text{max}}} - \frac{Q_{BO}}{C_{\text{max}}} = 0 - 0.6 - \frac{2.06\e{-3}}{15.7\e{-15}} - \frac{1.51\e{-4}}{15.7\e{-15}} = -1.41\e{11} V
+V_t = \phi_{ms} + 2\phi_f - \frac{Q_{ss}}{C_{\text{max}}} + \frac{Q_{BO}}{C_{\text{max}}} = 0 + 0.6 - \frac{1.06\e{-3}}{1.95} + \frac{1.51\e{-1}}{1.95} = -9.49\e{12} V
 \end{align*}
 
 \subsubsection{C-V plot of gate oxide capacitor w/ lights OFF}
@@ -924,9 +924,7 @@ The subthreshold slope was calculate between $V_G = 0$ and $V_G = 1$. This slope
 \caption{Plot for Inverter. Note both axis are in units of Volts.}
 \end{figure}
 
-\subsubsection{Estimate $V_M$}
-
-calculations here....
+To find the point where $V_{IN}$ = $V_{OUT}$ we ran a simple loop to find the closest point. We calculated $V_M = 0.025 V$. At that voltage $|V_{OUT} - V_{IN}|$ is minimized.
 
 \section{Theoretical Calculations}
 
@@ -971,12 +969,28 @@ R_{\text{total}} = 7(\eta R_s + R_c) = 7((2.3)(R_s) + (0.4)) = ?
 \subsection{Gate/Field Oxide Capacitors[3,4]}
 
 \subsection{Diode}
+We make the assumption that the junction is a step junction and that the concentrations of dopants are constant across respective regions of the device. Built-in potential for a p-n diode is given by the function:
+\begin{equation}
+\phi = \frac{kT}{q}\ln{\frac{N_AN_d}{{n_i}^{2}}}
+\end{equation}
+Where T is room temperature, $N_A$ is the p-sub dopant concentration (8\e{14}${\text{cm}^{-3}}$), $N_d$ is the n+ dopant concentration ($10^{21}{\text{cm}^{-3}}$), and $n_i$ is the instrinsic carrier concentration for silicon ($10^{10}$).
+
+\begin{align*}
+\phi = \frac{kT}{q}\ln{\frac{N_AN_d}{{n_i}^{2}}} = \frac{1.38\e{-23}(298)}{1.602\e{-19}}\ln{\frac{(8\e{14})(10^{21})}{{10^{20}}}} = 0.92 V
+\end{align*}
 
 \subsection{MOSFETs}
 \subsubsection{MOSFETs of varying length [8] and width [9]}
 \subsubsection{Large MOSFET}
 
 \subsection{Inverter}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=350pt]{Device_setup/Inverter_plots.pdf}};
+\end{tikzpicture}
+\caption{Setup for inverters.}
+\end{figure}
 
 \section{Discussion}
 
