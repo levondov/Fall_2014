@@ -109,7 +109,7 @@ slope6, intercept6, r_value, p_value, std_err = stats.linregress(x6,y6)
 x6a = np.linspace(0,10,100)
 y6a = slope6*x6a + intercept6
 
-print(slope6)
+#print(slope6)
 plt.grid(True)
 plt.scatter(x6,y6)
 plt.plot(x6a,y6a)
@@ -125,6 +125,27 @@ for i in range(0,np.size(device14,0)):
 	if (np.abs(device14[i,0] - device14[i,1]) < mins):
 		mins = np.abs(device14[i,0] - device14[i,1]) 
 		minx = i;
-print(device14[minx,0],device14[minx,1],mins)
+#print(device14[minx,0],device14[minx,1],mins)
+#### More Inverter shit
+plt.figure()
+x = np.linspace(0.25,1,100)
+yi1 = (1/170.)*(-8*np.sqrt(400*(x**2) - 135*x + 9) + 160*x - 27) #vdd = 0
+yi2 = (1/170.)*(-4*np.sqrt(2)*np.sqrt(800*(x**2) - 170*x - 17) + 160*x - 17) #vdd = 1
+yi3 = (1/170.)*(-8*np.sqrt(400*(x**2) - 35*x - 76) + 160*x - 7) #vdd = 2
+
+plt.plot(x,yi1)
+plt.plot(x,yi2)
+plt.plot(x,yi3)
+
+plt.grid(True)
+plt.xlabel('$V_{in}$ (V)')
+plt.ylabel('V_out (V)')
+plt.title('$V_{out}$ vs $V_{in}$ for theoretical Inverter')
+plt.legend(['$V_{dd}$ = 0','$V_{dd}$ = 1','$V_{dd}$ = 2'],loc =1)
+plt.savefig('D14theoplot.pdf')
+
+
+
+
 
 plt.show()

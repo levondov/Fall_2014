@@ -319,7 +319,7 @@ Q_{BO} = \sqrt{2q\epsilon_{si}N_B2\phi_F} = \sqrt{2(1.602\e{-19})(11.7 \times 8.
 \end{align*}
 Now to calculate/estimate threshold voltage. Note that the work function $\phi_{ms}$ is zero for n+ doped poly gate.
 \begin{align*}
-V_t = \phi_{ms} + 2\phi_f - \frac{Q_{ss}}{C_{\text{max}}} + \frac{Q_{BO}}{C_{\text{max}}} = 0 + 0.6 - \frac{1.06\e{-3}}{1.95} + \frac{1.51\e{-1}}{1.95} = -9.49\e{12} V
+V_t = \phi_{ms} + 2\phi_f - \frac{Q_{ss}}{C_{\text{max}}} + \frac{Q_{BO}}{C_{\text{max}}} = 0 + 0.6 - \frac{1.06\e{-3}}{1.95} + \frac{1.51\e{-1}}{1.95} = 0.677 V
 \end{align*}
 
 \subsubsection{C-V plot of gate oxide capacitor w/ lights OFF}
@@ -991,6 +991,58 @@ Where T is room temperature, $N_A$ is the p-sub dopant concentration (8\e{14}${\
 \end{tikzpicture}
 \caption{Setup for inverters.}
 \end{figure}
+
+The load resistor has Vdd connected to the drain and the gate. Since
+\begin{align*}
+V_{DS} &= V_{dd} - V{out} \\
+V_{GS} &= V_{dd} - V_{out}
+\end{align*} 
+Then 
+\begin{align*}
+V_{DS} = V_{dd} - V_{out} >= V_{dd} - V_{out} - V_{tnl} = V_{GS} - V_{tnl}
+\end{align*}
+So the load transistor is always in the saturation region, regardless of Vdd. It therefore acts as a variable resistor dependent on Vdd. The threshold voltage for both NMOS transistors is:
+\begin{align*}
+V_{TN} = V_{FB} + 2|\Phi_F| + (1/C_0)\sqrt{2\epsilon_s q N_B (2|\Phi_F| + V_{sb})}
+\end{align*}
+They differ in $V_{sb}$ so 
+\begin{align*}
+V_{tnl} &= V_{TN0} + (1/C_0)\sqrt{2\epsilon_s q N_B}(\sqrt{2|\Phi_F| + V_{out}} - \sqrt{2|\Phi_F|}) \\
+V_{tnd} &= V_{TN0} \\
+\text{Where } V_{TN0} =& V_{TND} = 0.03
+\end{align*}
+Since $V_{tnl}$ is dependent on $V_{out}$ and vice versa, $V_{out}$ can only be determined by iteration. For the purposes of graphing, we will make the simplfying assumption that the effect of substrate bias is small, and thus that $V_{tnl}$ can be estimated to be $V_{TN0}$. This is not the case in reality, but should serve the purpose of illustrating the expected curves.
+
+For the drive transistor: In the cutoff region ($V_{in}<V_{tnd}$), no current flows through the driver transistor, therefore the drain currents are zero for both transistors.
+\begin{align*}
+I_{Dl} = K_L(V_{dd} - V_{out} - V_{tnl})^2 = 0
+\end{align*}
+Therefore $V_{out} = V_{dd} - V_{tnl}$. In the saturated region ($V_{out} >V_{in}-V_{tnd}>0$), both transistors are saturated. Their drain currents must be equal.
+\begin{align*}
+I_{dl} =& K_L(V_{dd} - V_{out} - V_{tnl})^2 = K_D(V_{in} - V_{tnd})^2 = I_{Dd} \\
+V_{out} =& V_{dd} - V_{tnl} - \sqrt{K_D/K_L}(V_{in} - V_{tnd})
+\end{align*}
+In the linear region ($V_{in}-V_{tnd}>V_{out} >0$), the driver transistor is in the linear region and the load transistor is in the saturated region. Since their drain currents must again be equal:
+\begin{align*}
+I_{dl} =& K_L(V_{dd} - V_{out} - V_{tnl})^2 = 2K_D(V_{in} - V_{tnd} - 0.5V_{out})V_{out} = I_{Dd}
+\end{align*}
+Here the dependence of Vin on Vout is becomes non-linear. 
+\begin{align*}
+V_{in} = \frac{(K_L/K_D)(V_{dd} - V_{out} - V_{tnl})^2 + V_{out}^2 + V_{tnd}V_{out}}{2V_{out}}
+\end{align*}
+Also note that for our transistor, the aspect ratio should be
+\begin{align*}
+\frac{K_D}{K_L} = \frac{W_DL_L}{L_DW_L} = \frac{160*20}{10*10} = 16
+\end{align*}
+For $V_{tnl}$ and $V_{tnd}$ we will use a value of 0.3 as mentioned above. $V_{dd}$ will range from 0 to 5 volts.
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=350pt]{Device_plot_data/D14theoplot.pdf}};
+\end{tikzpicture}
+\caption{Setup for inverters.}
+\end{figure}
+
 
 \section{Discussion}
 
