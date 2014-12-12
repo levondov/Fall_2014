@@ -968,6 +968,78 @@ R_{\text{total}} = 7(\eta R_s + R_c) = 7((2.3)(R_s) + (0.4)) = ?
 
 \subsection{Gate/Field Oxide Capacitors[3,4]}
 
+\begin{description}[style = nextline]
+\item[Describe the physics of the MOS capacitor. In particular, what does MOS mean? Discuss the three regions of an MOS capacitor.] 
+
+MOS stands for metal-oxide-semiconductor: the three components that form a MOS capacitor. One plate is formed by the metal (or polysilicon) gate, and the other is formed by the surface of a semiconductor, with a oxide layer as an insulator in between. MOS capacitators have three operating regions due to the nature of the semiconductor. In the accumulation region, the applied gate voltage is lower than the flatband voltage of the device. Negative charge accumulating on the gate attracts holes from the p-substrate. In the depletion region, the gate voltage increases beyond the flatband voltage. Positive charge accumulates on the gate, repelling positive holes in the p-substrate, creating a depletion region in the semiconductor. In the inversion region, the gate voltage increases beyond the threshold voltage, and minority carriers, in this case electrons, in the p-substrate are attracted to the surface of the substrate by the large amount of positive charge on the gate.
+
+\item[Why does the Intermediate Oxide Capacitor (5) not display MOS effects?] 
+
+Due to the fact that the intermediate oxide was grown during drive-in for the S/D regions, there is an exceedingly large amount of dopants in the intermediate oxide, as opposed to the gate and field oxide which were grown when the wafer had not been heavily doped. If these are included into the calculations, then both the flatband voltage and the threshold voltage are exceedingly negative and the capacitor remains permanently in the accumulation region and never transitions.for the given voltage range.
+\end{description}
+
+\subsubsection{Theoretical plots}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,4) {CV plot for \textcolor{blue}{Gate capacitance} and \textcolor{red}{Field capacitance}};
+\draw[<->,thick] (0,0) -- (10,0);
+\draw[->,thick] (5,0) -- (5,2.5);
+\node at (10.2,0) {$V_G$};
+\node at (5.2,2.7) {$C_G$};
+
+\draw[-,dashed,red] (2.5,0) -- (2.5,2.5);
+\draw[-,dashed,blue] (2.83,0) -- (2.83,2.5);
+\draw[-,dashed,blue] (5.5,0) -- (5.5,2.5);
+\draw[-,dashed,red] (9,0) -- (9,2.5);
+\node at (2.5,-0.5) {\textcolor{blue}{$V_{FB}$ = -0.95V}};
+\node at (2.5,-1) {\textcolor{red}{$V_{FB}$ = -0.84V}};
+\node at (5.5,-0.5) {\textcolor{blue}{$V_t$ = 0.03V}};
+\node at (9,-0.5) {\textcolor{red}{$V_{t}$ = 1.30V}};
+
+\draw[red] (2,2.5) -- (2.5,2.5) parabola bend (8,0.5) (8.5,0.5) parabola bend (8.5,0.5) (9.5,2.5) -- (10,2.5);
+\draw[blue] (2.6,2.5) -- (2.83,2.5) parabola bend (4.8,0.5) (5,0.5) parabola bend (5,0.5) (6,2.5) -- (7,2.5);
+
+\end{tikzpicture}
+\caption{}
+\end{figure}
+
+
+
+\subsubsection{Theoretical calculations}
+Assuming no fixed charge in the oxide and oxide/silicon interface, the flatband voltage is the work function of the capacitor given by the equation:
+\begin{equation}
+V_{FB} = \Phi_M - \chi - E_g/2q - |\Phi_F|
+\end{equation}
+Where
+\begin{equation}
+|\Phi_F| = \frac{kT}{q}\ln{N_B/n_i}
+\end{equation}
+For gate oxide $\Phi_M - chi = 0$, $E_g$ = 1.12eV, and $N_B$ is the background concentration of the wafer.
+\begin{align*}
+|\Phi_F| =& \frac{kT}{q}\ln{N_B/n_i} = \frac{1.38\e{-23}298}{1.602\e{-19}}ln{8\e{14}/10^{10}} = 0.28V \\
+V_{FB} =& \Phi_M - \chi - E_g/2q - |\Phi_F| = 0 - (1.12eV)/(2*1.602\e{-19}) - 0.28 = -0.84
+\end{align*}
+For Field oxide $\Phi_M - chi = -0.11$, $E_g$ = 1.12eV. This means $\Phi_F = 0.28$ which is the same value as before.
+\begin{align*}
+V_{FB} =& \Phi_M - \chi - E_g/2q - |\Phi_F| = -0.11 - (1.12eV)/(2*1.602\e{-19}) - 0.28 = -0.84 = -0.95
+\end{align*} 
+Again, assuming no fixed charge in the oxide and oxide/silicon interface, the threshold voltage is given by the equation:
+\begin{equation}
+V_{TN} = V_{FB} + 2|\Phi_F| + (1/C_0)\sqrt{4 \epsilon_s q N_B |\Phi_F|}
+\end{equation}
+$V_{FB}$ and $|\Phi_F|$ are defined above. $C_0 =\epsilon_{ox}/t_{ox} = (3.9\times8.85\e{-12})/(86.5\e{-9}) = 3.99\e{-4}$ F/m.
+\begin{align*}
+V_{TN} =& V_{FB} + 2|\Phi_F| + (1/C_0)\sqrt{4 \epsilon_s q N_B |\Phi_F|} \\
+=& -0.84 + 2(0.28) + (1/3.99\e{-4})\sqrt{4(11.7\times 8.85\e{-12})1.602\e{-19}(8\e{14})0.28} = 0.03 V
+\end{align*}
+For the field oxide $C_0 =\epsilon_{ox}/t_{ox} = (3.9\times8.85\e{-12})/(477.2\e{-9}) = 7.22\e{-5}$ F/m.
+\begin{align*}
+V_{TN} =& V_{FB} + 2|\Phi_F| + (1/C_0)\sqrt{4 \epsilon_s q N_B |\Phi_F|} \\
+=& -0.95 + 2(0.28) + (1/7.22\e{-5})\sqrt{4(11.7\times 8.85\e{-12})1.602\e{-19}(8\e{14})0.28} = 1.30 V
+\end{align*}
+The photoelectric effect will cause carriers to be generated in the semiconducter. This will cause the capacitance to be appear slightly higher when transitioning between the accumulation and inversion regions when measured in ambient light than when measured in the dark.
+
 \subsection{Diode}
 We make the assumption that the junction is a step junction and that the concentrations of dopants are constant across respective regions of the device. Built-in potential for a p-n diode is given by the function:
 \begin{equation}
@@ -991,6 +1063,8 @@ Where T is room temperature, $N_A$ is the p-sub dopant concentration (8\e{14}${\
 \end{tikzpicture}
 \caption{Setup for inverters.}
 \end{figure}
+
+\subsubsection{Theoretical Inverter Calculations}
 
 The load resistor has Vdd connected to the drain and the gate. Since
 \begin{align*}
@@ -1035,6 +1109,8 @@ Also note that for our transistor, the aspect ratio should be
 \frac{K_D}{K_L} = \frac{W_DL_L}{L_DW_L} = \frac{160*20}{10*10} = 16
 \end{align*}
 For $V_{tnl}$ and $V_{tnd}$ we will use a value of 0.3 as mentioned above. $V_{dd}$ will range from 0 to 5 volts.
+
+\subsubsection{Theoretical Inverter plot}
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}

@@ -54,12 +54,16 @@
 \BOOKMARK [3][-]{subsubsection.2.4.1}{Diffusion chain resistor, 2c}{subsection.2.4}% 54
 \BOOKMARK [3][-]{subsubsection.2.4.2}{Poly chain resistor, 2d}{subsection.2.4}% 55
 \BOOKMARK [2][-]{subsection.2.5}{Gate/Field Oxide Capacitors[3,4]}{section.2}% 56
-\BOOKMARK [2][-]{subsection.2.6}{Diode}{section.2}% 57
-\BOOKMARK [2][-]{subsection.2.7}{MOSFETs}{section.2}% 58
-\BOOKMARK [3][-]{subsubsection.2.7.1}{MOSFETs of varying length [8] and width [9]}{subsection.2.7}% 59
-\BOOKMARK [3][-]{subsubsection.2.7.2}{Large MOSFET}{subsection.2.7}% 60
-\BOOKMARK [2][-]{subsection.2.8}{Inverter}{section.2}% 61
-\BOOKMARK [1][-]{section.3}{Discussion}{}% 62
-\BOOKMARK [1][-]{section.4}{Optional Questions}{}% 63
-\BOOKMARK [1][-]{section.5}{Appendix}{}% 64
-\BOOKMARK [1][-]{section.6}{References}{}% 65
+\BOOKMARK [3][-]{subsubsection.2.5.1}{Theoretical plots}{subsection.2.5}% 57
+\BOOKMARK [3][-]{subsubsection.2.5.2}{Theoretical calculations}{subsection.2.5}% 58
+\BOOKMARK [2][-]{subsection.2.6}{Diode}{section.2}% 59
+\BOOKMARK [2][-]{subsection.2.7}{MOSFETs}{section.2}% 60
+\BOOKMARK [3][-]{subsubsection.2.7.1}{MOSFETs of varying length [8] and width [9]}{subsection.2.7}% 61
+\BOOKMARK [3][-]{subsubsection.2.7.2}{Large MOSFET}{subsection.2.7}% 62
+\BOOKMARK [2][-]{subsection.2.8}{Inverter}{section.2}% 63
+\BOOKMARK [3][-]{subsubsection.2.8.1}{Theoretical Inverter Calculations}{subsection.2.8}% 64
+\BOOKMARK [3][-]{subsubsection.2.8.2}{Theoretical Inverter plot}{subsection.2.8}% 65
+\BOOKMARK [1][-]{section.3}{Discussion}{}% 66
+\BOOKMARK [1][-]{section.4}{Optional Questions}{}% 67
+\BOOKMARK [1][-]{section.5}{Appendix}{}% 68
+\BOOKMARK [1][-]{section.6}{References}{}% 69
