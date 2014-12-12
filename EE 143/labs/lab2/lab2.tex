@@ -288,39 +288,6 @@ R_{\text{total poly}} = 7(\eta R_{\text{S poly}} + R_{\text{C poly}}) \Rightarro
 \end{figure}
 
 The minimum capacitance from the plot above is 7.48 pF. The accumulation region capacitance at about 5 V is 15.7 pF. The active area is 200 $\mu m$ by 200 $\mu m$ while the pad+ring area is 240 $\mu m$ by 335 $\mu m$. Also note the gate oxide thickness calculated below for the field oxide capacitors is 1.15 $\mu$m.
-\begin{align*}
-C_{\text{measured}} &= A_{\text{active}}\frac{\epsilon_{\text{ox}}}{t_{\text{gox}}} + A_{\text{pad-ring}}\frac{\epsilon_{\text{ox}}}{t_{\text{fox}}} \\ \\
-t_{\text{gox}} = [\frac{1}{A_{\text{active}}}(\frac{C_{\text{measured}}}{\epsilon_{\text{ox}}} - \frac{A_{\text{pad-ring}}}{t_{\text{fox}}})]^{-1} &= [\frac{1}{4\e{-8}}(\frac{15.7\e{-12}}{(3.9)8.85\e{-12}} - \frac{8.04\e{-8}}{1.15\e{-6}})]^{-1} = 0.104 \,\mu\text{m}
-\end{align*}
-The capacitance per unit area in this case would be 15.7 pF / ($240 \mu m \times 335 \mu m$). C/area = 1.95 pF/$\mu$m or 1.95 F/$m^{-2}$. Now in order to calculate the maximum depletion region we use an equation from lecture notes. Note the max and min capacitance we calculated earlier,
-\begin{equation}
-\frac{1}{C_{\text{min}}} = \frac{1}{C_{\text{max}}} + \frac{1}{A_{\text{pad-ring}} C_{\text{Dmin}}},\,\text{where } C_{\text{Dmin}} = \frac{\epsilon_{\text{si}}}{x_{\text{dmax}}}
-\end{equation}
-Solving for the maximum depletion region we get,
-\begin{align*}
-x_{\text{dmax}} = A_{\text{pad-ring}}\epsilon_{\text{si}}(\frac{1}{C_{\text{min}}} - \frac{1}{C_{\text{max}}}) = (8.04\e{-8})(11.7 \times 8.85\e{-12})(\frac{1}{7.48\e{-12}} - \frac{1}{15.7\e{-12}}) = 0.583 \mu m
-\end{align*}
-
-Another equation from lecture will help us solve for the substrate doping concentration,
-\begin{equation}
-x_d = \sqrt{\frac{2\epsilon_{\text{si}}}{q}\frac{1}{N_A}|\psi_s|}
-\end{equation}
-where $\psi_s$ is the potential drop and has a typical value of 0.3, q is the charge of an electron 1.602\e{-19} C, and $N_A$ is the doping concentration.
-\begin{align*}
-N_A = \frac{2\epsilon_{\text{si}} |\psi_s|}{q{x_d}^2} = \frac{2(11.7 \times 8.85\e{-12})(0.3)}{1.602\e{-19}(0.583\e{-6})^2} = 1.14\e{21} \,{\text{cm}}^{-3} = 1.14\e{27} \,{\text{m}}^{-3}
-\end{align*}
-From the curve above (Figure 11) we can see that the flatband voltage is $V_{FB} \approx 5.5$ and the corresponding $C_{FB} \approx 15.5$pF. To find the charge per unit area at the oxide silicon interface we can use the Q = CV equation.
-\begin{align*}
-\frac{Q_{ss}}{A} = \frac{C_{FB}V_{FB}}{A_{\text{pad-ring}}} = \frac{(5.5)(15.5\e{-12})}{8.04\e{-8}} = 1.06 \,\text{mF}/\text{m}^2
-\end{align*}
-To calculate the threshold voltage we will assume that $V_{SB} = 0$. First we must also calculate $Q_{BO}$ which is the charge stored in the depletion region,
-\begin{align*}
-Q_{BO} = \sqrt{2q\epsilon_{si}N_B2\phi_F} = \sqrt{2(1.602\e{-19})(11.7 \times 8.85\e{-12})(1.14\e{27})(2 \times 0.3)} = 1.51\e{-1}\, C/{\text{m}}^2
-\end{align*}
-Now to calculate/estimate threshold voltage. Note that the work function $\phi_{ms}$ is zero for n+ doped poly gate.
-\begin{align*}
-V_t = \phi_{ms} + 2\phi_f - \frac{Q_{ss}}{C_{\text{max}}} + \frac{Q_{BO}}{C_{\text{max}}} = 0 + 0.6 - \frac{1.06\e{-3}}{1.95} + \frac{1.51\e{-1}}{1.95} = 0.677 V
-\end{align*}
 
 \subsubsection{C-V plot of gate oxide capacitor w/ lights OFF}
 \begin{figure}[H]
@@ -331,7 +298,41 @@ V_t = \phi_{ms} + 2\phi_f - \frac{Q_{ss}}{C_{\text{max}}} + \frac{Q_{BO}}{C_{\te
 \caption{A plot of the measurement data taken for the gate capacitor, 4. Lights off.}
 \end{figure}
 
-minimum capacitance ...
+The minimum capacitance from the plot above is 6.22 pF. The accumulation region capacitance at about 5 V is 15.7 pF. The active area is 200 $\mu m$ by 200 $\mu m$ while the pad+ring area is 240 $\mu m$ by 335 $\mu m$. Also note the gate oxide thickness calculated below for the field oxide capacitors is 1.15 $\mu$m.
+
+\begin{align*}
+C_{\text{measured}} &= A_{\text{active}}\frac{\epsilon_{\text{ox}}}{t_{\text{gox}}} + A_{\text{pad-ring}}\frac{\epsilon_{\text{ox}}}{t_{\text{fox}}} \\ \\
+t_{\text{gox}} = [\frac{1}{A_{\text{active}}}(\frac{C_{\text{measured}}}{\epsilon_{\text{ox}}} - \frac{A_{\text{pad-ring}}}{t_{\text{fox}}})]^{-1} &= [\frac{1}{4\e{-8}}(\frac{15.7\e{-12}}{(3.9)8.85\e{-12}} - \frac{8.04\e{-8}}{1.15\e{-6}})]^{-1} = 0.104 \,\mu\text{m}
+\end{align*}
+The capacitance per unit area in this case would be 15.7 pF / ($240 \mu m \times 335 \mu m$). C/area = 1.95 pF/$\mu$m or 1.95 F/$m^{-2}$. Now in order to calculate the maximum depletion region we use an equation from lecture notes. Note the max and min capacitance we calculated earlier,
+\begin{equation}
+\frac{1}{C_{\text{min}}} = \frac{1}{C_{\text{max}}} + \frac{1}{A_{\text{pad-ring}} C_{\text{Dmin}}},\,\text{where } C_{\text{Dmin}} = \frac{\epsilon_{\text{si}}}{x_{\text{dmax}}}
+\end{equation}
+Solving for the maximum depletion region we get,
+\begin{align*}
+x_{\text{dmax}} = A_{\text{pad-ring}}\epsilon_{\text{si}}(\frac{1}{C_{\text{min}}} - \frac{1}{C_{\text{max}}}) = (8.04\e{-8})(11.7 \times 8.85\e{-12})(\frac{1}{6.22\e{-12}} - \frac{1}{15.7\e{-12}}) = 0.808 \mu m
+\end{align*}
+
+Another equation from lecture will help us solve for the substrate doping concentration,
+\begin{equation}
+x_d = \sqrt{\frac{2\epsilon_{\text{si}}}{q}\frac{1}{N_A}|\psi_s|}
+\end{equation}
+where $\psi_s$ is the potential drop and has a typical value of 0.3, q is the charge of an electron 1.602\e{-19} C, and $N_A$ is the doping concentration.
+\begin{align*}
+N_A = \frac{2\epsilon_{\text{si}} |\psi_s|}{q{x_d}^2} = \frac{2(11.7 \times 8.85\e{-12})(0.3)}{1.602\e{-19}(0.808\e{-6})^2} = 5.94\e{20} \,{\text{m}}^{-3}
+\end{align*}
+From the curve above (Figure 11) we can see that the flatband voltage is $V_{FB} \approx 5.5$ and the corresponding $C_{FB} \approx 15.5$pF. To find the charge per unit area at the oxide silicon interface we can use the Q = CV equation.
+\begin{align*}
+\frac{Q_{ss}}{A} = \frac{C_{FB}V_{FB}}{A_{\text{pad-ring}}} = \frac{(5.5)(15.5\e{-12})}{8.04\e{-8}} = 1.06 \,\text{mF}/\text{m}^2
+\end{align*}
+To calculate the threshold voltage we will assume that $V_{SB} = 0$. First we must also calculate $Q_{BO}$ which is the charge stored in the depletion region,
+\begin{align*}
+Q_{BO} = \sqrt{2q\epsilon_{si}N_B2\phi_F} = \sqrt{2(1.602\e{-19})(11.7 \times 8.85\e{-12})(5.94\e{20})(2 \times 0.3)} = 1.09\e{-4}\, C/{\text{m}}^2
+\end{align*}
+Now to calculate/estimate threshold voltage. Note that the work function $\phi_{ms}$ is zero for n+ doped poly gate.
+\begin{align*}
+V_t = \phi_{ms} + 2\phi_f - \frac{Q_{ss}}{C_{\text{max/area}}} + \frac{Q_{BO}}{C_{\text{max/area}}} = 0 + 0.6 - \frac{1.06\e{-3}}{1.95} + \frac{1.09\e{-4}}{1.95} = 0.600 V
+\end{align*}
 
 \subsection{Field Oxide Capacitor, 3} %%%%%%% Field Oxide Capacitors 3
 
@@ -840,7 +841,7 @@ To calculate the effective electron mobility we will use the following equation,
 \end{equation}
 Note that $I_D$ depends on $V_{G}$ from the previous plot. For $\Delta W$ and $\Delta L$ we will use values calculated earlier (-8.33 and 1.59 $\mu m$). MOSFET 10 has a W and L value of 100 $\mu m$. Threshold voltage was calculated as $V_t = -4.92 V$ and $V_{DS} = 0.05 V$. $C_{\text{gox}}$ was also calculated earlier as 1.95pF/${\mu\text{m}}^{2}$.
 \begin{align*}
-\mu_{\text{eff}}(V_G) = \frac{I_D}{\frac{W_{\text{eff}}}{L_{\text{eff}}}C_{\text{gox}}(V_{GS} - V_t)V_{DS}} = \frac{I_D(V_G)}{\frac{(100 + 8.33)\e{-6}}{(100 - 1.59)\e{-6}}(1.95\e{-15})(V_{GS} + 4.92)(0.05)} = \frac{I_D(V_G)}{1.07\e{-8}(V_{GS} + 4.92)}{\text{cm}}^2/\text{V-s}
+\mu_{\text{eff}}(V_G) = \frac{I_D}{\frac{W_{\text{eff}}}{L_{\text{eff}}}C_{\text{gox}}(V_{GS} - V_t)V_{DS}} = \frac{I_D(V_G)}{\frac{(100 + 8.33)\e{-6}}{(100 - 1.59)\e{-6}}(1.95\e{-4}\text{cm}^{-2})(V_{GS} + 4.92)(0.05)} = \frac{I_D(V_G)}{1.07\e{-5}(V_{GS} + 4.92)}{\text{cm}}^2/\text{V-s}
 \end{align*}
 
 Now we plot $\mu_{\text{eff}}(V_G)$ vs $V_G$ using the values for $I_D(V_G)$ from the previous graph (Figure 44).
@@ -877,9 +878,9 @@ Since we only have 3 data points for $V_{SB}$ our plot is not very accurate and 
 \begin{equation}
 \gamma = \frac{\sqrt{2\epsilon_{\text{si}} q N_A}}{C_{\text{gox}}} = 
 \end{equation}
-Solving for the surface concentration and using previous values of $C_{\text{gox}} = 0.195 \mu$F/${\text{cm}}^2$.
+Solving for the surface concentration and using previous values of $C_{\text{gox}} = 0.195 $mF/${\text{cm}}^2$.
 \begin{align*}
-N_A = \frac{(\gamma C_{\text{gox}})^2}{2q\epsilon_{\text{si}}} = \frac{(0.910*0.195\e{-6})^2}{2(1.602\e{-19})(11.7\times 8.85\e{-12})} = 9.49\e{14} {\text{cm}}^{-3}
+N_A = \frac{(\gamma C_{\text{gox}})^2}{2q\epsilon_{\text{si}}} = \frac{(0.910*0.195\e{-3})^2}{2(1.602\e{-19})(11.7\times 8.85\e{-12})} = 9.49\e{20} {\text{cm}}^{-3}
 \end{align*}
 Finally, we plot a log plot of the data in Figure 44.
 \begin{figure}[H]
