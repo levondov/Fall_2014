@@ -944,25 +944,31 @@ $N_D$ & $10^{21}\,\text{cm}^{-3}$ \\ \hline
 \end{figure}
 
 \subsection{Resistors [2a,2b]}
+According to the results from Lab 1, we had a junction depth of 1$\mu$m and a surface concentration of $10^{21}{\text{cm}}^3$. Using Irvin’s curves  (Fig 4.16(b) in Jaeger), we determined a theoretical sheet resistance of $R_s \approx 10 \Omega$/sq. for the sheet resistance of the active layer (device 2a).
 
+Due to the polysilicon deposition having been performed in NanoLab, we did not have access to the sheet resistance of the polysilicon layer. According to [2], n+ polysilicon sheet resistance for a 500nm layer is 20 $\Omega$/sq. Then, for a layer of 400nm, the sheet resistance of the polysilicon (device 2b) should be 25 $\Omega$/sq.
+\begin{align*}
+R_{400}=R_{500}\frac{t_{500}}{t_{400}} =20\Omega/sq.\frac{500\text{nm}}{400\text{nm}} = 25 \Omega/sq.
+\end{align*}
 
 \subsection{Contact Resistances [17a,17b]}
-From jaeger Figure 7.6 [1] we that the specific contact resistivity $10^{-2}$ $\mu \Omega$-$\text{cm}^2$. The contact area of resistors 17a and 17b is 5$\mu m$ by 5$\mu m$. This means the theoretical contact reisistance for our contact resistors is
+Sintering of the contacts was performed at 400$\degree$C. Theoretical contact resistivties were taken from Jaeger Fig. 7.6. For device 17a, metal on n+polySi over n-Si should give a 5.6\e{-5} $\Omega$-$\text{cm}^2$ resistivity. For device 17b, metal on n+Si should give a 4.4\e{-4} $\Omega$-$\text{cm}^2$ resistivity. 
 \begin{align*}
-R_c = \frac{\rho_c}{A} = \frac{10^{-2} \mu \Omega-\text{cm}^2}{25 \mu m} = \frac{10}{25} = 0.4 \Omega
+R=\frac{\rho_c}{A} =\frac{\rho_c}{(5\e{-4}\text{cm})^2}
 \end{align*}
+So, for device 17a, a contact resistance of 224 $\Omega$ would be expected. For device 17b, a contact resistance of 1760 $\Omega$ would be expected. 
 
 
 \subsection{Contact-Chain Resistors [2c, 2d]}
 \subsubsection{Diffusion chain resistor, 2c}
 $R_c$ is the contact resistance calculated earlier and $R_s$ is the sheet resistance calculate for the diffused resistor. $\eta$ is a geometrical constant that has a value of 2.3
 \begin{align*}
-R_{\text{total}} = 7(\eta R_s + R_c) = 7((2.3)(R_s) + (0.4)) = ?
+R_{\text{total}} = 7(\eta R_s + R_c) = 7((2.3)(10) + (1760)) = 12.5k\Omega
 \end{align*}
 \subsubsection{Poly chain resistor, 2d}
 $R_c$ is the contact resistance calculated earlier and $R_s$ is the sheet resistance calculate for the poly resistor. $\eta$ is a geometrical constant that has a value of 2.3
 \begin{align*}
-R_{\text{total}} = 7(\eta R_s + R_c) = 7((2.3)(R_s) + (0.4)) = ?
+R_{\text{total}} = 7(\eta R_s + R_c) = 7((2.3)(25) + (224)) = ?
 \end{align*}
 
 
@@ -982,7 +988,7 @@ Due to the fact that the intermediate oxide was grown during drive-in for the S/
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-\node at (5,4) {CV plot for \textcolor{blue}{Gate capacitance} and \textcolor{red}{Field capacitance}}
+\node at (5,4) {CV plot for \textcolor{blue}{Gate capacitance} and \textcolor{red}{Field capacitance}};
 \draw[<->,thick] (0,0) -- (10,0);
 \draw[->,thick] (5,0) -- (5,2.5);
 \node at (10.2,0) {$V_G$};

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  12 DEC 2014 13:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  12 DEC 2014 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2350,20 +2350,19 @@ File: Device_plot_data/D14plot.pdf Graphic file (type pdf)
 <use Device_plot_data/D14plot.pdf>
 Package pdftex.def Info: Device_plot_data/D14plot.pdf used on input line 922.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
- [24 <./Device_setup/device14a2.pdf> <./Device_plot_data/D14plot.pdf>] [25] [26
-pdfTeX warning (ext4): destination with the same identifier (name{figure.51}) h
-as been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.1052 \end{align*}
-                   ]
-<Device_setup/Inverter_plots.pdf, id=2656, 614.295pt x 794.97pt>
+ [24 <./Device_setup/device14a2.pdf> <./Device_plot_data/D14plot.pdf>] [25]pdfT
+eX warning (ext4): destination with the same identifier (name{figure.51}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.988 \begin{figure}[H]
+                        [26]
+<Device_setup/Inverter_plots.pdf, id=2655, 614.295pt x 794.97pt>
 File: Device_setup/Inverter_plots.pdf Graphic file (type pdf)
 
 <use Device_setup/Inverter_plots.pdf>
 Package pdftex.def Info: Device_setup/Inverter_plots.pdf used on input line 106
-2.
+8.
 (pdftex.def)             Requested size: 350.0pt x 452.94353pt.
  [27 <./Device_setup/Inverter_plots.pdf>]
 <Device_plot_data/D14theoplot.pdf, id=2672, 578.16pt x 433.62pt>
@@ -2371,29 +2370,29 @@ File: Device_plot_data/D14theoplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D14theoplot.pdf>
 Package pdftex.def Info: Device_plot_data/D14theoplot.pdf used on input line 11
-17.
+23.
 (pdftex.def)             Requested size: 350.0pt x 262.4964pt.
  [28]
 No file lab2.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1154.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1160.
 [29 <./Device_plot_data/D14theoplot.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1154.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1160.
  (./lab2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1154.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1154.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1160.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1160.
 
 Package rerunfilecheck Info: File `lab2.out' has not changed.
 (rerunfilecheck)             Checksum: 92EFEB0D2F8AE5BBFB7CBAA9A36149C9;5560.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1154.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1160.
  ) 
 Here is how much of TeX's memory you used:
  33102 strings out of 493304
  733716 string characters out of 6139872
- 819852 words of memory out of 5000000
+ 820852 words of memory out of 5000000
  35775 multiletter control sequences out of 15000+600000
  7986 words of font info for 30 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,14n,74p,10432b,728s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,14n,74p,10432b,837s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texli
@@ -2406,7 +2405,7 @@ msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on lab2.pdf (29 pages, 1072684 bytes).
+Output written on lab2.pdf (29 pages, 1073735 bytes).
 PDF statistics:
  2812 PDF objects out of 2984 (max. 8388607)
  1042 compressed objects within 11 object streams
