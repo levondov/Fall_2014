@@ -146,9 +146,9 @@
 \caption{A plot of the measurement data taken for resistor 2a. The plot is based off of 2 data points.}
 \end{figure}
 
-From the plot above we can calculate our resistance. Note that the slope of the above plot will be equal to 1/R. Since I = V/R, where I is our dependent variable (y axis) and V is our independent variable (X axis). A resistance of $R = 17 \,\Omega$ was calculated. Our width and length values are $10 \mu m$ and $200 \mu m$. However our final 2$\mu m$ line was 2.520 $\mu m$ which means that we had a underetch of about 26\%. This means that
+From the plot above we can calculate our resistance. Note that the slope of the above plot will be equal to 1/R. Since I = V/R, where I is our dependent variable (y axis) and V is our independent variable (X axis). A resistance of $R = 17 \,\Omega$ was calculated. Our width and length values are $10 \mu m$ and $200 \mu m$. However our final 2$\mu m$ line after the ACTV mask was 3 $\mu m$ which means that we had a overetch of about 50\%. This means that
 \begin{align*}
-R_s = \frac{W}{L}R_{\text{diff}} = \frac{10(1.26)}{200}17 = 1.07 \,\Omega
+R_s = \frac{W}{L}R_{\text{diff}} = \frac{10(1.50)}{200}17 = 1.28 \,\Omega
 \end{align*}
 From the previous lab report we have a junction depth of $1\,\mu m$. This means that our Resistivity is $\rho = R_s x_j = 1.07\e{-4}$ $\Omega$-cm. Using the Irvin curves in Jaeger [1], we can estimate the surface concentration $N_0 \approx 10^{21}$. Now the mobility can be calculated using a table of values from Appendix xx.
 \begin{align*}
@@ -467,13 +467,7 @@ Looking at the plots above, the forward turn on voltage is $V_F \approx 70 V$ wh
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8a1plot.pdf}};
-\end{tikzpicture}
-\caption{Test 1 for Mosfet 8a}
-\end{figure}
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}
+\node at (-5,5) {\includegraphics[width=250pt]{Device_plot_data/D8a1plot.pdf}};
 \node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8a1longplot.pdf}};
 \draw[-,red,dashed] (2.1,2.35) -- (8.5,7.34);
 \draw[-,red,dashed] (2.1,2.35) -- (8.5,7.2);
@@ -490,13 +484,7 @@ We see that everything intersects at about -13.8 V. This corresponds to $\lambda
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8b1plot.pdf}};
-\end{tikzpicture}
-\caption{Test 1 for Mosfet 8b}
-\end{figure}
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}
+\node at (-5,5) {\includegraphics[width=250pt]{Device_plot_data/D8b1plot.pdf}};
 \node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8b1longplot.pdf}};
 \draw[-,red,dashed] (2.5,2.35) -- (8.5,7.37);
 \draw[-,red,dashed] (2.5,2.35) -- (8.5,7.18);
@@ -514,13 +502,7 @@ We see that everything intersects at about -8.23 V. This corresponds to $\lambda
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8c1plot.pdf}};
-\end{tikzpicture}
-\caption{Test 1 for Mosfet 8c}
-\end{figure}
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}
+\node at (-5,5) {\includegraphics[width=250pt]{Device_plot_data/D8c1plot.pdf}};
 \node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8c1longplot.pdf}};
 \draw[-,red,dashed] (3,2.35) -- (8.5,7.3);
 \draw[-,red,dashed] (3,2.35) -- (8.5,7.1);
@@ -534,16 +516,11 @@ We see that everything intersects at about -8.23 V. This corresponds to $\lambda
 \end{figure}
 We see that everything intersects at about -4.70 V. This corresponds to $\lambda = \frac{1}{-4.70} = -0.213$.
 
+
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8d1plot.pdf}};
-\end{tikzpicture}
-\caption{Test 1 for Mosfet 8d}
-\end{figure}
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}
+\node at (-5,5) {\includegraphics[width=250pt]{Device_plot_data/D8d1plot.pdf}};
 \node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8d1longplot.pdf}};
 \draw[-,red,dashed] (3.25,2.35) -- (8.5,6.87);
 \draw[-,red,dashed] (3.25,2.35) -- (8.5,6.525);
@@ -568,8 +545,17 @@ MOSFET device & $\lambda$ ($V^{-1}$) & $L_{\text{drawn}}$ ($\mu m$) & Fig \# \\ 
 8c & -0.213 & 8 & \textcolor{blue}{\ref{fig:8clong}}\\ \hline
 8d & -0.368 & 10 & \textcolor{blue}{\ref{fig:8dlong}}\\ \hline
 \end{tabular}
-\caption{all $\lambda$ values for mosfets 9a-d}
+\caption{all $\lambda$ values for mosfets 9a-d along with gate lengths.}
 \end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8plot.pdf}};
+\end{tikzpicture}
+\caption{$\lambda$ for each 8a-d device vs the gate length.}
+\end{figure}
+
 
 \subsubsection{Plots of $I_D$-$V_G$, sweeping $V_B$}
 
@@ -577,41 +563,80 @@ MOSFET device & $\lambda$ ($V^{-1}$) & $L_{\text{drawn}}$ ($\mu m$) & Fig \# \\ 
 \centering
 \begin{tikzpicture}
 \node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8a2plot.pdf}};
+\node at (15,5) {\includegraphics[width=250pt]{Device_plot_data/D8a2linplot.pdf}};
 \end{tikzpicture}
-\caption{Test 2 for Mosfet 8a}
+\caption{Test 2 for Mosfet 8a. On the right side we did a linear regression on the $V_{SB} = 0$ line in order to get a estimate of the threshold voltage.}
+\label{fig:8alin}
 \end{figure}
 
-Calculate stuff here... 
+Since it is quite difficult to see where a slope change occurs in order to find the threshold voltage, we can do a linear regression using the $V_{SB} = 0$ line. With linear regression, $V_t = -51.4 V$. One reason why there is no slope change might have to do with the fact that most of our MOSFETS show characteristics of junction leakage.
 
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
 \node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8b2plot.pdf}};
+\node at (15,5) {\includegraphics[width=250pt]{Device_plot_data/D8b2linplot.pdf}};
 \end{tikzpicture}
-\caption{Test 2 for Mosfet 8b}
+\caption{Test 2 for Mosfet 8b. On the right side we did a linear regression on the $V_{SB} = 0$ line in order to get a estimate of the threshold voltage.}
+\label{fig:8blin}
 \end{figure}
 
-Calculate stuff here...
+Similarly, the threshold voltage is not clear in the figure above. Using linear regression again with $V_{SB} = 0$ we get $V_t = -34.2$.
 
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
 \node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8c2plot.pdf}};
+\node at (15,5) {\includegraphics[width=250pt]{Device_plot_data/D8c2linplot.pdf}};
 \end{tikzpicture}
-\caption{Test 2 for Mosfet 8c}
+\caption{Test 2 for Mosfet 8c. On the right side we did a linear regression on the $V_{SB} = 0$ line in order to get a estimate of the threshold voltage.}
+\label{fig:8clin}
 \end{figure}
 
-Calculate stuff here...
+Similarly, the threshold voltage is not clear in the figure above. Using linear regression again with $V_{SB} = 0$ we get $V_t = -32.4$.
 
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
 \node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8d2plot.pdf}};
+\node at (15,5) {\includegraphics[width=250pt]{Device_plot_data/D8d2linplot.pdf}};
 \end{tikzpicture}
-\caption{Test 2 for Mosfet 8d}
+\caption{Test 2 for Mosfet 8d. On the right side we did a linear regression on the $V_{SB} = 0$ line in order to get a estimate of the threshold voltage.}
+\label{fig:8dlin}
 \end{figure}
 
-Calculate stuff here...
+Similarly, the threshold voltage is not clear in the figure above. Using linear regression again with $V_{SB} = 0$ we get $V_t = -32.2$.
+
+\subsubsection{Estimate of $\Delta L$}
+To summarize the threshold voltages calculated in the last section,
+\begin{figure}[H]
+\centering
+\begin{tabular}{c || c | c | c }
+MOSFET device & $V_t (V)$ & $L_{\text{drawn}}$ ($\mu m$) & Fig \# \\ \hline
+8a & -51.4 & 4 & \textcolor{blue}{\ref{fig:8alin}} \\ \hline
+8b & -34.2 & 6 & \textcolor{blue}{\ref{fig:8blin}}\\ \hline
+8c & -32.4 & 8 & \textcolor{blue}{\ref{fig:8clin}}\\ \hline
+8d & -32.2 & 10 & \textcolor{blue}{\ref{fig:8dlin}}\\ \hline
+\end{tabular}
+\caption{Threshold voltages for all MOSFET 8 devices.}
+\end{figure}
+
+Now the first step in calculating $\Delta L$ is to find the extended Resistance. We can do this by plotting the measured resistance vs gate Length at various voltages (from lecture). This plot looks like the following:
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D8Rplot.pdf}};
+\end{tikzpicture}
+\caption{Measured Resistance vs Gate length for various lengths and voltages}
+\end{figure}
+The Y value from the origin (0) to the point of intersection would be the extended Resistance value. However in our case the lines intersect at just about 0; this means that $R_{\text{ext}} \approx 0$. Now we can solve for $\Delta L$ by using the following equation from lecture:
+\begin{equation}
+R_{\text{meas}} = \frac{L_{\text{drawn}} - \Delta L}{\mu W C_{\text{gox}} (V_{\text{gs}} - V_t)} + R_{\text{ext}}
+\end{equation}
+Solving for $\Delta L$ and noting that from earlier that $C_{\text{gox}} = 1.95$pF/${\mu m}^{2}$ and $\mu_n = 92.4 {\text{cm}}^{2}$/V-s. We will also choice $V_{gs} - V_t = 2 V$, $L_{\text{drawn}} = 4 \mu m$, and $R_{\text{meas}} = 8.368 k\Omega$. Note that W = 15 $\mu m$ and $R_{ext} = 0$.
+\begin{align*}
+\Delta L = L_{\text{drawn}} - R_{\text{meas}}\mu_n C_{\text{gox}} (V_{\text{gs}} - V_t) = (8.368\e{3}\Omega)(92.4 {\text{cm}}^{2}/\text{V-s})(15\e{-6}\text{m})(1.95\e{-7}\text{F}/{\text{cm}}^{2})(2\text{V}) = 1.59 \,\mu m
+\end{align*}
 
 \subsection{MOSFETs of varying width [9a-c]} %%%%%%%%%%%%%% MOSFETS 9a-c
 

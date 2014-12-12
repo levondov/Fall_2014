@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy import stats
 
 
 ## Device 2a
@@ -138,12 +139,12 @@ for i in range(0,np.size(device8d,0)):
 plt.plot(device8d[start:,0],device8d[start:,1],'b')
 
 plt.grid(True)
-plt.axis([-5,5,0,.007])
-#plt.xticks([-6,-4.70,-2,0,2,4,5])
+#plt.axis([-5,5,0,.007])
+#plt.xticks([-4,-2.72,0,2,4,5])
 plt.xlabel("VD (V)")
 plt.ylabel("ID (A)")
 plt.title("Mosfet 8d, Test 1 plot")
-plt.savefig("D8d1longplot.pdf")
+plt.savefig("D8d1plot.pdf")
 ## Device8a, plot 2
 plt.figure()
 device8a2 = np.genfromtxt('D8AIMG2.TXT.csv', delimiter=',',skip_header=113) #113
@@ -151,9 +152,17 @@ start = 0;
 
 for i in range(0,np.size(device8a2,0)):
 	if (device8a2[i,0] < device8a2[i-1,0]):
-		plt.plot(device8a2[start:i,0],1000*device8a2[start:i,1],'b')
+		plt.plot(device8a2[start:i,0],1000*device8a2[start:i,1])
 		start = i
-		
+plt.plot(device8a2[start:,0],1000*device8a2[start:,1],'b')
+
+slope8a2, intercept8a2, r_value, p_value, std_err = stats.linregress(device8a2[0:13,0],device8a2[0:13,1])
+x8a2 = np.linspace(-intercept8a2/slope8a2,12,100)
+y8a2 = slope8a2*x8a2 + intercept8a2
+#plt.plot(x8a2,1000*y8a2,'k')
+#print(-intercept8a2/slope8a2)
+
+plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
@@ -166,9 +175,17 @@ start = 0;
 
 for i in range(0,np.size(device8b2,0)):
 	if (device8b2[i,0] < device8b2[i-1,0]):
-		plt.plot(device8b2[start:i,0],1000*device8b2[start:i,1],'b')
+		plt.plot(device8b2[start:i,0],1000*device8b2[start:i,1])
 		start = i
-		
+plt.plot(device8b2[start:,0],1000*device8b2[start:,1])
+
+slope8b2, intercept8b2, r_value, p_value, std_err = stats.linregress(device8b2[0:13,0],device8b2[0:13,1])
+x8b2 = np.linspace(-intercept8b2/slope8b2,12,100)
+y8b2 = slope8b2*x8b2 + intercept8b2
+#plt.plot(x8b2,1000*y8b2,'k')
+#print(-intercept8b2/slope8b2)
+
+plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)		
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
@@ -181,9 +198,17 @@ start = 0;
 
 for i in range(0,np.size(device8c2,0)):
 	if (device8c2[i,0] < device8c2[i-1,0]):
-		plt.plot(device8c2[start:i,0],1000*device8c2[start:i,1],'b')
+		plt.plot(device8c2[start:i,0],1000*device8c2[start:i,1])
 		start = i
-		
+plt.plot(device8c2[start:,0],1000*device8c2[start:,1])
+
+slope8c2, intercept8c2, r_value, p_value, std_err = stats.linregress(device8c2[0:13,0],device8c2[0:13,1])
+x8c2 = np.linspace(-intercept8c2/slope8c2,12,100)
+y8c2 = slope8c2*x8c2 + intercept8c2
+#plt.plot(x8c2,1000*y8c2,'k')
+#print(-intercept8c2/slope8c2)
+#plt.axis([-40,20,0,.16])
+plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
@@ -196,9 +221,18 @@ start = 0;
 
 for i in range(0,np.size(device8d2,0)):
 	if (device8d2[i,0] < device8d2[i-1,0]):
-		plt.plot(device8d2[start:i,0],1000*device8d2[start:i,1],'b')
+		plt.plot(device8d2[start:i,0],1000*device8d2[start:i,1])
 		start = i
-		
+plt.plot(device8d2[start:,0],1000*device8d2[start:,1])
+
+slope8d2, intercept8d2, r_value, p_value, std_err = stats.linregress(device8d2[0:13,0],device8d2[0:13,1])
+x8d2 = np.linspace(-intercept8d2/slope8d2,12,100)
+y8d2 = slope8d2*x8d2 + intercept8d2
+#plt.plot(x8d2,1000*y8d2,'k')
+#print(-intercept8d2/slope8d2)
+#plt.axis([-40,20,0,.16])
+
+plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
