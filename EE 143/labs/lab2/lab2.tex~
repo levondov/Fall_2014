@@ -710,7 +710,7 @@ Calculate stuff here...
 \node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D9a2plot.pdf}};
 \node at (15,5) {\includegraphics[width=250pt]{Device_plot_data/D9a2linplot.pdf}};
 \end{tikzpicture}
-\caption{Test 2 for Mosfet 9a. On the right side we did a linear regression on the V SB = 0 line in order to get a estimate of the threshold voltage.}
+\caption{Test 2 for Mosfet 9a. On the right side we did a linear regression on the $V_{\text{SB}} = 0$ line in order to get a estimate of the threshold voltage.}
 \label{fig:9alin}
 \end{figure}
 
@@ -722,7 +722,7 @@ Using linear regression, we calculated a threshold voltage of $V_t = -4.98$.
 \node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D9b2plot.pdf}};
 \node at (15,5) {\includegraphics[width=250pt]{Device_plot_data/D9b2linplot.pdf}};
 \end{tikzpicture}
-\caption{Test 2 for Mosfet 9b. On the right side we did a linear regression on the V SB = 0 line in order to get a estimate of the threshold voltage.}
+\caption{Test 2 for Mosfet 9b. On the right side we did a linear regression on the $V_{\text{SB}} = 0$ line in order to get a estimate of the threshold voltage.}
 \label{fig:9blin}
 \end{figure}
 
@@ -734,7 +734,7 @@ Using linear regression, we calculated a threshold voltage of $V_t = -5.46$.
 \node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D9c2plot.pdf}};
 \node at (15,5) {\includegraphics[width=250pt]{Device_plot_data/D9c2linplot.pdf}};
 \end{tikzpicture}
-\caption{Test 2 for Mosfet 9c. On the right side we did a linear regression on the V SB = 0 line in order to get a estimate of the threshold voltage.}
+\caption{Test 2 for Mosfet 9c. On the right side we did a linear regression on the $V_{\text{SB}} = 0$ line in order to get a estimate of the threshold voltage.}
 \label{fig:9clin}
 \end{figure}
 
@@ -769,6 +769,14 @@ Now to calculate the channel width we first plot the reciprocal of the measured 
 \end{figure}
 
 The line above intercepts the x axis at -8.33 $\mu $. Hense our $\Delta W = -8.33\mu m$. Now to plot the threshold voltage vs the efffective channel width we can use Figure \textcolor{blue}{\ref{tab:wdata}}. Note that $W_{\text{eff}} = W_{\text{drawn}} - \Delta W$.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D9Wplot.pdf}};
+\end{tikzpicture}
+\caption{Channel threshold voltage vs the channel width. Note the odd V shape which appears because of the calculated threshold voltages.}
+\end{figure}
 
 \subsection{Large MOSFET, 10} %%%%%%%%%%% LARGE MOSFET 10
 
@@ -812,19 +820,76 @@ The line above intercepts the x axis at -8.33 $\mu $. Hense our $\Delta W = -8.3
 \caption{Test 1 for Mosfet 10}
 \end{figure}
 
-Calculate stuff here... 
-
 \subsubsection{Plots of $I_D$-$V_G$, sweeping $V_B$}
 
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
 \node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D102plot.pdf}};
+\node at (15,5) {\includegraphics[width=250pt]{Device_plot_data/D102linplot.pdf}};
 \end{tikzpicture}
-\caption{Test 2 for Mosfet 10}
+\caption{Test 2 for Mosfet 10. On the right side we did a linear regression on the $V_{\text{SB}} = 0$ line in order to get a estimate of the threshold voltage.}
 \end{figure}
 
-Calculate stuff here... 
+The threshold voltage here is $V_t = -4.92 V$.
+
+\subsubsection{Calculating mobility, threshold, and other parameters}
+To calculate the effective electron mobility we will use the following equation,
+\begin{equation}
+\mu_{\text{eff}}(V_G) = \frac{I_D}{\frac{W_{\text{eff}}}{L_{\text{eff}}}C_{\text{gox}}(V_{GS} - V_t)V_{DS}}
+\end{equation}
+Note that $I_D$ depends on $V_{G}$ from the previous plot. For $\Delta W$ and $\Delta L$ we will use values calculated earlier (-8.33 and 1.59 $\mu m$). MOSFET 10 has a W and L value of 100 $\mu m$. Threshold voltage was calculated as $V_t = -4.92 V$ and $V_{DS} = 0.05 V$. $C_{\text{gox}}$ was also calculated earlier as 1.95pF/${\mu\text{m}}^{2}$.
+\begin{align*}
+\mu_{\text{eff}}(V_G) = \frac{I_D}{\frac{W_{\text{eff}}}{L_{\text{eff}}}C_{\text{gox}}(V_{GS} - V_t)V_{DS}} = \frac{I_D(V_G)}{\frac{(100 + 8.33)\e{-6}}{(100 - 1.59)\e{-6}}(1.95\e{-15})(V_{GS} + 4.92)(0.05)} = \frac{I_D(V_G)}{1.07\e{-8}(V_{GS} + 4.92)}{\text{cm}}^2/\text{V-s}
+\end{align*}
+
+Now we plot $\mu_{\text{eff}}(V_G)$ vs $V_G$ using the values for $I_D(V_G)$ from the previous graph (Figure 44).
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D10Uplot.pdf}};
+\end{tikzpicture}
+\caption{Note how the graph levels off almost immediately. The first few data points are right above the threshold voltage.}
+\end{figure}
+
+Now if we do a linear fit to each line in Figure 44 we get the following results,
+
+\begin{figure}[H]
+\centering
+\begin{tabular}{c || c}
+$V_{SB}$ (V) & $V_t$ (V) \\ \hline
+0 & -4.92 \\ \hline
+1 & -4.55 \\ \hline
+2 & -4.18 \\ \hline
+\end{tabular}
+\caption{Results from doing a linear fit to each line in Figure 44 above.}
+\end{figure}
+
+With this data we can now make a $V_t(V_{SB})$ vs $\sqrt{V_{SB} + 0.7}$ plot in order to estimate our body effect parameter $\gamma$.
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D10Gplot.pdf}};
+\end{tikzpicture}
+\caption{The slope of the above plot is our body effect parameter}
+\end{figure}
+Since we only have 3 data points for $V_{SB}$ our plot is not very accurate and does not show the change of slope as would be present in the theoretical case. Nonetheless, the slope for the above plot is$\gamma$ = 0.910. The equation for $\gamma$, the body effect parameter, is:
+\begin{equation}
+\gamma = \frac{\sqrt{2\epsilon_{\text{si}} q N_A}}{C_{\text{gox}}} = 
+\end{equation}
+Solving for the surface concentration and using previous values of $C_{\text{gox}} = 0.195 \mu$F/${\text{cm}}^2$.
+\begin{align*}
+N_A = \frac{(\gamma C_{\text{gox}})^2}{2q\epsilon_{\text{si}}} = \frac{(0.910*0.195\e{-6})^2}{2(1.602\e{-19})(11.7\times 8.85\e{-12})} = 9.49\e{14} {\text{cm}}^{-3}
+\end{align*}
+Finally, we plot a log plot of the data in Figure 44.
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/D102logplot.pdf}};
+\end{tikzpicture}
+\caption{Log plot of Figure 44.}
+\end{figure}
+The subthreshold slope was calculate between $V_G = 0$ and $V_G = 1$. This slope was calculated to be 0.12 $(V^{-1})$.
 
 
 \subsection{Inverter, 14} %%%%%%%%%%%%% Inverter 14

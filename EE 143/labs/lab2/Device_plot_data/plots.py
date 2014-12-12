@@ -162,7 +162,7 @@ y8a2 = slope8a2*x8a2 + intercept8a2
 #plt.plot(x8a2,1000*y8a2,'k')
 #print(-intercept8a2/slope8a2)
 
-plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)
+plt.legend(['$V_{SB} = 2$','$V_{SB} = 0$','$V_{SB} = 1$'],loc=2)
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
@@ -185,7 +185,7 @@ y8b2 = slope8b2*x8b2 + intercept8b2
 #plt.plot(x8b2,1000*y8b2,'k')
 #print(-intercept8b2/slope8b2)
 
-plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)		
+plt.legend(['$V_{SB} = 2$','$V_{SB} = 0$','$V_{SB} = 1$'],loc=2)		
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
@@ -208,7 +208,7 @@ y8c2 = slope8c2*x8c2 + intercept8c2
 #plt.plot(x8c2,1000*y8c2,'k')
 #print(-intercept8c2/slope8c2)
 #plt.axis([-40,20,0,.16])
-plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)
+plt.legend(['$V_{SB} = 2$','$V_{SB} = 0$','$V_{SB} = 1$'],loc=2)
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
@@ -232,12 +232,12 @@ y8d2 = slope8d2*x8d2 + intercept8d2
 #print(-intercept8d2/slope8d2)
 #plt.axis([-40,20,0,.16])
 
-plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)
+plt.legend(['$V_{SB} = 2$','$V_{SB} = 0$','$V_{SB} = 1$'],loc=2)
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
 plt.title("Mosfet 8d, Test 2 plot")
-plt.savefig("D8d2linplot.pdf")
+plt.savefig("D8d2plot.pdf")
 ## Device9a, plot 1
 plt.figure()
 device9a = np.genfromtxt('D9AIMG1.TXT.csv', delimiter=',',skip_header=113) #113
@@ -304,7 +304,7 @@ y9a2 = slope9a2*x9a2 + intercept9a2
 #print(-intercept9a2/slope9a2)
 #plt.axis([-40,20,0,.16])
 
-plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)
+plt.legend(['$V_{SB} = 2$','$V_{SB} = 0$','$V_{SB} = 1$'],loc=2)
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
@@ -328,7 +328,7 @@ y9b2 = slope9b2*x9b2 + intercept9b2
 #print(-intercept9b2/slope9b2)
 #plt.axis([-40,20,0,.16])
 
-plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)		
+plt.legend(['$V_{SB} = 2$','$V_{SB} = 0$','$V_{SB} = 1$'],loc=2)		
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
@@ -350,9 +350,9 @@ x9c2 = np.linspace(-intercept9c2/slope9c2,12,100)
 y9c2 = slope9c2*x9c2 + intercept9c2
 #plt.plot(x9c2,1000*y9c2,'k-')
 #print(-intercept9c2/slope9c2)
-#plt.axis([-40,20,0,.16])
+#plt.axis([-6,12,0,.025])
 
-plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)		
+plt.legend(['$V_{SB} = 2$','$V_{SB} = 0$','$V_{SB} = 1$'],loc=2)		
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
@@ -381,14 +381,23 @@ start = 0;
 
 for i in range(0,np.size(device102,0)):
 	if (device102[i,0] < device102[i-1,0]):
-		plt.plot(device102[start:i,0],1000*device102[start:i,1],'b')
+		plt.plot(device102[start:i,0],np.log10(device102[start:i,1]))
 		start = i
-		
+plt.plot(device102[start:,0],np.log10(device102[start:,1]))
+
+slope102, intercept102, r_value, p_value, std_err = stats.linregress(device102[0:13,0],device102[0:13,1])
+x102 = np.linspace(-intercept102/slope102,12,100)
+y102 = slope102*x102 + intercept102
+#plt.plot(x102,1000*y102,'k-')
+#print(-intercept102/slope102)
+#plt.axis([-40,20,0,.16])
+
+plt.legend(['$V_{SB} = 2$','$V_{SB} = 0$','$V_{SB} = 1$'],loc=2)	
 plt.grid(True)
 plt.xlabel("VG (V)")
-plt.ylabel("ID (mA)")
+plt.ylabel("log(ID) (n.a)")
 plt.title("Mosfet 10, Test 2 plot")
-plt.savefig("D102plot.pdf")
+plt.savefig("D102logplot.pdf")
 ## Device14
 plt.figure()
 device14 = np.genfromtxt('D14IMG1.TXT.csv', delimiter=',',skip_header=113) #113

@@ -42,10 +42,10 @@
 \BOOKMARK [3][-]{subsubsection.1.11.1}{Measurement setup}{subsection.1.11}% 42
 \BOOKMARK [3][-]{subsubsection.1.11.2}{Plots of ID-VD, sweeping VG }{subsection.1.11}% 43
 \BOOKMARK [3][-]{subsubsection.1.11.3}{Plots of ID-VG, sweeping VB}{subsection.1.11}% 44
-\BOOKMARK [2][-]{subsection.1.12}{Inverter, 14}{section.1}% 45
-\BOOKMARK [3][-]{subsubsection.1.12.1}{Measurement setup}{subsection.1.12}% 46
-\BOOKMARK [3][-]{subsubsection.1.12.2}{b. Vin-Vout plot}{subsection.1.12}% 47
-\BOOKMARK [3][-]{subsubsection.1.12.3}{Estimate VM}{subsection.1.12}% 48
+\BOOKMARK [3][-]{subsubsection.1.11.4}{Calculating mobility, threshold, and other parameters}{subsection.1.11}% 45
+\BOOKMARK [2][-]{subsection.1.12}{Inverter, 14}{section.1}% 46
+\BOOKMARK [3][-]{subsubsection.1.12.1}{Measurement setup}{subsection.1.12}% 47
+\BOOKMARK [3][-]{subsubsection.1.12.2}{b. Vin-Vout plot}{subsection.1.12}% 48
 \BOOKMARK [1][-]{section.2}{Theoretical Calculations}{}% 49
 \BOOKMARK [2][-]{subsection.2.1}{Measured Physical Dimensions and Parameters}{section.2}% 50
 \BOOKMARK [2][-]{subsection.2.2}{Resistors [2a,2b]}{section.2}% 51

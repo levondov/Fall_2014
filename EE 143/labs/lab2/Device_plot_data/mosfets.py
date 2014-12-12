@@ -76,9 +76,55 @@ plt.xlabel('$W_{eff}$ ($\mu m$)')
 plt.ylabel('$V_t$ (V)')
 plt.title('Threshold voltage vs Effective channel Width')
 plt.savefig('D9Wplot.pdf')
+## Ueff vs VG
+plt.figure()
+device102 = np.genfromtxt('D10IMG2.TXT.csv', delimiter=',',skip_header=113) #113
+slope102, intercept102, r_value, p_value, std_err = stats.linregress(device102[0:13,0],device102[0:13,1])
+x102 = np.linspace(-intercept102/slope102,12,100)
+y102 = slope102*x102 + intercept102
+ueff = y102[1:]/(1.07e-8*(x102[1:] + 4.92))
 
 
+plt.plot(x102[1:],ueff)
+plt.scatter(x102[1:],ueff)
+plt.grid(True)
+plt.xlabel('V_G (V)')
+plt.ylabel('$\mu_{eff}$ (${cm}^{2}$/ V-s)')
+plt.title('Effective electron mobility vs Gate voltage')
+plt.savefig('D10Uplot.pdf')
+### vt vs vsb 0.7 
+device102 = np.genfromtxt('D10IMG2.TXT.csv', delimiter=',',skip_header=113) #113
+slope102, intercept102, r_value, p_value, std_err = stats.linregress(device102[0:13,0],device102[0:13,1])
+slope102a, intercept102a, r_value, p_value, std_err = stats.linregress(device102[13:26,0],device102[13:26,1])
+slope102b, intercept102b, r_value, p_value, std_err = stats.linregress(device102[26:39,0],device102[26:39,1])
+#print(-intercept102/slope102)
+#print(-intercept102a/slope102a)
+#print(-intercept102b/slope102b)
+## body effect parameter
+plt.figure()
+x6 = np.array([np.sqrt(0.7),np.sqrt(0.7+1),np.sqrt(0.7+2)])
+y6 = np.array([-4.92,-4.55,-4.18])
+slope6, intercept6, r_value, p_value, std_err = stats.linregress(x6,y6)
 
+x6a = np.linspace(0,10,100)
+y6a = slope6*x6a + intercept6
 
+print(slope6)
+plt.grid(True)
+plt.scatter(x6,y6)
+plt.plot(x6a,y6a)
+plt.xlabel('$\sqrt{V_{SB} + 0.7}$ (V)')
+plt.ylabel('V_t (V)')
+plt.title('Estimation of body effect paramter')
+plt.savefig('D10Gplot.pdf')
+### Inverter shit
+device14 = np.genfromtxt('D14IMG1.TXT.csv', delimiter=',',skip_header=113) #113
+mins = np.abs(device14[0,0] - device14[0,1])
+minx = 0;
+for i in range(0,np.size(device14,0)):
+	if (np.abs(device14[i,0] - device14[i,1]) < mins):
+		mins = np.abs(device14[i,0] - device14[i,1]) 
+		minx = i;
+print(device14[minx,0],device14[minx,1],mins)
 
 plt.show()
