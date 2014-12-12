@@ -237,7 +237,7 @@ plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
 plt.title("Mosfet 8d, Test 2 plot")
-plt.savefig("D8d2plot.pdf")
+plt.savefig("D8d2linplot.pdf")
 ## Device9a, plot 1
 plt.figure()
 device9a = np.genfromtxt('D9AIMG1.TXT.csv', delimiter=',',skip_header=113) #113
@@ -293,9 +293,18 @@ start = 0;
 
 for i in range(0,np.size(device9a2,0)):
 	if (device9a2[i,0] < device9a2[i-1,0]):
-		plt.plot(device9a2[start:i,0],1000*device9a2[start:i,1],'b')
+		plt.plot(device9a2[start:i,0],1000*device9a2[start:i,1])
 		start = i
-		
+plt.plot(device9a2[start:,0],1000*device9a2[start:,1])
+
+slope9a2, intercept9a2, r_value, p_value, std_err = stats.linregress(device9a2[0:13,0],device9a2[0:13,1])
+x9a2 = np.linspace(-intercept9a2/slope9a2,12,100)
+y9a2 = slope9a2*x9a2 + intercept9a2
+#plt.plot(x9a2,1000*y9a2,'k-')
+#print(-intercept9a2/slope9a2)
+#plt.axis([-40,20,0,.16])
+
+plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
@@ -308,9 +317,18 @@ start = 0;
 
 for i in range(0,np.size(device9b2,0)):
 	if (device9b2[i,0] < device9b2[i-1,0]):
-		plt.plot(device9b2[start:i,0],1000*device9b2[start:i,1],'b')
+		plt.plot(device9b2[start:i,0],1000*device9b2[start:i,1])
 		start = i
-		
+plt.plot(device9b2[start:,0],1000*device9b2[start:,1])
+
+slope9b2, intercept9b2, r_value, p_value, std_err = stats.linregress(device9b2[0:13,0],device9b2[0:13,1])
+x9b2 = np.linspace(-intercept9b2/slope9b2,12,100)
+y9b2 = slope9b2*x9b2 + intercept9b2
+#plt.plot(x9b2,1000*y9b2,'k-')
+#print(-intercept9b2/slope9b2)
+#plt.axis([-40,20,0,.16])
+
+plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)		
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")
@@ -323,9 +341,18 @@ start = 0;
 
 for i in range(0,np.size(device9c2,0)):
 	if (device9c2[i,0] < device9c2[i-1,0]):
-		plt.plot(device9c2[start:i,0],1000*device9c2[start:i,1],'b')
+		plt.plot(device9c2[start:i,0],1000*device9c2[start:i,1])
 		start = i
-		
+plt.plot(device9c2[start:,0],1000*device9c2[start:,1])
+
+slope9c2, intercept9c2, r_value, p_value, std_err = stats.linregress(device9c2[0:13,0],device9c2[0:13,1])
+x9c2 = np.linspace(-intercept9c2/slope9c2,12,100)
+y9c2 = slope9c2*x9c2 + intercept9c2
+#plt.plot(x9c2,1000*y9c2,'k-')
+#print(-intercept9c2/slope9c2)
+#plt.axis([-40,20,0,.16])
+
+plt.legend(['$V_{SB} = -2$','$V_{SB} = 0$','$V_{SB} = -1$'],loc=2)		
 plt.grid(True)
 plt.xlabel("VG (V)")
 plt.ylabel("ID (mA)")

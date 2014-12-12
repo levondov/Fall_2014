@@ -44,6 +44,41 @@ plt.xlabel('$L_{drawn}$ ($\mu m$)')
 plt.ylabel('$R_{meas}$ (k$\Omega$)')
 plt.title('R measured vs Gate Length')
 plt.legend(['$V_{gt} = 2 V$','$V_{gt} = 4 V$','$V_{gt} = 6 V$'],loc=2)
+plt.savefig('D8Rplot.pdf')
+## delta W
+plt.figure()
+x = np.array([10,15,20])
+y = np.array([0.004,0.0058,0.0063])*1000
+
+slope4, intercept4, r_value, p_value, std_err = stats.linregress(x,y/2)
+x5 = np.linspace(-intercept4/slope4,20,100)
+
+plt.scatter(x,y/2)
+plt.plot(x5,slope4*x5 + intercept4)
+#print(-intercept4/slope4)
+
+plt.grid(True)
+plt.axis([-10,25,0,3.5])
+plt.xlabel('$W_{drawn}$ ($\mu m$)')
+plt.ylabel('$1/R_{meas}$ (1/$\Omega$)')
+plt.title('R measured vs Channel Width')
+plt.savefig('D9Rplot.pdf')
+## Vt vs Weff
+plt.figure()
+x5 = np.array([18.33,23.33,28.33])
+y5 = np.array([-4.98,-5.46,-4.91])
+
+plt.plot(x5,y5)
+plt.scatter(x5,y5)
+plt.grid(True)
+#plt.axis([-10,25,0,3.5])
+plt.xlabel('$W_{eff}$ ($\mu m$)')
+plt.ylabel('$V_t$ (V)')
+plt.title('Threshold voltage vs Effective channel Width')
+plt.savefig('D9Wplot.pdf')
+
+
+
 
 
 plt.show()
