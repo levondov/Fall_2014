@@ -880,7 +880,7 @@ Since we only have 3 data points for $V_{SB}$ our plot is not very accurate and 
 \end{equation}
 Solving for the surface concentration and using previous values of $C_{\text{gox}} = 0.195 $mF/${\text{cm}}^2$.
 \begin{align*}
-N_A = \frac{(\gamma C_{\text{gox}})^2}{2q\epsilon_{\text{si}}} = \frac{(0.910*0.195\e{-3})^2}{2(1.602\e{-19})(11.7\times 8.85\e{-12})} = 9.49\e{14} {\text{cm}}^{-3}
+N_A = \frac{(\gamma C_{\text{gox}})^2}{2q\epsilon_{\text{si}}} = \frac{(0.910*0.195\e{-3})^2}{2(1.602\e{-19})(11.7\times 8.85\e{-12})} = 9.49\e{20} {\text{cm}}^{-3}
 \end{align*}
 Finally, we plot a log plot of the data in Figure 44.
 \begin{figure}[H]
