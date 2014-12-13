@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  12 DEC 2014 17:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  12 DEC 2014 18:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2411,12 +2411,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 File: Device_plot_data/idealmosfet.png Graphic file (type png)
 
 <use Device_plot_data/idealmosfet.png>
-Package pdftex.def Info: Device_plot_data/idealmosfet.png used on input line 11
-76.
+Package pdftex.def Info: Device_plot_data/idealmosfet.png used on input line 12
+06.
 (pdftex.def)             Requested size: 250.0pt x 174.98575pt.
 File: Device_plot_data/D8c1plot.pdf Graphic file (type pdf)
  <use Device_plot_data/D8c1plot.pdf>
-Package pdftex.def Info: Device_plot_data/D8c1plot.pdf used on input line 1177.
+Package pdftex.def Info: Device_plot_data/D8c1plot.pdf used on input line 1207.
 
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
@@ -2424,27 +2424,26 @@ Package pdftex.def Info: Device_plot_data/D8c1plot.pdf used on input line 1177.
 File: Device_plot_data/bonus1.png Graphic file (type png)
 
 <use Device_plot_data/bonus1.png>
-Package pdftex.def Info: Device_plot_data/bonus1.png used on input line 1187.
+Package pdftex.def Info: Device_plot_data/bonus1.png used on input line 1217.
 (pdftex.def)             Requested size: 300.0pt x 159.7335pt.
-
+ [32 <./Device_plot_data/idealmosfet.png (PNG copy)>]
 No file lab2.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1218.
-[32 <./Device_plot_data/idealmosfet.png (PNG copy)> <./Device_plot_data/bonus1.
-png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1218.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1251.
+[33 <./Device_plot_data/bonus1.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1251.
  (./lab2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1218.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1218.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1251.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1251.
 
 Package rerunfilecheck Info: File `lab2.out' has not changed.
 (rerunfilecheck)             Checksum: 166E58F48EE354A545D72CDE48CD54A2;5684.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1218.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1251.
  ) 
 Here is how much of TeX's memory you used:
- 33150 strings out of 493304
- 734585 string characters out of 6139872
+ 33154 strings out of 493304
+ 734629 string characters out of 6139872
  820852 words of memory out of 5000000
- 35807 multiletter control sequences out of 15000+600000
+ 35809 multiletter control sequences out of 15000+600000
  7986 words of font info for 30 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,14n,74p,10432b,835s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2461,10 +2460,10 @@ cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on lab2.pdf (32 pages, 1228908 bytes).
+Output written on lab2.pdf (33 pages, 1231249 bytes).
 PDF statistics:
- 2870 PDF objects out of 2984 (max. 8388607)
- 1086 compressed objects within 11 object streams
- 171 named destinations out of 1000 (max. 500000)
+ 2875 PDF objects out of 2984 (max. 8388607)
+ 1090 compressed objects within 11 object streams
+ 173 named destinations out of 1000 (max. 500000)
  911 words of extra memory for PDF output out of 10000 (max. 10000000)
 

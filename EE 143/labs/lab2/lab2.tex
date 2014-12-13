@@ -1166,7 +1166,37 @@ For $V_{tnl}$ and $V_{tnd}$ we will use a value of 0.03 as mentioned above. $V_{
 
 \begin{itemize}
 \item Sheet resistance
-
+\begin{itemize}
+\item Polysilicon resistance depends largely on grain size and so may vary depending on the specific nature in which it was deposited. We did not use the polysilicon sheet resistance from our process in theoretical calculation
+\item Diffusion resistance may vary depending on the dopant concentration (may vary from die to die).
+\end{itemize}
+\item Contact resistance
+\begin{itemize}
+\item Noted junction spiking in our MOSFETs which would conform to prediction of poor contact resistance. However this may not be uniform across the wafer. 
+\end{itemize}
+\item Threshold voltage for Capacitors
+\begin{itemize}
+\item Ignored fixed charge present in gate and field oxide for calculating threshold voltage.
+\item Ignored any charge variation or movement of charge in the semiconductor 
+\end{itemize}
+\item Built in potential for Diode
+\begin{itemize}
+\item Assumed step junction, even though the n+ region behaves like a Gaussian distribution.
+\end{itemize}
+\item $\Delta$ L and W for MOSFETS
+\begin{itemize}
+\item Estimate of $\delta$ L and $\delta$ W based on lithography and vernier results may not be accurate across the wafer, especially if the mask was slightly rotated. 
+\item Predicted span of lateral diffusion may be an underestimate.
+\item Plots suggest high amounts of junction leakage for small MOSFETS [8] which would affect calculation of results. 
+\end{itemize}
+\item Mosfet threshold voltages
+\begin{itemize}
+\item Plots suggest highly negative threshold voltage, implies high concentration of fixed charge in the oxide and oxide-silicon interface, which was ignored for theorectical calculations.
+\end{itemize}
+\item Large Mosfet
+\begin{itemize}
+\item Made the poor assumption of a lack of fixed charge in the gate oxide
+\end{itemize}
 \end{itemize}
 
 \subsection{Ideal Mosfet}
@@ -1189,6 +1219,9 @@ The most obviously difference between the two plots is that our plot does not ha
 \end{figure}
 
 \section{Appendix}
+\begin{equation}
+\mu = \mu_{min} + \frac{\mu_0}{1+(N/N_{ref})^\alpha}
+\end{equation}
 %----------------------------------------------------------------------------------------
 %	SECTION References
 %----------------------------------------------------------------------------------------
