@@ -152,11 +152,11 @@ CONT-METL: METL shifted 1.6um to the left, 2.4 um up relative to CONT. \\
 \caption{A plot of the measurement data taken for resistor 2a. The plot is based off of 2 data points.}
 \end{figure}
 
-From the plot above we can calculate our resistance. Note that the slope of the above plot will be equal to 1/R. Since I = V/R, where I is our dependent variable (y axis) and V is our independent variable (X axis). A resistance of $R = 17 \,\Omega$ was calculated. Our width and length values are $10 \mu m$ and $200 \mu m$. However our final 2$\mu m$ line after the ACTV mask was 3 $\mu m$ which means that we had a overetch of about 50\%. This means that
+From the plot above we can calculate our resistance. Note that the slope of the above plot will be equal to 1/R. Since I = V/R, where I is our dependent variable (y axis) and V is our independent variable (X axis). A resistance of $R = 17 \,\Omega$ was calculated. Our width and length values are $10 \mu m$ and $200 \mu m$. However our final 2$\mu m$ line after the ACTV mask was 3 $\mu m$ which means that we had a process bias of 1$\mu$m on each dimension. This means that
 \begin{align*}
-R_s = \frac{W}{L}R_{\text{diff}} = \frac{10(1.50)}{200}17 = 1.28 \,\Omega
+R_s = \frac{W}{L}R_{\text{diff}} = \frac{11}{200}17 = 0.93 \,\Omega
 \end{align*}
-From the previous lab report we have a junction depth of $1\,\mu m$. This means that our Resistivity is $\rho = R_s x_j = 1.07\e{-4}$ $\Omega$-cm. Using the Irvin curves in Jaeger [1], we can estimate the surface concentration $N_0 \approx 10^{21}$. Now the mobility can be calculated using a table of values from Appendix xx.
+From the previous lab report we have a junction depth of $1\,\mu m$. This means that our Resistivity is $\rho = R_s x_j = 0.93$ $\Omega$-$\mu$m. Using the Irvin curves in Jaeger [1], we can estimate the surface concentration $N_0 \approx 10^{21}$. Now the mobility can be calculated using a table of values from Appendix xx.
 \begin{align*}
 \mu_e = \mu_{\text{min}} + \frac{\mu_0}{1 + (N/N_{\text{ref}})^{\alpha}} = 92 + \frac{1268}{1 + (10^{21}/1.3\e{17})^{0.91}} = 92.4 \,\text{cm}^2 /V-s
 \end{align*}
@@ -172,9 +172,9 @@ From the previous lab report we have a junction depth of $1\,\mu m$. This means 
 
 From the plot above we calculate a 1/slope value of 15. Hense $R = 15 \,\Omega$. This means that 
 \begin{align*}
-R_s = \frac{W}{L}R_{\text{poly}} = \frac{10(1.5)}{200}15 = 1.13 \,\Omega 
+R_s = \frac{W}{L}R_{\text{poly}} = \frac{8)}{198}15 = 0.61 \,\Omega 
 \end{align*}
-Our Resistivity is then $\rho = R_s t_{\text{poly}}$ where $t_{\text{poly}}$ is the polysilicon thickness which is 0.4 $\mu m$, Hense $\rho = 0.452 \,\Omega$-$\mu m$.
+Our Resistivity is then $\rho = R_s t_{\text{poly}}$ where $t_{\text{poly}}$ is the polysilicon thickness which is 0.4 $\mu m$, Hense $\rho = 0.24 \,\Omega$-$\mu m$.
 
 \subsection{Four-Point Contact Resistor [17a, 17b]} %%%%%%%%%%%% Resistors 17a,b
 \subsubsection{Measurement Setup}
@@ -247,7 +247,7 @@ Similarly, from the above plot we calculated a resistance of $R = 1.46 \Omega$.
 The resistance calculated from the graph here is $R = 91.2 \Omega$. Using sheet resistance from 2a/b and the total resistance from the slope above, we can solve for the contact resistance
 
 \begin{align*}
-R_{\text{total diff}} = 7(\eta R_{\text{S diff}} + R_{\text{C diff}}) \Rightarrow R_{\text{C diff}} = \frac{1}{7}R_{\text{total diff}} - \eta R_{\text{S diff}} = \frac{1}{7}(91.2 \Omega) - 2.3(1.07 \Omega) = 10.6 \Omega
+R_{\text{total diff}} = 7(\eta R_{\text{S diff}} + R_{\text{C diff}}) \Rightarrow R_{\text{C diff}} = \frac{1}{7}R_{\text{total diff}} - \eta R_{\text{S diff}} = \frac{1}{7}(91.2 \Omega) - 2.3(0.93 \Omega) = 10.88 \Omega
 \end{align*}
 
 
@@ -264,7 +264,7 @@ R_{\text{total diff}} = 7(\eta R_{\text{S diff}} + R_{\text{C diff}}) \Rightarro
 The resistance calculated from the graph here is $R = 370 \Omega$. Using sheet resistance from 2a/b and the total resistance from the slope above, we can solve for the contact resistance
 
 \begin{align*}
-R_{\text{total poly}} = 7(\eta R_{\text{S poly}} + R_{\text{C poly}}) \Rightarrow R_{\text{C poly}} = \frac{1}{7}R_{\text{total poly}} - \eta R_{\text{S poly}} = \frac{1}{7}(370 \Omega) - 2.3(0.945 \Omega) = 50.7 \Omega
+R_{\text{total poly}} = 7(\eta R_{\text{S poly}} + R_{\text{C poly}}) \Rightarrow R_{\text{C poly}} = \frac{1}{7}R_{\text{total poly}} - \eta R_{\text{S poly}} = \frac{1}{7}(370 \Omega) - 2.3(0.61 \Omega) = 51.45 \Omega
 \end{align*}
 
 
@@ -337,7 +337,11 @@ Q_{BO} = \sqrt{2q\epsilon_{si}N_B2\phi_F} = \sqrt{2(1.602\e{-19})(11.7 \times 8.
 \end{align*}
 Now to calculate/estimate threshold voltage. Note that the work function $\phi_{ms}$ is zero for n+ doped poly gate.
 \begin{align*}
-V_t = \phi_{ms} - 2\phi_f + \frac{Q_{ss}}{C_{\text{max/area}}} - \frac{Q_{BO}}{C_{\text{max/area}}} = 0 - 0.6 + \frac{1.06\e{-3}}{.195\e{-3}} - \frac{1.09\e{-4}}{.195\e{-3}} = 4.3 V
+V_t = \phi_{ms} - 2\phi_f + \frac{Q_{ss}}{C_{\text{max/area}}} - \frac{Q_{BO}}{C_{\text{max/area}}} = 0V -0.56V -0.3V - 0.6V + \frac{1.06\e{-3}}{.195\e{-3}} - \frac{1.09\e{-4}}{.195\e{-3}} = -0.26
+\end{align*}
+Where
+\begin{align*}
+\Phi_{ms} = \Phi_{m} - \chi - \frac{E_{g}\epsilon_{s}}{2q} - |\Phi_f| 
 \end{align*}
 
 \subsection{Field Oxide Capacitor, 3} %%%%%%% Field Oxide Capacitors 3
@@ -688,7 +692,6 @@ Solving for $\Delta L$ and noting that from earlier that $C_{\text{gox}} = .195$
 \caption{Test 1 for Mosfet 9a}
 \end{figure}
 
-Calculate stuff here... 
 
 \begin{figure}[H]
 \centering
@@ -698,8 +701,6 @@ Calculate stuff here...
 \caption{Test 1 for Mosfet 9b}
 \end{figure}
 
-Calculate stuff here...
-
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
@@ -707,8 +708,6 @@ Calculate stuff here...
 \end{tikzpicture}
 \caption{Test 1 for Mosfet 9c}
 \end{figure}
-
-Calculate stuff here...
 
 \subsubsection{Plots of $I_D$-$V_G$, sweeping $V_B$}
 
@@ -996,7 +995,7 @@ Due to the fact that the intermediate oxide was grown during drive-in for the S/
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-\node at (5,4) {CV plot for \textcolor{blue}{Gate capacitance} and \textcolor{red}{Field capacitance}};
+\node at (5,4) {CV plot for \textcolor{blue}{Gate capacitance},\textcolor{red}{Field capacitance} and \textcolor{green}{Intermediate Oxide}};
 \draw[<->,thick] (0,0) -- (10,0);
 \draw[->,thick] (5,0) -- (5,2.5);
 \node at (10.2,0) {$V_G$};
@@ -1013,6 +1012,7 @@ Due to the fact that the intermediate oxide was grown during drive-in for the S/
 
 \draw[red] (2,2.5) -- (2.5,2.5) parabola bend (8,0.5) (8.5,0.5) parabola bend (8.5,0.5) (9.5,2.5) -- (10,2.5);
 \draw[blue] (2.6,2.5) -- (2.83,2.5) parabola bend (4.8,0.5) (5,0.5) parabola bend (5,0.5) (6,2.5) -- (7,2.5);
+\draw[green] (2,2.4) -- (10,2.4);
 
 \end{tikzpicture}
 \caption{}
@@ -1067,7 +1067,30 @@ Where T is room temperature, $N_A$ is the p-sub dopant concentration (8\e{14}${\
 
 \subsection{MOSFETs}
 \subsubsection{MOSFETs of varying length [8] and width [9]}
+$\Delta$L and $\Delta$W are primarily caused undercutting of the polysilicon etch and the lateral diffusion of the S/D regions. We will estimate $\Delta$L and $\Delta$W using the line widths recorded in Lab 1 and the lateral diffusion calculated in Lab1. For polysilicon, the 2 $\mu$m line width on the wafer became a 4 $\mu$m line width after PR strip (indicating the width of the etch). This indicates a process bias of ~1$\mu$m on both sides of the polysilicon. The lateral diffusion of the S/D regions was calculated to be 0.880 $\mu$m. Therefore we can estimate $\Delta$L to be
+\begin{align*}
+\Delta L = 2\Delta L_{\text{process bias}} + 2 \Delta L_{S/D} = 3.76 \mu m
+\end{align*}
+
+$\Delta$W is caused by overetch of the active area and the lateral diffusion of the S/D regions. For the active area, the 2 $\mu$m line width on the wafer became a 3 $\mu$m line width after PR strip (indicating the width of the etch). This indicates a process bias of ~0.5 $\mu$m on both sides of the active area. Since the process bias and lateral diffusion contribute to the widening of the active area, by definition of $W_{eff}$, both are negative.
+\begin{align*}
+\Delta W = -2\Delta W_{\text{process bias}}- 2\Delta W_{S/D} =-2.76 \mu m 
+\end{align*}
+
 \subsubsection{Large MOSFET}
+The threshold voltage here is the same as the one calculated for the MOS gate capacitors.
+\begin{align*}
+V_{TN} = V_{FB} + 2|\Phi_F| + (1/C_0)\sqrt{4 \epsilon_s q N_B |\Phi_F|} = 0.03V
+\end{align*}
+Using $N_B$ value from lab 1, 8\e{14} $\text{cm}^{-3}$ we can now calculate a body effect parameter.
+\begin{align*}
+\gamma = (1/C_0)\sqrt{2 \epsilon_s q N_B} = 0.53 V^{-1/2}
+\end{align*}
+Using $N_B$ with the mobility equation from the appendix, we calculated:
+\begin{align*}
+\mu = 92.37 \text{cm}^{2}/\text{V-s}
+\end{align*}
+
 
 \subsection{Inverter}
 \begin{figure}[H]
@@ -1122,7 +1145,7 @@ Also note that for our transistor, the aspect ratio should be
 \begin{align*}
 \frac{K_D}{K_L} = \frac{W_DL_L}{L_DW_L} = \frac{160*20}{10*10} = 16
 \end{align*}
-For $V_{tnl}$ and $V_{tnd}$ we will use a value of 0.3 as mentioned above. $V_{dd}$ will range from 0 to 5 volts.
+For $V_{tnl}$ and $V_{tnd}$ we will use a value of 0.03 as mentioned above. $V_{dd}$ will range from 0 to 5 volts.
 
 \subsubsection{Theoretical Inverter plot}
 \begin{figure}[H]
@@ -1134,14 +1157,14 @@ For $V_{tnl}$ and $V_{tnd}$ we will use a value of 0.3 as mentioned above. $V_{d
 \end{figure}
 
 \section{Discussion}
-
 \subsection{Master Table}
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=600pt]{master_table.pdf}
 \caption{Master table for everything}
 \end{figure}
+
+
 
 \subsection{Ideal Mosfet}
 \begin{figure}[H]
@@ -1156,6 +1179,11 @@ The most obviously difference between the two plots is that our plot does not ha
 
 
 \section{Optional Questions}
+\begin{figure}[H]
+\centering
+\includegraphics[width=300pt]{Device_plot_data/bonus1.png}
+\caption{Bonus}
+\end{figure}
 
 \section{Appendix}
 %----------------------------------------------------------------------------------------
@@ -1164,7 +1192,7 @@ The most obviously difference between the two plots is that our plot does not ha
 \section{References}
 \begin{enumerate}
 \item Jaeger, Richard. \textit{Introduction to microelectronic fabrication}. New Jersey: Prentice Hall, 2002. Print.
-\item Lecture notes, $<$http://www.prenhall.com/howe3/microelectronics/pdf$_$folder/lectures/tth/lecture4.fm5.pdf$>$
+\item Lecture notes, \url{http://www.prenhall.com/howe3/microelectronics/pdf$_$folder/lectures/tth/lecture4.fm5.pdf}
 \end{enumerate}
 
 %----------------------------------------------------------------------------------------
