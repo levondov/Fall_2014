@@ -82,7 +82,7 @@ device102 = np.genfromtxt('D10IMG2.TXT.csv', delimiter=',',skip_header=113) #113
 slope102, intercept102, r_value, p_value, std_err = stats.linregress(device102[0:13,0],device102[0:13,1])
 x102 = np.linspace(-intercept102/slope102,12,100)
 y102 = slope102*x102 + intercept102
-ueff = y102[1:]/(1.07e-5*(x102[1:] + 4.92))
+ueff = y102[1:]/(1.07e-3*(x102[1:] + 4.92))
 
 
 plt.plot(x102[1:],ueff)

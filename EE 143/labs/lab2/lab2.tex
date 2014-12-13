@@ -108,6 +108,12 @@
 \end{figure}
 
 \subsubsection{Misalignment}
+Misalignment: (reading off the Verniers) \\
+ACTV-POLY: POLY shifted 0.4um to the left, 2.2 um up relative to ACTV \\
+ACTV-CONT: CONT shifted 1.0um to the right, 1.4 um down relative to ACTV \\
+POLY-CONT: CONT shifted 0.6um to the right, 3.6um down relative to POLY \\
+CONT-METL: METL shifted 1.6um to the left, 2.4 um up relative to CONT. \\
+
 
 \subsection{Four-Point Resistors [2a, 2b]} %%%%%%%%%%%%% Resistors 2a 2b
 
@@ -301,10 +307,10 @@ The minimum capacitance from the plot above is 7.48 pF. The accumulation region 
 The minimum capacitance from the plot above is 6.22 pF. The accumulation region capacitance at about 5 V is 15.7 pF. The active area is 200 $\mu m$ by 200 $\mu m$ while the pad+ring area is 240 $\mu m$ by 335 $\mu m$. Also note the gate oxide thickness calculated below for the field oxide capacitors is 1.15 $\mu$m.
 
 \begin{align*}
-C_{\text{measured}} &= A_{\text{active}}\frac{\epsilon_{\text{ox}}}{t_{\text{gox}}} + A_{\text{pad-ring}}\frac{\epsilon_{\text{ox}}}{t_{\text{fox}}} \\ \\
-t_{\text{gox}} = [\frac{1}{A_{\text{active}}}(\frac{C_{\text{measured}}}{\epsilon_{\text{ox}}} - \frac{A_{\text{pad-ring}}}{t_{\text{fox}}})]^{-1} &= [\frac{1}{4\e{-8}}(\frac{15.7\e{-12}}{(3.9)8.85\e{-12}} - \frac{8.04\e{-8}}{1.15\e{-6}})]^{-1} = 0.104 \,\mu\text{m}
+C_{\text{measured}} &= A_{\text{active}}\frac{\epsilon_{\text{ox}}}{t_{\text{gox}}} \\ \\
+t_{\text{gox}} = [\frac{1}{A_{\text{active}}}\frac{C_{\text{measured}}}{\epsilon_{\text{ox}}}]^{-1}&= [\frac{1}{4\e{-8}}\frac{15.7\e{-12}}{(3.9)8.85\e{-12}}]^{-1} = 0.088 \,\mu\text{m}
 \end{align*}
-The capacitance per unit area in this case would be 15.7 pF / ($240 \mu m \times 335 \mu m$). C/area = 1.95 pF/$\mu$m or 1.95 F/$m^{-2}$. Now in order to calculate the maximum depletion region we use an equation from lecture notes. Note the max and min capacitance we calculated earlier,
+The capacitance per unit area in this case would be 15.7 pF / ($240 \mu m \times 335 \mu m$). C/area = 19.55 nF/$\text{cm}^2$ or .195 mF/$m^{2}$. Now in order to calculate the maximum depletion region we use an equation from lecture notes. Note the max and min capacitance we calculated earlier,
 \begin{equation}
 \frac{1}{C_{\text{min}}} = \frac{1}{C_{\text{max}}} + \frac{1}{A_{\text{pad-ring}} C_{\text{Dmin}}},\,\text{where } C_{\text{Dmin}} = \frac{\epsilon_{\text{si}}}{x_{\text{dmax}}}
 \end{equation}
@@ -331,7 +337,7 @@ Q_{BO} = \sqrt{2q\epsilon_{si}N_B2\phi_F} = \sqrt{2(1.602\e{-19})(11.7 \times 8.
 \end{align*}
 Now to calculate/estimate threshold voltage. Note that the work function $\phi_{ms}$ is zero for n+ doped poly gate.
 \begin{align*}
-V_t = \phi_{ms} + 2\phi_f - \frac{Q_{ss}}{C_{\text{max/area}}} + \frac{Q_{BO}}{C_{\text{max/area}}} = 0 + 0.6 - \frac{1.06\e{-3}}{1.95} + \frac{1.09\e{-4}}{1.95} = 0.600 V
+V_t = \phi_{ms} - 2\phi_f + \frac{Q_{ss}}{C_{\text{max/area}}} - \frac{Q_{BO}}{C_{\text{max/area}}} = 0 - 0.6 + \frac{1.06\e{-3}}{.195\e{-3}} - \frac{1.09\e{-4}}{.195\e{-3}} = 4.3 V
 \end{align*}
 
 \subsection{Field Oxide Capacitor, 3} %%%%%%% Field Oxide Capacitors 3
@@ -634,9 +640,10 @@ The Y value from the origin (0) to the point of intersection would be the extend
 \begin{equation}
 R_{\text{meas}} = \frac{L_{\text{drawn}} - \Delta L}{\mu W C_{\text{gox}} (V_{\text{gs}} - V_t)} + R_{\text{ext}}
 \end{equation}
-Solving for $\Delta L$ and noting that from earlier that $C_{\text{gox}} = 1.95$pF/${\mu m}^{2}$ and $\mu_n = 92.4 {\text{cm}}^{2}$/V-s. We will also choose $V_{gs} - V_t = 2 V$, $L_{\text{drawn}} = 4 \mu m$, and $R_{\text{meas}} = 8.368 k\Omega$. Note that W = 15 $\mu m$ and $R_{ext} = 0$.
+Solving for $\Delta L$ and noting that from earlier that $C_{\text{gox}} = .195$mF/${m}^{2}$ and $\mu_n = 92.4 {\text{cm}}^{2}$/V-s. We will also choose $V_{gs} - V_t = 2 V$, $L_{\text{drawn}} = 4 \mu m$, and $R_{\text{meas}} = 8.368 k\Omega$. Note that W = 15 $\mu m$ and $R_{ext} = 0$.
 \begin{align*}
-\Delta L = L_{\text{drawn}} - R_{\text{meas}}\mu_n C_{\text{gox}} (V_{\text{gs}} - V_t) = (8.368\e{3}\Omega)(92.4 {\text{cm}}^{2}/\text{V-s})(15\e{-6}\text{m})(1.95\e{-7}\text{F}/{\text{cm}}^{2})(2\text{V}) = 1.59 \,\mu m
+\Delta L =& L_{\text{drawn}} - R_{\text{meas}}W\mu_n C_{\text{gox}} (V_{\text{gs}} - V_t) \\
+=& 4\e{-6} - (8.368\e{3}\Omega)(92.4 {\text{cm}}^{2}/\text{V-s})(15\e{-6}\text{m})(19.5\e{-3}\text{F}/{\text{cm}}^{2})(2\text{V}) = 0.453 \,\mu m
 \end{align*}
 
 \subsection{MOSFETs of varying width [9a-c]} %%%%%%%%%%%%%% MOSFETS 9a-c
@@ -839,9 +846,9 @@ To calculate the effective electron mobility we will use the following equation,
 \begin{equation}
 \mu_{\text{eff}}(V_G) = \frac{I_D}{\frac{W_{\text{eff}}}{L_{\text{eff}}}C_{\text{gox}}(V_{GS} - V_t)V_{DS}}
 \end{equation}
-Note that $I_D$ depends on $V_{G}$ from the previous plot. For $\Delta W$ and $\Delta L$ we will use values calculated earlier (-8.33 and 1.59 $\mu m$). MOSFET 10 has a W and L value of 100 $\mu m$. Threshold voltage was calculated as $V_t = -4.92 V$ and $V_{DS} = 0.05 V$. $C_{\text{gox}}$ was also calculated earlier as 1.95pF/${\mu\text{m}}^{2}$.
+Note that $I_D$ depends on $V_{G}$ from the previous plot. For $\Delta W$ and $\Delta L$ we will use values calculated earlier (-8.33 and 0.452 $\mu m$). MOSFET 10 has a W and L value of 100 $\mu m$. Threshold voltage was calculated as $V_t = -4.92 V$ and $V_{DS} = 0.05 V$. $C_{\text{gox}}$ was also calculated earlier as 1.95pF/${\mu\text{m}}^{2}$.
 \begin{align*}
-\mu_{\text{eff}}(V_G) = \frac{I_D}{\frac{W_{\text{eff}}}{L_{\text{eff}}}C_{\text{gox}}(V_{GS} - V_t)V_{DS}} = \frac{I_D(V_G)}{\frac{(100 + 8.33)\e{-6}}{(100 - 1.59)\e{-6}}(1.95\e{-4}\text{cm}^{-2})(V_{GS} + 4.92)(0.05)} = \frac{I_D(V_G)}{1.07\e{-5}(V_{GS} + 4.92)}{\text{cm}}^2/\text{V-s}
+\mu_{\text{eff}}(V_G) = \frac{I_D}{\frac{W_{\text{eff}}}{L_{\text{eff}}}C_{\text{gox}}(V_{GS} - V_t)V_{DS}} = \frac{I_D(V_G)}{\frac{(100 + 8.33)\e{-6}}{(100 - 0.452)\e{-6}}(19.5\e{-3}\text{cm}^{-2})(V_{GS} + 4.92)(0.05)} = \frac{I_D(V_G)}{1.07\e{-3}(V_{GS} + 4.92)}{\text{cm}}^2/\text{V-s}
 \end{align*}
 
 Now we plot $\mu_{\text{eff}}(V_G)$ vs $V_G$ using the values for $I_D(V_G)$ from the previous graph (Figure 44).
@@ -878,9 +885,9 @@ Since we only have 3 data points for $V_{SB}$ our plot is not very accurate and 
 \begin{equation}
 \gamma = \frac{\sqrt{2\epsilon_{\text{si}} q N_A}}{C_{\text{gox}}} = 
 \end{equation}
-Solving for the surface concentration and using previous values of $C_{\text{gox}} = 0.195 $mF/${\text{cm}}^2$.
+Solving for the surface concentration and using previous values of $C_{\text{gox}} = 19.5 $mF/${\text{cm}}^2$.
 \begin{align*}
-N_A = \frac{(\gamma C_{\text{gox}})^2}{2q\epsilon_{\text{si}}} = \frac{(0.910*0.195\e{-3})^2}{2(1.602\e{-19})(11.7\times 8.85\e{-12})} = 9.49\e{20} {\text{cm}}^{-3}
+N_A = \frac{(\gamma C_{\text{gox}})^2}{2q\epsilon_{\text{si}}} = \frac{(0.910*19.5\e{-3})^2}{2(1.602\e{-19})(11.7\times 8.85\e{-12})} = 9.49\e{24} {\text{cm}}^{-3}
 \end{align*}
 Finally, we plot a log plot of the data in Figure 44.
 \begin{figure}[H]
@@ -1126,8 +1133,26 @@ For $V_{tnl}$ and $V_{tnd}$ we will use a value of 0.3 as mentioned above. $V_{d
 \caption{Theoretical inverter plot.}
 \end{figure}
 
-
 \section{Discussion}
+
+\subsection{Master Table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=600pt]{master_table.pdf}
+\caption{Master table for everything}
+\end{figure}
+
+\subsection{Ideal Mosfet}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\node at (5,5) {\includegraphics[width=250pt]{Device_plot_data/idealmosfet.png}};
+\node at (15,5) {\includegraphics[width=250pt]{Device_plot_data/D8c1plot.pdf}};
+\end{tikzpicture}
+\caption{Ideal mosfet on the left and our non-ideal mosfet on the right.}
+\end{figure}
+The most obviously difference between the two plots is that our plot does not have a saturation region. It is possible that if $V_{DS}$ was extended to higher voltages that the saturation might then occur. However, what is more likely is that there is junction leakage in our device which would explain why there is no saturation region. This junction spiking probably occured during sintering when we had silicon dissolve into our aluminum metal contact which caused a hole in the dopant. This hole then allowed our aluminum to leak into the silicon substrate.
 
 
 \section{Optional Questions}
@@ -1139,6 +1164,7 @@ For $V_{tnl}$ and $V_{tnd}$ we will use a value of 0.3 as mentioned above. $V_{d
 \section{References}
 \begin{enumerate}
 \item Jaeger, Richard. \textit{Introduction to microelectronic fabrication}. New Jersey: Prentice Hall, 2002. Print.
+\item Lecture notes, \url{http://www.prenhall.com/howe3/microelectronics/pdf$_$folder/lectures/tth/lecture4.fm5.pdf}
 \end{enumerate}
 
 %----------------------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  12 DEC 2014 14:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  12 DEC 2014 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1524,25 +1524,29 @@ LaTeX Info: Redefining \nameref on input line 84.
 \c__siunitx_mathsf_int=\count287
 \c__siunitx_mathtt_int=\count288
 
-<Device_setup/device2a1.pdf, id=284, 137.51375pt x 393.47pt>
+Underfull \hbox (badness 10000) in paragraph at lines 111--116
+
+ []
+
+<Device_setup/device2a1.pdf, id=292, 137.51375pt x 393.47pt>
 File: Device_setup/device2a1.pdf Graphic file (type pdf)
 
 <use Device_setup/device2a1.pdf>
-Package pdftex.def Info: Device_setup/device2a1.pdf used on input line 118.
+Package pdftex.def Info: Device_setup/device2a1.pdf used on input line 124.
 (pdftex.def)             Requested size: 87.3706pt x 250.0pt.
 
-<Device_setup/device2b1.pdf, id=285, 127.47626pt x 393.47pt>
+<Device_setup/device2b1.pdf, id=293, 127.47626pt x 393.47pt>
 File: Device_setup/device2b1.pdf Graphic file (type pdf)
 
 <use Device_setup/device2b1.pdf>
-Package pdftex.def Info: Device_setup/device2b1.pdf used on input line 127.
+Package pdftex.def Info: Device_setup/device2b1.pdf used on input line 133.
 (pdftex.def)             Requested size: 80.9932pt x 250.0pt.
 
-<Device_plot_data/D2aplot.pdf, id=286, 578.16pt x 433.62pt>
+<Device_plot_data/D2aplot.pdf, id=294, 578.16pt x 433.62pt>
 File: Device_plot_data/D2aplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D2aplot.pdf>
-Package pdftex.def Info: Device_plot_data/D2aplot.pdf used on input line 144.
+Package pdftex.def Info: Device_plot_data/D2aplot.pdf used on input line 150.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [1
 
@@ -1552,155 +1556,155 @@ te ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.148 
+l.154 
        <./Device_setup/device2a1.pdf> <./Device_setup/device2b1.pdf>]
-<Device_plot_data/D2bplot.pdf, id=309, 578.16pt x 433.62pt>
+<Device_plot_data/D2bplot.pdf, id=317, 578.16pt x 433.62pt>
 File: Device_plot_data/D2bplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D2bplot.pdf>
-Package pdftex.def Info: Device_plot_data/D2bplot.pdf used on input line 162.
+Package pdftex.def Info: Device_plot_data/D2bplot.pdf used on input line 168.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [2 <./Device_plot_data/D2aplot.pdf> <./Device_plot_data/D2bplot.pdf
 
 pdfTeX warning: pdflatex (file ./Device_plot_data/D2bplot.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
->] <Device_setup/device17a2.pdf, id=386, 428.60126pt x 388.45125pt>
+>] <Device_setup/device17a2.pdf, id=394, 428.60126pt x 388.45125pt>
 File: Device_setup/device17a2.pdf Graphic file (type pdf)
 
 <use Device_setup/device17a2.pdf>
-Package pdftex.def Info: Device_setup/device17a2.pdf used on input line 178.
+Package pdftex.def Info: Device_setup/device17a2.pdf used on input line 184.
 (pdftex.def)             Requested size: 250.0pt x 226.58217pt.
 
-<Device_plot_data/D17aplot.pdf, id=387, 578.16pt x 433.62pt>
+<Device_plot_data/D17aplot.pdf, id=395, 578.16pt x 433.62pt>
 File: Device_plot_data/D17aplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D17aplot.pdf>
-Package pdftex.def Info: Device_plot_data/D17aplot.pdf used on input line 195.
+Package pdftex.def Info: Device_plot_data/D17aplot.pdf used on input line 201.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D17bplot.pdf, id=388, 578.16pt x 433.62pt>
+<Device_plot_data/D17bplot.pdf, id=396, 578.16pt x 433.62pt>
 File: Device_plot_data/D17bplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D17bplot.pdf>
-Package pdftex.def Info: Device_plot_data/D17bplot.pdf used on input line 206.
+Package pdftex.def Info: Device_plot_data/D17bplot.pdf used on input line 212.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [3 <./Device_setup/device17a2.pdf> <./Device_plot_data/D17aplot.pdf>]
-<Device_setup/device2c2.pdf, id=434, 112.42pt x 403.5075pt>
+<Device_setup/device2c2.pdf, id=442, 112.42pt x 403.5075pt>
 File: Device_setup/device2c2.pdf Graphic file (type pdf)
 
 <use Device_setup/device2c2.pdf>
-Package pdftex.def Info: Device_setup/device2c2.pdf used on input line 219.
+Package pdftex.def Info: Device_setup/device2c2.pdf used on input line 225.
 (pdftex.def)             Requested size: 69.65164pt x 250.0pt.
 
-<Device_setup/device2d2.pdf, id=435, 112.42pt x 403.5075pt>
+<Device_setup/device2d2.pdf, id=443, 112.42pt x 403.5075pt>
 File: Device_setup/device2d2.pdf Graphic file (type pdf)
 
 <use Device_setup/device2d2.pdf>
-Package pdftex.def Info: Device_setup/device2d2.pdf used on input line 224.
+Package pdftex.def Info: Device_setup/device2d2.pdf used on input line 230.
 (pdftex.def)             Requested size: 69.65164pt x 250.0pt.
 
-<Device_plot_data/D2cplot.pdf, id=436, 578.16pt x 433.62pt>
+<Device_plot_data/D2cplot.pdf, id=444, 578.16pt x 433.62pt>
 File: Device_plot_data/D2cplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D2cplot.pdf>
-Package pdftex.def Info: Device_plot_data/D2cplot.pdf used on input line 236.
+Package pdftex.def Info: Device_plot_data/D2cplot.pdf used on input line 242.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [4 <./Device_plot_data/D17bplot.pdf> <./Device_setup/device2c2.pdf> <./Device_
 setup/device2d2.pdf>]
-<Device_plot_data/D2dplot.pdf, id=489, 578.16pt x 433.62pt>
+<Device_plot_data/D2dplot.pdf, id=497, 578.16pt x 433.62pt>
 File: Device_plot_data/D2dplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D2dplot.pdf>
-Package pdftex.def Info: Device_plot_data/D2dplot.pdf used on input line 253.
+Package pdftex.def Info: Device_plot_data/D2dplot.pdf used on input line 259.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_setup/device4a2.pdf, id=490, 363.3575pt x 242.9075pt>
+<Device_setup/device4a2.pdf, id=498, 363.3575pt x 242.9075pt>
 File: Device_setup/device4a2.pdf Graphic file (type pdf)
 
 <use Device_setup/device4a2.pdf>
-Package pdftex.def Info: Device_setup/device4a2.pdf used on input line 271.
+Package pdftex.def Info: Device_setup/device4a2.pdf used on input line 277.
 (pdftex.def)             Requested size: 250.0pt x 167.13191pt.
  [5 <./Device_plot_data/D2cplot.pdf> <./Device_plot_data/D2dplot.pdf
 
 pdfTeX warning: pdflatex (file ./Device_plot_data/D2dplot.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
->] <Device_plot_data/D4aplot.pdf, id=561, 578.16pt x 433.62pt>
+>] <Device_plot_data/D4aplot.pdf, id=569, 578.16pt x 433.62pt>
 File: Device_plot_data/D4aplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D4aplot.pdf>
-Package pdftex.def Info: Device_plot_data/D4aplot.pdf used on input line 285.
+Package pdftex.def Info: Device_plot_data/D4aplot.pdf used on input line 291.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D4bplot.pdf, id=562, 578.16pt x 433.62pt>
+<Device_plot_data/D4bplot.pdf, id=570, 578.16pt x 433.62pt>
 File: Device_plot_data/D4bplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D4bplot.pdf>
-Package pdftex.def Info: Device_plot_data/D4bplot.pdf used on input line 296.
+Package pdftex.def Info: Device_plot_data/D4bplot.pdf used on input line 302.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [6 <./Device_setup/device4a2.pdf> <./Device_plot_data/D4aplot.pdf>] [7 <./Devi
 ce_plot_data/D4bplot.pdf>]
-<Device_setup/device3a2.pdf, id=666, 288.07625pt x 217.81375pt>
+<Device_setup/device3a2.pdf, id=674, 288.07625pt x 217.81375pt>
 File: Device_setup/device3a2.pdf Graphic file (type pdf)
 
 <use Device_setup/device3a2.pdf>
-Package pdftex.def Info: Device_setup/device3a2.pdf used on input line 343.
+Package pdftex.def Info: Device_setup/device3a2.pdf used on input line 349.
 (pdftex.def)             Requested size: 250.0pt x 189.03111pt.
 
-<Device_plot_data/D3plot.pdf, id=667, 578.16pt x 433.62pt>
+<Device_plot_data/D3plot.pdf, id=675, 578.16pt x 433.62pt>
 File: Device_plot_data/D3plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D3plot.pdf>
-Package pdftex.def Info: Device_plot_data/D3plot.pdf used on input line 357.
+Package pdftex.def Info: Device_plot_data/D3plot.pdf used on input line 363.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_setup/device5a2.pdf, id=668, 363.3575pt x 242.9075pt>
+<Device_setup/device5a2.pdf, id=676, 363.3575pt x 242.9075pt>
 File: Device_setup/device5a2.pdf Graphic file (type pdf)
 
 <use Device_setup/device5a2.pdf>
-Package pdftex.def Info: Device_setup/device5a2.pdf used on input line 373.
+Package pdftex.def Info: Device_setup/device5a2.pdf used on input line 379.
 (pdftex.def)             Requested size: 250.0pt x 167.13191pt.
  [8 <./Device_setup/device3a2.pdf> <./Device_plot_data/D3plot.pdf>]
-<Device_plot_data/D5plot.pdf, id=717, 578.16pt x 433.62pt>
+<Device_plot_data/D5plot.pdf, id=725, 578.16pt x 433.62pt>
 File: Device_plot_data/D5plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D5plot.pdf>
-Package pdftex.def Info: Device_plot_data/D5plot.pdf used on input line 389.
+Package pdftex.def Info: Device_plot_data/D5plot.pdf used on input line 395.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_setup/device7a2.pdf, id=718, 313.17pt x 192.72pt>
+<Device_setup/device7a2.pdf, id=726, 313.17pt x 192.72pt>
 File: Device_setup/device7a2.pdf Graphic file (type pdf)
 
 <use Device_setup/device7a2.pdf>
-Package pdftex.def Info: Device_setup/device7a2.pdf used on input line 403.
+Package pdftex.def Info: Device_setup/device7a2.pdf used on input line 409.
 (pdftex.def)             Requested size: 200.0pt x 123.08159pt.
 File: Device_setup/device7a2.pdf Graphic file (type pdf)
  <use Device_setup/device7a2.pdf>
-Package pdftex.def Info: Device_setup/device7a2.pdf used on input line 404.
+Package pdftex.def Info: Device_setup/device7a2.pdf used on input line 410.
 (pdftex.def)             Requested size: 200.0pt x 123.08159pt.
  [9 <./Device_setup/device5a2.pdf> <./Device_plot_data/D5plot.pdf>]
-<Device_plot_data/D7aplot.pdf, id=771, 578.16pt x 433.62pt>
+<Device_plot_data/D7aplot.pdf, id=779, 578.16pt x 433.62pt>
 File: Device_plot_data/D7aplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D7aplot.pdf>
-Package pdftex.def Info: Device_plot_data/D7aplot.pdf used on input line 423.
+Package pdftex.def Info: Device_plot_data/D7aplot.pdf used on input line 429.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D7bplot.pdf, id=772, 578.16pt x 433.62pt>
+<Device_plot_data/D7bplot.pdf, id=780, 578.16pt x 433.62pt>
 File: Device_plot_data/D7bplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D7bplot.pdf>
-Package pdftex.def Info: Device_plot_data/D7bplot.pdf used on input line 424.
+Package pdftex.def Info: Device_plot_data/D7bplot.pdf used on input line 430.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_setup/device8a2.pdf, id=773, 313.17pt x 288.07625pt>
+<Device_setup/device8a2.pdf, id=781, 313.17pt x 288.07625pt>
 File: Device_setup/device8a2.pdf Graphic file (type pdf)
 
 <use Device_setup/device8a2.pdf>
-Package pdftex.def Info: Device_setup/device8a2.pdf used on input line 440.
+Package pdftex.def Info: Device_setup/device8a2.pdf used on input line 446.
 (pdftex.def)             Requested size: 200.0pt x 183.98134pt.
 File: Device_setup/device8a2.pdf Graphic file (type pdf)
  <use Device_setup/device8a2.pdf>
-Package pdftex.def Info: Device_setup/device8a2.pdf used on input line 441.
+Package pdftex.def Info: Device_setup/device8a2.pdf used on input line 447.
 (pdftex.def)             Requested size: 200.0pt x 183.98134pt.
  [10 <./Device_setup/device7a2.pdf> <./Device_plot_data/D7aplot.pdf> <./Device_
 plot_data/D7bplot.pdf
@@ -1710,102 +1714,102 @@ multiple pdfs with page group included in a single page
 >]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 466.
+(hyperref)                removing `math shift' on input line 472.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 466.
+(hyperref)                removing `subscript' on input line 472.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 466.
+(hyperref)                removing `math shift' on input line 472.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 466.
+(hyperref)                removing `math shift' on input line 472.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 466.
+(hyperref)                removing `subscript' on input line 472.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 466.
+(hyperref)                removing `math shift' on input line 472.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 466.
+(hyperref)                removing `math shift' on input line 472.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 466.
+(hyperref)                removing `subscript' on input line 472.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 466.
+(hyperref)                removing `math shift' on input line 472.
 
-<Device_plot_data/D8a1plot.pdf, id=853, 578.16pt x 433.62pt>
+<Device_plot_data/D8a1plot.pdf, id=861, 578.16pt x 433.62pt>
 File: Device_plot_data/D8a1plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8a1plot.pdf>
-Package pdftex.def Info: Device_plot_data/D8a1plot.pdf used on input line 471.
+Package pdftex.def Info: Device_plot_data/D8a1plot.pdf used on input line 477.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D8a1longplot.pdf, id=854, 578.16pt x 433.62pt>
+<Device_plot_data/D8a1longplot.pdf, id=862, 578.16pt x 433.62pt>
 File: Device_plot_data/D8a1longplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8a1longplot.pdf>
 Package pdftex.def Info: Device_plot_data/D8a1longplot.pdf used on input line 4
-72.
+78.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D8b1plot.pdf, id=855, 578.16pt x 433.62pt>
+<Device_plot_data/D8b1plot.pdf, id=863, 578.16pt x 433.62pt>
 File: Device_plot_data/D8b1plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8b1plot.pdf>
-Package pdftex.def Info: Device_plot_data/D8b1plot.pdf used on input line 488.
+Package pdftex.def Info: Device_plot_data/D8b1plot.pdf used on input line 494.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D8b1longplot.pdf, id=856, 578.16pt x 433.62pt>
+<Device_plot_data/D8b1longplot.pdf, id=864, 578.16pt x 433.62pt>
 File: Device_plot_data/D8b1longplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8b1longplot.pdf>
 Package pdftex.def Info: Device_plot_data/D8b1longplot.pdf used on input line 4
-89.
+95.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [11 <./Device_setup/device8a2.pdf> <./Device_plot_data/D8a1plot.pdf> <./Device
 _plot_data/D8a1longplot.pdf
 
 pdfTeX warning: pdflatex (file ./Device_plot_data/D8a1longplot.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
->] <Device_plot_data/D8c1plot.pdf, id=935, 578.16pt x 433.62pt>
+>] <Device_plot_data/D8c1plot.pdf, id=943, 578.16pt x 433.62pt>
 File: Device_plot_data/D8c1plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8c1plot.pdf>
-Package pdftex.def Info: Device_plot_data/D8c1plot.pdf used on input line 506.
+Package pdftex.def Info: Device_plot_data/D8c1plot.pdf used on input line 512.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D8c1longplot.pdf, id=936, 578.16pt x 433.62pt>
+<Device_plot_data/D8c1longplot.pdf, id=944, 578.16pt x 433.62pt>
 File: Device_plot_data/D8c1longplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8c1longplot.pdf>
 Package pdftex.def Info: Device_plot_data/D8c1longplot.pdf used on input line 5
-07.
+13.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D8d1plot.pdf, id=937, 578.16pt x 433.62pt>
+<Device_plot_data/D8d1plot.pdf, id=945, 578.16pt x 433.62pt>
 File: Device_plot_data/D8d1plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8d1plot.pdf>
-Package pdftex.def Info: Device_plot_data/D8d1plot.pdf used on input line 524.
+Package pdftex.def Info: Device_plot_data/D8d1plot.pdf used on input line 530.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D8d1longplot.pdf, id=938, 578.16pt x 433.62pt>
+<Device_plot_data/D8d1longplot.pdf, id=946, 578.16pt x 433.62pt>
 File: Device_plot_data/D8d1longplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8d1longplot.pdf>
 Package pdftex.def Info: Device_plot_data/D8d1longplot.pdf used on input line 5
-25.
+31.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [12 <./Device_plot_data/D8b1plot.pdf> <./Device_plot_data/D8b1longplot.pdf
 
@@ -1822,84 +1826,84 @@ ion: multiple pdfs with page group included in a single page
 >]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 538.
+(hyperref)                removing `math shift' on input line 544.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 538.
+(hyperref)                removing `\lambda' on input line 544.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 538.
+(hyperref)                removing `math shift' on input line 544.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 538.
+(hyperref)                removing `math shift' on input line 544.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 538.
+(hyperref)                removing `subscript' on input line 544.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 538.
+(hyperref)                removing `math shift' on input line 544.
 
-<Device_plot_data/D8plot.pdf, id=1082, 578.16pt x 433.62pt>
+<Device_plot_data/D8plot.pdf, id=1090, 578.16pt x 433.62pt>
 File: Device_plot_data/D8plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8plot.pdf>
-Package pdftex.def Info: Device_plot_data/D8plot.pdf used on input line 555.
+Package pdftex.def Info: Device_plot_data/D8plot.pdf used on input line 561.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 561.
+(hyperref)                removing `math shift' on input line 567.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 561.
+(hyperref)                removing `subscript' on input line 567.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 561.
+(hyperref)                removing `math shift' on input line 567.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 561.
+(hyperref)                removing `math shift' on input line 567.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 561.
+(hyperref)                removing `subscript' on input line 567.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 561.
+(hyperref)                removing `math shift' on input line 567.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 561.
+(hyperref)                removing `math shift' on input line 567.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 561.
+(hyperref)                removing `subscript' on input line 567.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 561.
+(hyperref)                removing `math shift' on input line 567.
 
-<Device_plot_data/D8a2plot.pdf, id=1083, 578.16pt x 433.62pt>
+<Device_plot_data/D8a2plot.pdf, id=1091, 578.16pt x 433.62pt>
 File: Device_plot_data/D8a2plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8a2plot.pdf>
-Package pdftex.def Info: Device_plot_data/D8a2plot.pdf used on input line 566.
+Package pdftex.def Info: Device_plot_data/D8a2plot.pdf used on input line 572.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D8a2linplot.pdf, id=1084, 578.16pt x 433.62pt>
+<Device_plot_data/D8a2linplot.pdf, id=1092, 578.16pt x 433.62pt>
 File: Device_plot_data/D8a2linplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8a2linplot.pdf>
-Package pdftex.def Info: Device_plot_data/D8a2linplot.pdf used on input line 56
-7.
+Package pdftex.def Info: Device_plot_data/D8a2linplot.pdf used on input line 57
+3.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [13 <./Device_plot_data/D8d1plot.pdf> <./Device_plot_data/D8d1longplot.pdf
 
@@ -1909,34 +1913,34 @@ ion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./Device_plot_data/D8plot.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
->] <Device_plot_data/D8b2plot.pdf, id=1223, 578.16pt x 433.62pt>
+>] <Device_plot_data/D8b2plot.pdf, id=1231, 578.16pt x 433.62pt>
 File: Device_plot_data/D8b2plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8b2plot.pdf>
-Package pdftex.def Info: Device_plot_data/D8b2plot.pdf used on input line 578.
+Package pdftex.def Info: Device_plot_data/D8b2plot.pdf used on input line 584.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D8b2linplot.pdf, id=1224, 578.16pt x 433.62pt>
+<Device_plot_data/D8b2linplot.pdf, id=1232, 578.16pt x 433.62pt>
 File: Device_plot_data/D8b2linplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8b2linplot.pdf>
-Package pdftex.def Info: Device_plot_data/D8b2linplot.pdf used on input line 57
-9.
+Package pdftex.def Info: Device_plot_data/D8b2linplot.pdf used on input line 58
+5.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D8c2plot.pdf, id=1225, 578.16pt x 433.62pt>
+<Device_plot_data/D8c2plot.pdf, id=1233, 578.16pt x 433.62pt>
 File: Device_plot_data/D8c2plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8c2plot.pdf>
-Package pdftex.def Info: Device_plot_data/D8c2plot.pdf used on input line 590.
+Package pdftex.def Info: Device_plot_data/D8c2plot.pdf used on input line 596.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D8c2linplot.pdf, id=1226, 578.16pt x 433.62pt>
+<Device_plot_data/D8c2linplot.pdf, id=1234, 578.16pt x 433.62pt>
 File: Device_plot_data/D8c2linplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8c2linplot.pdf>
 Package pdftex.def Info: Device_plot_data/D8c2linplot.pdf used on input line 59
-1.
+7.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [14 <./Device_plot_data/D8a2plot.pdf> <./Device_plot_data/D8a2linplot.pdf
 
@@ -1950,38 +1954,38 @@ pdfTeX warning: pdflatex (file ./Device_plot_data/D8b2plot.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./Device_plot_data/D8b2linplot.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] <Device_plot_data/D8d2plot.pdf, id=1431, 578.16pt x 433.62pt>
+>] <Device_plot_data/D8d2plot.pdf, id=1439, 578.16pt x 433.62pt>
 File: Device_plot_data/D8d2plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8d2plot.pdf>
-Package pdftex.def Info: Device_plot_data/D8d2plot.pdf used on input line 602.
+Package pdftex.def Info: Device_plot_data/D8d2plot.pdf used on input line 608.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D8d2linplot.pdf, id=1432, 578.16pt x 433.62pt>
+<Device_plot_data/D8d2linplot.pdf, id=1440, 578.16pt x 433.62pt>
 File: Device_plot_data/D8d2linplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8d2linplot.pdf>
 Package pdftex.def Info: Device_plot_data/D8d2linplot.pdf used on input line 60
-3.
+9.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 611.
+(hyperref)                removing `math shift' on input line 617.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Delta' on input line 611.
+(hyperref)                removing `\Delta' on input line 617.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 611.
+(hyperref)                removing `math shift' on input line 617.
 
-<Device_plot_data/D8Rplot.pdf, id=1437, 578.16pt x 433.62pt>
+<Device_plot_data/D8Rplot.pdf, id=1445, 578.16pt x 433.62pt>
 File: Device_plot_data/D8Rplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D8Rplot.pdf>
-Package pdftex.def Info: Device_plot_data/D8Rplot.pdf used on input line 629.
+Package pdftex.def Info: Device_plot_data/D8Rplot.pdf used on input line 635.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [15 <./Device_plot_data/D8c2plot.pdf> <./Device_plot_data/D8c2linplot.pdf
 
@@ -1995,72 +1999,72 @@ pdfTeX warning: pdflatex (file ./Device_plot_data/D8d2plot.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./Device_plot_data/D8d2linplot.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] <Device_setup/device9a2.pdf, id=1644, 313.17pt x 273.02pt>
+>] <Device_setup/device9a2.pdf, id=1652, 313.17pt x 273.02pt>
 File: Device_setup/device9a2.pdf Graphic file (type pdf)
 
 <use Device_setup/device9a2.pdf>
-Package pdftex.def Info: Device_setup/device9a2.pdf used on input line 649.
+Package pdftex.def Info: Device_setup/device9a2.pdf used on input line 656.
 (pdftex.def)             Requested size: 200.0pt x 174.3656pt.
 File: Device_setup/device9a2.pdf Graphic file (type pdf)
  <use Device_setup/device9a2.pdf>
-Package pdftex.def Info: Device_setup/device9a2.pdf used on input line 650.
+Package pdftex.def Info: Device_setup/device9a2.pdf used on input line 657.
 (pdftex.def)             Requested size: 200.0pt x 174.3656pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 675.
+(hyperref)                removing `math shift' on input line 682.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 675.
+(hyperref)                removing `subscript' on input line 682.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 675.
+(hyperref)                removing `math shift' on input line 682.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 675.
+(hyperref)                removing `math shift' on input line 682.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 675.
+(hyperref)                removing `subscript' on input line 682.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 675.
+(hyperref)                removing `math shift' on input line 682.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 675.
+(hyperref)                removing `math shift' on input line 682.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 675.
+(hyperref)                removing `subscript' on input line 682.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 675.
+(hyperref)                removing `math shift' on input line 682.
 
-<Device_plot_data/D9a1plot.pdf, id=1645, 578.16pt x 433.62pt>
+<Device_plot_data/D9a1plot.pdf, id=1653, 578.16pt x 433.62pt>
 File: Device_plot_data/D9a1plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D9a1plot.pdf>
-Package pdftex.def Info: Device_plot_data/D9a1plot.pdf used on input line 679.
+Package pdftex.def Info: Device_plot_data/D9a1plot.pdf used on input line 686.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [16 <./Device_plot_data/D8Rplot.pdf> <./Device_setup/device9a2.pdf>]
-<Device_plot_data/D9b1plot.pdf, id=1721, 578.16pt x 433.62pt>
+<Device_plot_data/D9b1plot.pdf, id=1729, 578.16pt x 433.62pt>
 File: Device_plot_data/D9b1plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D9b1plot.pdf>
-Package pdftex.def Info: Device_plot_data/D9b1plot.pdf used on input line 689.
+Package pdftex.def Info: Device_plot_data/D9b1plot.pdf used on input line 696.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D9c1plot.pdf, id=1722, 578.16pt x 433.62pt>
+<Device_plot_data/D9c1plot.pdf, id=1730, 578.16pt x 433.62pt>
 File: Device_plot_data/D9c1plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D9c1plot.pdf>
-Package pdftex.def Info: Device_plot_data/D9c1plot.pdf used on input line 699.
+Package pdftex.def Info: Device_plot_data/D9c1plot.pdf used on input line 706.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [17 <./Device_plot_data/D9a1plot.pdf> <./Device_plot_data/D9b1plot.pdf
 
@@ -2069,68 +2073,68 @@ pdfTeX warning: pdflatex (file ./Device_plot_data/D9b1plot.pdf): PDF inclusion:
 >]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 706.
+(hyperref)                removing `math shift' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 706.
+(hyperref)                removing `subscript' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 706.
+(hyperref)                removing `math shift' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 706.
+(hyperref)                removing `math shift' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 706.
+(hyperref)                removing `subscript' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 706.
+(hyperref)                removing `math shift' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 706.
+(hyperref)                removing `math shift' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 706.
+(hyperref)                removing `subscript' on input line 713.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 706.
+(hyperref)                removing `math shift' on input line 713.
 
-<Device_plot_data/D9a2plot.pdf, id=1797, 578.16pt x 433.62pt>
+<Device_plot_data/D9a2plot.pdf, id=1805, 578.16pt x 433.62pt>
 File: Device_plot_data/D9a2plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D9a2plot.pdf>
-Package pdftex.def Info: Device_plot_data/D9a2plot.pdf used on input line 711.
+Package pdftex.def Info: Device_plot_data/D9a2plot.pdf used on input line 718.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D9a2linplot.pdf, id=1798, 578.16pt x 433.62pt>
+<Device_plot_data/D9a2linplot.pdf, id=1806, 578.16pt x 433.62pt>
 File: Device_plot_data/D9a2linplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D9a2linplot.pdf>
 Package pdftex.def Info: Device_plot_data/D9a2linplot.pdf used on input line 71
-2.
+9.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D9b2plot.pdf, id=1799, 578.16pt x 433.62pt>
+<Device_plot_data/D9b2plot.pdf, id=1807, 578.16pt x 433.62pt>
 File: Device_plot_data/D9b2plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D9b2plot.pdf>
-Package pdftex.def Info: Device_plot_data/D9b2plot.pdf used on input line 723.
+Package pdftex.def Info: Device_plot_data/D9b2plot.pdf used on input line 730.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D9b2linplot.pdf, id=1800, 578.16pt x 433.62pt>
+<Device_plot_data/D9b2linplot.pdf, id=1808, 578.16pt x 433.62pt>
 File: Device_plot_data/D9b2linplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D9b2linplot.pdf>
-Package pdftex.def Info: Device_plot_data/D9b2linplot.pdf used on input line 72
-4.
+Package pdftex.def Info: Device_plot_data/D9b2linplot.pdf used on input line 73
+1.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [18 <./Device_plot_data/D9c1plot.pdf> <./Device_plot_data/D9a2plot.pdf
 
@@ -2140,26 +2144,26 @@ pdfTeX warning: pdflatex (file ./Device_plot_data/D9a2plot.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./Device_plot_data/D9a2linplot.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] <Device_plot_data/D9c2plot.pdf, id=1940, 578.16pt x 433.62pt>
+>] <Device_plot_data/D9c2plot.pdf, id=1948, 578.16pt x 433.62pt>
 File: Device_plot_data/D9c2plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D9c2plot.pdf>
-Package pdftex.def Info: Device_plot_data/D9c2plot.pdf used on input line 735.
+Package pdftex.def Info: Device_plot_data/D9c2plot.pdf used on input line 742.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D9c2linplot.pdf, id=1941, 578.16pt x 433.62pt>
+<Device_plot_data/D9c2linplot.pdf, id=1949, 578.16pt x 433.62pt>
 File: Device_plot_data/D9c2linplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D9c2linplot.pdf>
-Package pdftex.def Info: Device_plot_data/D9c2linplot.pdf used on input line 73
-6.
+Package pdftex.def Info: Device_plot_data/D9c2linplot.pdf used on input line 74
+3.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D9Rplot.pdf, id=1945, 578.16pt x 433.62pt>
+<Device_plot_data/D9Rplot.pdf, id=1953, 578.16pt x 433.62pt>
 File: Device_plot_data/D9Rplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D9Rplot.pdf>
-Package pdftex.def Info: Device_plot_data/D9Rplot.pdf used on input line 762.
+Package pdftex.def Info: Device_plot_data/D9Rplot.pdf used on input line 769.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [19 <./Device_plot_data/D9b2plot.pdf> <./Device_plot_data/D9b2linplot.pdf
 
@@ -2173,22 +2177,22 @@ pdfTeX warning: pdflatex (file ./Device_plot_data/D9c2plot.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./Device_plot_data/D9c2linplot.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] <Device_plot_data/D9Wplot.pdf, id=2153, 578.16pt x 433.62pt>
+>] <Device_plot_data/D9Wplot.pdf, id=2161, 578.16pt x 433.62pt>
 File: Device_plot_data/D9Wplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D9Wplot.pdf>
-Package pdftex.def Info: Device_plot_data/D9Wplot.pdf used on input line 777.
+Package pdftex.def Info: Device_plot_data/D9Wplot.pdf used on input line 784.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_setup/device10a2.pdf, id=2154, 363.3575pt x 313.17pt>
+<Device_setup/device10a2.pdf, id=2162, 363.3575pt x 313.17pt>
 File: Device_setup/device10a2.pdf Graphic file (type pdf)
 
 <use Device_setup/device10a2.pdf>
-Package pdftex.def Info: Device_setup/device10a2.pdf used on input line 789.
+Package pdftex.def Info: Device_setup/device10a2.pdf used on input line 796.
 (pdftex.def)             Requested size: 200.0pt x 172.37782pt.
 File: Device_setup/device10a2.pdf Graphic file (type pdf)
  <use Device_setup/device10a2.pdf>
-Package pdftex.def Info: Device_setup/device10a2.pdf used on input line 790.
+Package pdftex.def Info: Device_setup/device10a2.pdf used on input line 797.
 (pdftex.def)             Requested size: 200.0pt x 172.37782pt.
  [20 <./Device_plot_data/D9Rplot.pdf> <./Device_plot_data/D9Wplot.pdf
 
@@ -2197,107 +2201,107 @@ multiple pdfs with page group included in a single page
 >]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 815.
+(hyperref)                removing `math shift' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 815.
+(hyperref)                removing `subscript' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 815.
+(hyperref)                removing `math shift' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 815.
+(hyperref)                removing `math shift' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 815.
+(hyperref)                removing `subscript' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 815.
+(hyperref)                removing `math shift' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 815.
+(hyperref)                removing `math shift' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 815.
+(hyperref)                removing `subscript' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 815.
+(hyperref)                removing `math shift' on input line 822.
 
-<Device_plot_data/D101plot.pdf, id=2268, 578.16pt x 433.62pt>
+<Device_plot_data/D101plot.pdf, id=2276, 578.16pt x 433.62pt>
 File: Device_plot_data/D101plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D101plot.pdf>
-Package pdftex.def Info: Device_plot_data/D101plot.pdf used on input line 819.
+Package pdftex.def Info: Device_plot_data/D101plot.pdf used on input line 826.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 824.
+(hyperref)                removing `math shift' on input line 831.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 824.
+(hyperref)                removing `subscript' on input line 831.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 824.
+(hyperref)                removing `math shift' on input line 831.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 824.
+(hyperref)                removing `math shift' on input line 831.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 824.
+(hyperref)                removing `subscript' on input line 831.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 824.
+(hyperref)                removing `math shift' on input line 831.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 824.
+(hyperref)                removing `math shift' on input line 831.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 824.
+(hyperref)                removing `subscript' on input line 831.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 824.
+(hyperref)                removing `math shift' on input line 831.
 
-<Device_plot_data/D102plot.pdf, id=2269, 578.16pt x 433.62pt>
+<Device_plot_data/D102plot.pdf, id=2277, 578.16pt x 433.62pt>
 File: Device_plot_data/D102plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D102plot.pdf>
-Package pdftex.def Info: Device_plot_data/D102plot.pdf used on input line 829.
+Package pdftex.def Info: Device_plot_data/D102plot.pdf used on input line 836.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D102linplot.pdf, id=2270, 578.16pt x 433.62pt>
+<Device_plot_data/D102linplot.pdf, id=2278, 578.16pt x 433.62pt>
 File: Device_plot_data/D102linplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D102linplot.pdf>
 Package pdftex.def Info: Device_plot_data/D102linplot.pdf used on input line 83
-0.
+7.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [21 <./Device_setup/device10a2.pdf> <./Device_plot_data/D101plot.pdf>]
-Overfull \hbox (14.735pt too wide) in paragraph at lines 845--845
+Overfull \hbox (18.72113pt too wide) in paragraph at lines 852--852
 [] 
  []
 
-<Device_plot_data/D10Uplot.pdf, id=2317, 578.16pt x 433.62pt>
+<Device_plot_data/D10Uplot.pdf, id=2325, 578.16pt x 433.62pt>
 File: Device_plot_data/D10Uplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D10Uplot.pdf>
-Package pdftex.def Info: Device_plot_data/D10Uplot.pdf used on input line 851.
+Package pdftex.def Info: Device_plot_data/D10Uplot.pdf used on input line 858.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [22 <./Device_plot_data/D102plot.pdf> <./Device_plot_data/D102linplot.pdf
 
@@ -2307,26 +2311,26 @@ on: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./Device_plot_data/D10Uplot.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] <Device_plot_data/D10Gplot.pdf, id=2478, 578.16pt x 433.62pt>
+>] <Device_plot_data/D10Gplot.pdf, id=2483, 578.16pt x 433.62pt>
 File: Device_plot_data/D10Gplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D10Gplot.pdf>
-Package pdftex.def Info: Device_plot_data/D10Gplot.pdf used on input line 873.
+Package pdftex.def Info: Device_plot_data/D10Gplot.pdf used on input line 880.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_plot_data/D102logplot.pdf, id=2479, 578.16pt x 433.62pt>
+<Device_plot_data/D102logplot.pdf, id=2484, 578.16pt x 433.62pt>
 File: Device_plot_data/D102logplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D102logplot.pdf>
-Package pdftex.def Info: Device_plot_data/D102logplot.pdf used on input line 88
-9.
+Package pdftex.def Info: Device_plot_data/D102logplot.pdf used on input line 89
+6.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
 
-<Device_setup/device14a2.pdf, id=2480, 614.295pt x 358.33875pt>
+<Device_setup/device14a2.pdf, id=2485, 614.295pt x 358.33875pt>
 File: Device_setup/device14a2.pdf Graphic file (type pdf)
 
 <use Device_setup/device14a2.pdf>
-Package pdftex.def Info: Device_setup/device14a2.pdf used on input line 902.
+Package pdftex.def Info: Device_setup/device14a2.pdf used on input line 909.
 (pdftex.def)             Requested size: 350.0pt x 204.16772pt.
  [23 <./Device_plot_data/D10Gplot.pdf> <./Device_plot_data/D102logplot.pdf
 
@@ -2335,69 +2339,97 @@ on: multiple pdfs with page group included in a single page
 >]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 919.
+(hyperref)                removing `math shift' on input line 926.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 919.
+(hyperref)                removing `subscript' on input line 926.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 919.
+(hyperref)                removing `subscript' on input line 926.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 919.
+(hyperref)                removing `math shift' on input line 926.
 
-<Device_plot_data/D14plot.pdf, id=2597, 578.16pt x 433.62pt>
+<Device_plot_data/D14plot.pdf, id=2602, 578.16pt x 433.62pt>
 File: Device_plot_data/D14plot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D14plot.pdf>
-Package pdftex.def Info: Device_plot_data/D14plot.pdf used on input line 923.
+Package pdftex.def Info: Device_plot_data/D14plot.pdf used on input line 930.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
  [24 <./Device_setup/device14a2.pdf> <./Device_plot_data/D14plot.pdf>] [25]pdfT
 eX warning (ext4): destination with the same identifier (name{figure.51}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.989 \begin{figure}[H]
+l.996 \begin{figure}[H]
                         [26]
-<Device_setup/Inverter_plots.pdf, id=2655, 614.295pt x 794.97pt>
+<Device_setup/Inverter_plots.pdf, id=2660, 614.295pt x 794.97pt>
 File: Device_setup/Inverter_plots.pdf Graphic file (type pdf)
 
 <use Device_setup/Inverter_plots.pdf>
-Package pdftex.def Info: Device_setup/Inverter_plots.pdf used on input line 106
-9.
+Package pdftex.def Info: Device_setup/Inverter_plots.pdf used on input line 107
+6.
 (pdftex.def)             Requested size: 350.0pt x 452.94353pt.
  [27 <./Device_setup/Inverter_plots.pdf>]
-<Device_plot_data/D14theoplot.pdf, id=2672, 578.16pt x 433.62pt>
+<Device_plot_data/D14theoplot.pdf, id=2677, 578.16pt x 433.62pt>
 File: Device_plot_data/D14theoplot.pdf Graphic file (type pdf)
 
 <use Device_plot_data/D14theoplot.pdf>
 Package pdftex.def Info: Device_plot_data/D14theoplot.pdf used on input line 11
-24.
+31.
 (pdftex.def)             Requested size: 350.0pt x 262.4964pt.
  [28]
+<master_table.pdf, id=2682, 614.295pt x 794.97pt>
+File: master_table.pdf Graphic file (type pdf)
+ <use master_table.pdf>
+Package pdftex.def Info: master_table.pdf used on input line 1142.
+(pdftex.def)             Requested size: 600.0pt x 776.51794pt.
+
+Overfull \hbox (57.97499pt too wide) in paragraph at lines 1142--1143
+ [][] 
+ []
+
+[29 <./Device_plot_data/D14theoplot.pdf>] [30]
+Overfull \vbox (129.12346pt too high) has occurred while \output is active []
+
+
+[31 <./master_table.pdf>]
+<Device_plot_data/idealmosfet.png, id=2772, 1505.625pt x 1053.9375pt>
+File: Device_plot_data/idealmosfet.png Graphic file (type png)
+
+<use Device_plot_data/idealmosfet.png>
+Package pdftex.def Info: Device_plot_data/idealmosfet.png used on input line 11
+50.
+(pdftex.def)             Requested size: 250.0pt x 174.98575pt.
+File: Device_plot_data/D8c1plot.pdf Graphic file (type pdf)
+ <use Device_plot_data/D8c1plot.pdf>
+Package pdftex.def Info: Device_plot_data/D8c1plot.pdf used on input line 1151.
+
+(pdftex.def)             Requested size: 250.0pt x 187.49837pt.
+
 No file lab2.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1161.
-[29 <./Device_plot_data/D14theoplot.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1161.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1187.
+[32 <./Device_plot_data/idealmosfet.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1187.
  (./lab2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1161.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1161.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1187.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1187.
 
 Package rerunfilecheck Info: File `lab2.out' has not changed.
-(rerunfilecheck)             Checksum: 92EFEB0D2F8AE5BBFB7CBAA9A36149C9;5560.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1161.
+(rerunfilecheck)             Checksum: 166E58F48EE354A545D72CDE48CD54A2;5684.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1187.
  ) 
 Here is how much of TeX's memory you used:
- 33102 strings out of 493304
- 733716 string characters out of 6139872
+ 33123 strings out of 493304
+ 734086 string characters out of 6139872
  820852 words of memory out of 5000000
- 35775 multiletter control sequences out of 15000+600000
+ 35785 multiletter control sequences out of 15000+600000
  7986 words of font info for 30 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,14n,74p,10432b,837s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,14n,74p,10432b,835s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texli
@@ -2409,11 +2441,12 @@ public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on lab2.pdf (29 pages, 1074021 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on lab2.pdf (32 pages, 1210460 bytes).
 PDF statistics:
- 2812 PDF objects out of 2984 (max. 8388607)
- 1042 compressed objects within 11 object streams
- 162 named destinations out of 1000 (max. 500000)
- 880 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2868 PDF objects out of 2984 (max. 8388607)
+ 1085 compressed objects within 11 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 906 words of extra memory for PDF output out of 10000 (max. 10000000)
 
